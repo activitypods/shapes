@@ -5,7 +5,7 @@ RUN npm -v
 
 WORKDIR /app
 
-RUN apk add --update --no-cache autoconf bash libtool automake python3 py3-pip alpine-sdk openssh-keygen yarn nano
+RUN apk add --update --no-cache bash yarn nano
 
 # Install packages first so that Docker doesn't run `yarn install` if the packages haven't changed
 # See https://making.close.com/posts/reduce-docker-image-size
