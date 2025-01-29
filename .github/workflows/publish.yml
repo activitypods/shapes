@@ -38,10 +38,3 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: activitypods/shapes:latest
-
-      - name: Generate artifact attestation
-        uses: actions/attest-build-provenance@v2
-        with:
-          subject-name: activitypods/shapes
-          subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: true
