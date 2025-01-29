@@ -49,5 +49,5 @@ jobs:
           script: |
             cd apps
             docker system prune --force
-            docker compose build shapes
-            docker compose up -d shapes
+            docker compose build activitypods-shapes
+            docker compose up -d activitypods-shapes
