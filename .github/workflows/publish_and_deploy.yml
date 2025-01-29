@@ -38,3 +38,16 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: activitypods/shapes:latest
+
+      - name: Deploy to shapes.activitypods.org
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: shapes.activitypods.org
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd apps
+            docker system prune --force
+            docker compose build shapes
+            docker compose up -d shapes
