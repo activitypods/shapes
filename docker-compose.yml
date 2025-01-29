@@ -1,0 +1,8 @@
+services:
+  shapes:
+    build:
+      context: .
+    image: activitypods/shapes:latest
+    container_name: shapes
+    ports:
+      - '3000:3000'

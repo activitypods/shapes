@@ -1,0 +1,10 @@
+{
+  "name": "activitypods-shapes",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "rdf-serve": "^1.1.0"
+  }
+}
