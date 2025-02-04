@@ -3,6 +3,8 @@ const path = require("path");
 const express = require("express");
 const { negotiateHandlerFactory } = require("rdf-serve");
 
+express.static.mime.define({ "text/shex": ["shex"] });
+
 const app = express();
 
 app.get("/shex/*", (req, res) => {
