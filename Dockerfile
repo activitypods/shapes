@@ -16,6 +16,8 @@ RUN yarn install && yarn cache clean
 ADD index.js /app
 ADD shapes /app/shapes
 
+RUN chmod -R 777 /app/shapes
+
 EXPOSE 3000
 
 CMD [ "node", "index.js" ]
