@@ -15,6 +15,7 @@ app.get("/shex/*", (req, res) => {
       res.status(404).send();
     } else {
       res.setHeader("Content-Type", "text/shex");
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.status(200).send(data);
     }
   });
@@ -29,6 +30,8 @@ app.get("/trees/*", async (req, res) => {
   if (response.getHeader("Content-Type") === "text/turtle") {
     res.setHeader("Content-Type", "text/turtle; charset=utf-8");
   }
+
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
   return response;
 });
