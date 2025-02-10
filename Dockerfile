@@ -18,6 +18,6 @@ ADD shapes /app/shapes
 
 RUN chmod -R 777 /app/shapes
 
-EXPOSE 3000
+EXPOSE 8000
 
 CMD [ "node", "index.js" ]

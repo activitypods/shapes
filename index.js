@@ -36,4 +36,4 @@ app.get("/trees/*", async (req, res) => {
   return response;
 });
 
-module.exports = app.listen(process.env.PORT || 3000);
+module.exports = app.listen(process.env.PORT || 8000);
