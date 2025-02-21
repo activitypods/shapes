@@ -9,7 +9,6 @@ const app = express();
 
 app.get("/shex/*", (req, res) => {
   const wildcardPath = req.params["0"];
-  console.log("wildcardPath", wildcardPath);
   fs.readFile(`shapes/shex/${wildcardPath}.shex`, "utf8", (err, data) => {
     if (err) {
       res.status(404).send();
