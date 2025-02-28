@@ -1,36 +1,26 @@
-const fs = require("fs");
 const path = require("path");
 const express = require("express");
 const { negotiateHandlerFactory } = require("rdf-serve");
 
-express.static.mime.define({ "text/shex": ["shex"] });
-
 const app = express();
 
-app.get("/shex/*", (req, res) => {
-  const wildcardPath = req.params["0"];
-  fs.readFile(`shapes/shex/${wildcardPath}.shex`, "utf8", (err, data) => {
-    if (err) {
-      res.status(404).send();
-    } else {
-      res.setHeader("Content-Type", "text/shex");
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.status(200).send(data);
+app.get("*", async (req, res) => {
+  const response = await negotiateHandlerFactory(path.join(__dirname, "src"))(
+    req,
+    res
+  );
+
+  // If there was an error, the response is not writable anymore
+  if (!res.writableEnded) {
+    // Add the UTF8 charset to Turtle or special characters will appear incorrectly
+    if (response.getHeader("Content-Type") === "text/turtle") {
+      response.setHeader("Content-Type", "text/turtle; charset=utf-8");
     }
-  });
-});
 
-app.get("/trees/*", async (req, res) => {
-  const response = await negotiateHandlerFactory(
-    path.join(__dirname, "shapes")
-  )(req, res);
-
-  // Add the UTF8 charset to Turtle or special characters will appear incorrectly
-  if (response.getHeader("Content-Type") === "text/turtle") {
-    res.setHeader("Content-Type", "text/turtle; charset=utf-8");
+    response.setHeader("Access-Control-Allow-Origin", "*");
   }
 
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  console.log(`Serving ${req.url}. Response code: ${res.statusCode}`);
 
   return response;
 });

@@ -6,5 +6,5 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
 :Note
   a st:ShapeTree ;
   st:expectsType st:Resource ;
-  st:shape <../../shex/as/Note> ;
+  st:shape <../../shapes/as/Note> ;
   skos:prefLabel "Messages"@en, "Messages"@fr .

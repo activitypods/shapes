@@ -1,9 +1,0 @@
-PREFIX : <>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX as: <https://www.w3.org/ns/activitystreams#>
-PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
-
-:Profile {
-  a [ as:Profile ] ;
-  as:describes IRI
-}

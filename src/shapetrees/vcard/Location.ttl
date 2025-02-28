@@ -6,6 +6,6 @@ PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 :Location
   a st:ShapeTree ;
   st:expectsType st:Resource ;
-  st:shape <../../shex/vcard/Location> ;
+  st:shape <../../shapes/vcard/Location> ;
   st:describesInstance vcard:given-name ;
   skos:prefLabel "Addresses"@en, "Adresses"@fr .

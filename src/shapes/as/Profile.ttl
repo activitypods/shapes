@@ -1,0 +1,7 @@
+PREFIX : <>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX as: <https://www.w3.org/ns/activitystreams#>
+
+:Profile
+  a sh:NodeShape ;
+  sh:targetClass as:Profile .
