@@ -14,9 +14,9 @@ ADD yarn.lock /app
 RUN yarn install && yarn cache clean
 
 ADD index.js /app
-ADD shapes /app/shapes
+ADD src /app/src
 
-RUN chmod -R 777 /app/shapes
+RUN chmod -R 777 /app/src
 
 EXPOSE 8000
 
