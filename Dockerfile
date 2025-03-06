@@ -14,6 +14,7 @@ ADD yarn.lock /app
 RUN yarn install && yarn cache clean
 
 ADD index.js /app
+ADD negotiateHandlerFactory.js /app
 ADD src /app/src
 
 RUN chmod -R 777 /app/src

@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const path = require("path");
 const express = require("express");
-const negotiateHandlerFactory = require("./negotiateHandlerFactor");
+const negotiateHandlerFactory = require("./negotiateHandlerFactory");
 
 const app = express();
 
