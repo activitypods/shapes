@@ -1,14 +1,18 @@
+require("dotenv").config();
+
 const path = require("path");
 const express = require("express");
-const { negotiateHandlerFactory } = require("rdf-serve");
+const negotiateHandlerFactory = require("./negotiateHandlerFactor");
 
 const app = express();
 
+console.log("BASE_URL", process.env.BASE_URL);
+
 app.get("*", async (req, res) => {
-  const response = await negotiateHandlerFactory(path.join(__dirname, "src"))(
-    req,
-    res
-  );
+  const response = await negotiateHandlerFactory(
+    path.join(__dirname, "src"),
+    process.env.BASE_URL
+  )(req, res);
 
   // If there was an error, the response is not writable anymore
   if (!res.writableEnded) {
