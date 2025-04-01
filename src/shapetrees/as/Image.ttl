@@ -7,4 +7,4 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
   a st:ShapeTree ;
   st:expectsType st:Resource ;
   st:shape <../../shapes/as/Image> ;
-  skos:prefLabel "Image"@en, "Image"@fr .
+  skos:prefLabel "Images"@en, "Images"@fr .
