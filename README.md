@@ -2,9 +2,18 @@
 
 # ActivityPods shapes repository
 
-A repository with shapes and shape trees used by [ActivityPods](https://activitypods.org) applications.
+A monorepo with shapes, shape trees, and LDO objects used by [ActivityPods](https://activitypods.org) applications.
 
-## Running locally
+## Packages
+
+This monorepo contains the following packages:
+
+- **`shape-definitions`**: Contains the SHACL files and ShapeTrees.
+- **`ldo-types`**: Contains Linked Data Object (LDO) definitions for typescript generated from shex-definitions. The shex definitions are derived from the shacl shape definitions since the ldo type builder requires shex definitions.
+
+For the moment, the shex definitions need to be manually "translated" from the shacl definitions. Please note that the ldo builder does not currently support "ShapeOr, ShapeAnd, ShapeNot, ShapeExternal, or NodeConstraint". See the existing shacl and shex files as a reference. The npm package `@jeswr/shacl2shex` or an LLM might help you with the translation.
+
+## Serving shapes
 
 ```bash
 yarn install

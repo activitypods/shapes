@@ -31,8 +31,8 @@ function negotiateHandlerFactory(basePath, baseUri, containsTriples) {
               f.isDirectory()
                 ? `${f.name}/`
                 : f.name.includes(".")
-                ? f.name.slice(0, f.name.lastIndexOf("."))
-                : f.name
+                  ? f.name.slice(0, f.name.lastIndexOf("."))
+                  : f.name
             }>`
         );
         const str = `<> <http://www.w3.org/ns/ldp#contains> ${files.join(

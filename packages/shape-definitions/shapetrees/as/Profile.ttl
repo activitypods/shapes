@@ -2,9 +2,11 @@ PREFIX : <>
 PREFIX st: <http://www.w3.org/ns/shapetrees#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX as: <https://www.w3.org/ns/activitystreams#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 
-:Image
+:Profile
   a st:ShapeTree ;
   st:expectsType st:Resource ;
-  st:shape <../../shapes/as/Image> ;
-  skos:prefLabel "Images"@en, "Images"@fr .
+  st:shape <../../shapes/activitypub#Profile> ;
+  st:describesInstance vcard:given-name ;
+  skos:prefLabel "Profiles"@en, "Profils"@fr .

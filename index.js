@@ -10,7 +10,7 @@ console.log("BASE_URL", process.env.BASE_URL);
 
 app.get("*", async (req, res) => {
   const response = await negotiateHandlerFactory(
-    path.join(__dirname, "src"),
+    path.join(__dirname, "packages/shape-definitions/"),
     process.env.BASE_URL
   )(req, res);
 

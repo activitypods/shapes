@@ -6,5 +6,5 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
 :Note
   a st:ShapeTree ;
   st:expectsType st:Resource ;
-  st:shape <../../shapes/as/Video> ;
-  skos:prefLabel "Videos"@en, "Vidéos"@fr .
+  st:shape <../../shapes/activitypub#Note> ;
+  skos:prefLabel "Messages"@en, "Messages"@fr .
