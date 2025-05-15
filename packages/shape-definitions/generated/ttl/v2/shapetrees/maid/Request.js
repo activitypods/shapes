@@ -1,0 +1,2 @@
+const turtleShape = "PREFIX : <>\nPREFIX st: <http://www.w3.org/ns/shapetrees#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX pair: <http://virtual-assembly.org/ontologies/pair#>\n\n:Request\n  a st:ShapeTree ;\n  st:expectsType st:Resource ;\n  st:shape <../../shapes/maid/Request> ;\n  st:describesInstance pair:label ;\n  skos:prefLabel \"Requests\"@en, \"Demandes\"@fr .\n";
+export default turtleShape;

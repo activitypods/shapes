@@ -1,0 +1,2 @@
+const turtleShape = "PREFIX : <>\nPREFIX st: <http://www.w3.org/ns/shapetrees#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX as: <https://www.w3.org/ns/activitystreams#>\nPREFIX vcard: <http://www.w3.org/2006/vcard/ns#>\n\n:Profile\n  a st:ShapeTree ;\n  st:expectsType st:Resource ;\n  st:shape <../../shapes/activitypub#Profile> ;\n  st:describesInstance vcard:given-name ;\n  skos:prefLabel \"Profiles\"@en, \"Profils\"@fr .\n";
+export default turtleShape;

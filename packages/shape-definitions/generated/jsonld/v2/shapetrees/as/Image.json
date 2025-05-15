@@ -1,0 +1,29 @@
+[
+  {
+    "@id": "Image",
+    "@type": [
+      "http://www.w3.org/ns/shapetrees#ShapeTree"
+    ],
+    "http://www.w3.org/ns/shapetrees#expectsType": [
+      {
+        "@id": "http://www.w3.org/ns/shapetrees#Resource"
+      }
+    ],
+    "http://www.w3.org/ns/shapetrees#shape": [
+      {
+        "@id": "/shapes/activitypub#Image"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Images",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Images",
+        "@language": "fr"
+      }
+    ]
+  }
+]

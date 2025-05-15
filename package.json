@@ -1,13 +1,14 @@
 {
   "name": "activitypods-shapes-monorepo",
   "private": true,
+  "type": "module",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "start": "node index.js",
-    "build": "yarn build:ldo",
-    "build:ldo": "yarn run ldo build --input ./packages/ldo-types/shex-derived --output ./packages/ldo-types/types"
+    "start": "node index.ts",
+    "build": "lerna run build",
+    "prepublishOnly": "yarn build"
   },
   "license": "Apache-2.0",
   "dependencies": {
@@ -18,7 +19,12 @@
     "streamify-string": "^1.0.1"
   },
   "devDependencies": {
-    "@ldo/cli": "^1.0.0-alpha.9",
-    "@ldo/ldo": "^1.0.0-alpha.9"
+    "@types/express": "^4.17.21",
+    "@types/negotiator": "^0.6.3",
+    "@types/streamify-string": "^1.0.4",
+    "lerna": "^8.2.2",
+    "parcel": "^2.15.0",
+    "typescript": "^5.8.3",
+    "yalc": "^1.0.0-pre.53"
   }
 }
