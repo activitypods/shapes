@@ -8,7 +8,7 @@
 set -e
 
 DEFINITIONS_DIR=../shape-definitions/source
-TARGET_DIR=./src/types-generated
+TARGET_DIR=./objects-generated
 
 # Find all directories containing .shex files under $DEFINITIONS_DIR
 find $DEFINITIONS_DIR -name '*.shex' -printf '%h\n' | \

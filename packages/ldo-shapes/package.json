@@ -5,13 +5,15 @@
   "repository": "https://github.com/activitypods/shapes",
   "license": "Apache-2.0",
   "author": "Virtual Assembly",
-  "source": "src/index.ts",
+  "type": "module",
+  "source": "index.ts",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "scripts": {
-    "build": "yarn build:ldo && yarn build:transpile",
-    "build:transpile": "parcel build && yalc publish --push --changed",
-    "build:ldo": "bash ldo-dirs.sh | while read -r input output; do ldo build --input \"$input\" --output \"$output\"; done"
+    "build": "yarn build:ldo && yarn build:ldo-indexes && yarn build:transpile",
+    "build:ldo": "bash ldo-dirs.sh | while read -r input output; do ldo build --input \"$input\" --output \"$output\"; done",
+    "build:ldo-indexes": "node ./scripts/create-indexes.ts",
+    "build:transpile": "parcel build && yalc publish --push --changed"
   },
   "devDependencies": {
     "@ldo/cli": "^1.0.0-alpha.9",
