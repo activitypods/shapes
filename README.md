@@ -1,6 +1,6 @@
 ![activitypods-small](https://user-images.githubusercontent.com/17931931/215525902-6ae72fa9-fde0-43eb-a053-0ccfd4565ead.png)
 
-# ActivityPods shapes repository
+# ActivityPods shapes Monorepo
 
 A monorepo with RDF shapes, shape trees, and LDO objects used by [ActivityPods](https://activitypods.org) applications.
 
@@ -19,6 +19,7 @@ This monorepo has the following structure:
 
 - `packages/shape-definitions`: Contains the shape definitions and exports to js/ts.
 - `packages/shape-definitions/source/<version/`: Contains the actual (SHACL) shape and shape-tree definitions serialized in turtle (`.shacl.ttl`). Also contains SHEX shape files: For the moment, they are generated manually and only contain ActivityStreams translations that are derived from the SHACL definitions. We need the SHEX files to generate ldo objects from them.
+- `packages/shape-definitions/generated/` contains js-importable json-ld and ttl-string exports generated from the source `.shacl.ttl` files.
 - `packages/ldo-types`: Contains [ldo](https://ldo.js.org/) typescript ShapeTypes derived from the shapes.
 
 For the moment, the shex definitions need to be manually "translated" from the shacl definitions. Please note that the ldo builder does not currently support "ShapeOr, ShapeAnd, ShapeNot, ShapeExternal, or NodeConstraint". See the existing shacl and shex files as a reference. The npm package `@jeswr/shacl2shex` (does not translate all features) or an LLM might help you with the translation.
