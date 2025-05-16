@@ -1,7 +1,0 @@
-PREFIX : <>
-PREFIX sh: <http://www.w3.org/ns/shacl#>
-PREFIX as: <https://www.w3.org/ns/activitystreams#>
-
-:Audio
-  a sh:NodeShape ;
-  sh:targetClass as:Audio .

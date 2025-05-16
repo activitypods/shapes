@@ -1,0 +1,29 @@
+[
+  {
+    "@id": "Article",
+    "@type": [
+      "http://www.w3.org/ns/shapetrees#ShapeTree"
+    ],
+    "http://www.w3.org/ns/shapetrees#expectsType": [
+      {
+        "@id": "http://www.w3.org/ns/shapetrees#Resource"
+      }
+    ],
+    "http://www.w3.org/ns/shapetrees#shape": [
+      {
+        "@id": "/shapes/activitypub#Article"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Articles",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Articles",
+        "@language": "fr"
+      }
+    ]
+  }
+]
