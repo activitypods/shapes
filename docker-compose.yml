@@ -5,4 +5,4 @@ services:
     image: activitypods/shapes:latest
     container_name: shapes
     ports:
-      - '8000:8000'
+      - "30916:30916"

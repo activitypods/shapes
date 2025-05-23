@@ -1,0 +1,194 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix notify: <http://www.w3.org/ns/solid/notifications#> .
+@prefix apodsShape: <https://shapes.activitypods.org/v2/shapes/solid#> .
+
+# Solid Notifications Protocol Data Models
+# Based on https://solidproject.org/TR/notifications-protocol
+
+# Description Resource Shape
+apodsShape:DescriptionResource a sh:NodeShape ;
+  sh:targetClass notify:DescriptionResource ;
+  rdfs:label "Description Resource" ;
+  rdfs:comment "A resource that includes information about the capabilities and features of a subscription service or notification channel" ;
+  sh:property [
+    sh:path rdf:id ;
+    sh:name "id" ;
+    sh:description "The identifier of the description resource" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path notify:subscription ;
+    sh:name "subscription" ;
+    sh:description "Available subscription services" ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path notify:channel ;
+    sh:name "channel" ;
+    sh:description "Available notification channels" ;
+    sh:nodeKind sh:IRI ;
+  ] .
+
+# Subscription Service Shape
+apodsShape:SubscriptionServiceShape a sh:NodeShape ;
+  sh:targetClass notify:SubscriptionService ;
+  rdfs:label "Subscription Service" ;
+  rdfs:comment "A service that can be used by Subscription Clients to discover available features and customize the details of a subscription request" ;
+  sh:property [
+    sh:path rdf:id ;
+    sh:name "id" ;
+    sh:description "The identifier of the subscription service" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path notify:channelType ;
+    sh:name "channelType" ;
+    sh:description "The notification channel type" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path notify:feature ;
+    sh:name "feature" ;
+    sh:description "Supported features" ;
+    sh:nodeKind sh:IRI ;
+  ] .
+
+# Notification Channel Shape
+apodsShape:NotificationChannelShape a sh:NodeShape ;
+  sh:targetClass notify:NotificationChannel ;
+  rdfs:label "Notification Channel" ;
+  rdfs:comment "A resource whose properties describe the immediately available notification interface with a specific notification channel type" ;
+  sh:property [
+    sh:path rdf:id ;
+    sh:name "id" ;
+    sh:description "The identifier of the notification channel" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:name "type" ;
+    sh:description "The notification channel type" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path notify:topic ;
+    sh:name "topic" ;
+    sh:description "The resource that the notifications are about" ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path notify:receiveFrom ;
+    sh:name "receiveFrom" ;
+    sh:description "The resource on the Notification Sender that can be used to establish a connection to receive notifications" ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path notify:sendTo ;
+    sh:name "sendTo" ;
+    sh:description "The resource where the Notification Receiver can accept notifications" ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path notify:sender ;
+    sh:name "sender" ;
+    sh:description "The Notification Sender" ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  # Feature properties
+  sh:property [
+    sh:path notify:startAt ;
+    sh:name "startAt" ;
+    sh:description "The proposed or actual starting date and time of a notification channel" ;
+    sh:datatype xsd:dateTime ;
+  ] ;
+  sh:property [
+    sh:path notify:endAt ;
+    sh:name "endAt" ;
+    sh:description "The proposed or actual ending date and time of a notification channel" ;
+    sh:datatype xsd:dateTime ;
+  ] ;
+  sh:property [
+    sh:path notify:state ;
+    sh:name "state" ;
+    sh:description "The last known state of a topic resource" ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
+    sh:path notify:rate ;
+    sh:name "rate" ;
+    sh:description "The minimum amount of time to elapse between notifications sent to receiver" ;
+    sh:datatype xsd:duration ;
+  ] ;
+  sh:property [
+    sh:path notify:accept ;
+    sh:name "accept" ;
+    sh:description "The media types that are acceptable by the recipient of a notification" ;
+    sh:datatype xsd:string ;
+  ] .
+
+# Notification Message Shape
+apodsShape:NotificationMessageShape a sh:NodeShape ;
+  sh:targetClass as:Activity ;
+  rdfs:label "Notification Message" ;
+  rdfs:comment "A notification message sent through a notification channel" ;
+  sh:property [
+    sh:path rdf:id ;
+    sh:name "id" ;
+    sh:description "The identifier of the notification" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:name "type" ;
+    sh:description "The type of activity" ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path as:object ;
+    sh:name "object" ;
+    sh:description "The resource that the notification is about" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path as:published ;
+    sh:name "published" ;
+    sh:description "The date and time of the notification" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:dateTime ;
+  ] ;
+  sh:property [
+    sh:path as:target ;
+    sh:name "target" ;
+    sh:description "The resource to which the activity is directed" ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path notify:state ;
+    sh:name "state" ;
+    sh:description "The last known state of the resource" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+  ] .
