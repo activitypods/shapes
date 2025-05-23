@@ -1,24 +1,34 @@
 
+function $parcel$exportWildcard(dest, source) {
+  Object.keys(source).forEach(function(key) {
+    if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) {
+      return;
+    }
+
+    Object.defineProperty(dest, key, {
+      enumerable: true,
+      get: function get() {
+        return source[key];
+      }
+    });
+  });
+
+  return dest;
+}
+
 function $parcel$export(e, n, v, s) {
   Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
 }
 var $3fd42e7ba4a216b6$exports = {};
 
-$parcel$export($3fd42e7ba4a216b6$exports, "v2", () => $8fe34d6df5c12494$exports);
-var $8fe34d6df5c12494$exports = {};
+$parcel$export($3fd42e7ba4a216b6$exports, "shapes", () => $3fd42e7ba4a216b6$re_export$shapes);
+/** Nested shape-import */ var $40fc03b76cce2cb4$exports = {};
 
-$parcel$export($8fe34d6df5c12494$exports, "shapes", () => $59166f20eca703f7$exports);
-var $59166f20eca703f7$exports = {};
+$parcel$export($40fc03b76cce2cb4$exports, "solid", () => $40fc03b76cce2cb4$re_export$solid);
+var $aeeccf19fafb51b6$exports = {};
 
-$parcel$export($59166f20eca703f7$exports, "activitystreams_context", () => $3160491e5f21a2b7$exports);
-$parcel$export($59166f20eca703f7$exports, "activitystreams_schema", () => $3150ed67de4489e5$exports);
-$parcel$export($59166f20eca703f7$exports, "activitystreams_shapeTypes", () => $e5e2cdab7d1f7925$exports);
-$parcel$export($59166f20eca703f7$exports, "activitystreams_typings", () => $3f2ef00493e3d75b$exports);
-$parcel$export($59166f20eca703f7$exports, "maid", () => $328d92aaad15ffa0$exports);
-var $3160491e5f21a2b7$exports = {};
-
-$parcel$export($3160491e5f21a2b7$exports, "activitystreamsContext", () => $3160491e5f21a2b7$export$2c8fa83ea1e9f99c);
-const $3160491e5f21a2b7$export$2c8fa83ea1e9f99c = {
+$parcel$export($aeeccf19fafb51b6$exports, "activitystreamsContext", () => $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c);
+const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
     type: {
         "@id": "@type",
         "@type": "https://www.w3.org/ns/activitystreams#Object"
@@ -350,14 +360,14 @@ const $3160491e5f21a2b7$export$2c8fa83ea1e9f99c = {
 };
 
 
-var $3150ed67de4489e5$exports = {};
+var $5a51491c579929c5$exports = {};
 
-$parcel$export($3150ed67de4489e5$exports, "activitystreamsSchema", () => $3150ed67de4489e5$export$d7dff8426c1f1d2);
-const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
+$parcel$export($5a51491c579929c5$exports, "activitystreamsSchema", () => $5a51491c579929c5$export$d7dff8426c1f1d2);
+const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
     type: "Schema",
     shapes: [
         {
-            id: "https://ldo.js.org/shapes/activitypub#Object",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -647,7 +657,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#Link",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -761,7 +771,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#Activity",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -776,7 +786,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Activity"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#actor",
@@ -842,7 +852,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#IntransitiveActivity",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -857,13 +867,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#IntransitiveActivity"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#Collection",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -878,7 +888,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Collection"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#totalItems",
@@ -935,7 +945,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#OrderedCollection",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -950,7 +960,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#OrderedCollection"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Collection",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#orderedItems",
@@ -966,7 +976,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#CollectionPage",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#CollectionPage",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -981,7 +991,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#CollectionPage"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Collection",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#next",
@@ -1017,7 +1027,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#OrderedCollectionPage",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollectionPage",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1032,7 +1042,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#OrderedCollection",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#startIndex",
@@ -1049,7 +1059,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#AcceptShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AcceptShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1064,13 +1074,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Accept"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#AddShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AddShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1085,13 +1095,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Add"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#CreateShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#CreateShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1106,13 +1116,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Create"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#DeleteShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DeleteShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1127,13 +1137,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Delete"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#FollowShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#FollowShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1148,13 +1158,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Follow"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#IgnoreShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#IgnoreShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1169,13 +1179,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Ignore"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#JoinShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#JoinShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1190,13 +1200,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Join"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#LeaveShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#LeaveShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1211,13 +1221,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Leave"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#LikeShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#LikeShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1232,13 +1242,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Like"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#OfferShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OfferShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1253,13 +1263,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Offer"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#InviteShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#InviteShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1274,13 +1284,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Invite"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#RejectShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#RejectShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1295,13 +1305,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Reject"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#TentativeRejectShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeRejectShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1316,13 +1326,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#TentativeReject"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#RemoveShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#RemoveShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1337,13 +1347,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Remove"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#UndoShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#UndoShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1358,13 +1368,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Undo"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#UpdateShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#UpdateShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1379,13 +1389,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Update"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#ViewShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ViewShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1400,13 +1410,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#View"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#ListenShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ListenShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1421,13 +1431,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Listen"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#ReadShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ReadShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1442,13 +1452,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Read"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#MoveShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#MoveShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1463,13 +1473,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Move"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#AnnounceShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AnnounceShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1484,13 +1494,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Announce"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#FlagShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#FlagShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1505,13 +1515,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Flag"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#DislikeShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DislikeShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1526,13 +1536,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Dislike"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#ArriveShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArriveShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1547,13 +1557,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Arrive"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#IntransitiveActivity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#TravelShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TravelShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1568,13 +1578,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Travel"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#IntransitiveActivity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#Question",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Question",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1589,7 +1599,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Question"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#IntransitiveActivity",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#oneOf",
@@ -1625,7 +1635,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#TentativeAcceptShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeAcceptShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1640,13 +1650,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#TentativeAccept"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#BlockShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#BlockShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1661,13 +1671,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Block"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Activity"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#ApplicationShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ApplicationShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1682,13 +1692,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Application"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#GroupShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#GroupShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1703,13 +1713,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Group"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#OrganizationShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrganizationShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1724,13 +1734,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Organization"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#PersonShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#PersonShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1745,13 +1755,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Person"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#ServiceShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ServiceShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1766,13 +1776,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Service"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#Relationship",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Relationship",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1787,7 +1797,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Relationship"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#subject",
@@ -1823,7 +1833,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#DocumentShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DocumentShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1838,13 +1848,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Document"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#ArticleShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArticleShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1859,13 +1869,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Article"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#AudioShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AudioShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1880,13 +1890,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Audio"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Document"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Document"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#ImageShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ImageShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1901,13 +1911,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Image"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Document"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Document"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#VideoShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#VideoShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1922,13 +1932,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Video"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Document"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Document"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#NoteShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#NoteShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1943,13 +1953,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Note"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#PageShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#PageShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1964,13 +1974,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Page"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#EventShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#EventShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1985,13 +1995,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Event"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#Place",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Place",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2006,7 +2016,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Place"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#accuracy",
@@ -2075,7 +2085,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#MentionShape",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#MentionShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2090,13 +2100,13 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Mention"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Link"
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Link"
                     ]
                 }
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#Profile",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Profile",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2111,7 +2121,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Profile"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#describes",
@@ -2127,7 +2137,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
             }
         },
         {
-            id: "https://ldo.js.org/shapes/activitypub#Tombstone",
+            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Tombstone",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2142,7 +2152,7 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
                                 datatype: "https://www.w3.org/ns/activitystreams#Tombstone"
                             }
                         },
-                        "https://ldo.js.org/shapes/activitypub#Object",
+                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#formerType",
@@ -2171,488 +2181,433 @@ const $3150ed67de4489e5$export$d7dff8426c1f1d2 = {
 };
 
 
-var $e5e2cdab7d1f7925$exports = {};
+var $75d228de1641f124$exports = {};
 
-$parcel$export($e5e2cdab7d1f7925$exports, "ObjectShapeType", () => $e5e2cdab7d1f7925$export$10ed4a6ea04a5da7);
-$parcel$export($e5e2cdab7d1f7925$exports, "LinkShapeType", () => $e5e2cdab7d1f7925$export$711627bf7900d47a);
-$parcel$export($e5e2cdab7d1f7925$exports, "ActivityShapeType", () => $e5e2cdab7d1f7925$export$4f551c247294b576);
-$parcel$export($e5e2cdab7d1f7925$exports, "IntransitiveActivityShapeType", () => $e5e2cdab7d1f7925$export$8278f0ce2855ac11);
-$parcel$export($e5e2cdab7d1f7925$exports, "CollectionShapeType", () => $e5e2cdab7d1f7925$export$8d488253d594ee88);
-$parcel$export($e5e2cdab7d1f7925$exports, "OrderedCollectionShapeType", () => $e5e2cdab7d1f7925$export$f52b300449df2b3f);
-$parcel$export($e5e2cdab7d1f7925$exports, "CollectionPageShapeType", () => $e5e2cdab7d1f7925$export$464d3b3aa39764d1);
-$parcel$export($e5e2cdab7d1f7925$exports, "OrderedCollectionPageShapeType", () => $e5e2cdab7d1f7925$export$27ca8464d8ec16cf);
-$parcel$export($e5e2cdab7d1f7925$exports, "AcceptShapeShapeType", () => $e5e2cdab7d1f7925$export$853c1e95a1b4f13d);
-$parcel$export($e5e2cdab7d1f7925$exports, "AddShapeShapeType", () => $e5e2cdab7d1f7925$export$54470b92651c6f54);
-$parcel$export($e5e2cdab7d1f7925$exports, "CreateShapeShapeType", () => $e5e2cdab7d1f7925$export$3a74c015d90fb48a);
-$parcel$export($e5e2cdab7d1f7925$exports, "DeleteShapeShapeType", () => $e5e2cdab7d1f7925$export$b194320e377e30fc);
-$parcel$export($e5e2cdab7d1f7925$exports, "FollowShapeShapeType", () => $e5e2cdab7d1f7925$export$d40894f5415fdcb0);
-$parcel$export($e5e2cdab7d1f7925$exports, "IgnoreShapeShapeType", () => $e5e2cdab7d1f7925$export$f8c85015e7349761);
-$parcel$export($e5e2cdab7d1f7925$exports, "JoinShapeShapeType", () => $e5e2cdab7d1f7925$export$75f4c3f4458cea73);
-$parcel$export($e5e2cdab7d1f7925$exports, "LeaveShapeShapeType", () => $e5e2cdab7d1f7925$export$74413df64bcbe663);
-$parcel$export($e5e2cdab7d1f7925$exports, "LikeShapeShapeType", () => $e5e2cdab7d1f7925$export$abc8448eeabbbdd1);
-$parcel$export($e5e2cdab7d1f7925$exports, "OfferShapeShapeType", () => $e5e2cdab7d1f7925$export$58d047bd7f06f05e);
-$parcel$export($e5e2cdab7d1f7925$exports, "InviteShapeShapeType", () => $e5e2cdab7d1f7925$export$5ccaa421b5f51854);
-$parcel$export($e5e2cdab7d1f7925$exports, "RejectShapeShapeType", () => $e5e2cdab7d1f7925$export$df337f25edddb3d4);
-$parcel$export($e5e2cdab7d1f7925$exports, "TentativeRejectShapeShapeType", () => $e5e2cdab7d1f7925$export$df20cc89434c142c);
-$parcel$export($e5e2cdab7d1f7925$exports, "RemoveShapeShapeType", () => $e5e2cdab7d1f7925$export$eb541117f0aec2fa);
-$parcel$export($e5e2cdab7d1f7925$exports, "UndoShapeShapeType", () => $e5e2cdab7d1f7925$export$7bfbae0453992dcf);
-$parcel$export($e5e2cdab7d1f7925$exports, "UpdateShapeShapeType", () => $e5e2cdab7d1f7925$export$f5189816b12b8ad7);
-$parcel$export($e5e2cdab7d1f7925$exports, "ViewShapeShapeType", () => $e5e2cdab7d1f7925$export$f33c35e7f7c0666f);
-$parcel$export($e5e2cdab7d1f7925$exports, "ListenShapeShapeType", () => $e5e2cdab7d1f7925$export$7e5c80c19f4c5a36);
-$parcel$export($e5e2cdab7d1f7925$exports, "ReadShapeShapeType", () => $e5e2cdab7d1f7925$export$df70b3134eec98f);
-$parcel$export($e5e2cdab7d1f7925$exports, "MoveShapeShapeType", () => $e5e2cdab7d1f7925$export$b592c28b99e1d44b);
-$parcel$export($e5e2cdab7d1f7925$exports, "AnnounceShapeShapeType", () => $e5e2cdab7d1f7925$export$b60376fce881b14b);
-$parcel$export($e5e2cdab7d1f7925$exports, "FlagShapeShapeType", () => $e5e2cdab7d1f7925$export$e491b9b2de4157da);
-$parcel$export($e5e2cdab7d1f7925$exports, "DislikeShapeShapeType", () => $e5e2cdab7d1f7925$export$e24e4ca9e47f4568);
-$parcel$export($e5e2cdab7d1f7925$exports, "ArriveShapeShapeType", () => $e5e2cdab7d1f7925$export$48e86937c92d8cd8);
-$parcel$export($e5e2cdab7d1f7925$exports, "TravelShapeShapeType", () => $e5e2cdab7d1f7925$export$41c40e810465abe8);
-$parcel$export($e5e2cdab7d1f7925$exports, "QuestionShapeType", () => $e5e2cdab7d1f7925$export$eac099d4a1b658a2);
-$parcel$export($e5e2cdab7d1f7925$exports, "TentativeAcceptShapeShapeType", () => $e5e2cdab7d1f7925$export$1d228843c187151c);
-$parcel$export($e5e2cdab7d1f7925$exports, "BlockShapeShapeType", () => $e5e2cdab7d1f7925$export$80979644dbf392c);
-$parcel$export($e5e2cdab7d1f7925$exports, "ApplicationShapeShapeType", () => $e5e2cdab7d1f7925$export$842d31ccf1dfdac8);
-$parcel$export($e5e2cdab7d1f7925$exports, "GroupShapeShapeType", () => $e5e2cdab7d1f7925$export$b564288dea0a5bd0);
-$parcel$export($e5e2cdab7d1f7925$exports, "OrganizationShapeShapeType", () => $e5e2cdab7d1f7925$export$522f1e53d28364e8);
-$parcel$export($e5e2cdab7d1f7925$exports, "PersonShapeShapeType", () => $e5e2cdab7d1f7925$export$5902ff62545abcf5);
-$parcel$export($e5e2cdab7d1f7925$exports, "ServiceShapeShapeType", () => $e5e2cdab7d1f7925$export$555ca5a31e520487);
-$parcel$export($e5e2cdab7d1f7925$exports, "RelationshipShapeType", () => $e5e2cdab7d1f7925$export$9ce6e99fcca40947);
-$parcel$export($e5e2cdab7d1f7925$exports, "DocumentShapeShapeType", () => $e5e2cdab7d1f7925$export$dd3702b153e5244b);
-$parcel$export($e5e2cdab7d1f7925$exports, "ArticleShapeShapeType", () => $e5e2cdab7d1f7925$export$1b7a523775299522);
-$parcel$export($e5e2cdab7d1f7925$exports, "AudioShapeShapeType", () => $e5e2cdab7d1f7925$export$5dd967872b6cf25d);
-$parcel$export($e5e2cdab7d1f7925$exports, "ImageShapeShapeType", () => $e5e2cdab7d1f7925$export$e68d3d081cbf05e);
-$parcel$export($e5e2cdab7d1f7925$exports, "VideoShapeShapeType", () => $e5e2cdab7d1f7925$export$8db85f7ab45647a);
-$parcel$export($e5e2cdab7d1f7925$exports, "NoteShapeShapeType", () => $e5e2cdab7d1f7925$export$f3f942ab50fb1d35);
-$parcel$export($e5e2cdab7d1f7925$exports, "PageShapeShapeType", () => $e5e2cdab7d1f7925$export$352fb8bb94d77f11);
-$parcel$export($e5e2cdab7d1f7925$exports, "EventShapeShapeType", () => $e5e2cdab7d1f7925$export$4979c852d919e99d);
-$parcel$export($e5e2cdab7d1f7925$exports, "PlaceShapeType", () => $e5e2cdab7d1f7925$export$ab061787a3ad797b);
-$parcel$export($e5e2cdab7d1f7925$exports, "MentionShapeShapeType", () => $e5e2cdab7d1f7925$export$c89cca55dd5b78cb);
-$parcel$export($e5e2cdab7d1f7925$exports, "ProfileShapeType", () => $e5e2cdab7d1f7925$export$84c06d7a4d4dca59);
-$parcel$export($e5e2cdab7d1f7925$exports, "TombstoneShapeType", () => $e5e2cdab7d1f7925$export$d4c5034320ad7d23);
-
-
-const $e5e2cdab7d1f7925$export$10ed4a6ea04a5da7 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#Object",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$711627bf7900d47a = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#Link",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$4f551c247294b576 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#Activity",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$8278f0ce2855ac11 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#IntransitiveActivity",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$8d488253d594ee88 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#Collection",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$f52b300449df2b3f = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#OrderedCollection",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$464d3b3aa39764d1 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#CollectionPage",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$27ca8464d8ec16cf = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#OrderedCollectionPage",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$853c1e95a1b4f13d = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#AcceptShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$54470b92651c6f54 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#AddShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$3a74c015d90fb48a = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#CreateShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$b194320e377e30fc = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#DeleteShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$d40894f5415fdcb0 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#FollowShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$f8c85015e7349761 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#IgnoreShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$75f4c3f4458cea73 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#JoinShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$74413df64bcbe663 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#LeaveShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$abc8448eeabbbdd1 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#LikeShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$58d047bd7f06f05e = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#OfferShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$5ccaa421b5f51854 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#InviteShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$df337f25edddb3d4 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#RejectShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$df20cc89434c142c = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#TentativeRejectShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$eb541117f0aec2fa = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#RemoveShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$7bfbae0453992dcf = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#UndoShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$f5189816b12b8ad7 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#UpdateShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$f33c35e7f7c0666f = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#ViewShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$7e5c80c19f4c5a36 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#ListenShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$df70b3134eec98f = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#ReadShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$b592c28b99e1d44b = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#MoveShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$b60376fce881b14b = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#AnnounceShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$e491b9b2de4157da = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#FlagShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$e24e4ca9e47f4568 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#DislikeShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$48e86937c92d8cd8 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#ArriveShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$41c40e810465abe8 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#TravelShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$eac099d4a1b658a2 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#Question",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$1d228843c187151c = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#TentativeAcceptShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$80979644dbf392c = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#BlockShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$842d31ccf1dfdac8 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#ApplicationShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$b564288dea0a5bd0 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#GroupShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$522f1e53d28364e8 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#OrganizationShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$5902ff62545abcf5 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#PersonShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$555ca5a31e520487 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#ServiceShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$9ce6e99fcca40947 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#Relationship",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$dd3702b153e5244b = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#DocumentShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$1b7a523775299522 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#ArticleShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$5dd967872b6cf25d = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#AudioShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$e68d3d081cbf05e = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#ImageShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$8db85f7ab45647a = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#VideoShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$f3f942ab50fb1d35 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#NoteShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$352fb8bb94d77f11 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#PageShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$4979c852d919e99d = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#EventShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$ab061787a3ad797b = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#Place",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$c89cca55dd5b78cb = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#MentionShape",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$84c06d7a4d4dca59 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#Profile",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
-const $e5e2cdab7d1f7925$export$d4c5034320ad7d23 = {
-    schema: (0, $3150ed67de4489e5$export$d7dff8426c1f1d2),
-    shape: "https://ldo.js.org/shapes/activitypub#Tombstone",
-    context: (0, $3160491e5f21a2b7$export$2c8fa83ea1e9f99c)
-};
+$parcel$export($75d228de1641f124$exports, "ObjectShapeType", () => $75d228de1641f124$export$10ed4a6ea04a5da7);
+$parcel$export($75d228de1641f124$exports, "LinkShapeType", () => $75d228de1641f124$export$711627bf7900d47a);
+$parcel$export($75d228de1641f124$exports, "ActivityShapeType", () => $75d228de1641f124$export$4f551c247294b576);
+$parcel$export($75d228de1641f124$exports, "IntransitiveActivityShapeType", () => $75d228de1641f124$export$8278f0ce2855ac11);
+$parcel$export($75d228de1641f124$exports, "CollectionShapeType", () => $75d228de1641f124$export$8d488253d594ee88);
+$parcel$export($75d228de1641f124$exports, "OrderedCollectionShapeType", () => $75d228de1641f124$export$f52b300449df2b3f);
+$parcel$export($75d228de1641f124$exports, "CollectionPageShapeType", () => $75d228de1641f124$export$464d3b3aa39764d1);
+$parcel$export($75d228de1641f124$exports, "OrderedCollectionPageShapeType", () => $75d228de1641f124$export$27ca8464d8ec16cf);
+$parcel$export($75d228de1641f124$exports, "AcceptShapeShapeType", () => $75d228de1641f124$export$853c1e95a1b4f13d);
+$parcel$export($75d228de1641f124$exports, "AddShapeShapeType", () => $75d228de1641f124$export$54470b92651c6f54);
+$parcel$export($75d228de1641f124$exports, "CreateShapeShapeType", () => $75d228de1641f124$export$3a74c015d90fb48a);
+$parcel$export($75d228de1641f124$exports, "DeleteShapeShapeType", () => $75d228de1641f124$export$b194320e377e30fc);
+$parcel$export($75d228de1641f124$exports, "FollowShapeShapeType", () => $75d228de1641f124$export$d40894f5415fdcb0);
+$parcel$export($75d228de1641f124$exports, "IgnoreShapeShapeType", () => $75d228de1641f124$export$f8c85015e7349761);
+$parcel$export($75d228de1641f124$exports, "JoinShapeShapeType", () => $75d228de1641f124$export$75f4c3f4458cea73);
+$parcel$export($75d228de1641f124$exports, "LeaveShapeShapeType", () => $75d228de1641f124$export$74413df64bcbe663);
+$parcel$export($75d228de1641f124$exports, "LikeShapeShapeType", () => $75d228de1641f124$export$abc8448eeabbbdd1);
+$parcel$export($75d228de1641f124$exports, "OfferShapeShapeType", () => $75d228de1641f124$export$58d047bd7f06f05e);
+$parcel$export($75d228de1641f124$exports, "InviteShapeShapeType", () => $75d228de1641f124$export$5ccaa421b5f51854);
+$parcel$export($75d228de1641f124$exports, "RejectShapeShapeType", () => $75d228de1641f124$export$df337f25edddb3d4);
+$parcel$export($75d228de1641f124$exports, "TentativeRejectShapeShapeType", () => $75d228de1641f124$export$df20cc89434c142c);
+$parcel$export($75d228de1641f124$exports, "RemoveShapeShapeType", () => $75d228de1641f124$export$eb541117f0aec2fa);
+$parcel$export($75d228de1641f124$exports, "UndoShapeShapeType", () => $75d228de1641f124$export$7bfbae0453992dcf);
+$parcel$export($75d228de1641f124$exports, "UpdateShapeShapeType", () => $75d228de1641f124$export$f5189816b12b8ad7);
+$parcel$export($75d228de1641f124$exports, "ViewShapeShapeType", () => $75d228de1641f124$export$f33c35e7f7c0666f);
+$parcel$export($75d228de1641f124$exports, "ListenShapeShapeType", () => $75d228de1641f124$export$7e5c80c19f4c5a36);
+$parcel$export($75d228de1641f124$exports, "ReadShapeShapeType", () => $75d228de1641f124$export$df70b3134eec98f);
+$parcel$export($75d228de1641f124$exports, "MoveShapeShapeType", () => $75d228de1641f124$export$b592c28b99e1d44b);
+$parcel$export($75d228de1641f124$exports, "AnnounceShapeShapeType", () => $75d228de1641f124$export$b60376fce881b14b);
+$parcel$export($75d228de1641f124$exports, "FlagShapeShapeType", () => $75d228de1641f124$export$e491b9b2de4157da);
+$parcel$export($75d228de1641f124$exports, "DislikeShapeShapeType", () => $75d228de1641f124$export$e24e4ca9e47f4568);
+$parcel$export($75d228de1641f124$exports, "ArriveShapeShapeType", () => $75d228de1641f124$export$48e86937c92d8cd8);
+$parcel$export($75d228de1641f124$exports, "TravelShapeShapeType", () => $75d228de1641f124$export$41c40e810465abe8);
+$parcel$export($75d228de1641f124$exports, "QuestionShapeType", () => $75d228de1641f124$export$eac099d4a1b658a2);
+$parcel$export($75d228de1641f124$exports, "TentativeAcceptShapeShapeType", () => $75d228de1641f124$export$1d228843c187151c);
+$parcel$export($75d228de1641f124$exports, "BlockShapeShapeType", () => $75d228de1641f124$export$80979644dbf392c);
+$parcel$export($75d228de1641f124$exports, "ApplicationShapeShapeType", () => $75d228de1641f124$export$842d31ccf1dfdac8);
+$parcel$export($75d228de1641f124$exports, "GroupShapeShapeType", () => $75d228de1641f124$export$b564288dea0a5bd0);
+$parcel$export($75d228de1641f124$exports, "OrganizationShapeShapeType", () => $75d228de1641f124$export$522f1e53d28364e8);
+$parcel$export($75d228de1641f124$exports, "PersonShapeShapeType", () => $75d228de1641f124$export$5902ff62545abcf5);
+$parcel$export($75d228de1641f124$exports, "ServiceShapeShapeType", () => $75d228de1641f124$export$555ca5a31e520487);
+$parcel$export($75d228de1641f124$exports, "RelationshipShapeType", () => $75d228de1641f124$export$9ce6e99fcca40947);
+$parcel$export($75d228de1641f124$exports, "DocumentShapeShapeType", () => $75d228de1641f124$export$dd3702b153e5244b);
+$parcel$export($75d228de1641f124$exports, "ArticleShapeShapeType", () => $75d228de1641f124$export$1b7a523775299522);
+$parcel$export($75d228de1641f124$exports, "AudioShapeShapeType", () => $75d228de1641f124$export$5dd967872b6cf25d);
+$parcel$export($75d228de1641f124$exports, "ImageShapeShapeType", () => $75d228de1641f124$export$e68d3d081cbf05e);
+$parcel$export($75d228de1641f124$exports, "VideoShapeShapeType", () => $75d228de1641f124$export$8db85f7ab45647a);
+$parcel$export($75d228de1641f124$exports, "NoteShapeShapeType", () => $75d228de1641f124$export$f3f942ab50fb1d35);
+$parcel$export($75d228de1641f124$exports, "PageShapeShapeType", () => $75d228de1641f124$export$352fb8bb94d77f11);
+$parcel$export($75d228de1641f124$exports, "EventShapeShapeType", () => $75d228de1641f124$export$4979c852d919e99d);
+$parcel$export($75d228de1641f124$exports, "PlaceShapeType", () => $75d228de1641f124$export$ab061787a3ad797b);
+$parcel$export($75d228de1641f124$exports, "MentionShapeShapeType", () => $75d228de1641f124$export$c89cca55dd5b78cb);
+$parcel$export($75d228de1641f124$exports, "ProfileShapeType", () => $75d228de1641f124$export$84c06d7a4d4dca59);
+$parcel$export($75d228de1641f124$exports, "TombstoneShapeType", () => $75d228de1641f124$export$d4c5034320ad7d23);
 
 
-var $3f2ef00493e3d75b$exports = {};
+const $75d228de1641f124$export$10ed4a6ea04a5da7 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$711627bf7900d47a = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$4f551c247294b576 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$8278f0ce2855ac11 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$8d488253d594ee88 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$f52b300449df2b3f = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$464d3b3aa39764d1 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#CollectionPage",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$27ca8464d8ec16cf = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollectionPage",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$853c1e95a1b4f13d = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AcceptShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$54470b92651c6f54 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AddShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$3a74c015d90fb48a = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#CreateShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$b194320e377e30fc = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#DeleteShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$d40894f5415fdcb0 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#FollowShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$f8c85015e7349761 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#IgnoreShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$75f4c3f4458cea73 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#JoinShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$74413df64bcbe663 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#LeaveShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$abc8448eeabbbdd1 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#LikeShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$58d047bd7f06f05e = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OfferShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$5ccaa421b5f51854 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#InviteShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$df337f25edddb3d4 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#RejectShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$df20cc89434c142c = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeRejectShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$eb541117f0aec2fa = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#RemoveShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$7bfbae0453992dcf = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#UndoShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$f5189816b12b8ad7 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#UpdateShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$f33c35e7f7c0666f = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ViewShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$7e5c80c19f4c5a36 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ListenShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$df70b3134eec98f = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ReadShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$b592c28b99e1d44b = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#MoveShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$b60376fce881b14b = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AnnounceShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$e491b9b2de4157da = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#FlagShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$e24e4ca9e47f4568 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#DislikeShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$48e86937c92d8cd8 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArriveShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$41c40e810465abe8 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#TravelShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$eac099d4a1b658a2 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Question",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$1d228843c187151c = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeAcceptShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$80979644dbf392c = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#BlockShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$842d31ccf1dfdac8 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ApplicationShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$b564288dea0a5bd0 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#GroupShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$522f1e53d28364e8 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrganizationShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$5902ff62545abcf5 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#PersonShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$555ca5a31e520487 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ServiceShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$9ce6e99fcca40947 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Relationship",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$dd3702b153e5244b = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#DocumentShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$1b7a523775299522 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArticleShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$5dd967872b6cf25d = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AudioShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$e68d3d081cbf05e = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ImageShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$8db85f7ab45647a = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#VideoShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$f3f942ab50fb1d35 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#NoteShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$352fb8bb94d77f11 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#PageShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$4979c852d919e99d = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#EventShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$ab061787a3ad797b = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Place",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$c89cca55dd5b78cb = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#MentionShape",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$84c06d7a4d4dca59 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Profile",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
+const $75d228de1641f124$export$d4c5034320ad7d23 = {
+    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Tombstone",
+    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+};
 
 
-var $328d92aaad15ffa0$exports = {};
+var $edcd6a486bf8a25d$exports = {};
 
-$parcel$export($328d92aaad15ffa0$exports, "test_context", () => $ec4308ff5e589a00$exports);
-$parcel$export($328d92aaad15ffa0$exports, "test_schema", () => $d27e162a128ae27a$exports);
-$parcel$export($328d92aaad15ffa0$exports, "test_shapeTypes", () => $10accb8e947bd47b$exports);
-$parcel$export($328d92aaad15ffa0$exports, "test_typings", () => $22a600ce98d2a9a3$exports);
-var $ec4308ff5e589a00$exports = {};
 
-$parcel$export($ec4308ff5e589a00$exports, "testContext", () => $ec4308ff5e589a00$export$2f92c4c35b8a7173);
-const $ec4308ff5e589a00$export$2f92c4c35b8a7173 = {
-    type: {
-        "@id": "@type",
-        "@type": "https://www.w3.org/ns/activitystreams#Object"
-    },
-    attachment: {
-        "@id": "https://www.w3.org/ns/activitystreams#attachment",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    attributedTo: {
-        "@id": "https://www.w3.org/ns/activitystreams#attributedTo",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    audience: {
-        "@id": "https://www.w3.org/ns/activitystreams#audience",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    bcc: {
-        "@id": "https://www.w3.org/ns/activitystreams#bcc",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    bto: {
-        "@id": "https://www.w3.org/ns/activitystreams#bto",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    cc: {
-        "@id": "https://www.w3.org/ns/activitystreams#cc",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    content: {
-        "@id": "https://www.w3.org/ns/activitystreams#content",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    context: {
-        "@id": "https://www.w3.org/ns/activitystreams#context",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    generator: {
-        "@id": "https://www.w3.org/ns/activitystreams#generator",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    icon: {
-        "@id": "https://www.w3.org/ns/activitystreams#icon",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    image: {
-        "@id": "https://www.w3.org/ns/activitystreams#image",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    inReplyTo: {
-        "@id": "https://www.w3.org/ns/activitystreams#inReplyTo",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    location: {
-        "@id": "https://www.w3.org/ns/activitystreams#location",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    name: {
-        "@id": "https://www.w3.org/ns/activitystreams#name",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    preview: {
-        "@id": "https://www.w3.org/ns/activitystreams#preview",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    replies: {
-        "@id": "https://www.w3.org/ns/activitystreams#replies",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    summary: {
-        "@id": "https://www.w3.org/ns/activitystreams#summary",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    tag: {
-        "@id": "https://www.w3.org/ns/activitystreams#tag",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    to: {
-        "@id": "https://www.w3.org/ns/activitystreams#to",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    url: {
-        "@id": "https://www.w3.org/ns/activitystreams#url",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    duration: {
-        "@id": "https://www.w3.org/ns/activitystreams#duration",
-        "@type": "http://www.w3.org/2001/XMLSchema#duration"
-    },
-    endTime: {
-        "@id": "https://www.w3.org/ns/activitystreams#endTime",
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
+var $af4281d770155332$exports = {};
+var $bdf273e33df436ba$exports = {};
+
+$parcel$export($bdf273e33df436ba$exports, "SolidNotificationContext", () => $bdf273e33df436ba$export$6cb580950f960f8);
+const $bdf273e33df436ba$export$6cb580950f960f8 = {
     id: {
-        "@id": "https://www.w3.org/ns/activitystreams#id",
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#id",
         "@type": "@id"
     },
-    mediaType: {
-        "@id": "https://www.w3.org/ns/activitystreams#mediaType",
+    subscription: {
+        "@id": "http://www.w3.org/ns/solid/notifications#subscription",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    channel: {
+        "@id": "http://www.w3.org/ns/solid/notifications#channel",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    channelType: {
+        "@id": "http://www.w3.org/ns/solid/notifications#channelType",
+        "@type": "@id"
+    },
+    feature: {
+        "@id": "http://www.w3.org/ns/solid/notifications#feature",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    type: {
+        "@id": "@type",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    topic: {
+        "@id": "http://www.w3.org/ns/solid/notifications#topic",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    receiveFrom: {
+        "@id": "http://www.w3.org/ns/solid/notifications#receiveFrom",
+        "@type": "@id"
+    },
+    sendTo: {
+        "@id": "http://www.w3.org/ns/solid/notifications#sendTo",
+        "@type": "@id"
+    },
+    sender: {
+        "@id": "http://www.w3.org/ns/solid/notifications#sender",
+        "@type": "@id"
+    },
+    startAt: {
+        "@id": "http://www.w3.org/ns/solid/notifications#startAt",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    endAt: {
+        "@id": "http://www.w3.org/ns/solid/notifications#endAt",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    state: {
+        "@id": "http://www.w3.org/ns/solid/notifications#state",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    rate: {
+        "@id": "http://www.w3.org/ns/solid/notifications#rate",
+        "@type": "http://www.w3.org/2001/XMLSchema#duration"
+    },
+    accept: {
+        "@id": "http://www.w3.org/ns/solid/notifications#accept",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    object: {
+        "@id": "https://www.w3.org/ns/activitystreams#object",
+        "@type": "@id"
     },
     published: {
         "@id": "https://www.w3.org/ns/activitystreams#published",
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    startTime: {
-        "@id": "https://www.w3.org/ns/activitystreams#startTime",
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    updated: {
-        "@id": "https://www.w3.org/ns/activitystreams#updated",
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    target: {
+        "@id": "https://www.w3.org/ns/activitystreams#target",
+        "@type": "@id",
+        "@isCollection": true
     }
 };
 
 
-var $d27e162a128ae27a$exports = {};
+var $9d2c08eaaf44c215$exports = {};
 
-$parcel$export($d27e162a128ae27a$exports, "testSchema", () => $d27e162a128ae27a$export$b7dd23919f06700f);
-const $d27e162a128ae27a$export$b7dd23919f06700f = {
+$parcel$export($9d2c08eaaf44c215$exports, "SolidNotificationSchema", () => $9d2c08eaaf44c215$export$ea6652556b7356f);
+const $9d2c08eaaf44c215$export$ea6652556b7356f = {
     type: "Schema",
     shapes: [
         {
-            id: "https://ldo.js.org/shapes/activitypub#Ex",
+            id: "https://shapes.activitypods.org/v2/shapes/solid#DescriptionResource",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2661,235 +2616,111 @@ const $d27e162a128ae27a$export$b7dd23919f06700f = {
                     expressions: [
                         {
                             type: "TripleConstraint",
-                            predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                            predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#id",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Object"
+                                nodeKind: "iri"
                             }
                         },
                         {
                             type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#attachment",
+                            predicate: "http://www.w3.org/ns/solid/notifications#subscription",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
+                                nodeKind: "iri"
                             },
                             min: 0,
                             max: -1
                         },
                         {
                             type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#attributedTo",
+                            predicate: "http://www.w3.org/ns/solid/notifications#channel",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
+                                nodeKind: "iri"
                             },
                             min: 0,
+                            max: -1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            id: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionService",
+            type: "ShapeDecl",
+            shapeExpr: {
+                type: "Shape",
+                expression: {
+                    type: "EachOf",
+                    expressions: [
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#id",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            }
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/ns/solid/notifications#channelType",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            }
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/ns/solid/notifications#feature",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            },
+                            min: 0,
+                            max: -1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannel",
+            type: "ShapeDecl",
+            shapeExpr: {
+                type: "Shape",
+                expression: {
+                    type: "EachOf",
+                    expressions: [
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#id",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            }
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            }
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/ns/solid/notifications#topic",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            },
+                            min: 1,
                             max: -1
                         },
                         {
                             type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#audience",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#bcc",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#bto",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#cc",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#content",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#context",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#generator",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#icon",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#image",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#inReplyTo",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#location",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#name",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#preview",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#replies",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#summary",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#tag",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#to",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#url",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#duration",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#duration"
-                            },
-                            min: 0,
-                            max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#endTime",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
-                            },
-                            min: 0,
-                            max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#id",
+                            predicate: "http://www.w3.org/ns/solid/notifications#receiveFrom",
                             valueExpr: {
                                 type: "NodeConstraint",
                                 nodeKind: "iri"
@@ -2899,7 +2730,47 @@ const $d27e162a128ae27a$export$b7dd23919f06700f = {
                         },
                         {
                             type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#mediaType",
+                            predicate: "http://www.w3.org/ns/solid/notifications#sendTo",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            },
+                            min: 0,
+                            max: 1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/ns/solid/notifications#sender",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            },
+                            min: 0,
+                            max: 1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/ns/solid/notifications#startAt",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
+                            },
+                            min: 0,
+                            max: 1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/ns/solid/notifications#endAt",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
+                            },
+                            min: 0,
+                            max: 1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/ns/solid/notifications#state",
                             valueExpr: {
                                 type: "NodeConstraint",
                                 datatype: "http://www.w3.org/2001/XMLSchema#string"
@@ -2909,30 +2780,86 @@ const $d27e162a128ae27a$export$b7dd23919f06700f = {
                         },
                         {
                             type: "TripleConstraint",
+                            predicate: "http://www.w3.org/ns/solid/notifications#rate",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                datatype: "http://www.w3.org/2001/XMLSchema#duration"
+                            },
+                            min: 0,
+                            max: 1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/ns/solid/notifications#accept",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                datatype: "http://www.w3.org/2001/XMLSchema#string"
+                            },
+                            min: 0,
+                            max: 1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessage",
+            type: "ShapeDecl",
+            shapeExpr: {
+                type: "Shape",
+                expression: {
+                    type: "EachOf",
+                    expressions: [
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#id",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            }
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            },
+                            min: 1,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#object",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                nodeKind: "iri"
+                            }
+                        },
+                        {
+                            type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#published",
                             valueExpr: {
                                 type: "NodeConstraint",
                                 datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
-                            },
-                            min: 0,
-                            max: 1
+                            }
                         },
                         {
                             type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#startTime",
+                            predicate: "https://www.w3.org/ns/activitystreams#target",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
+                                nodeKind: "iri"
                             },
                             min: 0,
-                            max: 1
+                            max: -1
                         },
                         {
                             type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#updated",
+                            predicate: "http://www.w3.org/ns/solid/notifications#state",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
+                                datatype: "http://www.w3.org/2001/XMLSchema#string"
                             },
                             min: 0,
                             max: 1
@@ -2945,29 +2872,56 @@ const $d27e162a128ae27a$export$b7dd23919f06700f = {
 };
 
 
-var $10accb8e947bd47b$exports = {};
+var $81f9fc733a8124f9$exports = {};
 
-$parcel$export($10accb8e947bd47b$exports, "ExShapeType", () => $10accb8e947bd47b$export$1f59f1fb3eddac78);
+$parcel$export($81f9fc733a8124f9$exports, "DescriptionResourceShapeType", () => $81f9fc733a8124f9$export$51daf0a9e553c5b3);
+$parcel$export($81f9fc733a8124f9$exports, "SubscriptionServiceShapeType", () => $81f9fc733a8124f9$export$9e1b4131740fbe8);
+$parcel$export($81f9fc733a8124f9$exports, "NotificationChannelShapeType", () => $81f9fc733a8124f9$export$852cddb4525b12fc);
+$parcel$export($81f9fc733a8124f9$exports, "NotificationMessageShapeType", () => $81f9fc733a8124f9$export$4426abcac492061f);
 
 
-const $10accb8e947bd47b$export$1f59f1fb3eddac78 = {
-    schema: (0, $d27e162a128ae27a$export$b7dd23919f06700f),
-    shape: "https://ldo.js.org/shapes/activitypub#Ex",
-    context: (0, $ec4308ff5e589a00$export$2f92c4c35b8a7173)
+const $81f9fc733a8124f9$export$51daf0a9e553c5b3 = {
+    schema: (0, $9d2c08eaaf44c215$export$ea6652556b7356f),
+    shape: "https://shapes.activitypods.org/v2/shapes/solid#DescriptionResource",
+    context: (0, $bdf273e33df436ba$export$6cb580950f960f8)
+};
+const $81f9fc733a8124f9$export$9e1b4131740fbe8 = {
+    schema: (0, $9d2c08eaaf44c215$export$ea6652556b7356f),
+    shape: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionService",
+    context: (0, $bdf273e33df436ba$export$6cb580950f960f8)
+};
+const $81f9fc733a8124f9$export$852cddb4525b12fc = {
+    schema: (0, $9d2c08eaaf44c215$export$ea6652556b7356f),
+    shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannel",
+    context: (0, $bdf273e33df436ba$export$6cb580950f960f8)
+};
+const $81f9fc733a8124f9$export$4426abcac492061f = {
+    schema: (0, $9d2c08eaaf44c215$export$ea6652556b7356f),
+    shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessage",
+    context: (0, $bdf273e33df436ba$export$6cb580950f960f8)
 };
 
 
-var $22a600ce98d2a9a3$exports = {};
+var $b60e4fc21753ff26$exports = {};
+
+
+$parcel$exportWildcard($af4281d770155332$exports, $bdf273e33df436ba$exports);
+$parcel$exportWildcard($af4281d770155332$exports, $9d2c08eaaf44c215$exports);
+$parcel$exportWildcard($af4281d770155332$exports, $81f9fc733a8124f9$exports);
+$parcel$exportWildcard($af4281d770155332$exports, $b60e4fc21753ff26$exports);
+
+
+$parcel$exportWildcard($40fc03b76cce2cb4$exports, $aeeccf19fafb51b6$exports);
+$parcel$exportWildcard($40fc03b76cce2cb4$exports, $5a51491c579929c5$exports);
+$parcel$exportWildcard($40fc03b76cce2cb4$exports, $75d228de1641f124$exports);
+$parcel$exportWildcard($40fc03b76cce2cb4$exports, $edcd6a486bf8a25d$exports);
+$parcel$exportWildcard($40fc03b76cce2cb4$exports, $af4281d770155332$exports);
+
+
+$parcel$exportWildcard($3fd42e7ba4a216b6$exports, $40fc03b76cce2cb4$exports);
 
 
 
 
-
-
-
-
-
-
-
-
+export {$3fd42e7ba4a216b6$re_export$shapes as shapes, $40fc03b76cce2cb4$re_export$solid as solid, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c as activitystreamsContext, $5a51491c579929c5$export$d7dff8426c1f1d2 as activitystreamsSchema, $75d228de1641f124$export$10ed4a6ea04a5da7 as ObjectShapeType, $75d228de1641f124$export$711627bf7900d47a as LinkShapeType, $75d228de1641f124$export$4f551c247294b576 as ActivityShapeType, $75d228de1641f124$export$8278f0ce2855ac11 as IntransitiveActivityShapeType, $75d228de1641f124$export$8d488253d594ee88 as CollectionShapeType, $75d228de1641f124$export$f52b300449df2b3f as OrderedCollectionShapeType, $75d228de1641f124$export$464d3b3aa39764d1 as CollectionPageShapeType, $75d228de1641f124$export$27ca8464d8ec16cf as OrderedCollectionPageShapeType, $75d228de1641f124$export$853c1e95a1b4f13d as AcceptShapeShapeType, $75d228de1641f124$export$54470b92651c6f54 as AddShapeShapeType, $75d228de1641f124$export$3a74c015d90fb48a as CreateShapeShapeType, $75d228de1641f124$export$b194320e377e30fc as DeleteShapeShapeType, $75d228de1641f124$export$d40894f5415fdcb0 as FollowShapeShapeType, $75d228de1641f124$export$f8c85015e7349761 as IgnoreShapeShapeType, $75d228de1641f124$export$75f4c3f4458cea73 as JoinShapeShapeType, $75d228de1641f124$export$74413df64bcbe663 as LeaveShapeShapeType, $75d228de1641f124$export$abc8448eeabbbdd1 as LikeShapeShapeType, $75d228de1641f124$export$58d047bd7f06f05e as OfferShapeShapeType, $75d228de1641f124$export$5ccaa421b5f51854 as InviteShapeShapeType, $75d228de1641f124$export$df337f25edddb3d4 as RejectShapeShapeType, $75d228de1641f124$export$df20cc89434c142c as TentativeRejectShapeShapeType, $75d228de1641f124$export$eb541117f0aec2fa as RemoveShapeShapeType, $75d228de1641f124$export$7bfbae0453992dcf as UndoShapeShapeType, $75d228de1641f124$export$f5189816b12b8ad7 as UpdateShapeShapeType, $75d228de1641f124$export$f33c35e7f7c0666f as ViewShapeShapeType, $75d228de1641f124$export$7e5c80c19f4c5a36 as ListenShapeShapeType, $75d228de1641f124$export$df70b3134eec98f as ReadShapeShapeType, $75d228de1641f124$export$b592c28b99e1d44b as MoveShapeShapeType, $75d228de1641f124$export$b60376fce881b14b as AnnounceShapeShapeType, $75d228de1641f124$export$e491b9b2de4157da as FlagShapeShapeType, $75d228de1641f124$export$e24e4ca9e47f4568 as DislikeShapeShapeType, $75d228de1641f124$export$48e86937c92d8cd8 as ArriveShapeShapeType, $75d228de1641f124$export$41c40e810465abe8 as TravelShapeShapeType, $75d228de1641f124$export$eac099d4a1b658a2 as QuestionShapeType, $75d228de1641f124$export$1d228843c187151c as TentativeAcceptShapeShapeType, $75d228de1641f124$export$80979644dbf392c as BlockShapeShapeType, $75d228de1641f124$export$842d31ccf1dfdac8 as ApplicationShapeShapeType, $75d228de1641f124$export$b564288dea0a5bd0 as GroupShapeShapeType, $75d228de1641f124$export$522f1e53d28364e8 as OrganizationShapeShapeType, $75d228de1641f124$export$5902ff62545abcf5 as PersonShapeShapeType, $75d228de1641f124$export$555ca5a31e520487 as ServiceShapeShapeType, $75d228de1641f124$export$9ce6e99fcca40947 as RelationshipShapeType, $75d228de1641f124$export$dd3702b153e5244b as DocumentShapeShapeType, $75d228de1641f124$export$1b7a523775299522 as ArticleShapeShapeType, $75d228de1641f124$export$5dd967872b6cf25d as AudioShapeShapeType, $75d228de1641f124$export$e68d3d081cbf05e as ImageShapeShapeType, $75d228de1641f124$export$8db85f7ab45647a as VideoShapeShapeType, $75d228de1641f124$export$f3f942ab50fb1d35 as NoteShapeShapeType, $75d228de1641f124$export$352fb8bb94d77f11 as PageShapeShapeType, $75d228de1641f124$export$4979c852d919e99d as EventShapeShapeType, $75d228de1641f124$export$ab061787a3ad797b as PlaceShapeType, $75d228de1641f124$export$c89cca55dd5b78cb as MentionShapeShapeType, $75d228de1641f124$export$84c06d7a4d4dca59 as ProfileShapeType, $75d228de1641f124$export$d4c5034320ad7d23 as TombstoneShapeType, $bdf273e33df436ba$export$6cb580950f960f8 as SolidNotificationContext, $9d2c08eaaf44c215$export$ea6652556b7356f as SolidNotificationSchema, $81f9fc733a8124f9$export$51daf0a9e553c5b3 as DescriptionResourceShapeType, $81f9fc733a8124f9$export$9e1b4131740fbe8 as SubscriptionServiceShapeType, $81f9fc733a8124f9$export$852cddb4525b12fc as NotificationChannelShapeType, $81f9fc733a8124f9$export$4426abcac492061f as NotificationMessageShapeType};
 //# sourceMappingURL=index.cjs.js.map

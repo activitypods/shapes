@@ -1,5 +1,5 @@
 {
-  "name": "@activitypods/shapes-ldo",
+  "name": "@activitypods/ldo-shapes",
   "version": "0.0.1",
   "description": "Types generated from the ActivityPods shape repository",
   "repository": "https://github.com/activitypods/shapes",
@@ -10,13 +10,22 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "scripts": {
-    "build": "yarn build:ldo && yarn build:ldo-indexes && yarn build:transpile",
-    "build:ldo": "bash ldo-dirs.sh | while read -r input output; do ldo build --input \"$input\" --output \"$output\"; done",
+    "build": "yarn build:ldo && yarn build:ldo-indexes && yarn build:transpile ",
+    "build:ldo": "bash scripts/list-ldo-dirs.sh | while read -r input output; do ldo build --input \"$input\" --output \"$output\"; done",
     "build:ldo-indexes": "node ./scripts/create-indexes.ts",
     "build:transpile": "parcel build && yalc publish --push --changed"
   },
   "devDependencies": {
-    "@ldo/cli": "^1.0.0-alpha.9",
-    "@ldo/ldo": "^1.0.0-alpha.9"
+    "@ldo/cli": "^1.0.0-alpha.18",
+    "@ldo/ldo": "^1.0.0-alpha.14"
+  },
+  "exports": {
+    "./objects-generated/shapes": "./objects-generated/shapes/index.ts",
+    "./objects-generated/shapes/solid": "./objects-generated/shapes/solid/index.ts",
+    "./objects-generated/v2": "./objects-generated/v2/index.ts",
+    "./objects-generated/v2/shapes": "./objects-generated/v2/shapes/index.ts",
+    "./objects-generated/v2/shapes/maid": "./objects-generated/v2/shapes/maid/index.ts",
+    "./objects-generated/v2/shapes/solid": "./objects-generated/v2/shapes/solid/index.ts",
+    ".": "./objects-generated/index.ts"
   }
 }

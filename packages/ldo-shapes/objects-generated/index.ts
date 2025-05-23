@@ -1,1 +1,3 @@
-export * as v2 from './v2/index.ts';
+/** Nested shape-import */
+export * as shapes from './shapes/index.ts';
+export * from './shapes/index.ts';

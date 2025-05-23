@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "start": "node index.ts",
-    "build": "lerna run build",
+    "build": "lerna run build --scope=@activitypods/shape-definitions && lerna run build --scope=@activitypods/ldo-shapes && lerna exec -- yalc publish --push --changed",
     "prepublishOnly": "yarn build"
   },
   "license": "Apache-2.0",

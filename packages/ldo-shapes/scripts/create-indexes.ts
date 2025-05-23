@@ -1,13 +1,11 @@
-import fs, { write } from "node:fs";
+// This script gererates index.ts files for all subdirectories and files with the specified extension
+import fs from "node:fs";
 import path from "node:path";
 import { promisify } from "node:util";
-import { transform } from "rdf-transform";
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
 
-const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
-const mkdir = promisify(fs.mkdir);
 const readdir = promisify(fs.readdir);
 const stat = promisify(fs.stat);
 
@@ -51,11 +49,9 @@ async function generateIndexFiles(baseDir: string, ext: string) {
         await walk(fullPath);
         // Add an export statement for the subdirectory as a namespace
         // Replace any non-alphanumeric characters with underscores for valid JS identifiers
+        const sanitizedEntry = entry.replace(/[^a-zA-Z0-9_]/g, "_");
         exports.push(
-          `export * as ${entry.replace(
-            /[^a-zA-Z0-9_]/g,
-            "_"
-          )} from './${entry}/index.ts';`
+          `/** Nested shape-import */\nexport * as ${sanitizedEntry} from './${entry}/index.ts';\nexport * from './${entry}/index.ts';`
         );
       } else if (entry.endsWith(ext)) {
         // For files with the matching extension, add an export statement
@@ -63,7 +59,7 @@ async function generateIndexFiles(baseDir: string, ext: string) {
         const exportName = path
           .basename(entry, ext)
           .replace(/[^a-zA-Z0-9_]/g, "_");
-        exports.push(`export * as ${exportName} from './${entry}';`);
+        exports.push(`export * from './${entry}';`);
       }
     }
 

@@ -9,7 +9,7 @@ export const activitystreamsSchema: Schema = {
   type: "Schema",
   shapes: [
     {
-      id: "https://ldo.js.org/shapes/activitypub#Object",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -299,7 +299,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#Link",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -411,7 +411,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#Activity",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -426,7 +426,7 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Activity",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#actor",
@@ -492,7 +492,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#IntransitiveActivity",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -508,13 +508,13 @@ export const activitystreamsSchema: Schema = {
                   "https://www.w3.org/ns/activitystreams#IntransitiveActivity",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#Collection",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -529,7 +529,7 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Collection",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#totalItems",
@@ -586,7 +586,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#OrderedCollection",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -602,7 +602,7 @@ export const activitystreamsSchema: Schema = {
                   "https://www.w3.org/ns/activitystreams#OrderedCollection",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Collection",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#orderedItems",
@@ -618,7 +618,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#CollectionPage",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#CollectionPage",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -634,7 +634,7 @@ export const activitystreamsSchema: Schema = {
                   "https://www.w3.org/ns/activitystreams#CollectionPage",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Collection",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#next",
@@ -670,7 +670,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#OrderedCollectionPage",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollectionPage",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -686,7 +686,7 @@ export const activitystreamsSchema: Schema = {
                   "https://www.w3.org/ns/activitystreams#OrderedCollectionPage",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#OrderedCollection",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#startIndex",
@@ -703,7 +703,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#AcceptShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AcceptShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -718,13 +718,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Accept",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#AddShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AddShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -739,13 +739,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Add",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#CreateShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#CreateShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -760,13 +760,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Create",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#DeleteShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DeleteShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -781,13 +781,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Delete",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#FollowShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#FollowShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -802,13 +802,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Follow",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#IgnoreShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#IgnoreShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -823,13 +823,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Ignore",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#JoinShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#JoinShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -844,13 +844,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Join",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#LeaveShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#LeaveShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -865,13 +865,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Leave",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#LikeShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#LikeShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -886,13 +886,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Like",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#OfferShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OfferShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -907,13 +907,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Offer",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#InviteShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#InviteShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -928,13 +928,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Invite",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#RejectShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#RejectShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -949,13 +949,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Reject",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#TentativeRejectShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeRejectShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -971,13 +971,13 @@ export const activitystreamsSchema: Schema = {
                   "https://www.w3.org/ns/activitystreams#TentativeReject",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#RemoveShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#RemoveShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -992,13 +992,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Remove",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#UndoShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#UndoShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1013,13 +1013,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Undo",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#UpdateShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#UpdateShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1034,13 +1034,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Update",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#ViewShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ViewShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1055,13 +1055,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#View",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#ListenShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ListenShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1076,13 +1076,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Listen",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#ReadShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ReadShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1097,13 +1097,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Read",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#MoveShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#MoveShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1118,13 +1118,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Move",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#AnnounceShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AnnounceShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1139,13 +1139,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Announce",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#FlagShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#FlagShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1160,13 +1160,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Flag",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#DislikeShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DislikeShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1181,13 +1181,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Dislike",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#ArriveShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArriveShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1202,13 +1202,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Arrive",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#IntransitiveActivity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#TravelShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TravelShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1223,13 +1223,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Travel",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#IntransitiveActivity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#Question",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Question",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1244,7 +1244,7 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Question",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#IntransitiveActivity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#oneOf",
@@ -1280,7 +1280,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#TentativeAcceptShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeAcceptShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1296,13 +1296,13 @@ export const activitystreamsSchema: Schema = {
                   "https://www.w3.org/ns/activitystreams#TentativeAccept",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#BlockShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#BlockShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1317,13 +1317,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Block",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Activity",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#ApplicationShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ApplicationShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1338,13 +1338,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Application",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#GroupShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#GroupShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1359,13 +1359,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Group",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#OrganizationShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrganizationShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1380,13 +1380,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Organization",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#PersonShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#PersonShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1401,13 +1401,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Person",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#ServiceShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ServiceShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1422,13 +1422,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Service",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#Relationship",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Relationship",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1443,7 +1443,7 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Relationship",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#subject",
@@ -1479,7 +1479,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#DocumentShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DocumentShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1494,13 +1494,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Document",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#ArticleShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArticleShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1515,13 +1515,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Article",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#AudioShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AudioShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1536,13 +1536,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Audio",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Document",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Document",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#ImageShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ImageShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1557,13 +1557,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Image",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Document",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Document",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#VideoShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#VideoShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1578,13 +1578,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Video",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Document",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Document",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#NoteShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#NoteShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1599,13 +1599,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Note",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#PageShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#PageShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1620,13 +1620,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Page",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#EventShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#EventShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1641,13 +1641,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Event",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#Place",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Place",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1662,7 +1662,7 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Place",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#accuracy",
@@ -1731,7 +1731,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#MentionShape",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#MentionShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1746,13 +1746,13 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Mention",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Link",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
           ],
         },
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#Profile",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Profile",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1767,7 +1767,7 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Profile",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#describes",
@@ -1783,7 +1783,7 @@ export const activitystreamsSchema: Schema = {
       },
     },
     {
-      id: "https://ldo.js.org/shapes/activitypub#Tombstone",
+      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Tombstone",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1798,7 +1798,7 @@ export const activitystreamsSchema: Schema = {
                 datatype: "https://www.w3.org/ns/activitystreams#Tombstone",
               },
             },
-            "https://ldo.js.org/shapes/activitypub#Object",
+            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#formerType",

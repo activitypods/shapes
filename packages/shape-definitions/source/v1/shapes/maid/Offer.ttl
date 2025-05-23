@@ -1,7 +1,0 @@
-PREFIX : <>
-PREFIX sh: <http://www.w3.org/ns/shacl#>
-PREFIX maid: <https://mutual-aid.app/ns/core#>
-
-:Offer
-  a sh:NodeShape ;
-  sh:targetClass maid:Offer .

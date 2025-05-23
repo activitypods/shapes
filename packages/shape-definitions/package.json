@@ -1,5 +1,5 @@
 {
-  "name": "@activitypods/shapes-definitions",
+  "name": "@activitypods/shape-definitions",
   "version": "0.0.1",
   "description": "Types generated from the ActivityPods shape repository",
   "repository": "https://github.com/activitypods/shapes",
@@ -15,7 +15,7 @@
     "build:shapes": "node scripts/build-shapes.ts"
   },
   "devDependencies": {
-    "rdf-transform": "1.3.0"
+    "rdf-transform": "^1.3.0"
   },
   "engines": {
     "node": ">=22.12.0"

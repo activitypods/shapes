@@ -1,7 +1,0 @@
-PREFIX : <>
-PREFIX sh: <http://www.w3.org/ns/shacl#>
-PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
-
-:Group
-  a sh:NodeShape ;
-  sh:targetClass vcard:Group .

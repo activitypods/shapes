@@ -69,7 +69,7 @@ import {
  */
 export const ObjectShapeType: ShapeType<Object> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#Object",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
   context: activitystreamsContext,
 };
 
@@ -78,7 +78,7 @@ export const ObjectShapeType: ShapeType<Object> = {
  */
 export const LinkShapeType: ShapeType<Link> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#Link",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
   context: activitystreamsContext,
 };
 
@@ -87,7 +87,7 @@ export const LinkShapeType: ShapeType<Link> = {
  */
 export const ActivityShapeType: ShapeType<Activity> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#Activity",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
   context: activitystreamsContext,
 };
 
@@ -96,7 +96,8 @@ export const ActivityShapeType: ShapeType<Activity> = {
  */
 export const IntransitiveActivityShapeType: ShapeType<IntransitiveActivity> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#IntransitiveActivity",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
   context: activitystreamsContext,
 };
 
@@ -105,7 +106,7 @@ export const IntransitiveActivityShapeType: ShapeType<IntransitiveActivity> = {
  */
 export const CollectionShapeType: ShapeType<Collection> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#Collection",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
   context: activitystreamsContext,
 };
 
@@ -114,7 +115,8 @@ export const CollectionShapeType: ShapeType<Collection> = {
  */
 export const OrderedCollectionShapeType: ShapeType<OrderedCollection> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#OrderedCollection",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
   context: activitystreamsContext,
 };
 
@@ -123,7 +125,8 @@ export const OrderedCollectionShapeType: ShapeType<OrderedCollection> = {
  */
 export const CollectionPageShapeType: ShapeType<CollectionPage> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#CollectionPage",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#CollectionPage",
   context: activitystreamsContext,
 };
 
@@ -133,7 +136,8 @@ export const CollectionPageShapeType: ShapeType<CollectionPage> = {
 export const OrderedCollectionPageShapeType: ShapeType<OrderedCollectionPage> =
   {
     schema: activitystreamsSchema,
-    shape: "https://ldo.js.org/shapes/activitypub#OrderedCollectionPage",
+    shape:
+      "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollectionPage",
     context: activitystreamsContext,
   };
 
@@ -142,7 +146,8 @@ export const OrderedCollectionPageShapeType: ShapeType<OrderedCollectionPage> =
  */
 export const AcceptShapeShapeType: ShapeType<AcceptShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#AcceptShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#AcceptShape",
   context: activitystreamsContext,
 };
 
@@ -151,7 +156,7 @@ export const AcceptShapeShapeType: ShapeType<AcceptShape> = {
  */
 export const AddShapeShapeType: ShapeType<AddShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#AddShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AddShape",
   context: activitystreamsContext,
 };
 
@@ -160,7 +165,8 @@ export const AddShapeShapeType: ShapeType<AddShape> = {
  */
 export const CreateShapeShapeType: ShapeType<CreateShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#CreateShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#CreateShape",
   context: activitystreamsContext,
 };
 
@@ -169,7 +175,8 @@ export const CreateShapeShapeType: ShapeType<CreateShape> = {
  */
 export const DeleteShapeShapeType: ShapeType<DeleteShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#DeleteShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#DeleteShape",
   context: activitystreamsContext,
 };
 
@@ -178,7 +185,8 @@ export const DeleteShapeShapeType: ShapeType<DeleteShape> = {
  */
 export const FollowShapeShapeType: ShapeType<FollowShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#FollowShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#FollowShape",
   context: activitystreamsContext,
 };
 
@@ -187,7 +195,8 @@ export const FollowShapeShapeType: ShapeType<FollowShape> = {
  */
 export const IgnoreShapeShapeType: ShapeType<IgnoreShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#IgnoreShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#IgnoreShape",
   context: activitystreamsContext,
 };
 
@@ -196,7 +205,7 @@ export const IgnoreShapeShapeType: ShapeType<IgnoreShape> = {
  */
 export const JoinShapeShapeType: ShapeType<JoinShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#JoinShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#JoinShape",
   context: activitystreamsContext,
 };
 
@@ -205,7 +214,7 @@ export const JoinShapeShapeType: ShapeType<JoinShape> = {
  */
 export const LeaveShapeShapeType: ShapeType<LeaveShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#LeaveShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#LeaveShape",
   context: activitystreamsContext,
 };
 
@@ -214,7 +223,7 @@ export const LeaveShapeShapeType: ShapeType<LeaveShape> = {
  */
 export const LikeShapeShapeType: ShapeType<LikeShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#LikeShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#LikeShape",
   context: activitystreamsContext,
 };
 
@@ -223,7 +232,7 @@ export const LikeShapeShapeType: ShapeType<LikeShape> = {
  */
 export const OfferShapeShapeType: ShapeType<OfferShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#OfferShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OfferShape",
   context: activitystreamsContext,
 };
 
@@ -232,7 +241,8 @@ export const OfferShapeShapeType: ShapeType<OfferShape> = {
  */
 export const InviteShapeShapeType: ShapeType<InviteShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#InviteShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#InviteShape",
   context: activitystreamsContext,
 };
 
@@ -241,7 +251,8 @@ export const InviteShapeShapeType: ShapeType<InviteShape> = {
  */
 export const RejectShapeShapeType: ShapeType<RejectShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#RejectShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#RejectShape",
   context: activitystreamsContext,
 };
 
@@ -250,7 +261,8 @@ export const RejectShapeShapeType: ShapeType<RejectShape> = {
  */
 export const TentativeRejectShapeShapeType: ShapeType<TentativeRejectShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#TentativeRejectShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeRejectShape",
   context: activitystreamsContext,
 };
 
@@ -259,7 +271,8 @@ export const TentativeRejectShapeShapeType: ShapeType<TentativeRejectShape> = {
  */
 export const RemoveShapeShapeType: ShapeType<RemoveShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#RemoveShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#RemoveShape",
   context: activitystreamsContext,
 };
 
@@ -268,7 +281,7 @@ export const RemoveShapeShapeType: ShapeType<RemoveShape> = {
  */
 export const UndoShapeShapeType: ShapeType<UndoShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#UndoShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#UndoShape",
   context: activitystreamsContext,
 };
 
@@ -277,7 +290,8 @@ export const UndoShapeShapeType: ShapeType<UndoShape> = {
  */
 export const UpdateShapeShapeType: ShapeType<UpdateShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#UpdateShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#UpdateShape",
   context: activitystreamsContext,
 };
 
@@ -286,7 +300,7 @@ export const UpdateShapeShapeType: ShapeType<UpdateShape> = {
  */
 export const ViewShapeShapeType: ShapeType<ViewShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#ViewShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ViewShape",
   context: activitystreamsContext,
 };
 
@@ -295,7 +309,8 @@ export const ViewShapeShapeType: ShapeType<ViewShape> = {
  */
 export const ListenShapeShapeType: ShapeType<ListenShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#ListenShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#ListenShape",
   context: activitystreamsContext,
 };
 
@@ -304,7 +319,7 @@ export const ListenShapeShapeType: ShapeType<ListenShape> = {
  */
 export const ReadShapeShapeType: ShapeType<ReadShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#ReadShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ReadShape",
   context: activitystreamsContext,
 };
 
@@ -313,7 +328,7 @@ export const ReadShapeShapeType: ShapeType<ReadShape> = {
  */
 export const MoveShapeShapeType: ShapeType<MoveShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#MoveShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#MoveShape",
   context: activitystreamsContext,
 };
 
@@ -322,7 +337,8 @@ export const MoveShapeShapeType: ShapeType<MoveShape> = {
  */
 export const AnnounceShapeShapeType: ShapeType<AnnounceShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#AnnounceShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#AnnounceShape",
   context: activitystreamsContext,
 };
 
@@ -331,7 +347,7 @@ export const AnnounceShapeShapeType: ShapeType<AnnounceShape> = {
  */
 export const FlagShapeShapeType: ShapeType<FlagShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#FlagShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#FlagShape",
   context: activitystreamsContext,
 };
 
@@ -340,7 +356,8 @@ export const FlagShapeShapeType: ShapeType<FlagShape> = {
  */
 export const DislikeShapeShapeType: ShapeType<DislikeShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#DislikeShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#DislikeShape",
   context: activitystreamsContext,
 };
 
@@ -349,7 +366,8 @@ export const DislikeShapeShapeType: ShapeType<DislikeShape> = {
  */
 export const ArriveShapeShapeType: ShapeType<ArriveShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#ArriveShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#ArriveShape",
   context: activitystreamsContext,
 };
 
@@ -358,7 +376,8 @@ export const ArriveShapeShapeType: ShapeType<ArriveShape> = {
  */
 export const TravelShapeShapeType: ShapeType<TravelShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#TravelShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#TravelShape",
   context: activitystreamsContext,
 };
 
@@ -367,7 +386,7 @@ export const TravelShapeShapeType: ShapeType<TravelShape> = {
  */
 export const QuestionShapeType: ShapeType<Question> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#Question",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Question",
   context: activitystreamsContext,
 };
 
@@ -376,7 +395,8 @@ export const QuestionShapeType: ShapeType<Question> = {
  */
 export const TentativeAcceptShapeShapeType: ShapeType<TentativeAcceptShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#TentativeAcceptShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeAcceptShape",
   context: activitystreamsContext,
 };
 
@@ -385,7 +405,7 @@ export const TentativeAcceptShapeShapeType: ShapeType<TentativeAcceptShape> = {
  */
 export const BlockShapeShapeType: ShapeType<BlockShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#BlockShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#BlockShape",
   context: activitystreamsContext,
 };
 
@@ -394,7 +414,8 @@ export const BlockShapeShapeType: ShapeType<BlockShape> = {
  */
 export const ApplicationShapeShapeType: ShapeType<ApplicationShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#ApplicationShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#ApplicationShape",
   context: activitystreamsContext,
 };
 
@@ -403,7 +424,7 @@ export const ApplicationShapeShapeType: ShapeType<ApplicationShape> = {
  */
 export const GroupShapeShapeType: ShapeType<GroupShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#GroupShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#GroupShape",
   context: activitystreamsContext,
 };
 
@@ -412,7 +433,8 @@ export const GroupShapeShapeType: ShapeType<GroupShape> = {
  */
 export const OrganizationShapeShapeType: ShapeType<OrganizationShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#OrganizationShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#OrganizationShape",
   context: activitystreamsContext,
 };
 
@@ -421,7 +443,8 @@ export const OrganizationShapeShapeType: ShapeType<OrganizationShape> = {
  */
 export const PersonShapeShapeType: ShapeType<PersonShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#PersonShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#PersonShape",
   context: activitystreamsContext,
 };
 
@@ -430,7 +453,8 @@ export const PersonShapeShapeType: ShapeType<PersonShape> = {
  */
 export const ServiceShapeShapeType: ShapeType<ServiceShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#ServiceShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#ServiceShape",
   context: activitystreamsContext,
 };
 
@@ -439,7 +463,8 @@ export const ServiceShapeShapeType: ShapeType<ServiceShape> = {
  */
 export const RelationshipShapeType: ShapeType<Relationship> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#Relationship",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#Relationship",
   context: activitystreamsContext,
 };
 
@@ -448,7 +473,8 @@ export const RelationshipShapeType: ShapeType<Relationship> = {
  */
 export const DocumentShapeShapeType: ShapeType<DocumentShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#DocumentShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#DocumentShape",
   context: activitystreamsContext,
 };
 
@@ -457,7 +483,8 @@ export const DocumentShapeShapeType: ShapeType<DocumentShape> = {
  */
 export const ArticleShapeShapeType: ShapeType<ArticleShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#ArticleShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#ArticleShape",
   context: activitystreamsContext,
 };
 
@@ -466,7 +493,7 @@ export const ArticleShapeShapeType: ShapeType<ArticleShape> = {
  */
 export const AudioShapeShapeType: ShapeType<AudioShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#AudioShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AudioShape",
   context: activitystreamsContext,
 };
 
@@ -475,7 +502,7 @@ export const AudioShapeShapeType: ShapeType<AudioShape> = {
  */
 export const ImageShapeShapeType: ShapeType<ImageShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#ImageShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ImageShape",
   context: activitystreamsContext,
 };
 
@@ -484,7 +511,7 @@ export const ImageShapeShapeType: ShapeType<ImageShape> = {
  */
 export const VideoShapeShapeType: ShapeType<VideoShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#VideoShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#VideoShape",
   context: activitystreamsContext,
 };
 
@@ -493,7 +520,7 @@ export const VideoShapeShapeType: ShapeType<VideoShape> = {
  */
 export const NoteShapeShapeType: ShapeType<NoteShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#NoteShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#NoteShape",
   context: activitystreamsContext,
 };
 
@@ -502,7 +529,7 @@ export const NoteShapeShapeType: ShapeType<NoteShape> = {
  */
 export const PageShapeShapeType: ShapeType<PageShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#PageShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#PageShape",
   context: activitystreamsContext,
 };
 
@@ -511,7 +538,7 @@ export const PageShapeShapeType: ShapeType<PageShape> = {
  */
 export const EventShapeShapeType: ShapeType<EventShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#EventShape",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#EventShape",
   context: activitystreamsContext,
 };
 
@@ -520,7 +547,7 @@ export const EventShapeShapeType: ShapeType<EventShape> = {
  */
 export const PlaceShapeType: ShapeType<Place> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#Place",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Place",
   context: activitystreamsContext,
 };
 
@@ -529,7 +556,8 @@ export const PlaceShapeType: ShapeType<Place> = {
  */
 export const MentionShapeShapeType: ShapeType<MentionShape> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#MentionShape",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/activitystreams#MentionShape",
   context: activitystreamsContext,
 };
 
@@ -538,7 +566,7 @@ export const MentionShapeShapeType: ShapeType<MentionShape> = {
  */
 export const ProfileShapeType: ShapeType<Profile> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#Profile",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Profile",
   context: activitystreamsContext,
 };
 
@@ -547,6 +575,6 @@ export const ProfileShapeType: ShapeType<Profile> = {
  */
 export const TombstoneShapeType: ShapeType<Tombstone> = {
   schema: activitystreamsSchema,
-  shape: "https://ldo.js.org/shapes/activitypub#Tombstone",
+  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Tombstone",
   context: activitystreamsContext,
 };
