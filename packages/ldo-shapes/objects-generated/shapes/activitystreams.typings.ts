@@ -246,6 +246,8 @@ export interface OrderedCollection {
   first?: string;
   items?: LdSet<string>;
   last?: string;
+  next?: string;
+  prev?: string;
   orderedItems?: LdSet<string>;
 }
 
@@ -340,6 +342,8 @@ export interface OrderedCollectionPage {
   first?: string;
   items?: LdSet<string>;
   last?: string;
+  next?: string;
+  prev?: string;
   orderedItems?: LdSet<string>;
   startIndex?: number;
 }

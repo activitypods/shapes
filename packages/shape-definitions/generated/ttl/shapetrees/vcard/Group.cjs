@@ -1,0 +1,2 @@
+const turtleShape = "PREFIX : <>\nPREFIX st: <http://www.w3.org/ns/shapetrees#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX vcard: <http://www.w3.org/2006/vcard/ns#>\n\n:Group\n  a st:ShapeTree ;\n  st:expectsType st:Resource ;\n  st:shape <../../shapes/vcard/Group> ;\n  st:describesInstance vcard:label ;\n  skos:prefLabel \"Groups\"@en, \"Groupes\"@fr .\n";
+module.exports = turtleShape;

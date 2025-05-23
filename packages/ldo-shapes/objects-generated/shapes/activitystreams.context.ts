@@ -252,21 +252,21 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@id": "https://www.w3.org/ns/activitystreams#last",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
+  next: {
+    "@id": "https://www.w3.org/ns/activitystreams#next",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
+  prev: {
+    "@id": "https://www.w3.org/ns/activitystreams#prev",
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+  },
   orderedItems: {
     "@id": "https://www.w3.org/ns/activitystreams#orderedItems",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
     "@isCollection": true,
   },
-  next: {
-    "@id": "https://www.w3.org/ns/activitystreams#next",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
-  },
   partOf: {
     "@id": "https://www.w3.org/ns/activitystreams#partOf",
-    "@type": "http://www.w3.org/2001/XMLSchema#string",
-  },
-  prev: {
-    "@id": "https://www.w3.org/ns/activitystreams#prev",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
   },
   startIndex: {

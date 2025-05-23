@@ -275,21 +275,21 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#last",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
+    next: {
+        "@id": "https://www.w3.org/ns/activitystreams#next",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    prev: {
+        "@id": "https://www.w3.org/ns/activitystreams#prev",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
     orderedItems: {
         "@id": "https://www.w3.org/ns/activitystreams#orderedItems",
         "@type": "http://www.w3.org/2001/XMLSchema#string",
         "@isCollection": true
     },
-    next: {
-        "@id": "https://www.w3.org/ns/activitystreams#next",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
     partOf: {
         "@id": "https://www.w3.org/ns/activitystreams#partOf",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    prev: {
-        "@id": "https://www.w3.org/ns/activitystreams#prev",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     startIndex: {
@@ -961,6 +961,26 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             }
                         },
                         "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#next",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                datatype: "http://www.w3.org/2001/XMLSchema#string"
+                            },
+                            min: 0,
+                            max: 1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#prev",
+                            valueExpr: {
+                                type: "NodeConstraint",
+                                datatype: "http://www.w3.org/2001/XMLSchema#string"
+                            },
+                            min: 0,
+                            max: 1
+                        },
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#orderedItems",

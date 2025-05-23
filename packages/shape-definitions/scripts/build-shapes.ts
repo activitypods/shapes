@@ -57,35 +57,45 @@ async function convertTtlToJsonld(ttlPath: string, jsonldPath: string) {
   });
 }
 
-async function exportTtlAsJs(ttlPath: string, jsPath: string) {
+// Export Turtle content as ES module (.mjs)
+async function exportTtlAsMjs(ttlPath: string, mjsPath: string) {
+  // Read the Turtle file content
   const ttlContent = await readFile(ttlPath, "utf8");
-  const jsExport = `const turtleShape = ${JSON.stringify(
-    ttlContent
-  )};\nexport default turtleShape;\n`;
-  await writeFile(jsPath, jsExport, "utf8");
+  // Wrap the content as a default export in an ES module
+  const mjsExport = `const turtleShape = ${JSON.stringify(ttlContent)};\nexport default turtleShape;\n`;
+  await writeFile(mjsPath, mjsExport, "utf8");
+}
+
+// Export Turtle content as CommonJS module (.cjs)
+async function exportTtlAsCjs(ttlPath: string, cjsPath: string) {
+  // Read the Turtle file content
+  const ttlContent = await readFile(ttlPath, "utf8");
+  // Wrap the content as a module.exports in a CommonJS module
+  const cjsExport = `const turtleShape = ${JSON.stringify(ttlContent)};\nmodule.exports = turtleShape;\n`;
+  await writeFile(cjsPath, cjsExport, "utf8");
 }
 
 /**
- * Recursively generates index.js files with export statements for all subdirectories and files
+ * Recursively generates index.mjs and index.cjs files with export statements for all subdirectories and files
  * with the specified extension in the base directory.
  *
- * The function walks through the directory tree and creates index.js files that:
+ * The function walks through the directory tree and creates index files that:
  * - Export subdirectories as namespaces
  * - Export default exports from files with the specified extension
  *
  * All export names are sanitized to ensure they are valid JavaScript identifiers.
  *
  * @param baseDir - The base directory to start generating index files from
- * @param ext - The file extension to look for (e.g., '.json', '.js')
- *
+ * @param ext - The file extension to look for (e.g., '.json', '.mjs')
  */
 async function generateIndexFiles(baseDir: string, ext: string) {
   // Inner recursive function to walk through directories
   async function walk(dir: string) {
     // Read all entries in the current directory
     const entries = await readdir(dir);
-    // Array to store export statements
+    // Arrays to store export statements
     const exports: string[] = [];
+    const exportsStar: string[] = [];
 
     // Process each entry in the directory
     for (const entry of entries) {
@@ -95,40 +105,75 @@ async function generateIndexFiles(baseDir: string, ext: string) {
       if (entryStat.isDirectory()) {
         // Recursively process subdirectories first
         await walk(fullPath);
-        // Add an export statement for the subdirectory as a namespace
-        // Replace any non-alphanumeric characters with underscores for valid JS identifiers
-        exports.push(
-          `export * as ${entry.replace(
-            /[^a-zA-Z0-9_]/g,
-            "_"
-          )} from './${entry}';`
-        );
+        // Add export statements for the subdirectory as a namespace and as a star export
+        const ns = entry.replace(/[^a-zA-Z0-9_]/g, "_");
+        exports.push(`export * as ${ns} from './${entry}';`);
+        exportsStar.push(`export * from './${entry}';`);
       } else if (entry.endsWith(ext)) {
-        // For files with the matching extension, add an export statement
-        // Create a valid JS identifier by removing the extension and replacing invalid chars
+        // For files with the matching extension, add export statements
         const exportName = path
           .basename(entry, ext)
           .replace(/[^a-zA-Z0-9_]/g, "_");
         exports.push(`export { default as ${exportName} } from './${entry}';`);
+        exportsStar.push(`export * from './${entry}';`);
       }
     }
 
-    // If we have any exports, write them to an index.js file in the current directory
+    // If we have any exports, write them to index.mjs and index.cjs files in the current directory
     if (exports.length > 0) {
-      await writeFile(
-        path.join(dir, "index.js"),
-        exports.join("\n") + "\n",
-        "utf8"
-      );
+      const content = exports.concat(exportsStar).join("\n") + "\n";
+      // Write ES module index (index.mjs)
+      await writeFile(path.join(dir, "index.mjs"), content, "utf8");
+      // Write CommonJS index (index.cjs) using object spread and named property pattern
+      const cjsRequires = entries
+        .filter((entry) => {
+          const fullPath = path.join(dir, entry);
+          return fs.existsSync(fullPath) && fs.statSync(fullPath).isDirectory();
+        })
+        .map((entry) => {
+          const ns = entry.replace(/[^a-zA-Z0-9_]/g, "_");
+          return `const ${ns} = require('./${entry}');`;
+        });
+      const cjsExports = entries
+        .filter((entry) => {
+          const fullPath = path.join(dir, entry);
+          return fs.existsSync(fullPath) && fs.statSync(fullPath).isDirectory();
+        })
+        .map((entry) => {
+          const ns = entry.replace(/[^a-zA-Z0-9_]/g, "_");
+          return `...${ns}, ${ns}`;
+        });
+      const cjsFiles = entries
+        .filter((entry) => entry.endsWith(ext))
+        .map((entry) => {
+          const exportName = path
+            .basename(entry, ext)
+            .replace(/[^a-zA-Z0-9_]/g, "_");
+          return `const ${exportName} = require('./${entry}');`;
+        });
+      const cjsFileExports = entries
+        .filter((entry) => entry.endsWith(ext))
+        .map((entry) => {
+          const exportName = path
+            .basename(entry, ext)
+            .replace(/[^a-zA-Z0-9_]/g, "_");
+          return `...${exportName}, ${exportName}`;
+        });
+      const cjsContent =
+        [
+          ...cjsRequires,
+          ...cjsFiles,
+          `module.exports = { ${[...cjsExports, ...cjsFileExports].join(", ")} };`,
+        ].join("\n") + "\n";
+      await writeFile(path.join(dir, "index.cjs"), cjsContent, "utf8");
     }
   }
-
   // Start the directory walking process from the base directory
   await walk(baseDir);
 }
 
 async function processFiles() {
-  // Clean up existing files
+  // Clean up existing files in the output directories
   if (fs.existsSync(JSONLD_DIR)) {
     await fs.promises.rm(JSONLD_DIR, { recursive: true, force: true });
   }
@@ -136,40 +181,44 @@ async function processFiles() {
     await fs.promises.rm(TTL_JS_DIR, { recursive: true, force: true });
   }
 
-  // Recreate empty directories
+  // Recreate empty output directories
   await ensureDir(JSONLD_DIR);
   await ensureDir(TTL_JS_DIR);
 
   // Find all Turtle (.ttl) files in the source directory
   const ttlFiles = await findTtlFiles(SOURCE_DIR);
 
-  // Process each Turtle file
+  // Process each Turtle file found in the source directory
   for (const ttlFile of ttlFiles) {
     // Get the file path relative to the source directory
     const relPath = path.relative(SOURCE_DIR, ttlFile);
 
-    // Define output paths for JSON-LD and JS files
+    // Define output paths for JSON-LD, .mjs, and .cjs files
     const jsonldOut = path.join(JSONLD_DIR, relPath.replace(/\.ttl$/, ".json"));
-    const ttlJsOut = path.join(TTL_JS_DIR, relPath.replace(/\.ttl$/, ".js"));
+    const ttlMjsOut = path.join(TTL_JS_DIR, relPath.replace(/\.ttl$/, ".mjs"));
+    const ttlCjsOut = path.join(TTL_JS_DIR, relPath.replace(/\.ttl$/, ".cjs"));
 
     // Create necessary directories if they don't exist
     await ensureDir(path.dirname(jsonldOut));
-    await ensureDir(path.dirname(ttlJsOut));
+    await ensureDir(path.dirname(ttlMjsOut));
+    await ensureDir(path.dirname(ttlCjsOut));
 
-    // Convert Turtle to JSON-LD format
+    // Convert Turtle to JSON-LD format and write to output
     await convertTtlToJsonld(ttlFile, jsonldOut);
 
-    // Export Turtle content as JavaScript module
-    await exportTtlAsJs(ttlFile, ttlJsOut);
+    // Export Turtle content as ES module (.mjs) and CommonJS module (.cjs)
+    await exportTtlAsMjs(ttlFile, ttlMjsOut);
+    await exportTtlAsCjs(ttlFile, ttlCjsOut);
   }
 
-  // Generate index.js files for the JSON-LD directory
+  // Generate index.mjs and index.cjs files for the JSON-LD directory
   await generateIndexFiles(JSONLD_DIR, ".json");
 
-  // Generate index.js files for the JS directory
-  await generateIndexFiles(TTL_JS_DIR, ".js");
+  // Generate index.mjs and index.cjs files for the Turtle JS directory
+  await generateIndexFiles(TTL_JS_DIR, ".mjs");
 }
 
+// Start the processing of files and handle errors
 processFiles().catch((err) => {
   console.error(err);
   process.exit(1);

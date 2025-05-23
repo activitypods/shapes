@@ -83,6 +83,8 @@ apodsShape:Collection {
 apodsShape:OrderedCollection {
     a as:OrderedCollection;
     &apodsShape:Collection;
+    as:next xsd:string?;
+    as:prev xsd:string?;
     as:orderedItems xsd:string*;
 }
 
