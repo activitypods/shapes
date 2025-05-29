@@ -1,0 +1,196 @@
+PREFIX as: <https://www.w3.org/ns/activitystreams#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <http://schema.org/>
+PREFIX apodsShape: <https://shapes.activitypods.org/shapes/activitystreams#>
+
+# Class Shapes
+
+apodsShape:Object EXTRA a {
+   
+    a [ as:Object ];
+    as:content xsd:string?;
+    as:icon xsd:string*;
+    as:image xsd:string*;
+    as:name xsd:string?;
+    as:preview xsd:string*;
+    as:summary xsd:string?;
+    as:url xsd:string*;
+    as:duration xsd:duration?;
+    as:endTime xsd:dateTime?;
+    as:mediaType xsd:string?;
+    as:published xsd:dateTime?;
+    as:startTime xsd:dateTime?;
+    as:updated xsd:dateTime?;
+
+    as:attachment @apodsShape:Object *;
+    as:attributedTo @apodsShape:Object *;
+    as:audience @apodsShape:Object *;
+    as:bcc @apodsShape:Object *;
+    as:bto @apodsShape:Object *;
+    as:cc @apodsShape:Object *;
+    as:context @apodsShape:Object *;
+    as:generator @apodsShape:Object *;
+    as:inReplyTo @apodsShape:Object *;
+    as:location @apodsShape:Object *;
+    as:replies @apodsShape:Collection?;
+    as:tag @apodsShape:Object *;
+    as:to @apodsShape:Object *;
+}
+
+apodsShape:Link EXTRA a {
+    a [ as:Link ];
+    as:name xsd:string?;
+    as:preview xsd:string*;
+    as:height xsd:nonNegativeInteger MinInclusive 0?;
+    as:href xsd:anyURI?;
+    as:hreflang xsd:string?;
+    as:id IRI?;
+    as:mediaType xsd:string?;
+    as:rel xsd:string*;
+    as:width xsd:nonNegativeInteger MinInclusive 0?
+}
+
+apodsShape:Activity EXTRA a {
+    a [ as:Activity ];
+    &apodsShape:Object;
+    as:actor @apodsShape:Object*;
+    as:instrument @apodsShape:Object*;
+    as:object @apodsShape:Object*;
+    as:origin @apodsShape:Object*;
+    as:result @apodsShape:Object*;
+    as:target @apodsShape:Object*;
+}
+
+apodsShape:IntransitiveActivity EXTRA a {
+    a [ as:IntransitiveActivity ];
+    &apodsShape:Activity;
+    # Note: By inheriting ActivityShape, it will include 'as:object'.
+    # The original SHACL definition of IntransitiveActivity implies 'as:object' should not be present.
+}
+
+apodsShape:Collection EXTRA a {
+    a [ as:Collection ];
+    &apodsShape:Object;
+    as:totalItems xsd:nonNegativeInteger MinInclusive 0?;
+    as:current xsd:string?;
+    as:first xsd:string?;
+    as:items @apodsShape:Object*;
+    as:last xsd:string?;
+}
+
+apodsShape:OrderedCollection EXTRA a {
+    a [ as:OrderedCollection ];
+    &apodsShape:Collection;
+    as:next xsd:string?;
+    as:prev xsd:string?;
+    as:orderedItems @apodsShape:Object*;
+}
+
+apodsShape:CollectionPage EXTRA a {
+    a [ as:CollectionPage ];
+    &apodsShape:Collection;
+    as:next xsd:string?;
+    as:partOf xsd:string?;
+    as:prev xsd:string?;
+}
+
+apodsShape:OrderedCollectionPage EXTRA a {
+    a [ as:OrderedCollectionPage ];
+    &apodsShape:OrderedCollection;
+    as:startIndex xsd:nonNegativeInteger MinInclusive 0?;
+}
+
+# Activity subclasses
+apodsShape:Accept EXTRA a { a [ as:Accept ]; &apodsShape:Activity; }
+apodsShape:Add EXTRA a { a [ as:Add ]; &apodsShape:Activity; }
+apodsShape:Create EXTRA a { a [ as:Create ]; &apodsShape:Activity; }
+apodsShape:Delete EXTRA a { a [ as:Delete ]; &apodsShape:Activity; }
+apodsShape:Follow EXTRA a { a [ as:Follow ]; &apodsShape:Activity; }
+apodsShape:Ignore EXTRA a { a [ as:Ignore ]; &apodsShape:Activity; }
+apodsShape:Join EXTRA a { a [ as:Join ]; &apodsShape:Activity; }
+apodsShape:Leave EXTRA a { a [ as:Leave ]; &apodsShape:Activity; }
+apodsShape:Like EXTRA a { a [ as:Like ]; &apodsShape:Activity; }
+apodsShape:Offer EXTRA a { a [ as:Offer ]; &apodsShape:Activity; }
+apodsShape:Invite EXTRA a { a [ as:Invite ]; &apodsShape:Activity; } # Was: Inherits from Offer in SHACL
+apodsShape:Reject EXTRA a { a [ as:Reject ]; &apodsShape:Activity; }
+apodsShape:TentativeReject EXTRA a { a [ as:TentativeReject ]; &apodsShape:Activity; } # Was: Inherits from Reject in SHACL
+apodsShape:Remove EXTRA a { a [ as:Remove ]; &apodsShape:Activity; }
+apodsShape:Undo EXTRA a { a [ as:Undo ]; &apodsShape:Activity; }
+apodsShape:Update EXTRA a { a [ as:Update ]; &apodsShape:Activity; }
+apodsShape:View EXTRA a { a [ as:View ]; &apodsShape:Activity; }
+apodsShape:Listen EXTRA a { a [ as:Listen ]; &apodsShape:Activity; }
+apodsShape:Read EXTRA a { a [ as:Read ]; &apodsShape:Activity; }
+apodsShape:Move EXTRA a { a [ as:Move ]; &apodsShape:Activity; }
+apodsShape:Announce EXTRA a { a [ as:Announce ]; &apodsShape:Activity; }
+apodsShape:Flag EXTRA a { a [ as:Flag ]; &apodsShape:Activity; }
+apodsShape:Dislike EXTRA a { a [ as:Dislike ]; &apodsShape:Activity; }
+
+# IntransitiveActivity subclasses
+apodsShape:Arrive EXTRA a { a [ as:Arrive ]; &apodsShape:IntransitiveActivity; }
+apodsShape:Travel EXTRA a { a [ as:Travel ]; &apodsShape:IntransitiveActivity; }
+apodsShape:Question EXTRA a {
+    a [ as:Question ];
+    &apodsShape:IntransitiveActivity;
+    as:oneOf xsd:string*;
+    as:anyOf xsd:string*;
+    as:closed xsd:string?;
+}
+
+# Accept/Reject specializations
+apodsShape:TentativeAccept EXTRA a { a [ as:TentativeAccept ]; &apodsShape:Activity; } # Was: Inherits from Accept in SHACL
+
+# Block is a specialization of Ignore
+apodsShape:Block EXTRA a { a [ as:Block ]; &apodsShape:Activity; } # Was: Inherits from Ignore in SHACL
+
+# Actor types (all are Objects)
+apodsShape:Application EXTRA a { a [ as:Application ]; &apodsShape:Object; }
+apodsShape:Group EXTRA a { a [ as:Group ]; &apodsShape:Object; }
+apodsShape:Organization EXTRA a { a [ as:Organization ]; &apodsShape:Object; }
+apodsShape:Person EXTRA a { a [ as:Person ]; &apodsShape:Object; }
+apodsShape:Service EXTRA a { a [ as:Service ]; &apodsShape:Object; }
+
+# Object and Link types
+apodsShape:Relationship EXTRA a {
+    a [ as:Relationship ];
+    &apodsShape:Object;
+    as:subject @apodsShape:Object*;
+    as:object @apodsShape:Object*;
+    as:relationship xsd:string *; # minCount 0
+}
+
+apodsShape:Document EXTRA a { a [ as:Document ]; &apodsShape:Object; }
+apodsShape:Article EXTRA a { a [ as:Article ]; &apodsShape:Object; }
+apodsShape:Audio EXTRA a { a [ as:Audio ]; &apodsShape:Document; }
+apodsShape:Image EXTRA a { a [ as:Image ]; &apodsShape:Document; }
+apodsShape:Video EXTRA a { a [ as:Video ]; &apodsShape:Document; }
+apodsShape:Note EXTRA a { a [ as:Note ]; &apodsShape:Object; }
+apodsShape:Page EXTRA a { a [ as:Page ]; &apodsShape:Object; }
+apodsShape:Event EXTRA a { a [ as:Event ]; &apodsShape:Object; }
+
+apodsShape:Place EXTRA a {
+    a [ as:Place ];
+    &apodsShape:Object;
+    as:accuracy xsd:float MinInclusive 0 MaxInclusive 100?;
+    as:altitude xsd:float?;
+    as:latitude xsd:float?;
+    as:longitude xsd:float?;
+    as:radius xsd:float MinInclusive 0?;
+    as:units xsd:string?; # Based on @apodsShape:UnitsProperty
+}
+
+apodsShape:Mention EXTRA a { a [ as:Mention ]; &apodsShape:Link; } # Was: Inherits from Link in SHACL
+
+apodsShape:Profile EXTRA a {
+    a [ as:Profile ];
+    &apodsShape:Object;
+    as:describes xsd:string?; # maxCount 1
+}
+
+apodsShape:Tombstone EXTRA a {
+    a [ as:Tombstone ];
+    &apodsShape:Object;
+    as:formerType xsd:string*; # minCount 0
+    as:deleted xsd:dateTime?;
+}

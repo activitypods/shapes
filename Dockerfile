@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:24.1.0-alpine
 
 RUN node -v
 RUN npm -v
@@ -13,12 +13,12 @@ ADD package.json /app
 ADD yarn.lock /app
 RUN yarn install && yarn cache clean
 
-ADD index.js /app
+ADD index.ts /app
 ADD negotiateHandlerFactory.js /app
 ADD src /app/src
 
 RUN chmod -R 777 /app/src
 
-EXPOSE 8000
+EXPOSE 30916
 
-CMD [ "node", "index.js" ]
+CMD [ "node", "index.ts" ]

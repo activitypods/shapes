@@ -1,0 +1,10 @@
+export * as as from './as';
+export * as maid from './maid';
+export * as solid from './solid';
+export * as vcard from './vcard';
+export { default as activitystreams } from './activitystreams.json';
+export * from './as';
+export * from './maid';
+export * from './solid';
+export * from './vcard';
+export * from './activitystreams.json';

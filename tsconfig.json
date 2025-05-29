@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "lib": ["ESNext", "dom"],
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

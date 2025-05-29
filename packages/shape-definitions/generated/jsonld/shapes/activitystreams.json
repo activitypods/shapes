@@ -1,0 +1,7357 @@
+[
+  {
+    "@id": "_:b0_AttachmentPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "attachment"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#attachment"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies a resource attached or related to an object that potentially requires special handling. The intent is to provide a model that is at least semantically similar to attachments in email."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-0",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-1"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-1",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-0",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-2"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-2",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-3"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-3",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-2",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-4"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-4",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-5"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-5",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-4",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_AttachmentPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-0"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_AttributedToPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "attributedTo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#attributedTo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies one or more entities to which this object is attributed. The attributed entities might not be Actors. For instance, an object might be attributed to the completion of another activity."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-6",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-7"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-7",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-6",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-8"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-8",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-9"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-9",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-8",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-10"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-10",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-11"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-11",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-10",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_AttributedToPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-6"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_AudiencePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "audience"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#audience"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies one or more entities that represent the total population of entities for which the object can considered to be relevant."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-12",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-13"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-13",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-12",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-14"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-14",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-15"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-15",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-14",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-16"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-16",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-17"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-17",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-16",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_AudiencePropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-12"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_BccPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "bcc"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#bcc"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies one or more Objects that are part of the private secondary audience of this Object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-18",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-19"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-19",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-18",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-20"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-20",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-21"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-21",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-20",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-22"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-22",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-23"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-23",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-22",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_BccPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-18"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_BtoPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "bto"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#bto"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies an Object that is part of the private primary audience of this Object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-24",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-25"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-25",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-24",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-26"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-26",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-27"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-27",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-26",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-28"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-28",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-29"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-29",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-28",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_BtoPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-24"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_CcPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "cc"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#cc"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies an Object that is part of the public secondary audience of this Object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-30",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-31"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-31",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-30",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-32"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-32",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-33"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-33",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-32",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-34"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-34",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-35"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-35",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-34",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_CcPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-30"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ContentPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The content or textual representation of the Object encoded as a JSON string. By default, the value of content is HTML. The mediaType property can be used in the object to indicate a different content type. The content MAY be expressed using multiple language-tagged values."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-36",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-37"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-37",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-36",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-38"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-38",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-39"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-39",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-38",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-40"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-40",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-41"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-41",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-40",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ContentPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-36"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ContextPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "context"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#context"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies the context within which the object exists or an activity was performed. The notion of 'context' used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-42",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-43"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-43",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-42",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-44"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-44",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-45"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-45",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-44",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-46"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-46",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-47"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-47",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-46",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ContextPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-42"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_GeneratorPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "generator"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#generator"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies the entity (e.g. an application) that generated the object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-48",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-49"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-49",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-48",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-50"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-50",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-51"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-51",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-50",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-52"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-52",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-53"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-53",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-52",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_GeneratorPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-48"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_IconPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "icon"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#icon"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates an entity that describes an icon for this object. The image should have an aspect ratio of one (horizontal) to one (vertical) and should be suitable for presentation at a small size."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-54",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-55"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-55",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Image"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-54",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-56"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-56",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-57"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-57",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-56",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-58"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-58",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-59"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-59",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-58",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_IconPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-54"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ImagePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "image"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#image"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates an entity that describes an image for this object. Unlike the icon property, there are no aspect ratio or display size limitations assumed."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-60",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-61"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-61",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Image"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-60",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-62"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-62",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-63"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-63",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-62",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-64"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-64",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-65"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-65",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-64",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ImagePropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-60"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_InReplyToPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "inReplyTo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#inReplyTo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates one or more entities for which this object is considered a response."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-66",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-67"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-67",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-66",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-68"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-68",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-69"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-69",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-68",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-70"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-70",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-71"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-71",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-70",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_InReplyToPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-66"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_LocationPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "location"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#location"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates one or more physical or logical locations associated with the object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-72",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-73"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-73",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-72",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-74"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-74",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-75"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-75",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-74",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-76"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-76",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-77"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-77",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-76",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_LocationPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-72"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_NamePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A simple, human-readable, plain-text name for the object. HTML markup MUST NOT be included. The name MAY be expressed using multiple language-tagged values."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-78",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-79"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-79",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-78",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-80"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-80",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-81"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-81",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-80",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-82"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-82",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-83"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-83",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-82",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_NamePropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-78"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_PreviewPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "preview"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#preview"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies an entity that provides a preview of this object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-84",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-85"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-85",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-84",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-86"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-86",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-87"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-87",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-86",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-88"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-88",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-89"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-89",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-88",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_PreviewPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-84"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_RepliesPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "replies"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#replies"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies a Collection containing objects considered to be responses to this object."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-90",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-91"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-91",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Collection"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-90",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-92"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-92",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-93"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-93",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollection"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-92",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-94"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-94",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-95"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-95",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-94",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_RepliesPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-90"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_SummaryPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "summary"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#summary"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A natural language summarization of the object encoded as HTML. Multiple language tagged summaries MAY be provided."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-96",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-97"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-97",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-96",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-98"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-98",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-99"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-99",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-98",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-100"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-100",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-101"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-101",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-100",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_SummaryPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-96"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_TagPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "tag"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#tag"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "One or more 'tags' that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-102",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-103"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-103",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-102",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-104"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-104",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-105"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-105",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-104",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-106"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-106",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-107"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-107",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-106",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_TagPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-102"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ToPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "to"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#to"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies an entity considered to be part of the public primary audience of an Object"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-108",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-109"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-109",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-108",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-110"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-110",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-111"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-111",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-110",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-112"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-112",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-113"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-113",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-112",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ToPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-108"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_UrlPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "url"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#url"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies one or more links to representations of the object"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-114",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-115"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-115",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-114",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-116"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-116",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-117"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-117",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-116",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-118"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-118",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-119"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-119",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-118",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_UrlPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-114"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_DurationPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "duration"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#duration"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "When the object describes a time-bound resource, such as an audio or video, a meeting, etc, the duration property indicates the object's approximate duration. The value MUST be expressed as an xsd:duration as defined by [ xmlschema11-2], section 3.3.6 (e.g. a period of 5 seconds is represented as 'PT5S')."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#duration"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_EndTimePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "endTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#endTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The date and time describing the actual or expected ending time of the object. When used with an Activity object, for instance, the endTime property specifies the moment the activity concluded or is expected to conclude."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_IdPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "id"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#id"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Provides the globally unique identifier for an Object or Link."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_MediaTypePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "mediaType"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#mediaType"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "When used on a Link, identifies the MIME media type of the referenced resource. When used on an Object, identifies the MIME media type of the value of the content property. If not specified, the content property is assumed to contain text/html content."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#seeAlso": [
+      {
+        "@id": "http://schema.org/encodingFormat"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_PublishedPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "published"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#published"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The date and time at which the object was published"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_StartTimePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "startTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#startTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The date and time describing the actual or expected starting time of the object. When used with an Activity object, for instance, the startTime property specifies the moment the activity began or is scheduled to begin."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_UpdatedPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "updated"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#updated"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The date and time at which the object was updated"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_HeightPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "height"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#height"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "On a Link, specifies a hint as to the rendering height in device-independent pixels of the linked resource."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_HrefPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "href"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#href"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The target resource pointed to by a Link."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_HreflangPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "hreflang"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#hreflang"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Hints as to the language used by the target resource. Value MUST be a [BCP47] Language-Tag."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#seeAlso": [
+      {
+        "@id": "http://schema.org/inLanguage"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_RelPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "rel"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#rel"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A link relation associated with a Link. The value MUST conform to both the [HTML5] and [RFC5988] 'link relation' definitions. In the [HTML5], any string not containing the 'space' U+0020, 'tab' (U+0009), 'LF' (U+000A), 'FF' (U+000C), 'CR' (U+000D) or ',' (U+002C) characters can be used as a valid link relation."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_WidthPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "width"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#width"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "On a Link, specifies a hint as to the rendering width in device-independent pixels of the linked resource."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ActorPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#actor"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Describes one or more entities that either performed or are expected to perform the activity. Any single activity can have multiple actors. The actor MAY be specified using an indirect Link."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-120",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-121"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-121",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-120",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-122"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-122",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-123"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-123",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-122",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-124"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-124",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-125"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-125",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-124",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ActorPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-120"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_InstrumentPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#instrument"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies one or more objects used (or to be used) in the completion of an Activity."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-126",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-127"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-127",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-126",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-128"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-128",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-129"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-129",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-128",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-130"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-130",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-131"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-131",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-130",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_InstrumentPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-126"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ObjectPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#object"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "When used within an Activity, describes the direct object of the activity. For instance, in the activity 'John added a movie to his wishlist', the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-132",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-133"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-133",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-132",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-134"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-134",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-135"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-135",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-134",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-136"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-136",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-137"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-137",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-136",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ObjectPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-132"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_OriginPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#origin"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition 'from'. For instance, in the activity 'John moved an item to List B from List A', the origin of the activity is 'List A'."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-138",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-139"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-139",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-138",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-140"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-140",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-141"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-141",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-140",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-142"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-142",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-143"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-143",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-142",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_OriginPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-138"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ResultPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#result"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Describes the result of the activity. For instance, if a particular action results in the creation of a new resource, the result property can be used to describe that new resource."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-144",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-145"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-145",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-144",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-146"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-146",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-147"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-147",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-146",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-148"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-148",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-149"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-149",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-148",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ResultPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-144"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_TargetPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#target"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition 'to'. For instance, in the activity 'John added a movie to his wishlist', the target of the activity is John's wishlist. An activity can have more than one target."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-150",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-151"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-151",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-150",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-152"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-152",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-153"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-153",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-152",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-154"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-154",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-155"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-155",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-154",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_TargetPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-150"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_CurrentPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#current"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "In a paged Collection, indicates the page that contains the most recently updated member items."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-156",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-157"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-157",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-156",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-158"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-158",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-159"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-159",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-158",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-160"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-160",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-161"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-161",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-160",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-162"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-162",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-163"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-163",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-162",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_CurrentPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-156"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_FirstPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#first"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "In a paged Collection, indicates the furthest preceeding page of items in the collection."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-164",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-165"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-165",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-164",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-166"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-166",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-167"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-167",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-166",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-168"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-168",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-169"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-169",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-168",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-170"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-170",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-171"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-171",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-170",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_FirstPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-164"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ItemsPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#items"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies the items contained in a collection. The items might be ordered or unordered."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-172",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-173"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-173",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-172",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-174"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-174",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-175"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-175",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-174",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-176"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-176",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-177"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-177",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-176",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ItemsPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-172"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_LastPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#last"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "In a paged Collection, indicates the furthest proceeding page of the collection."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-178",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-179"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-179",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-178",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-180"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-180",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-181"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-181",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-180",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-182"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-182",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-183"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-183",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-182",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-184"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-184",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-185"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-185",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-184",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_LastPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-178"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_TotalItemsPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#totalItems"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A non-negative integer specifying the total number of objects contained by the logical view of the collection. This number might not reflect the actual number of items serialized within the Collection object instance."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_OrderedItemsPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#orderedItems"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies the items contained in a collection. The items might be ordered or unordered."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-186",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-187"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-187",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-186",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-188"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-188",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-189"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-189",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-188",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-190"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-190",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-191"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-191",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-190",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_OrderedItemsPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-186"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_NextPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#next"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "In a paged Collection, indicates the next page of items."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-192",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-193"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-193",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-192",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-194"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-194",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-195"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-195",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-194",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-196"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-196",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-197"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-197",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-196",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-198"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-198",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-199"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-199",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-198",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_NextPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-192"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_PartOfPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#partOf"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Identifies the Collection to which a CollectionPage objects items belong."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-200",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-201"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-201",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-200",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-202"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-202",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-203"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-203",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Collection"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-202",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-204"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-204",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-205"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-205",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-204",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_PartOfPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-200"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_PrevPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#prev"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "In a paged Collection, identifies the previous page of items."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-206",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-207"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-207",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-206",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-208"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-208",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-209"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-209",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-208",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-210"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-210",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-211"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-211",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-210",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-212"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-212",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-213"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-213",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-212",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_PrevPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-206"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_StartIndexPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#startIndex"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A non-negative integer value identifying the relative position within the logical view of a strictly ordered collection."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_AccuracyPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#accuracy"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates the accuracy of position coordinates on a Place objects. Expressed in properties of percentage. e.g. '94.0' means '94.0% accurate'."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxInclusive": [
+      {
+        "@value": "100",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_AltitudePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#altitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates the altitude of a place. The measurement units is indicated using the units property. If units is not specified, the default is assumed to be 'm' indicating meters."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_LatitudePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#latitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The latitude of a place"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_LongitudePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#longitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The longitude of a place"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_RadiusPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#radius"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The radius from the given latitude and longitude for a Place. The units is expressed by the units property. If units is not specified, the default is assumed to be 'm' indicating 'meters'."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_UnitsPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#units"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Specifies the measurement units for the radius and altitude properties on a Place object. If not specified, the default is assumed to be 'm' for 'meters'."
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_RelationshipPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#relationship"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "On a Relationship object, the relationship property identifies the kind of relationship that exists between subject and object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-214",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-215"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-215",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-214",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-216"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-216",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-217"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-217",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-216",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_RelationshipPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-214"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_SubjectPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#subject"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "On a Relationship object, the subject property identifies one of the connected individuals. For instance, for a Relationship object describing 'John is related to Sally', subject would refer to John."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-218",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-219"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-219",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-218",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-220"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-220",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-221"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-221",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-220",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-222"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-222",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-223"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-223",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-222",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_SubjectPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-218"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_DescribesPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#describes"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "On a Profile object, the described property identifies the object described by the Profile."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-224",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-225"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-225",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-224",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-226"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-226",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-227"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-227",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-226",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_DescribesPropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-224"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_FormerTypePropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#formerType"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "On a Tombstone object, the formerType property identifies the type of the object that was deleted."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-228",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-229"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-229",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-228",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:n3-230"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-230",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:n3-231"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-231",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-230",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_FormerTypePropertyShape",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:n3-228"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_DeletedPropertyShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#PropertyShape"
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#deleted"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "On a Tombstone object, the deleted property is a timestamp for when the object was deleted."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ObjectProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Describes an object of any kind. The Object type serves as the base type for most of the other kinds of objects defined in the Activity Vocabulary, including other Core types such as Activity, IntransitiveActivity, Collection and OrderedCollection."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_AttachmentPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_AttributedToPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_AudiencePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_BccPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_BtoPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_CcPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_ContentPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_ContextPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_GeneratorPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_IconPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_ImagePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_InReplyToPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_LocationPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_NamePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_PreviewPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_RepliesPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_SummaryPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_TagPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_ToPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_UrlPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_DurationPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_EndTimePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_IdPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_MediaTypePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_PublishedPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_StartTimePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_UpdatedPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_LinkProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A Link is an indirect, qualified reference to a resource identified by a URL. The fundamental model for links is established by RFC5988. Many of the properties defined by the Activity Vocabulary allow values that are either instances of Object or Link. When a Link is used, it establishes a qualified relation connecting the subject (the containing object) to the resource identified by the href. Properties of the Link are properties of the reference as opposed to properties of the resource."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_NamePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_PreviewPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_HeightPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_HrefPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_HreflangPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_IdPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_MediaTypePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_RelPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_WidthPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ActivityProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "An Activity is a subtype of Object that describes some form of action that may happen, is currently happening, or has already happened. The Activity type itself serves as an abstract base type for all types of activities. It is important to note that the Activity type itself does not carry any specific semantics about the kind of action being taken."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_ActorPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_InstrumentPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_ObjectPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_OriginPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_ResultPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_TargetPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_IntransitiveActivityProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "An Activity that has no direct object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_CollectionProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A Collection is a subtype of Object that represents ordered or unordered sets of Object or Link instances. Refer to the Activity Streams 2.0 Core specification for a complete description of the Collection type."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_CurrentPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_FirstPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_ItemsPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_LastPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_TotalItemsPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_OrderedCollectionProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A subtype of Collection in which members of the logical collection are assumed to always be strictly ordered."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_CollectionProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_OrderedItemsPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_CollectionPageProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Used to represent distinct subsets of items from a Collection. Refer to the Activity Streams 2.0 Core for a complete description of the CollectionPage object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_CollectionProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_NextPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_PartOfPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_PrevPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_OrderedCollectionPageProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Used to represent ordered subsets of items from an OrderedCollection. Refer to the Activity Streams 2.0 Core for a complete description of the OrderedCollectionPage object."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_OrderedCollectionProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_StartIndexPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_NextPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_PartOfPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_PrevPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_PlaceProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents a logical or physical location. See 5.3 Representing Places for additional information."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_AccuracyPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_AltitudePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_LatitudePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_LongitudePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_RadiusPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_UnitsPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_RelationshipProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Describes a relationship between two individuals. The subject and object properties are used to identify the connected individuals. See 5.2 Representing Relationships Between Entities for additional information."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_ObjectPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_RelationshipPropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_SubjectPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_ProfileProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A Profile is a content object that describes another Object, typically used to describe Actor Type objects. The describes property is used to reference the object being described by the profile."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_DescribesPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "_:b0_TombstoneProperties",
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A Tombstone represents a content object that has been deleted. It can be used in Collections to signify that there used to be an object at this position, but it has been deleted."
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:b0_FormerTypePropertyShape"
+      }
+      ,
+      {
+        "@id": "_:b0_DeletedPropertyShape"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Object",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Describes an object of any kind. The Object type serves as the base type for most of the other kinds of objects defined in the Activity Vocabulary, including other Core types such as Activity, IntransitiveActivity, Collection and OrderedCollection."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-232",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Object",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-232"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Link",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A Link is an indirect, qualified reference to a resource identified by a URL. The fundamental model for links is established by RFC5988. Many of the properties defined by the Activity Vocabulary allow values that are either instances of Object or Link. When a Link is used, it establishes a qualified relation connecting the subject (the containing object) to the resource identified by the href. Properties of the Link are properties of the reference as opposed to properties of the resource."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-233",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Link",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-233"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_LinkProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Activity",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "An Activity is a subtype of Object that describes some form of action that may happen, is currently happening, or has already happened. The Activity type itself serves as an abstract base type for all types of activities. It is important to note that the Activity type itself does not carry any specific semantics about the kind of action being taken."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-234",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Activity",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-234"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "An Activity that has no direct object."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-235",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#IntransitiveActivity"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-235"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_IntransitiveActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#IntransitiveActivity"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Collection",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A Collection is a subtype of Object that represents ordered or unordered sets of Object or Link instances. Refer to the Activity Streams 2.0 Core specification for a complete description of the Collection type."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-236",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Collection"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Collection",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-236"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_CollectionProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Collection"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A subtype of Collection in which members of the logical collection are assumed to always be strictly ordered."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-237",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollection"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-237"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_OrderedCollectionProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollection"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#CollectionPage",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Used to represent distinct subsets of items from a Collection. Refer to the Activity Streams 2.0 Core for a complete description of the CollectionPage object."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-238",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#CollectionPage",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-238"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_CollectionPageProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollectionPage",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Used to represent ordered subsets of items from an OrderedCollection. Refer to the Activity Streams 2.0 Core for a complete description of the OrderedCollectionPage object."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-239",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollectionPage",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-239"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_OrderedCollectionPageProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Accept",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor accepts the object. The target property can be used in certain circumstances to indicate the context into which the object has been accepted."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-240",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Accept"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Accept",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-240"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Accept"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Add",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has added the object to the target. If the target property is not explicitly specified, the target would need to be determined implicitly by context. The origin can be used to identify the context from which the object originated."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-241",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Add"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Add",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-241"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Add"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Create",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has created the object."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-242",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Create"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Create",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-242"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Create"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Delete",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has deleted the object. If specified, the origin indicates the context from which the object was deleted."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-243",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Delete"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Delete",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-243"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Delete"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Follow",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is \"following\" the object. Following is defined in the sense typically used within Social systems in which the actor is interested in any activity performed by or on the object. The target and origin typically have no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-244",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Follow"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Follow",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-244"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Follow"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Ignore",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is ignoring the object. The target and origin typically have no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-245",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Ignore"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Ignore",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-245"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Ignore"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Join",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has joined the object. The target and origin typically have no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-246",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Join"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Join",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-246"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Join"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Leave",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has left the object. The target and origin typically have no meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-247",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Leave"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Leave",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-247"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Leave"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Like",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor likes, recommends or endorses the object. The target and origin typically have no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-248",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Like"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Like",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-248"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Like"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Offer",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is offering the object. If specified, the target indicates the entity to which the object is being offered."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-249",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Offer"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Offer",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-249"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Offer"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Invite",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A specialization of Offer in which the actor is extending an invitation for the object to the target."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-250",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Invite"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Invite",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-250"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "https://shapes.activitypods.org/shapes/activitystreams#Offer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Invite"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Reject",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is rejecting the object. The target and origin typically have no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-251",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Reject"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Reject",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-251"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Reject"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#TentativeReject",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A specialization of Reject in which the rejection is considered tentative."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-252",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#TentativeReject"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#TentativeReject",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-252"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "https://shapes.activitypods.org/shapes/activitystreams#Reject"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#TentativeReject"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Remove",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is removing the object. If specified, the origin indicates the context from which the object is being removed."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-253",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Remove"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Remove",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-253"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Remove"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Undo",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is undoing the object. In most cases, the object will be an Activity describing some previously performed action (for instance, a person may have previously 'liked' an article but, for whatever reason, might choose to undo that like at some later point in time). The target and origin typically have no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-254",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Undo"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Undo",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-254"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Undo"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Update",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has updated the object. Note, however, that this vocabulary does not define a mechanism for describing the actual set of modifications made to object. The target and origin typically have no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-255",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Update"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Update",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-255"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Update"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#View",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has viewed the object."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-256",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#View"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#View",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-256"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#View"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Listen",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has listened to the object."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-257",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Listen"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Listen",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-257"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Listen"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Read",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has read the object."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-258",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Read"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Read",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-258"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Read"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Move",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor has moved object from origin to target. If the origin or target are not specified, either can be determined by context."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-259",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Move"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Move",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-259"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Move"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Announce",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is calling the target's attention the object. The origin typically has no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-260",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Announce"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Announce",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-260"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Announce"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Flag",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is 'flagging' the object. Flagging is defined in the sense common to many social platforms as reporting content as being inappropriate for any number of reasons."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-261",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Flag"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Flag",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-261"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Flag"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Dislike",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor dislikes the object."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-262",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Dislike"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Dislike",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-262"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Dislike"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Arrive",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "An IntransitiveActivity that indicates that the actor has arrived at the location. The origin can be used to identify the context from which the actor originated. The target typically has no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-263",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Arrive"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Arrive",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-263"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_IntransitiveActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Arrive"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Travel",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is traveling to target from origin. Travel is an IntransitiveObject whose actor specifies the direct object. If the target or origin are not specified, either can be determined by context."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-264",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Travel"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Travel",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-264"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_IntransitiveActivityProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Travel"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Question",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents a question being asked. Question objects are an extension of IntransitiveActivity. That is, the Question object is an Activity, but the direct object is the question itself and therefore it would not contain an object property. Either of the anyOf and oneOf properties MAY be used to express possible answers, but a Question object MUST NOT have both properties."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-265",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Question"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Question",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-265"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_IntransitiveActivityProperties"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-266",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#anyOf"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Question",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-266"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-267",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#oneOf"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Question",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-267"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Question"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#TentativeAccept",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A specialization of Accept indicating that the acceptance is tentative."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-268",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#TentativeAccept"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#TentativeAccept",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-268"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "https://shapes.activitypods.org/shapes/activitystreams#Accept"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#TentativeAccept"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Block",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Indicates that the actor is blocking the object. Blocking is a stronger form of Ignore. The typical use is to support social systems that allow one user to block activities or content of other users. The target and origin typically have no defined meaning."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-269",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Block"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Block",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-269"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "https://shapes.activitypods.org/shapes/activitystreams#Ignore"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Block"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Application",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Describes a software application."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-270",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Application"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Application",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-270"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Application"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Group",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents a formal or informal collective of Actors."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-271",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Group"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Group",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-271"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Group"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Organization",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents an organization."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-272",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Organization"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Organization",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-272"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Organization"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Person",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents an individual person."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-273",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Person"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Person",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-273"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Person"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Service",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents a service of any kind."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-274",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Service"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Service",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-274"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Service"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Relationship",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Describes a relationship between two individuals. The subject and object properties are used to identify the connected individuals."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-275",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Relationship"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Relationship",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-275"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_RelationshipProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Relationship"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Document",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents a document of any kind."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-276",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Document"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Document",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-276"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Document"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Article",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-277",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Article"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Article",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-277"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Article"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Audio",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents an audio document of any kind."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-278",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Audio"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Audio",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-278"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "https://shapes.activitypods.org/shapes/activitystreams#Document"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Audio"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Image",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "An image document of any kind"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-279",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Image"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Image",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-279"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "https://shapes.activitypods.org/shapes/activitystreams#Document"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Image"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Video",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents a video document of any kind."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-280",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Video"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Video",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-280"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "https://shapes.activitypods.org/shapes/activitystreams#Document"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Video"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Note",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents a short written work typically less than a single paragraph in length."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-281",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Note"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Note",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-281"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Note"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Page",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents a Web Page."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-282",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Page"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Page",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-282"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Page"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Event",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents any kind of event."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-283",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Event"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Event",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-283"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ObjectProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Event"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Place",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Represents a logical or physical location. See 5.3 Representing Places for additional information."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-284",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Place"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Place",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-284"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_PlaceProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Place"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Mention",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A specialized Link that represents an @mention."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-285",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Mention"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Mention",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-285"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_LinkProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Mention"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Profile",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A Profile is a content object that describes another Object, typically used to describe Actor Type objects. The describes property is used to reference the object being described by the profile."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-286",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Profile"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Profile",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-286"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_ProfileProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Profile"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Tombstone",
+    "@type": [
+      "http://www.w3.org/ns/shacl#Node"
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A Tombstone represents a content object that has been deleted. It can be used in Collections to signify that there used to be an object at this position, but it has been deleted."
+      }
+    ]
+  },
+  {
+    "@id": "_:n3-287",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Tombstone"
+      }
+    ]
+  },
+  {
+    "@id": "https://shapes.activitypods.org/shapes/activitystreams#Tombstone",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n3-287"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "_:b0_TombstoneProperties"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Tombstone"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "name": "@activitypods/shape-definitions",
+  "version": "0.0.1",
+  "description": "Types generated from the ActivityPods shape repository",
+  "repository": "https://github.com/activitypods/shapes",
+  "license": "Apache-2.0",
+  "author": "Virtual Assembly",
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn build:shapes && yarn build:publish",
+    "build:shapes": "node scripts/build-shapes.ts",
+    "build:publish": "yalc publish --push --changed"
+  },
+  "devDependencies": {
+    "rdf-transform": "^1.3.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./shapes/jsonld": {
+      "import": "./generated/jsonld/shapes/index.mjs",
+      "require": "./generated/jsonld/shapes/index.cjs"
+    },
+    "./shapes/turtle": {
+      "import": "./generated/ttl/shapes/index.mjs",
+      "require": "./generated/ttl/shapes/index.cjs"
+    },
+    "./shapetrees/jsonld": {
+      "import": "./generated/jsonld/shapetrees/index.mjs",
+      "require": "./generated/jsonld/shapetrees/index.cjs"
+    },
+    "./shapetrees/turtle": {
+      "import": "./generated/ttl/shapetrees/index.mjs",
+      "require": "./generated/ttl/shapetrees/index.cjs"
+    }
+  }
+}

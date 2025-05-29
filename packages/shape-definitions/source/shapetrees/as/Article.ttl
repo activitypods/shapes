@@ -1,0 +1,10 @@
+PREFIX : <>
+PREFIX st: <http://www.w3.org/ns/shapetrees#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX as: <https://www.w3.org/ns/activitystreams#>
+
+:Article
+  a st:ShapeTree ;
+  st:expectsType st:Resource ;
+  st:shape <../../shapes/activitypub#Article> ;
+  skos:prefLabel "Articles"@en, "Articles"@fr .

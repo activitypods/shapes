@@ -1,0 +1,13 @@
+[
+  {
+    "@id": "Profile",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Profile"
+      }
+    ]
+  }
+]
