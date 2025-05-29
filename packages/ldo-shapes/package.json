@@ -5,10 +5,17 @@
   "repository": "https://github.com/activitypods/shapes",
   "license": "Apache-2.0",
   "author": "Virtual Assembly",
+  "keywords": [
+    "rdf",
+    "schema",
+    "shapes",
+    "ldo"
+  ],
   "type": "module",
   "source": "index.ts",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
+  "sideEffects": false,
   "scripts": {
     "build": "yarn build:ldo && yarn build:ldo-indexes && yarn build:transpile ",
     "build:ldo": "bash scripts/list-ldo-dirs.sh | while read -r input output; do ldo build --input \"$input\" --output \"$output\"; done",

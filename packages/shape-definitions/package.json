@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "Types generated from the ActivityPods shape repository",
   "repository": "https://github.com/activitypods/shapes",
+  "keywords": [
+    "rdf",
+    "schema",
+    "shapes",
+    "shapetrees"
+  ],
   "license": "Apache-2.0",
   "author": "Virtual Assembly",
   "sideEffects": false,
