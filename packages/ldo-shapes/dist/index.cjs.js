@@ -19,16 +19,16 @@ function $parcel$exportWildcard(dest, source) {
 function $parcel$export(e, n, v, s) {
   Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
 }
-var $3fd42e7ba4a216b6$exports = {};
+var $4ab69864c18ce8f1$exports = {};
 
-$parcel$export($3fd42e7ba4a216b6$exports, "shapes", () => $3fd42e7ba4a216b6$re_export$shapes);
-/** Nested shape-import */ var $40fc03b76cce2cb4$exports = {};
+$parcel$export($4ab69864c18ce8f1$exports, "shapes", () => $4ab69864c18ce8f1$re_export$shapes);
+/** Nested shape-import */ var $2661a8d00834231b$exports = {};
 
-$parcel$export($40fc03b76cce2cb4$exports, "solid", () => $40fc03b76cce2cb4$re_export$solid);
-var $aeeccf19fafb51b6$exports = {};
+$parcel$export($2661a8d00834231b$exports, "solid", () => $2661a8d00834231b$re_export$solid);
+var $eb5f831e0bb7d686$exports = {};
 
-$parcel$export($aeeccf19fafb51b6$exports, "activitystreamsContext", () => $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c);
-const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
+$parcel$export($eb5f831e0bb7d686$exports, "activitystreamsContext", () => $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c);
+const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
     type: {
         "@id": "@type"
     },
@@ -1049,10 +1049,10 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
 };
 
 
-var $5a51491c579929c5$exports = {};
+var $f770439b14f0edea$exports = {};
 
-$parcel$export($5a51491c579929c5$exports, "activitystreamsSchema", () => $5a51491c579929c5$export$d7dff8426c1f1d2);
-const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
+$parcel$export($f770439b14f0edea$exports, "activitystreamsSchema", () => $f770439b14f0edea$export$d7dff8426c1f1d2);
+const $f770439b14f0edea$export$d7dff8426c1f1d2 = {
     type: "Schema",
     shapes: [
         {
@@ -3079,344 +3079,344 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
 };
 
 
-var $75d228de1641f124$exports = {};
+var $69fbb77d6b36be6a$exports = {};
 
-$parcel$export($75d228de1641f124$exports, "ObjectShapeType", () => $75d228de1641f124$export$10ed4a6ea04a5da7);
-$parcel$export($75d228de1641f124$exports, "LinkShapeType", () => $75d228de1641f124$export$711627bf7900d47a);
-$parcel$export($75d228de1641f124$exports, "ActivityShapeType", () => $75d228de1641f124$export$4f551c247294b576);
-$parcel$export($75d228de1641f124$exports, "IntransitiveActivityShapeType", () => $75d228de1641f124$export$8278f0ce2855ac11);
-$parcel$export($75d228de1641f124$exports, "CollectionShapeType", () => $75d228de1641f124$export$8d488253d594ee88);
-$parcel$export($75d228de1641f124$exports, "OrderedCollectionShapeType", () => $75d228de1641f124$export$f52b300449df2b3f);
-$parcel$export($75d228de1641f124$exports, "CollectionPageShapeType", () => $75d228de1641f124$export$464d3b3aa39764d1);
-$parcel$export($75d228de1641f124$exports, "OrderedCollectionPageShapeType", () => $75d228de1641f124$export$27ca8464d8ec16cf);
-$parcel$export($75d228de1641f124$exports, "AcceptShapeType", () => $75d228de1641f124$export$373b0e733f6a58a9);
-$parcel$export($75d228de1641f124$exports, "AddShapeType", () => $75d228de1641f124$export$4b1e2013a5b1e29e);
-$parcel$export($75d228de1641f124$exports, "CreateShapeType", () => $75d228de1641f124$export$53bb2f00039d84cd);
-$parcel$export($75d228de1641f124$exports, "DeleteShapeType", () => $75d228de1641f124$export$b326dbb26970afbb);
-$parcel$export($75d228de1641f124$exports, "FollowShapeType", () => $75d228de1641f124$export$b7576cccedad952c);
-$parcel$export($75d228de1641f124$exports, "IgnoreShapeType", () => $75d228de1641f124$export$c56d9a370d377517);
-$parcel$export($75d228de1641f124$exports, "JoinShapeType", () => $75d228de1641f124$export$40423390495346df);
-$parcel$export($75d228de1641f124$exports, "LeaveShapeType", () => $75d228de1641f124$export$814450a210b872b7);
-$parcel$export($75d228de1641f124$exports, "LikeShapeType", () => $75d228de1641f124$export$967d64d7dc043cb3);
-$parcel$export($75d228de1641f124$exports, "OfferShapeType", () => $75d228de1641f124$export$76d5a5ef5adfa81c);
-$parcel$export($75d228de1641f124$exports, "InviteShapeType", () => $75d228de1641f124$export$c7b35596bbddaa36);
-$parcel$export($75d228de1641f124$exports, "RejectShapeType", () => $75d228de1641f124$export$98dd8636ee1b2027);
-$parcel$export($75d228de1641f124$exports, "TentativeRejectShapeType", () => $75d228de1641f124$export$f210c874e8a67e08);
-$parcel$export($75d228de1641f124$exports, "RemoveShapeType", () => $75d228de1641f124$export$8eb62a16c5dd25f1);
-$parcel$export($75d228de1641f124$exports, "UndoShapeType", () => $75d228de1641f124$export$8e0e70e5cd971414);
-$parcel$export($75d228de1641f124$exports, "UpdateShapeType", () => $75d228de1641f124$export$7a8532a8272b8fe9);
-$parcel$export($75d228de1641f124$exports, "ViewShapeType", () => $75d228de1641f124$export$86f046b31e9d598a);
-$parcel$export($75d228de1641f124$exports, "ListenShapeType", () => $75d228de1641f124$export$8392660fa310a61e);
-$parcel$export($75d228de1641f124$exports, "ReadShapeType", () => $75d228de1641f124$export$4aadace30e70896c);
-$parcel$export($75d228de1641f124$exports, "MoveShapeType", () => $75d228de1641f124$export$9de1cbd05aa4e4a2);
-$parcel$export($75d228de1641f124$exports, "AnnounceShapeType", () => $75d228de1641f124$export$6a65061ecd1ed015);
-$parcel$export($75d228de1641f124$exports, "FlagShapeType", () => $75d228de1641f124$export$772907b34ccd38da);
-$parcel$export($75d228de1641f124$exports, "DislikeShapeType", () => $75d228de1641f124$export$6280f1022b022237);
-$parcel$export($75d228de1641f124$exports, "ArriveShapeType", () => $75d228de1641f124$export$dc3522f479d91405);
-$parcel$export($75d228de1641f124$exports, "TravelShapeType", () => $75d228de1641f124$export$1a4b6fd809c5438);
-$parcel$export($75d228de1641f124$exports, "QuestionShapeType", () => $75d228de1641f124$export$eac099d4a1b658a2);
-$parcel$export($75d228de1641f124$exports, "TentativeAcceptShapeType", () => $75d228de1641f124$export$e44d01b2a5be2258);
-$parcel$export($75d228de1641f124$exports, "BlockShapeType", () => $75d228de1641f124$export$8a55b09e07eee057);
-$parcel$export($75d228de1641f124$exports, "ApplicationShapeType", () => $75d228de1641f124$export$7eb06d840cd48ae1);
-$parcel$export($75d228de1641f124$exports, "GroupShapeType", () => $75d228de1641f124$export$cfa2681679f25fd);
-$parcel$export($75d228de1641f124$exports, "OrganizationShapeType", () => $75d228de1641f124$export$7d3c4a9772d49f4b);
-$parcel$export($75d228de1641f124$exports, "PersonShapeType", () => $75d228de1641f124$export$5f641edbe0260f3);
-$parcel$export($75d228de1641f124$exports, "ServiceShapeType", () => $75d228de1641f124$export$2167ff40709826a7);
-$parcel$export($75d228de1641f124$exports, "RelationshipShapeType", () => $75d228de1641f124$export$9ce6e99fcca40947);
-$parcel$export($75d228de1641f124$exports, "DocumentShapeType", () => $75d228de1641f124$export$567343fec6bc2c67);
-$parcel$export($75d228de1641f124$exports, "ArticleShapeType", () => $75d228de1641f124$export$e95d69cde7699941);
-$parcel$export($75d228de1641f124$exports, "AudioShapeType", () => $75d228de1641f124$export$98a873e8b95d6baf);
-$parcel$export($75d228de1641f124$exports, "ImageShapeType", () => $75d228de1641f124$export$dea7974d2ab9d5f9);
-$parcel$export($75d228de1641f124$exports, "VideoShapeType", () => $75d228de1641f124$export$4df0c0c211bb75ea);
-$parcel$export($75d228de1641f124$exports, "NoteShapeType", () => $75d228de1641f124$export$8d5a952ef4e9f114);
-$parcel$export($75d228de1641f124$exports, "PageShapeType", () => $75d228de1641f124$export$899495320525d3ad);
-$parcel$export($75d228de1641f124$exports, "EventShapeType", () => $75d228de1641f124$export$53e4cd7400e6ee51);
-$parcel$export($75d228de1641f124$exports, "PlaceShapeType", () => $75d228de1641f124$export$ab061787a3ad797b);
-$parcel$export($75d228de1641f124$exports, "MentionShapeType", () => $75d228de1641f124$export$57b2cf11a29eb701);
-$parcel$export($75d228de1641f124$exports, "ProfileShapeType", () => $75d228de1641f124$export$84c06d7a4d4dca59);
-$parcel$export($75d228de1641f124$exports, "TombstoneShapeType", () => $75d228de1641f124$export$d4c5034320ad7d23);
+$parcel$export($69fbb77d6b36be6a$exports, "ObjectShapeType", () => $69fbb77d6b36be6a$export$10ed4a6ea04a5da7);
+$parcel$export($69fbb77d6b36be6a$exports, "LinkShapeType", () => $69fbb77d6b36be6a$export$711627bf7900d47a);
+$parcel$export($69fbb77d6b36be6a$exports, "ActivityShapeType", () => $69fbb77d6b36be6a$export$4f551c247294b576);
+$parcel$export($69fbb77d6b36be6a$exports, "IntransitiveActivityShapeType", () => $69fbb77d6b36be6a$export$8278f0ce2855ac11);
+$parcel$export($69fbb77d6b36be6a$exports, "CollectionShapeType", () => $69fbb77d6b36be6a$export$8d488253d594ee88);
+$parcel$export($69fbb77d6b36be6a$exports, "OrderedCollectionShapeType", () => $69fbb77d6b36be6a$export$f52b300449df2b3f);
+$parcel$export($69fbb77d6b36be6a$exports, "CollectionPageShapeType", () => $69fbb77d6b36be6a$export$464d3b3aa39764d1);
+$parcel$export($69fbb77d6b36be6a$exports, "OrderedCollectionPageShapeType", () => $69fbb77d6b36be6a$export$27ca8464d8ec16cf);
+$parcel$export($69fbb77d6b36be6a$exports, "AcceptShapeType", () => $69fbb77d6b36be6a$export$373b0e733f6a58a9);
+$parcel$export($69fbb77d6b36be6a$exports, "AddShapeType", () => $69fbb77d6b36be6a$export$4b1e2013a5b1e29e);
+$parcel$export($69fbb77d6b36be6a$exports, "CreateShapeType", () => $69fbb77d6b36be6a$export$53bb2f00039d84cd);
+$parcel$export($69fbb77d6b36be6a$exports, "DeleteShapeType", () => $69fbb77d6b36be6a$export$b326dbb26970afbb);
+$parcel$export($69fbb77d6b36be6a$exports, "FollowShapeType", () => $69fbb77d6b36be6a$export$b7576cccedad952c);
+$parcel$export($69fbb77d6b36be6a$exports, "IgnoreShapeType", () => $69fbb77d6b36be6a$export$c56d9a370d377517);
+$parcel$export($69fbb77d6b36be6a$exports, "JoinShapeType", () => $69fbb77d6b36be6a$export$40423390495346df);
+$parcel$export($69fbb77d6b36be6a$exports, "LeaveShapeType", () => $69fbb77d6b36be6a$export$814450a210b872b7);
+$parcel$export($69fbb77d6b36be6a$exports, "LikeShapeType", () => $69fbb77d6b36be6a$export$967d64d7dc043cb3);
+$parcel$export($69fbb77d6b36be6a$exports, "OfferShapeType", () => $69fbb77d6b36be6a$export$76d5a5ef5adfa81c);
+$parcel$export($69fbb77d6b36be6a$exports, "InviteShapeType", () => $69fbb77d6b36be6a$export$c7b35596bbddaa36);
+$parcel$export($69fbb77d6b36be6a$exports, "RejectShapeType", () => $69fbb77d6b36be6a$export$98dd8636ee1b2027);
+$parcel$export($69fbb77d6b36be6a$exports, "TentativeRejectShapeType", () => $69fbb77d6b36be6a$export$f210c874e8a67e08);
+$parcel$export($69fbb77d6b36be6a$exports, "RemoveShapeType", () => $69fbb77d6b36be6a$export$8eb62a16c5dd25f1);
+$parcel$export($69fbb77d6b36be6a$exports, "UndoShapeType", () => $69fbb77d6b36be6a$export$8e0e70e5cd971414);
+$parcel$export($69fbb77d6b36be6a$exports, "UpdateShapeType", () => $69fbb77d6b36be6a$export$7a8532a8272b8fe9);
+$parcel$export($69fbb77d6b36be6a$exports, "ViewShapeType", () => $69fbb77d6b36be6a$export$86f046b31e9d598a);
+$parcel$export($69fbb77d6b36be6a$exports, "ListenShapeType", () => $69fbb77d6b36be6a$export$8392660fa310a61e);
+$parcel$export($69fbb77d6b36be6a$exports, "ReadShapeType", () => $69fbb77d6b36be6a$export$4aadace30e70896c);
+$parcel$export($69fbb77d6b36be6a$exports, "MoveShapeType", () => $69fbb77d6b36be6a$export$9de1cbd05aa4e4a2);
+$parcel$export($69fbb77d6b36be6a$exports, "AnnounceShapeType", () => $69fbb77d6b36be6a$export$6a65061ecd1ed015);
+$parcel$export($69fbb77d6b36be6a$exports, "FlagShapeType", () => $69fbb77d6b36be6a$export$772907b34ccd38da);
+$parcel$export($69fbb77d6b36be6a$exports, "DislikeShapeType", () => $69fbb77d6b36be6a$export$6280f1022b022237);
+$parcel$export($69fbb77d6b36be6a$exports, "ArriveShapeType", () => $69fbb77d6b36be6a$export$dc3522f479d91405);
+$parcel$export($69fbb77d6b36be6a$exports, "TravelShapeType", () => $69fbb77d6b36be6a$export$1a4b6fd809c5438);
+$parcel$export($69fbb77d6b36be6a$exports, "QuestionShapeType", () => $69fbb77d6b36be6a$export$eac099d4a1b658a2);
+$parcel$export($69fbb77d6b36be6a$exports, "TentativeAcceptShapeType", () => $69fbb77d6b36be6a$export$e44d01b2a5be2258);
+$parcel$export($69fbb77d6b36be6a$exports, "BlockShapeType", () => $69fbb77d6b36be6a$export$8a55b09e07eee057);
+$parcel$export($69fbb77d6b36be6a$exports, "ApplicationShapeType", () => $69fbb77d6b36be6a$export$7eb06d840cd48ae1);
+$parcel$export($69fbb77d6b36be6a$exports, "GroupShapeType", () => $69fbb77d6b36be6a$export$cfa2681679f25fd);
+$parcel$export($69fbb77d6b36be6a$exports, "OrganizationShapeType", () => $69fbb77d6b36be6a$export$7d3c4a9772d49f4b);
+$parcel$export($69fbb77d6b36be6a$exports, "PersonShapeType", () => $69fbb77d6b36be6a$export$5f641edbe0260f3);
+$parcel$export($69fbb77d6b36be6a$exports, "ServiceShapeType", () => $69fbb77d6b36be6a$export$2167ff40709826a7);
+$parcel$export($69fbb77d6b36be6a$exports, "RelationshipShapeType", () => $69fbb77d6b36be6a$export$9ce6e99fcca40947);
+$parcel$export($69fbb77d6b36be6a$exports, "DocumentShapeType", () => $69fbb77d6b36be6a$export$567343fec6bc2c67);
+$parcel$export($69fbb77d6b36be6a$exports, "ArticleShapeType", () => $69fbb77d6b36be6a$export$e95d69cde7699941);
+$parcel$export($69fbb77d6b36be6a$exports, "AudioShapeType", () => $69fbb77d6b36be6a$export$98a873e8b95d6baf);
+$parcel$export($69fbb77d6b36be6a$exports, "ImageShapeType", () => $69fbb77d6b36be6a$export$dea7974d2ab9d5f9);
+$parcel$export($69fbb77d6b36be6a$exports, "VideoShapeType", () => $69fbb77d6b36be6a$export$4df0c0c211bb75ea);
+$parcel$export($69fbb77d6b36be6a$exports, "NoteShapeType", () => $69fbb77d6b36be6a$export$8d5a952ef4e9f114);
+$parcel$export($69fbb77d6b36be6a$exports, "PageShapeType", () => $69fbb77d6b36be6a$export$899495320525d3ad);
+$parcel$export($69fbb77d6b36be6a$exports, "EventShapeType", () => $69fbb77d6b36be6a$export$53e4cd7400e6ee51);
+$parcel$export($69fbb77d6b36be6a$exports, "PlaceShapeType", () => $69fbb77d6b36be6a$export$ab061787a3ad797b);
+$parcel$export($69fbb77d6b36be6a$exports, "MentionShapeType", () => $69fbb77d6b36be6a$export$57b2cf11a29eb701);
+$parcel$export($69fbb77d6b36be6a$exports, "ProfileShapeType", () => $69fbb77d6b36be6a$export$84c06d7a4d4dca59);
+$parcel$export($69fbb77d6b36be6a$exports, "TombstoneShapeType", () => $69fbb77d6b36be6a$export$d4c5034320ad7d23);
 
 
-const $75d228de1641f124$export$10ed4a6ea04a5da7 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$10ed4a6ea04a5da7 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Object",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$711627bf7900d47a = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$711627bf7900d47a = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Link",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$4f551c247294b576 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$4f551c247294b576 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Activity",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$8278f0ce2855ac11 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$8278f0ce2855ac11 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$8d488253d594ee88 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$8d488253d594ee88 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Collection",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$f52b300449df2b3f = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$f52b300449df2b3f = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$464d3b3aa39764d1 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$464d3b3aa39764d1 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#CollectionPage",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$27ca8464d8ec16cf = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$27ca8464d8ec16cf = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollectionPage",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$373b0e733f6a58a9 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$373b0e733f6a58a9 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Accept",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$4b1e2013a5b1e29e = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$4b1e2013a5b1e29e = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Add",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$53bb2f00039d84cd = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$53bb2f00039d84cd = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Create",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$b326dbb26970afbb = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$b326dbb26970afbb = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Delete",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$b7576cccedad952c = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$b7576cccedad952c = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Follow",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$c56d9a370d377517 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$c56d9a370d377517 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Ignore",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$40423390495346df = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$40423390495346df = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Join",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$814450a210b872b7 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$814450a210b872b7 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Leave",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$967d64d7dc043cb3 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$967d64d7dc043cb3 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Like",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$76d5a5ef5adfa81c = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$76d5a5ef5adfa81c = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Offer",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$c7b35596bbddaa36 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$c7b35596bbddaa36 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Invite",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$98dd8636ee1b2027 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$98dd8636ee1b2027 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Reject",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$f210c874e8a67e08 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$f210c874e8a67e08 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#TentativeReject",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$8eb62a16c5dd25f1 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$8eb62a16c5dd25f1 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Remove",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$8e0e70e5cd971414 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$8e0e70e5cd971414 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Undo",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$7a8532a8272b8fe9 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$7a8532a8272b8fe9 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Update",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$86f046b31e9d598a = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$86f046b31e9d598a = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#View",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$8392660fa310a61e = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$8392660fa310a61e = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Listen",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$4aadace30e70896c = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$4aadace30e70896c = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Read",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$9de1cbd05aa4e4a2 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$9de1cbd05aa4e4a2 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Move",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$6a65061ecd1ed015 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$6a65061ecd1ed015 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Announce",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$772907b34ccd38da = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$772907b34ccd38da = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Flag",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$6280f1022b022237 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$6280f1022b022237 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Dislike",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$dc3522f479d91405 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$dc3522f479d91405 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Arrive",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$1a4b6fd809c5438 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$1a4b6fd809c5438 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Travel",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$eac099d4a1b658a2 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$eac099d4a1b658a2 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Question",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$e44d01b2a5be2258 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$e44d01b2a5be2258 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#TentativeAccept",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$8a55b09e07eee057 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$8a55b09e07eee057 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Block",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$7eb06d840cd48ae1 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$7eb06d840cd48ae1 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Application",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$cfa2681679f25fd = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$cfa2681679f25fd = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Group",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$7d3c4a9772d49f4b = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$7d3c4a9772d49f4b = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Organization",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$5f641edbe0260f3 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$5f641edbe0260f3 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Person",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$2167ff40709826a7 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$2167ff40709826a7 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Service",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$9ce6e99fcca40947 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$9ce6e99fcca40947 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Relationship",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$567343fec6bc2c67 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$567343fec6bc2c67 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Document",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$e95d69cde7699941 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$e95d69cde7699941 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Article",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$98a873e8b95d6baf = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$98a873e8b95d6baf = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Audio",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$dea7974d2ab9d5f9 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$dea7974d2ab9d5f9 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Image",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$4df0c0c211bb75ea = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$4df0c0c211bb75ea = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Video",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$8d5a952ef4e9f114 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$8d5a952ef4e9f114 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Note",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$899495320525d3ad = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$899495320525d3ad = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Page",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$53e4cd7400e6ee51 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$53e4cd7400e6ee51 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Event",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$ab061787a3ad797b = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$ab061787a3ad797b = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Place",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$57b2cf11a29eb701 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$57b2cf11a29eb701 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Mention",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$84c06d7a4d4dca59 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$84c06d7a4d4dca59 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Profile",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$d4c5034320ad7d23 = {
-    schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
+const $69fbb77d6b36be6a$export$d4c5034320ad7d23 = {
+    schema: (0, $f770439b14f0edea$export$d7dff8426c1f1d2),
     shape: "https://shapes.activitypods.org/shapes/activitystreams#Tombstone",
-    context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
+    context: (0, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c)
 };
 
 
-var $edcd6a486bf8a25d$exports = {};
+var $777de797be3fa128$exports = {};
 
 
-var $af4281d770155332$exports = {};
-var $bdf273e33df436ba$exports = {};
+var $fd9d03fdb37974ab$exports = {};
+var $f5da5fe4bb3a5c60$exports = {};
 
-$parcel$export($bdf273e33df436ba$exports, "SolidNotificationContext", () => $bdf273e33df436ba$export$6cb580950f960f8);
-const $bdf273e33df436ba$export$6cb580950f960f8 = {
+$parcel$export($f5da5fe4bb3a5c60$exports, "SolidNotificationContext", () => $f5da5fe4bb3a5c60$export$6cb580950f960f8);
+const $f5da5fe4bb3a5c60$export$6cb580950f960f8 = {
     id: {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#id",
         "@type": "@id"
@@ -3498,10 +3498,10 @@ const $bdf273e33df436ba$export$6cb580950f960f8 = {
 };
 
 
-var $9d2c08eaaf44c215$exports = {};
+var $3278b757a0226216$exports = {};
 
-$parcel$export($9d2c08eaaf44c215$exports, "SolidNotificationSchema", () => $9d2c08eaaf44c215$export$ea6652556b7356f);
-const $9d2c08eaaf44c215$export$ea6652556b7356f = {
+$parcel$export($3278b757a0226216$exports, "SolidNotificationSchema", () => $3278b757a0226216$export$ea6652556b7356f);
+const $3278b757a0226216$export$ea6652556b7356f = {
     type: "Schema",
     shapes: [
         {
@@ -3770,56 +3770,56 @@ const $9d2c08eaaf44c215$export$ea6652556b7356f = {
 };
 
 
-var $81f9fc733a8124f9$exports = {};
+var $0c862ea91c28280b$exports = {};
 
-$parcel$export($81f9fc733a8124f9$exports, "DescriptionResourceShapeType", () => $81f9fc733a8124f9$export$51daf0a9e553c5b3);
-$parcel$export($81f9fc733a8124f9$exports, "SubscriptionServiceShapeType", () => $81f9fc733a8124f9$export$9e1b4131740fbe8);
-$parcel$export($81f9fc733a8124f9$exports, "NotificationChannelShapeType", () => $81f9fc733a8124f9$export$852cddb4525b12fc);
-$parcel$export($81f9fc733a8124f9$exports, "NotificationMessageShapeType", () => $81f9fc733a8124f9$export$4426abcac492061f);
+$parcel$export($0c862ea91c28280b$exports, "DescriptionResourceShapeType", () => $0c862ea91c28280b$export$51daf0a9e553c5b3);
+$parcel$export($0c862ea91c28280b$exports, "SubscriptionServiceShapeType", () => $0c862ea91c28280b$export$9e1b4131740fbe8);
+$parcel$export($0c862ea91c28280b$exports, "NotificationChannelShapeType", () => $0c862ea91c28280b$export$852cddb4525b12fc);
+$parcel$export($0c862ea91c28280b$exports, "NotificationMessageShapeType", () => $0c862ea91c28280b$export$4426abcac492061f);
 
 
-const $81f9fc733a8124f9$export$51daf0a9e553c5b3 = {
-    schema: (0, $9d2c08eaaf44c215$export$ea6652556b7356f),
+const $0c862ea91c28280b$export$51daf0a9e553c5b3 = {
+    schema: (0, $3278b757a0226216$export$ea6652556b7356f),
     shape: "https://shapes.activitypods.org/v2/shapes/solid#DescriptionResource",
-    context: (0, $bdf273e33df436ba$export$6cb580950f960f8)
+    context: (0, $f5da5fe4bb3a5c60$export$6cb580950f960f8)
 };
-const $81f9fc733a8124f9$export$9e1b4131740fbe8 = {
-    schema: (0, $9d2c08eaaf44c215$export$ea6652556b7356f),
+const $0c862ea91c28280b$export$9e1b4131740fbe8 = {
+    schema: (0, $3278b757a0226216$export$ea6652556b7356f),
     shape: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionService",
-    context: (0, $bdf273e33df436ba$export$6cb580950f960f8)
+    context: (0, $f5da5fe4bb3a5c60$export$6cb580950f960f8)
 };
-const $81f9fc733a8124f9$export$852cddb4525b12fc = {
-    schema: (0, $9d2c08eaaf44c215$export$ea6652556b7356f),
+const $0c862ea91c28280b$export$852cddb4525b12fc = {
+    schema: (0, $3278b757a0226216$export$ea6652556b7356f),
     shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannel",
-    context: (0, $bdf273e33df436ba$export$6cb580950f960f8)
+    context: (0, $f5da5fe4bb3a5c60$export$6cb580950f960f8)
 };
-const $81f9fc733a8124f9$export$4426abcac492061f = {
-    schema: (0, $9d2c08eaaf44c215$export$ea6652556b7356f),
+const $0c862ea91c28280b$export$4426abcac492061f = {
+    schema: (0, $3278b757a0226216$export$ea6652556b7356f),
     shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessage",
-    context: (0, $bdf273e33df436ba$export$6cb580950f960f8)
+    context: (0, $f5da5fe4bb3a5c60$export$6cb580950f960f8)
 };
 
 
-var $b60e4fc21753ff26$exports = {};
+var $6f219be4d69e7ce6$exports = {};
 
 
-$parcel$exportWildcard($af4281d770155332$exports, $bdf273e33df436ba$exports);
-$parcel$exportWildcard($af4281d770155332$exports, $9d2c08eaaf44c215$exports);
-$parcel$exportWildcard($af4281d770155332$exports, $81f9fc733a8124f9$exports);
-$parcel$exportWildcard($af4281d770155332$exports, $b60e4fc21753ff26$exports);
+$parcel$exportWildcard($fd9d03fdb37974ab$exports, $f5da5fe4bb3a5c60$exports);
+$parcel$exportWildcard($fd9d03fdb37974ab$exports, $3278b757a0226216$exports);
+$parcel$exportWildcard($fd9d03fdb37974ab$exports, $0c862ea91c28280b$exports);
+$parcel$exportWildcard($fd9d03fdb37974ab$exports, $6f219be4d69e7ce6$exports);
 
 
-$parcel$exportWildcard($40fc03b76cce2cb4$exports, $af4281d770155332$exports);
-$parcel$exportWildcard($40fc03b76cce2cb4$exports, $aeeccf19fafb51b6$exports);
-$parcel$exportWildcard($40fc03b76cce2cb4$exports, $5a51491c579929c5$exports);
-$parcel$exportWildcard($40fc03b76cce2cb4$exports, $75d228de1641f124$exports);
-$parcel$exportWildcard($40fc03b76cce2cb4$exports, $edcd6a486bf8a25d$exports);
+$parcel$exportWildcard($2661a8d00834231b$exports, $eb5f831e0bb7d686$exports);
+$parcel$exportWildcard($2661a8d00834231b$exports, $f770439b14f0edea$exports);
+$parcel$exportWildcard($2661a8d00834231b$exports, $69fbb77d6b36be6a$exports);
+$parcel$exportWildcard($2661a8d00834231b$exports, $777de797be3fa128$exports);
+$parcel$exportWildcard($2661a8d00834231b$exports, $fd9d03fdb37974ab$exports);
 
 
-$parcel$exportWildcard($3fd42e7ba4a216b6$exports, $40fc03b76cce2cb4$exports);
+$parcel$exportWildcard($4ab69864c18ce8f1$exports, $2661a8d00834231b$exports);
 
 
 
 
-export {$3fd42e7ba4a216b6$re_export$shapes as shapes, $40fc03b76cce2cb4$re_export$solid as solid, $bdf273e33df436ba$export$6cb580950f960f8 as SolidNotificationContext, $9d2c08eaaf44c215$export$ea6652556b7356f as SolidNotificationSchema, $81f9fc733a8124f9$export$51daf0a9e553c5b3 as DescriptionResourceShapeType, $81f9fc733a8124f9$export$9e1b4131740fbe8 as SubscriptionServiceShapeType, $81f9fc733a8124f9$export$852cddb4525b12fc as NotificationChannelShapeType, $81f9fc733a8124f9$export$4426abcac492061f as NotificationMessageShapeType, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c as activitystreamsContext, $5a51491c579929c5$export$d7dff8426c1f1d2 as activitystreamsSchema, $75d228de1641f124$export$10ed4a6ea04a5da7 as ObjectShapeType, $75d228de1641f124$export$711627bf7900d47a as LinkShapeType, $75d228de1641f124$export$4f551c247294b576 as ActivityShapeType, $75d228de1641f124$export$8278f0ce2855ac11 as IntransitiveActivityShapeType, $75d228de1641f124$export$8d488253d594ee88 as CollectionShapeType, $75d228de1641f124$export$f52b300449df2b3f as OrderedCollectionShapeType, $75d228de1641f124$export$464d3b3aa39764d1 as CollectionPageShapeType, $75d228de1641f124$export$27ca8464d8ec16cf as OrderedCollectionPageShapeType, $75d228de1641f124$export$373b0e733f6a58a9 as AcceptShapeType, $75d228de1641f124$export$4b1e2013a5b1e29e as AddShapeType, $75d228de1641f124$export$53bb2f00039d84cd as CreateShapeType, $75d228de1641f124$export$b326dbb26970afbb as DeleteShapeType, $75d228de1641f124$export$b7576cccedad952c as FollowShapeType, $75d228de1641f124$export$c56d9a370d377517 as IgnoreShapeType, $75d228de1641f124$export$40423390495346df as JoinShapeType, $75d228de1641f124$export$814450a210b872b7 as LeaveShapeType, $75d228de1641f124$export$967d64d7dc043cb3 as LikeShapeType, $75d228de1641f124$export$76d5a5ef5adfa81c as OfferShapeType, $75d228de1641f124$export$c7b35596bbddaa36 as InviteShapeType, $75d228de1641f124$export$98dd8636ee1b2027 as RejectShapeType, $75d228de1641f124$export$f210c874e8a67e08 as TentativeRejectShapeType, $75d228de1641f124$export$8eb62a16c5dd25f1 as RemoveShapeType, $75d228de1641f124$export$8e0e70e5cd971414 as UndoShapeType, $75d228de1641f124$export$7a8532a8272b8fe9 as UpdateShapeType, $75d228de1641f124$export$86f046b31e9d598a as ViewShapeType, $75d228de1641f124$export$8392660fa310a61e as ListenShapeType, $75d228de1641f124$export$4aadace30e70896c as ReadShapeType, $75d228de1641f124$export$9de1cbd05aa4e4a2 as MoveShapeType, $75d228de1641f124$export$6a65061ecd1ed015 as AnnounceShapeType, $75d228de1641f124$export$772907b34ccd38da as FlagShapeType, $75d228de1641f124$export$6280f1022b022237 as DislikeShapeType, $75d228de1641f124$export$dc3522f479d91405 as ArriveShapeType, $75d228de1641f124$export$1a4b6fd809c5438 as TravelShapeType, $75d228de1641f124$export$eac099d4a1b658a2 as QuestionShapeType, $75d228de1641f124$export$e44d01b2a5be2258 as TentativeAcceptShapeType, $75d228de1641f124$export$8a55b09e07eee057 as BlockShapeType, $75d228de1641f124$export$7eb06d840cd48ae1 as ApplicationShapeType, $75d228de1641f124$export$cfa2681679f25fd as GroupShapeType, $75d228de1641f124$export$7d3c4a9772d49f4b as OrganizationShapeType, $75d228de1641f124$export$5f641edbe0260f3 as PersonShapeType, $75d228de1641f124$export$2167ff40709826a7 as ServiceShapeType, $75d228de1641f124$export$9ce6e99fcca40947 as RelationshipShapeType, $75d228de1641f124$export$567343fec6bc2c67 as DocumentShapeType, $75d228de1641f124$export$e95d69cde7699941 as ArticleShapeType, $75d228de1641f124$export$98a873e8b95d6baf as AudioShapeType, $75d228de1641f124$export$dea7974d2ab9d5f9 as ImageShapeType, $75d228de1641f124$export$4df0c0c211bb75ea as VideoShapeType, $75d228de1641f124$export$8d5a952ef4e9f114 as NoteShapeType, $75d228de1641f124$export$899495320525d3ad as PageShapeType, $75d228de1641f124$export$53e4cd7400e6ee51 as EventShapeType, $75d228de1641f124$export$ab061787a3ad797b as PlaceShapeType, $75d228de1641f124$export$57b2cf11a29eb701 as MentionShapeType, $75d228de1641f124$export$84c06d7a4d4dca59 as ProfileShapeType, $75d228de1641f124$export$d4c5034320ad7d23 as TombstoneShapeType};
+export {$4ab69864c18ce8f1$re_export$shapes as shapes, $2661a8d00834231b$re_export$solid as solid, $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c as activitystreamsContext, $f770439b14f0edea$export$d7dff8426c1f1d2 as activitystreamsSchema, $69fbb77d6b36be6a$export$10ed4a6ea04a5da7 as ObjectShapeType, $69fbb77d6b36be6a$export$711627bf7900d47a as LinkShapeType, $69fbb77d6b36be6a$export$4f551c247294b576 as ActivityShapeType, $69fbb77d6b36be6a$export$8278f0ce2855ac11 as IntransitiveActivityShapeType, $69fbb77d6b36be6a$export$8d488253d594ee88 as CollectionShapeType, $69fbb77d6b36be6a$export$f52b300449df2b3f as OrderedCollectionShapeType, $69fbb77d6b36be6a$export$464d3b3aa39764d1 as CollectionPageShapeType, $69fbb77d6b36be6a$export$27ca8464d8ec16cf as OrderedCollectionPageShapeType, $69fbb77d6b36be6a$export$373b0e733f6a58a9 as AcceptShapeType, $69fbb77d6b36be6a$export$4b1e2013a5b1e29e as AddShapeType, $69fbb77d6b36be6a$export$53bb2f00039d84cd as CreateShapeType, $69fbb77d6b36be6a$export$b326dbb26970afbb as DeleteShapeType, $69fbb77d6b36be6a$export$b7576cccedad952c as FollowShapeType, $69fbb77d6b36be6a$export$c56d9a370d377517 as IgnoreShapeType, $69fbb77d6b36be6a$export$40423390495346df as JoinShapeType, $69fbb77d6b36be6a$export$814450a210b872b7 as LeaveShapeType, $69fbb77d6b36be6a$export$967d64d7dc043cb3 as LikeShapeType, $69fbb77d6b36be6a$export$76d5a5ef5adfa81c as OfferShapeType, $69fbb77d6b36be6a$export$c7b35596bbddaa36 as InviteShapeType, $69fbb77d6b36be6a$export$98dd8636ee1b2027 as RejectShapeType, $69fbb77d6b36be6a$export$f210c874e8a67e08 as TentativeRejectShapeType, $69fbb77d6b36be6a$export$8eb62a16c5dd25f1 as RemoveShapeType, $69fbb77d6b36be6a$export$8e0e70e5cd971414 as UndoShapeType, $69fbb77d6b36be6a$export$7a8532a8272b8fe9 as UpdateShapeType, $69fbb77d6b36be6a$export$86f046b31e9d598a as ViewShapeType, $69fbb77d6b36be6a$export$8392660fa310a61e as ListenShapeType, $69fbb77d6b36be6a$export$4aadace30e70896c as ReadShapeType, $69fbb77d6b36be6a$export$9de1cbd05aa4e4a2 as MoveShapeType, $69fbb77d6b36be6a$export$6a65061ecd1ed015 as AnnounceShapeType, $69fbb77d6b36be6a$export$772907b34ccd38da as FlagShapeType, $69fbb77d6b36be6a$export$6280f1022b022237 as DislikeShapeType, $69fbb77d6b36be6a$export$dc3522f479d91405 as ArriveShapeType, $69fbb77d6b36be6a$export$1a4b6fd809c5438 as TravelShapeType, $69fbb77d6b36be6a$export$eac099d4a1b658a2 as QuestionShapeType, $69fbb77d6b36be6a$export$e44d01b2a5be2258 as TentativeAcceptShapeType, $69fbb77d6b36be6a$export$8a55b09e07eee057 as BlockShapeType, $69fbb77d6b36be6a$export$7eb06d840cd48ae1 as ApplicationShapeType, $69fbb77d6b36be6a$export$cfa2681679f25fd as GroupShapeType, $69fbb77d6b36be6a$export$7d3c4a9772d49f4b as OrganizationShapeType, $69fbb77d6b36be6a$export$5f641edbe0260f3 as PersonShapeType, $69fbb77d6b36be6a$export$2167ff40709826a7 as ServiceShapeType, $69fbb77d6b36be6a$export$9ce6e99fcca40947 as RelationshipShapeType, $69fbb77d6b36be6a$export$567343fec6bc2c67 as DocumentShapeType, $69fbb77d6b36be6a$export$e95d69cde7699941 as ArticleShapeType, $69fbb77d6b36be6a$export$98a873e8b95d6baf as AudioShapeType, $69fbb77d6b36be6a$export$dea7974d2ab9d5f9 as ImageShapeType, $69fbb77d6b36be6a$export$4df0c0c211bb75ea as VideoShapeType, $69fbb77d6b36be6a$export$8d5a952ef4e9f114 as NoteShapeType, $69fbb77d6b36be6a$export$899495320525d3ad as PageShapeType, $69fbb77d6b36be6a$export$53e4cd7400e6ee51 as EventShapeType, $69fbb77d6b36be6a$export$ab061787a3ad797b as PlaceShapeType, $69fbb77d6b36be6a$export$57b2cf11a29eb701 as MentionShapeType, $69fbb77d6b36be6a$export$84c06d7a4d4dca59 as ProfileShapeType, $69fbb77d6b36be6a$export$d4c5034320ad7d23 as TombstoneShapeType, $f5da5fe4bb3a5c60$export$6cb580950f960f8 as SolidNotificationContext, $3278b757a0226216$export$ea6652556b7356f as SolidNotificationSchema, $0c862ea91c28280b$export$51daf0a9e553c5b3 as DescriptionResourceShapeType, $0c862ea91c28280b$export$9e1b4131740fbe8 as SubscriptionServiceShapeType, $0c862ea91c28280b$export$852cddb4525b12fc as NotificationChannelShapeType, $0c862ea91c28280b$export$4426abcac492061f as NotificationMessageShapeType};
 //# sourceMappingURL=index.cjs.js.map

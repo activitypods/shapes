@@ -1,2 +1,2 @@
-const SolidNotification_shacl = require('./SolidNotification.shacl.json');
-module.exports = { ...SolidNotification_shacl, SolidNotification_shacl };
+const SolidNotification = require('./SolidNotification.json');
+module.exports = { ...SolidNotification, SolidNotification };
