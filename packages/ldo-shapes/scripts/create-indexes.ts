@@ -55,10 +55,6 @@ async function generateIndexFiles(baseDir: string, ext: string) {
         );
       } else if (entry.endsWith(ext)) {
         // For files with the matching extension, add an export statement
-        // Create a valid JS identifier by removing the extension and replacing invalid chars
-        const exportName = path
-          .basename(entry, ext)
-          .replace(/[^a-zA-Z0-9_]/g, "_");
         exports.push(`export * from './${entry}';`);
       }
     }

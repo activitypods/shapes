@@ -1,4 +1,4 @@
-const Event = require('./Event.mjs');
-const Note = require('./Note.mjs');
-const Profile = require('./Profile.mjs');
+const Event = require('./Event.cjs');
+const Note = require('./Note.cjs');
+const Profile = require('./Profile.cjs');
 module.exports = { ...Event, Event, ...Note, Note, ...Profile, Profile };

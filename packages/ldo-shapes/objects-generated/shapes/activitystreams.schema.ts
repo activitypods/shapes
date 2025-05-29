@@ -9,7 +9,7 @@ export const activitystreamsSchema: Schema = {
   type: "Schema",
   shapes: [
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Object",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -21,68 +21,8 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Object",
+                values: ["https://www.w3.org/ns/activitystreams#Object"],
               },
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#attachment",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#attributedTo",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#audience",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#bcc",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#bto",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#cc",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -93,26 +33,6 @@ export const activitystreamsSchema: Schema = {
               },
               min: 0,
               max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#context",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#generator",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -127,26 +47,6 @@ export const activitystreamsSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#image",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#inReplyTo",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#location",
               valueExpr: {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
@@ -176,16 +76,6 @@ export const activitystreamsSchema: Schema = {
             },
             {
               type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#replies",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#summary",
               valueExpr: {
                 type: "NodeConstraint",
@@ -193,26 +83,6 @@ export const activitystreamsSchema: Schema = {
               },
               min: 0,
               max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#tag",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#to",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
-              min: 0,
-              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -240,16 +110,6 @@ export const activitystreamsSchema: Schema = {
               valueExpr: {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#dateTime",
-              },
-              min: 0,
-              max: 1,
-            },
-            {
-              type: "TripleConstraint",
-              predicate: "https://www.w3.org/ns/activitystreams#id",
-              valueExpr: {
-                type: "NodeConstraint",
-                nodeKind: "iri",
               },
               min: 0,
               max: 1,
@@ -294,12 +154,117 @@ export const activitystreamsSchema: Schema = {
               min: 0,
               max: 1,
             },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#attachment",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#attributedTo",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#audience",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#bcc",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#bto",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#cc",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#context",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#generator",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#inReplyTo",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#location",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#replies",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Collection",
+              min: 0,
+              max: 1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#tag",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
+            {
+              type: "TripleConstraint",
+              predicate: "https://www.w3.org/ns/activitystreams#to",
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
+              min: 0,
+              max: -1,
+            },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Link",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -408,10 +373,11 @@ export const activitystreamsSchema: Schema = {
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Activity",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -423,76 +389,65 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Activity",
+                values: ["https://www.w3.org/ns/activitystreams#Activity"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#actor",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#instrument",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#object",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#origin",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#result",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#target",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -504,17 +459,19 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype:
+                values: [
                   "https://www.w3.org/ns/activitystreams#IntransitiveActivity",
+                ],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Collection",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -526,10 +483,10 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Collection",
+                values: ["https://www.w3.org/ns/activitystreams#Collection"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#totalItems",
@@ -564,10 +521,8 @@ export const activitystreamsSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#items",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
@@ -583,10 +538,11 @@ export const activitystreamsSchema: Schema = {
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -598,11 +554,12 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype:
+                values: [
                   "https://www.w3.org/ns/activitystreams#OrderedCollection",
+                ],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+            "https://shapes.activitypods.org/shapes/activitystreams#Collection",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#next",
@@ -626,19 +583,18 @@ export const activitystreamsSchema: Schema = {
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#orderedItems",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#CollectionPage",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#CollectionPage",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -650,11 +606,12 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype:
+                values: [
                   "https://www.w3.org/ns/activitystreams#CollectionPage",
+                ],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+            "https://shapes.activitypods.org/shapes/activitystreams#Collection",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#next",
@@ -687,10 +644,11 @@ export const activitystreamsSchema: Schema = {
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollectionPage",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollectionPage",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -702,11 +660,12 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype:
+                values: [
                   "https://www.w3.org/ns/activitystreams#OrderedCollectionPage",
+                ],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
+            "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#startIndex",
@@ -720,10 +679,11 @@ export const activitystreamsSchema: Schema = {
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AcceptShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Accept",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -735,16 +695,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Accept",
+                values: ["https://www.w3.org/ns/activitystreams#Accept"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AddShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Add",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -756,16 +717,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Add",
+                values: ["https://www.w3.org/ns/activitystreams#Add"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#CreateShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Create",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -777,16 +739,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Create",
+                values: ["https://www.w3.org/ns/activitystreams#Create"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DeleteShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Delete",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -798,16 +761,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Delete",
+                values: ["https://www.w3.org/ns/activitystreams#Delete"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#FollowShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Follow",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -819,16 +783,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Follow",
+                values: ["https://www.w3.org/ns/activitystreams#Follow"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#IgnoreShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Ignore",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -840,16 +805,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Ignore",
+                values: ["https://www.w3.org/ns/activitystreams#Ignore"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#JoinShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Join",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -861,16 +827,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Join",
+                values: ["https://www.w3.org/ns/activitystreams#Join"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#LeaveShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Leave",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -882,16 +849,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Leave",
+                values: ["https://www.w3.org/ns/activitystreams#Leave"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#LikeShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Like",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -903,16 +871,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Like",
+                values: ["https://www.w3.org/ns/activitystreams#Like"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OfferShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Offer",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -924,16 +893,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Offer",
+                values: ["https://www.w3.org/ns/activitystreams#Offer"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#InviteShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Invite",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -945,16 +915,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Invite",
+                values: ["https://www.w3.org/ns/activitystreams#Invite"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#RejectShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Reject",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -966,16 +937,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Reject",
+                values: ["https://www.w3.org/ns/activitystreams#Reject"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeRejectShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#TentativeReject",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -987,17 +959,19 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype:
+                values: [
                   "https://www.w3.org/ns/activitystreams#TentativeReject",
+                ],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#RemoveShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Remove",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1009,16 +983,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Remove",
+                values: ["https://www.w3.org/ns/activitystreams#Remove"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#UndoShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Undo",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1030,16 +1005,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Undo",
+                values: ["https://www.w3.org/ns/activitystreams#Undo"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#UpdateShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Update",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1051,16 +1027,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Update",
+                values: ["https://www.w3.org/ns/activitystreams#Update"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ViewShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#View",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1072,16 +1049,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#View",
+                values: ["https://www.w3.org/ns/activitystreams#View"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ListenShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Listen",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1093,16 +1071,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Listen",
+                values: ["https://www.w3.org/ns/activitystreams#Listen"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ReadShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Read",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1114,16 +1093,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Read",
+                values: ["https://www.w3.org/ns/activitystreams#Read"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#MoveShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Move",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1135,16 +1115,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Move",
+                values: ["https://www.w3.org/ns/activitystreams#Move"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AnnounceShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Announce",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1156,16 +1137,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Announce",
+                values: ["https://www.w3.org/ns/activitystreams#Announce"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#FlagShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Flag",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1177,16 +1159,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Flag",
+                values: ["https://www.w3.org/ns/activitystreams#Flag"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DislikeShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Dislike",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1198,16 +1181,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Dislike",
+                values: ["https://www.w3.org/ns/activitystreams#Dislike"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArriveShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Arrive",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1219,16 +1203,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Arrive",
+                values: ["https://www.w3.org/ns/activitystreams#Arrive"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
+            "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TravelShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Travel",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1240,16 +1225,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Travel",
+                values: ["https://www.w3.org/ns/activitystreams#Travel"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
+            "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Question",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Question",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1261,10 +1247,10 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Question",
+                values: ["https://www.w3.org/ns/activitystreams#Question"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
+            "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#oneOf",
@@ -1297,10 +1283,11 @@ export const activitystreamsSchema: Schema = {
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeAcceptShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#TentativeAccept",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1312,17 +1299,19 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype:
+                values: [
                   "https://www.w3.org/ns/activitystreams#TentativeAccept",
+                ],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#BlockShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Block",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1334,16 +1323,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Block",
+                values: ["https://www.w3.org/ns/activitystreams#Block"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            "https://shapes.activitypods.org/shapes/activitystreams#Activity",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ApplicationShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Application",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1355,16 +1345,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Application",
+                values: ["https://www.w3.org/ns/activitystreams#Application"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#GroupShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Group",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1376,16 +1367,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Group",
+                values: ["https://www.w3.org/ns/activitystreams#Group"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrganizationShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Organization",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1397,16 +1389,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Organization",
+                values: ["https://www.w3.org/ns/activitystreams#Organization"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#PersonShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Person",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1418,16 +1411,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Person",
+                values: ["https://www.w3.org/ns/activitystreams#Person"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ServiceShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Service",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1439,16 +1433,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Service",
+                values: ["https://www.w3.org/ns/activitystreams#Service"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Relationship",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Relationship",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1460,27 +1455,23 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Relationship",
+                values: ["https://www.w3.org/ns/activitystreams#Relationship"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#subject",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#object",
-              valueExpr: {
-                type: "NodeConstraint",
-                datatype: "http://www.w3.org/2001/XMLSchema#string",
-              },
+              valueExpr:
+                "https://shapes.activitypods.org/shapes/activitystreams#Object",
               min: 0,
               max: -1,
             },
@@ -1496,10 +1487,11 @@ export const activitystreamsSchema: Schema = {
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DocumentShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Document",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1511,16 +1503,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Document",
+                values: ["https://www.w3.org/ns/activitystreams#Document"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArticleShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Article",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1532,16 +1525,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Article",
+                values: ["https://www.w3.org/ns/activitystreams#Article"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AudioShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Audio",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1553,16 +1547,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Audio",
+                values: ["https://www.w3.org/ns/activitystreams#Audio"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Document",
+            "https://shapes.activitypods.org/shapes/activitystreams#Document",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ImageShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Image",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1574,16 +1569,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Image",
+                values: ["https://www.w3.org/ns/activitystreams#Image"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Document",
+            "https://shapes.activitypods.org/shapes/activitystreams#Document",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#VideoShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Video",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1595,16 +1591,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Video",
+                values: ["https://www.w3.org/ns/activitystreams#Video"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Document",
+            "https://shapes.activitypods.org/shapes/activitystreams#Document",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#NoteShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Note",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1616,16 +1613,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Note",
+                values: ["https://www.w3.org/ns/activitystreams#Note"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#PageShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Page",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1637,16 +1635,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Page",
+                values: ["https://www.w3.org/ns/activitystreams#Page"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#EventShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Event",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1658,16 +1657,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Event",
+                values: ["https://www.w3.org/ns/activitystreams#Event"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Place",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Place",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1679,10 +1679,10 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Place",
+                values: ["https://www.w3.org/ns/activitystreams#Place"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#accuracy",
@@ -1748,10 +1748,11 @@ export const activitystreamsSchema: Schema = {
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#MentionShape",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Mention",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1763,16 +1764,17 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Mention",
+                values: ["https://www.w3.org/ns/activitystreams#Mention"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
+            "https://shapes.activitypods.org/shapes/activitystreams#Link",
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Profile",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Profile",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1784,10 +1786,10 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Profile",
+                values: ["https://www.w3.org/ns/activitystreams#Profile"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#describes",
@@ -1800,10 +1802,11 @@ export const activitystreamsSchema: Schema = {
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Tombstone",
+      id: "https://shapes.activitypods.org/shapes/activitystreams#Tombstone",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -1815,10 +1818,10 @@ export const activitystreamsSchema: Schema = {
               predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
               valueExpr: {
                 type: "NodeConstraint",
-                datatype: "https://www.w3.org/ns/activitystreams#Tombstone",
+                values: ["https://www.w3.org/ns/activitystreams#Tombstone"],
               },
             },
-            "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            "https://shapes.activitypods.org/shapes/activitystreams#Object",
             {
               type: "TripleConstraint",
               predicate: "https://www.w3.org/ns/activitystreams#formerType",
@@ -1841,6 +1844,7 @@ export const activitystreamsSchema: Schema = {
             },
           ],
         },
+        extra: ["http://www.w3.org/1999/02/22-rdf-syntax-ns#type"],
       },
     },
   ],

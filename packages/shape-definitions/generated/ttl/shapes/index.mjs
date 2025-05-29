@@ -1,10 +1,10 @@
-export { default as activitystreams_shacl } from './activitystreams.shacl.mjs';
 export * as as from './as';
 export * as maid from './maid';
 export * as solid from './solid';
 export * as vcard from './vcard';
-export * from './activitystreams.shacl.mjs';
+export { default as activitystreams_shacl } from './activitystreams.shacl.mjs';
 export * from './as';
 export * from './maid';
 export * from './solid';
 export * from './vcard';
+export * from './activitystreams.shacl.mjs';

@@ -10,50 +10,50 @@ import {
   OrderedCollection,
   CollectionPage,
   OrderedCollectionPage,
-  AcceptShape,
-  AddShape,
-  CreateShape,
-  DeleteShape,
-  FollowShape,
-  IgnoreShape,
-  JoinShape,
-  LeaveShape,
-  LikeShape,
-  OfferShape,
-  InviteShape,
-  RejectShape,
-  TentativeRejectShape,
-  RemoveShape,
-  UndoShape,
-  UpdateShape,
-  ViewShape,
-  ListenShape,
-  ReadShape,
-  MoveShape,
-  AnnounceShape,
-  FlagShape,
-  DislikeShape,
-  ArriveShape,
-  TravelShape,
+  Accept,
+  Add,
+  Create,
+  Delete,
+  Follow,
+  Ignore,
+  Join,
+  Leave,
+  Like,
+  Offer,
+  Invite,
+  Reject,
+  TentativeReject,
+  Remove,
+  Undo,
+  Update,
+  View,
+  Listen,
+  Read,
+  Move,
+  Announce,
+  Flag,
+  Dislike,
+  Arrive,
+  Travel,
   Question,
-  TentativeAcceptShape,
-  BlockShape,
-  ApplicationShape,
-  GroupShape,
-  OrganizationShape,
-  PersonShape,
-  ServiceShape,
+  TentativeAccept,
+  Block,
+  Application,
+  Group,
+  Organization,
+  Person,
+  Service,
   Relationship,
-  DocumentShape,
-  ArticleShape,
-  AudioShape,
-  ImageShape,
-  VideoShape,
-  NoteShape,
-  PageShape,
-  EventShape,
+  Document,
+  Article,
+  Audio,
+  Image,
+  Video,
+  Note,
+  Page,
+  Event,
   Place,
-  MentionShape,
+  Mention,
   Profile,
   Tombstone,
 } from "./activitystreams.typings";
@@ -69,7 +69,7 @@ import {
  */
 export const ObjectShapeType: ShapeType<Object> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Object",
   context: activitystreamsContext,
 };
 
@@ -78,7 +78,7 @@ export const ObjectShapeType: ShapeType<Object> = {
  */
 export const LinkShapeType: ShapeType<Link> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Link",
   context: activitystreamsContext,
 };
 
@@ -87,7 +87,7 @@ export const LinkShapeType: ShapeType<Link> = {
  */
 export const ActivityShapeType: ShapeType<Activity> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Activity",
   context: activitystreamsContext,
 };
 
@@ -97,7 +97,7 @@ export const ActivityShapeType: ShapeType<Activity> = {
 export const IntransitiveActivityShapeType: ShapeType<IntransitiveActivity> = {
   schema: activitystreamsSchema,
   shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
+    "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
   context: activitystreamsContext,
 };
 
@@ -106,7 +106,7 @@ export const IntransitiveActivityShapeType: ShapeType<IntransitiveActivity> = {
  */
 export const CollectionShapeType: ShapeType<Collection> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Collection",
   context: activitystreamsContext,
 };
 
@@ -116,7 +116,7 @@ export const CollectionShapeType: ShapeType<Collection> = {
 export const OrderedCollectionShapeType: ShapeType<OrderedCollection> = {
   schema: activitystreamsSchema,
   shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
+    "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
   context: activitystreamsContext,
 };
 
@@ -126,7 +126,7 @@ export const OrderedCollectionShapeType: ShapeType<OrderedCollection> = {
 export const CollectionPageShapeType: ShapeType<CollectionPage> = {
   schema: activitystreamsSchema,
   shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#CollectionPage",
+    "https://shapes.activitypods.org/shapes/activitystreams#CollectionPage",
   context: activitystreamsContext,
 };
 
@@ -137,247 +137,233 @@ export const OrderedCollectionPageShapeType: ShapeType<OrderedCollectionPage> =
   {
     schema: activitystreamsSchema,
     shape:
-      "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollectionPage",
+      "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollectionPage",
     context: activitystreamsContext,
   };
 
 /**
- * AcceptShape ShapeType
+ * Accept ShapeType
  */
-export const AcceptShapeShapeType: ShapeType<AcceptShape> = {
+export const AcceptShapeType: ShapeType<Accept> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Accept",
+  context: activitystreamsContext,
+};
+
+/**
+ * Add ShapeType
+ */
+export const AddShapeType: ShapeType<Add> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Add",
+  context: activitystreamsContext,
+};
+
+/**
+ * Create ShapeType
+ */
+export const CreateShapeType: ShapeType<Create> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Create",
+  context: activitystreamsContext,
+};
+
+/**
+ * Delete ShapeType
+ */
+export const DeleteShapeType: ShapeType<Delete> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Delete",
+  context: activitystreamsContext,
+};
+
+/**
+ * Follow ShapeType
+ */
+export const FollowShapeType: ShapeType<Follow> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Follow",
+  context: activitystreamsContext,
+};
+
+/**
+ * Ignore ShapeType
+ */
+export const IgnoreShapeType: ShapeType<Ignore> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Ignore",
+  context: activitystreamsContext,
+};
+
+/**
+ * Join ShapeType
+ */
+export const JoinShapeType: ShapeType<Join> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Join",
+  context: activitystreamsContext,
+};
+
+/**
+ * Leave ShapeType
+ */
+export const LeaveShapeType: ShapeType<Leave> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Leave",
+  context: activitystreamsContext,
+};
+
+/**
+ * Like ShapeType
+ */
+export const LikeShapeType: ShapeType<Like> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Like",
+  context: activitystreamsContext,
+};
+
+/**
+ * Offer ShapeType
+ */
+export const OfferShapeType: ShapeType<Offer> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Offer",
+  context: activitystreamsContext,
+};
+
+/**
+ * Invite ShapeType
+ */
+export const InviteShapeType: ShapeType<Invite> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Invite",
+  context: activitystreamsContext,
+};
+
+/**
+ * Reject ShapeType
+ */
+export const RejectShapeType: ShapeType<Reject> = {
+  schema: activitystreamsSchema,
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Reject",
+  context: activitystreamsContext,
+};
+
+/**
+ * TentativeReject ShapeType
+ */
+export const TentativeRejectShapeType: ShapeType<TentativeReject> = {
   schema: activitystreamsSchema,
   shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#AcceptShape",
+    "https://shapes.activitypods.org/shapes/activitystreams#TentativeReject",
   context: activitystreamsContext,
 };
 
 /**
- * AddShape ShapeType
+ * Remove ShapeType
  */
-export const AddShapeShapeType: ShapeType<AddShape> = {
+export const RemoveShapeType: ShapeType<Remove> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AddShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Remove",
   context: activitystreamsContext,
 };
 
 /**
- * CreateShape ShapeType
+ * Undo ShapeType
  */
-export const CreateShapeShapeType: ShapeType<CreateShape> = {
+export const UndoShapeType: ShapeType<Undo> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#CreateShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Undo",
   context: activitystreamsContext,
 };
 
 /**
- * DeleteShape ShapeType
+ * Update ShapeType
  */
-export const DeleteShapeShapeType: ShapeType<DeleteShape> = {
+export const UpdateShapeType: ShapeType<Update> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#DeleteShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Update",
   context: activitystreamsContext,
 };
 
 /**
- * FollowShape ShapeType
+ * View ShapeType
  */
-export const FollowShapeShapeType: ShapeType<FollowShape> = {
+export const ViewShapeType: ShapeType<View> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#FollowShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#View",
   context: activitystreamsContext,
 };
 
 /**
- * IgnoreShape ShapeType
+ * Listen ShapeType
  */
-export const IgnoreShapeShapeType: ShapeType<IgnoreShape> = {
+export const ListenShapeType: ShapeType<Listen> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#IgnoreShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Listen",
   context: activitystreamsContext,
 };
 
 /**
- * JoinShape ShapeType
+ * Read ShapeType
  */
-export const JoinShapeShapeType: ShapeType<JoinShape> = {
+export const ReadShapeType: ShapeType<Read> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#JoinShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Read",
   context: activitystreamsContext,
 };
 
 /**
- * LeaveShape ShapeType
+ * Move ShapeType
  */
-export const LeaveShapeShapeType: ShapeType<LeaveShape> = {
+export const MoveShapeType: ShapeType<Move> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#LeaveShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Move",
   context: activitystreamsContext,
 };
 
 /**
- * LikeShape ShapeType
+ * Announce ShapeType
  */
-export const LikeShapeShapeType: ShapeType<LikeShape> = {
+export const AnnounceShapeType: ShapeType<Announce> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#LikeShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Announce",
   context: activitystreamsContext,
 };
 
 /**
- * OfferShape ShapeType
+ * Flag ShapeType
  */
-export const OfferShapeShapeType: ShapeType<OfferShape> = {
+export const FlagShapeType: ShapeType<Flag> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OfferShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Flag",
   context: activitystreamsContext,
 };
 
 /**
- * InviteShape ShapeType
+ * Dislike ShapeType
  */
-export const InviteShapeShapeType: ShapeType<InviteShape> = {
+export const DislikeShapeType: ShapeType<Dislike> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#InviteShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Dislike",
   context: activitystreamsContext,
 };
 
 /**
- * RejectShape ShapeType
+ * Arrive ShapeType
  */
-export const RejectShapeShapeType: ShapeType<RejectShape> = {
+export const ArriveShapeType: ShapeType<Arrive> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#RejectShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Arrive",
   context: activitystreamsContext,
 };
 
 /**
- * TentativeRejectShape ShapeType
+ * Travel ShapeType
  */
-export const TentativeRejectShapeShapeType: ShapeType<TentativeRejectShape> = {
+export const TravelShapeType: ShapeType<Travel> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeRejectShape",
-  context: activitystreamsContext,
-};
-
-/**
- * RemoveShape ShapeType
- */
-export const RemoveShapeShapeType: ShapeType<RemoveShape> = {
-  schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#RemoveShape",
-  context: activitystreamsContext,
-};
-
-/**
- * UndoShape ShapeType
- */
-export const UndoShapeShapeType: ShapeType<UndoShape> = {
-  schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#UndoShape",
-  context: activitystreamsContext,
-};
-
-/**
- * UpdateShape ShapeType
- */
-export const UpdateShapeShapeType: ShapeType<UpdateShape> = {
-  schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#UpdateShape",
-  context: activitystreamsContext,
-};
-
-/**
- * ViewShape ShapeType
- */
-export const ViewShapeShapeType: ShapeType<ViewShape> = {
-  schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ViewShape",
-  context: activitystreamsContext,
-};
-
-/**
- * ListenShape ShapeType
- */
-export const ListenShapeShapeType: ShapeType<ListenShape> = {
-  schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#ListenShape",
-  context: activitystreamsContext,
-};
-
-/**
- * ReadShape ShapeType
- */
-export const ReadShapeShapeType: ShapeType<ReadShape> = {
-  schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ReadShape",
-  context: activitystreamsContext,
-};
-
-/**
- * MoveShape ShapeType
- */
-export const MoveShapeShapeType: ShapeType<MoveShape> = {
-  schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#MoveShape",
-  context: activitystreamsContext,
-};
-
-/**
- * AnnounceShape ShapeType
- */
-export const AnnounceShapeShapeType: ShapeType<AnnounceShape> = {
-  schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#AnnounceShape",
-  context: activitystreamsContext,
-};
-
-/**
- * FlagShape ShapeType
- */
-export const FlagShapeShapeType: ShapeType<FlagShape> = {
-  schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#FlagShape",
-  context: activitystreamsContext,
-};
-
-/**
- * DislikeShape ShapeType
- */
-export const DislikeShapeShapeType: ShapeType<DislikeShape> = {
-  schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#DislikeShape",
-  context: activitystreamsContext,
-};
-
-/**
- * ArriveShape ShapeType
- */
-export const ArriveShapeShapeType: ShapeType<ArriveShape> = {
-  schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#ArriveShape",
-  context: activitystreamsContext,
-};
-
-/**
- * TravelShape ShapeType
- */
-export const TravelShapeShapeType: ShapeType<TravelShape> = {
-  schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#TravelShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Travel",
   context: activitystreamsContext,
 };
 
@@ -386,75 +372,71 @@ export const TravelShapeShapeType: ShapeType<TravelShape> = {
  */
 export const QuestionShapeType: ShapeType<Question> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Question",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Question",
   context: activitystreamsContext,
 };
 
 /**
- * TentativeAcceptShape ShapeType
+ * TentativeAccept ShapeType
  */
-export const TentativeAcceptShapeShapeType: ShapeType<TentativeAcceptShape> = {
+export const TentativeAcceptShapeType: ShapeType<TentativeAccept> = {
   schema: activitystreamsSchema,
   shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeAcceptShape",
+    "https://shapes.activitypods.org/shapes/activitystreams#TentativeAccept",
   context: activitystreamsContext,
 };
 
 /**
- * BlockShape ShapeType
+ * Block ShapeType
  */
-export const BlockShapeShapeType: ShapeType<BlockShape> = {
+export const BlockShapeType: ShapeType<Block> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#BlockShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Block",
   context: activitystreamsContext,
 };
 
 /**
- * ApplicationShape ShapeType
+ * Application ShapeType
  */
-export const ApplicationShapeShapeType: ShapeType<ApplicationShape> = {
+export const ApplicationShapeType: ShapeType<Application> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#ApplicationShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Application",
   context: activitystreamsContext,
 };
 
 /**
- * GroupShape ShapeType
+ * Group ShapeType
  */
-export const GroupShapeShapeType: ShapeType<GroupShape> = {
+export const GroupShapeType: ShapeType<Group> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#GroupShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Group",
   context: activitystreamsContext,
 };
 
 /**
- * OrganizationShape ShapeType
+ * Organization ShapeType
  */
-export const OrganizationShapeShapeType: ShapeType<OrganizationShape> = {
+export const OrganizationShapeType: ShapeType<Organization> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#OrganizationShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Organization",
   context: activitystreamsContext,
 };
 
 /**
- * PersonShape ShapeType
+ * Person ShapeType
  */
-export const PersonShapeShapeType: ShapeType<PersonShape> = {
+export const PersonShapeType: ShapeType<Person> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#PersonShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Person",
   context: activitystreamsContext,
 };
 
 /**
- * ServiceShape ShapeType
+ * Service ShapeType
  */
-export const ServiceShapeShapeType: ShapeType<ServiceShape> = {
+export const ServiceShapeType: ShapeType<Service> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#ServiceShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Service",
   context: activitystreamsContext,
 };
 
@@ -463,82 +445,79 @@ export const ServiceShapeShapeType: ShapeType<ServiceShape> = {
  */
 export const RelationshipShapeType: ShapeType<Relationship> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#Relationship",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Relationship",
   context: activitystreamsContext,
 };
 
 /**
- * DocumentShape ShapeType
+ * Document ShapeType
  */
-export const DocumentShapeShapeType: ShapeType<DocumentShape> = {
+export const DocumentShapeType: ShapeType<Document> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#DocumentShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Document",
   context: activitystreamsContext,
 };
 
 /**
- * ArticleShape ShapeType
+ * Article ShapeType
  */
-export const ArticleShapeShapeType: ShapeType<ArticleShape> = {
+export const ArticleShapeType: ShapeType<Article> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#ArticleShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Article",
   context: activitystreamsContext,
 };
 
 /**
- * AudioShape ShapeType
+ * Audio ShapeType
  */
-export const AudioShapeShapeType: ShapeType<AudioShape> = {
+export const AudioShapeType: ShapeType<Audio> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AudioShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Audio",
   context: activitystreamsContext,
 };
 
 /**
- * ImageShape ShapeType
+ * Image ShapeType
  */
-export const ImageShapeShapeType: ShapeType<ImageShape> = {
+export const ImageShapeType: ShapeType<Image> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ImageShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Image",
   context: activitystreamsContext,
 };
 
 /**
- * VideoShape ShapeType
+ * Video ShapeType
  */
-export const VideoShapeShapeType: ShapeType<VideoShape> = {
+export const VideoShapeType: ShapeType<Video> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#VideoShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Video",
   context: activitystreamsContext,
 };
 
 /**
- * NoteShape ShapeType
+ * Note ShapeType
  */
-export const NoteShapeShapeType: ShapeType<NoteShape> = {
+export const NoteShapeType: ShapeType<Note> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#NoteShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Note",
   context: activitystreamsContext,
 };
 
 /**
- * PageShape ShapeType
+ * Page ShapeType
  */
-export const PageShapeShapeType: ShapeType<PageShape> = {
+export const PageShapeType: ShapeType<Page> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#PageShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Page",
   context: activitystreamsContext,
 };
 
 /**
- * EventShape ShapeType
+ * Event ShapeType
  */
-export const EventShapeShapeType: ShapeType<EventShape> = {
+export const EventShapeType: ShapeType<Event> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#EventShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Event",
   context: activitystreamsContext,
 };
 
@@ -547,17 +526,16 @@ export const EventShapeShapeType: ShapeType<EventShape> = {
  */
 export const PlaceShapeType: ShapeType<Place> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Place",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Place",
   context: activitystreamsContext,
 };
 
 /**
- * MentionShape ShapeType
+ * Mention ShapeType
  */
-export const MentionShapeShapeType: ShapeType<MentionShape> = {
+export const MentionShapeType: ShapeType<Mention> = {
   schema: activitystreamsSchema,
-  shape:
-    "https://shapes.activitypods.org/v2/shapes/activitystreams#MentionShape",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Mention",
   context: activitystreamsContext,
 };
 
@@ -566,7 +544,7 @@ export const MentionShapeShapeType: ShapeType<MentionShape> = {
  */
 export const ProfileShapeType: ShapeType<Profile> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Profile",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Profile",
   context: activitystreamsContext,
 };
 
@@ -575,6 +553,6 @@ export const ProfileShapeType: ShapeType<Profile> = {
  */
 export const TombstoneShapeType: ShapeType<Tombstone> = {
   schema: activitystreamsSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Tombstone",
+  shape: "https://shapes.activitypods.org/shapes/activitystreams#Tombstone",
   context: activitystreamsContext,
 };

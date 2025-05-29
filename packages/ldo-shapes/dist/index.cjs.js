@@ -30,52 +30,139 @@ var $aeeccf19fafb51b6$exports = {};
 $parcel$export($aeeccf19fafb51b6$exports, "activitystreamsContext", () => $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c);
 const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
     type: {
-        "@id": "@type",
-        "@type": "https://www.w3.org/ns/activitystreams#Object"
+        "@id": "@type"
     },
-    attachment: {
-        "@id": "https://www.w3.org/ns/activitystreams#attachment",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    attributedTo: {
-        "@id": "https://www.w3.org/ns/activitystreams#attributedTo",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    audience: {
-        "@id": "https://www.w3.org/ns/activitystreams#audience",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    bcc: {
-        "@id": "https://www.w3.org/ns/activitystreams#bcc",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    bto: {
-        "@id": "https://www.w3.org/ns/activitystreams#bto",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    cc: {
-        "@id": "https://www.w3.org/ns/activitystreams#cc",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
+    Object: {
+        "@id": "https://www.w3.org/ns/activitystreams#Object",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            content: {
+                "@id": "https://www.w3.org/ns/activitystreams#content",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            icon: {
+                "@id": "https://www.w3.org/ns/activitystreams#icon",
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@isCollection": true
+            },
+            image: {
+                "@id": "https://www.w3.org/ns/activitystreams#image",
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@isCollection": true
+            },
+            name: {
+                "@id": "https://www.w3.org/ns/activitystreams#name",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            preview: {
+                "@id": "https://www.w3.org/ns/activitystreams#preview",
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@isCollection": true
+            },
+            summary: {
+                "@id": "https://www.w3.org/ns/activitystreams#summary",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            url: {
+                "@id": "https://www.w3.org/ns/activitystreams#url",
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@isCollection": true
+            },
+            duration: {
+                "@id": "https://www.w3.org/ns/activitystreams#duration",
+                "@type": "http://www.w3.org/2001/XMLSchema#duration"
+            },
+            endTime: {
+                "@id": "https://www.w3.org/ns/activitystreams#endTime",
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            },
+            mediaType: {
+                "@id": "https://www.w3.org/ns/activitystreams#mediaType",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            published: {
+                "@id": "https://www.w3.org/ns/activitystreams#published",
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            },
+            startTime: {
+                "@id": "https://www.w3.org/ns/activitystreams#startTime",
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            },
+            updated: {
+                "@id": "https://www.w3.org/ns/activitystreams#updated",
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            },
+            attachment: {
+                "@id": "https://www.w3.org/ns/activitystreams#attachment",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            attributedTo: {
+                "@id": "https://www.w3.org/ns/activitystreams#attributedTo",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            audience: {
+                "@id": "https://www.w3.org/ns/activitystreams#audience",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            bcc: {
+                "@id": "https://www.w3.org/ns/activitystreams#bcc",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            bto: {
+                "@id": "https://www.w3.org/ns/activitystreams#bto",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            cc: {
+                "@id": "https://www.w3.org/ns/activitystreams#cc",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            context: {
+                "@id": "https://www.w3.org/ns/activitystreams#context",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            generator: {
+                "@id": "https://www.w3.org/ns/activitystreams#generator",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            inReplyTo: {
+                "@id": "https://www.w3.org/ns/activitystreams#inReplyTo",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            location: {
+                "@id": "https://www.w3.org/ns/activitystreams#location",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            replies: {
+                "@id": "https://www.w3.org/ns/activitystreams#replies",
+                "@type": "@id"
+            },
+            tag: {
+                "@id": "https://www.w3.org/ns/activitystreams#tag",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            to: {
+                "@id": "https://www.w3.org/ns/activitystreams#to",
+                "@type": "@id",
+                "@isCollection": true
+            }
+        }
     },
     content: {
         "@id": "https://www.w3.org/ns/activitystreams#content",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    context: {
-        "@id": "https://www.w3.org/ns/activitystreams#context",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    generator: {
-        "@id": "https://www.w3.org/ns/activitystreams#generator",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
     },
     icon: {
         "@id": "https://www.w3.org/ns/activitystreams#icon",
@@ -84,16 +171,6 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
     },
     image: {
         "@id": "https://www.w3.org/ns/activitystreams#image",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    inReplyTo: {
-        "@id": "https://www.w3.org/ns/activitystreams#inReplyTo",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    location: {
-        "@id": "https://www.w3.org/ns/activitystreams#location",
         "@type": "http://www.w3.org/2001/XMLSchema#string",
         "@isCollection": true
     },
@@ -106,23 +183,9 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
         "@type": "http://www.w3.org/2001/XMLSchema#string",
         "@isCollection": true
     },
-    replies: {
-        "@id": "https://www.w3.org/ns/activitystreams#replies",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
     summary: {
         "@id": "https://www.w3.org/ns/activitystreams#summary",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    tag: {
-        "@id": "https://www.w3.org/ns/activitystreams#tag",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    to: {
-        "@id": "https://www.w3.org/ns/activitystreams#to",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
     },
     url: {
         "@id": "https://www.w3.org/ns/activitystreams#url",
@@ -136,10 +199,6 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
     endTime: {
         "@id": "https://www.w3.org/ns/activitystreams#endTime",
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    id: {
-        "@id": "https://www.w3.org/ns/activitystreams#id",
-        "@type": "@id"
     },
     mediaType: {
         "@id": "https://www.w3.org/ns/activitystreams#mediaType",
@@ -156,6 +215,120 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
     updated: {
         "@id": "https://www.w3.org/ns/activitystreams#updated",
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    attachment: {
+        "@id": "https://www.w3.org/ns/activitystreams#attachment",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    attributedTo: {
+        "@id": "https://www.w3.org/ns/activitystreams#attributedTo",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    audience: {
+        "@id": "https://www.w3.org/ns/activitystreams#audience",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    bcc: {
+        "@id": "https://www.w3.org/ns/activitystreams#bcc",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    bto: {
+        "@id": "https://www.w3.org/ns/activitystreams#bto",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    cc: {
+        "@id": "https://www.w3.org/ns/activitystreams#cc",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    context: {
+        "@id": "https://www.w3.org/ns/activitystreams#context",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    generator: {
+        "@id": "https://www.w3.org/ns/activitystreams#generator",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    inReplyTo: {
+        "@id": "https://www.w3.org/ns/activitystreams#inReplyTo",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    location: {
+        "@id": "https://www.w3.org/ns/activitystreams#location",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    replies: {
+        "@id": "https://www.w3.org/ns/activitystreams#replies",
+        "@type": "@id"
+    },
+    Collection: {
+        "@id": "https://www.w3.org/ns/activitystreams#Collection",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            totalItems: {
+                "@id": "https://www.w3.org/ns/activitystreams#totalItems",
+                "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+            },
+            current: {
+                "@id": "https://www.w3.org/ns/activitystreams#current",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            first: {
+                "@id": "https://www.w3.org/ns/activitystreams#first",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            items: {
+                "@id": "https://www.w3.org/ns/activitystreams#items",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            last: {
+                "@id": "https://www.w3.org/ns/activitystreams#last",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        }
+    },
+    totalItems: {
+        "@id": "https://www.w3.org/ns/activitystreams#totalItems",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    current: {
+        "@id": "https://www.w3.org/ns/activitystreams#current",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    first: {
+        "@id": "https://www.w3.org/ns/activitystreams#first",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    items: {
+        "@id": "https://www.w3.org/ns/activitystreams#items",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    last: {
+        "@id": "https://www.w3.org/ns/activitystreams#last",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    tag: {
+        "@id": "https://www.w3.org/ns/activitystreams#tag",
+        "@type": "@id",
+        "@isCollection": true
+    },
+    to: {
+        "@id": "https://www.w3.org/ns/activitystreams#to",
+        "@type": "@id",
+        "@isCollection": true
     },
     Link: {
         "@id": "https://www.w3.org/ns/activitystreams#Link",
@@ -215,6 +388,10 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#hreflang",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
+    id: {
+        "@id": "https://www.w3.org/ns/activitystreams#id",
+        "@type": "@id"
+    },
     rel: {
         "@id": "https://www.w3.org/ns/activitystreams#rel",
         "@type": "http://www.w3.org/2001/XMLSchema#string",
@@ -224,56 +401,102 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#width",
         "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
     },
+    Activity: {
+        "@id": "https://www.w3.org/ns/activitystreams#Activity",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            actor: {
+                "@id": "https://www.w3.org/ns/activitystreams#actor",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            instrument: {
+                "@id": "https://www.w3.org/ns/activitystreams#instrument",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            object: {
+                "@id": "https://www.w3.org/ns/activitystreams#object",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            origin: {
+                "@id": "https://www.w3.org/ns/activitystreams#origin",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            result: {
+                "@id": "https://www.w3.org/ns/activitystreams#result",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            target: {
+                "@id": "https://www.w3.org/ns/activitystreams#target",
+                "@type": "@id",
+                "@isCollection": true
+            }
+        }
+    },
     actor: {
         "@id": "https://www.w3.org/ns/activitystreams#actor",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": "@id",
         "@isCollection": true
     },
     instrument: {
         "@id": "https://www.w3.org/ns/activitystreams#instrument",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": "@id",
         "@isCollection": true
     },
     object: {
         "@id": "https://www.w3.org/ns/activitystreams#object",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": "@id",
         "@isCollection": true
     },
     origin: {
         "@id": "https://www.w3.org/ns/activitystreams#origin",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": "@id",
         "@isCollection": true
     },
     result: {
         "@id": "https://www.w3.org/ns/activitystreams#result",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": "@id",
         "@isCollection": true
     },
     target: {
         "@id": "https://www.w3.org/ns/activitystreams#target",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": "@id",
         "@isCollection": true
     },
-    totalItems: {
-        "@id": "https://www.w3.org/ns/activitystreams#totalItems",
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    IntransitiveActivity: {
+        "@id": "https://www.w3.org/ns/activitystreams#IntransitiveActivity",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
     },
-    current: {
-        "@id": "https://www.w3.org/ns/activitystreams#current",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    first: {
-        "@id": "https://www.w3.org/ns/activitystreams#first",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    items: {
-        "@id": "https://www.w3.org/ns/activitystreams#items",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@isCollection": true
-    },
-    last: {
-        "@id": "https://www.w3.org/ns/activitystreams#last",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
+    OrderedCollection: {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollection",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            next: {
+                "@id": "https://www.w3.org/ns/activitystreams#next",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            prev: {
+                "@id": "https://www.w3.org/ns/activitystreams#prev",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            orderedItems: {
+                "@id": "https://www.w3.org/ns/activitystreams#orderedItems",
+                "@type": "@id",
+                "@isCollection": true
+            }
+        }
     },
     next: {
         "@id": "https://www.w3.org/ns/activitystreams#next",
@@ -285,16 +508,270 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
     },
     orderedItems: {
         "@id": "https://www.w3.org/ns/activitystreams#orderedItems",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": "@id",
         "@isCollection": true
+    },
+    CollectionPage: {
+        "@id": "https://www.w3.org/ns/activitystreams#CollectionPage",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            next: {
+                "@id": "https://www.w3.org/ns/activitystreams#next",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            partOf: {
+                "@id": "https://www.w3.org/ns/activitystreams#partOf",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            prev: {
+                "@id": "https://www.w3.org/ns/activitystreams#prev",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        }
     },
     partOf: {
         "@id": "https://www.w3.org/ns/activitystreams#partOf",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
+    OrderedCollectionPage: {
+        "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            startIndex: {
+                "@id": "https://www.w3.org/ns/activitystreams#startIndex",
+                "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+            }
+        }
+    },
     startIndex: {
         "@id": "https://www.w3.org/ns/activitystreams#startIndex",
         "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    Accept: {
+        "@id": "https://www.w3.org/ns/activitystreams#Accept",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Add: {
+        "@id": "https://www.w3.org/ns/activitystreams#Add",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Create: {
+        "@id": "https://www.w3.org/ns/activitystreams#Create",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Delete: {
+        "@id": "https://www.w3.org/ns/activitystreams#Delete",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Follow: {
+        "@id": "https://www.w3.org/ns/activitystreams#Follow",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Ignore: {
+        "@id": "https://www.w3.org/ns/activitystreams#Ignore",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Join: {
+        "@id": "https://www.w3.org/ns/activitystreams#Join",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Leave: {
+        "@id": "https://www.w3.org/ns/activitystreams#Leave",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Like: {
+        "@id": "https://www.w3.org/ns/activitystreams#Like",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Offer: {
+        "@id": "https://www.w3.org/ns/activitystreams#Offer",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Invite: {
+        "@id": "https://www.w3.org/ns/activitystreams#Invite",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Reject: {
+        "@id": "https://www.w3.org/ns/activitystreams#Reject",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    TentativeReject: {
+        "@id": "https://www.w3.org/ns/activitystreams#TentativeReject",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Remove: {
+        "@id": "https://www.w3.org/ns/activitystreams#Remove",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Undo: {
+        "@id": "https://www.w3.org/ns/activitystreams#Undo",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Update: {
+        "@id": "https://www.w3.org/ns/activitystreams#Update",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    View: {
+        "@id": "https://www.w3.org/ns/activitystreams#View",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Listen: {
+        "@id": "https://www.w3.org/ns/activitystreams#Listen",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Read: {
+        "@id": "https://www.w3.org/ns/activitystreams#Read",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Move: {
+        "@id": "https://www.w3.org/ns/activitystreams#Move",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Announce: {
+        "@id": "https://www.w3.org/ns/activitystreams#Announce",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Flag: {
+        "@id": "https://www.w3.org/ns/activitystreams#Flag",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Dislike: {
+        "@id": "https://www.w3.org/ns/activitystreams#Dislike",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Arrive: {
+        "@id": "https://www.w3.org/ns/activitystreams#Arrive",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Travel: {
+        "@id": "https://www.w3.org/ns/activitystreams#Travel",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Question: {
+        "@id": "https://www.w3.org/ns/activitystreams#Question",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            oneOf: {
+                "@id": "https://www.w3.org/ns/activitystreams#oneOf",
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@isCollection": true
+            },
+            anyOf: {
+                "@id": "https://www.w3.org/ns/activitystreams#anyOf",
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@isCollection": true
+            },
+            closed: {
+                "@id": "https://www.w3.org/ns/activitystreams#closed",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        }
     },
     oneOf: {
         "@id": "https://www.w3.org/ns/activitystreams#oneOf",
@@ -310,15 +787,190 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#closed",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
+    TentativeAccept: {
+        "@id": "https://www.w3.org/ns/activitystreams#TentativeAccept",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Block: {
+        "@id": "https://www.w3.org/ns/activitystreams#Block",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Application: {
+        "@id": "https://www.w3.org/ns/activitystreams#Application",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Group: {
+        "@id": "https://www.w3.org/ns/activitystreams#Group",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Organization: {
+        "@id": "https://www.w3.org/ns/activitystreams#Organization",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Person: {
+        "@id": "https://www.w3.org/ns/activitystreams#Person",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Service: {
+        "@id": "https://www.w3.org/ns/activitystreams#Service",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Relationship: {
+        "@id": "https://www.w3.org/ns/activitystreams#Relationship",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            subject: {
+                "@id": "https://www.w3.org/ns/activitystreams#subject",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            object: {
+                "@id": "https://www.w3.org/ns/activitystreams#object",
+                "@type": "@id",
+                "@isCollection": true
+            },
+            relationship: {
+                "@id": "https://www.w3.org/ns/activitystreams#relationship",
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@isCollection": true
+            }
+        }
+    },
     subject: {
         "@id": "https://www.w3.org/ns/activitystreams#subject",
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": "@id",
         "@isCollection": true
     },
     relationship: {
         "@id": "https://www.w3.org/ns/activitystreams#relationship",
         "@type": "http://www.w3.org/2001/XMLSchema#string",
         "@isCollection": true
+    },
+    Document: {
+        "@id": "https://www.w3.org/ns/activitystreams#Document",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Article: {
+        "@id": "https://www.w3.org/ns/activitystreams#Article",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Audio: {
+        "@id": "https://www.w3.org/ns/activitystreams#Audio",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Image: {
+        "@id": "https://www.w3.org/ns/activitystreams#Image",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Video: {
+        "@id": "https://www.w3.org/ns/activitystreams#Video",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Note: {
+        "@id": "https://www.w3.org/ns/activitystreams#Note",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Page: {
+        "@id": "https://www.w3.org/ns/activitystreams#Page",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Event: {
+        "@id": "https://www.w3.org/ns/activitystreams#Event",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Place: {
+        "@id": "https://www.w3.org/ns/activitystreams#Place",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            accuracy: {
+                "@id": "https://www.w3.org/ns/activitystreams#accuracy",
+                "@type": "http://www.w3.org/2001/XMLSchema#float"
+            },
+            altitude: {
+                "@id": "https://www.w3.org/ns/activitystreams#altitude",
+                "@type": "http://www.w3.org/2001/XMLSchema#float"
+            },
+            latitude: {
+                "@id": "https://www.w3.org/ns/activitystreams#latitude",
+                "@type": "http://www.w3.org/2001/XMLSchema#float"
+            },
+            longitude: {
+                "@id": "https://www.w3.org/ns/activitystreams#longitude",
+                "@type": "http://www.w3.org/2001/XMLSchema#float"
+            },
+            radius: {
+                "@id": "https://www.w3.org/ns/activitystreams#radius",
+                "@type": "http://www.w3.org/2001/XMLSchema#float"
+            },
+            units: {
+                "@id": "https://www.w3.org/ns/activitystreams#units",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        }
     },
     accuracy: {
         "@id": "https://www.w3.org/ns/activitystreams#accuracy",
@@ -344,9 +996,46 @@ const $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#units",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
+    Mention: {
+        "@id": "https://www.w3.org/ns/activitystreams#Mention",
+        "@context": {
+            type: {
+                "@id": "@type"
+            }
+        }
+    },
+    Profile: {
+        "@id": "https://www.w3.org/ns/activitystreams#Profile",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            describes: {
+                "@id": "https://www.w3.org/ns/activitystreams#describes",
+                "@type": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        }
+    },
     describes: {
         "@id": "https://www.w3.org/ns/activitystreams#describes",
         "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    Tombstone: {
+        "@id": "https://www.w3.org/ns/activitystreams#Tombstone",
+        "@context": {
+            type: {
+                "@id": "@type"
+            },
+            formerType: {
+                "@id": "https://www.w3.org/ns/activitystreams#formerType",
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@isCollection": true
+            },
+            deleted: {
+                "@id": "https://www.w3.org/ns/activitystreams#deleted",
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+            }
+        }
     },
     formerType: {
         "@id": "https://www.w3.org/ns/activitystreams#formerType",
@@ -367,7 +1056,7 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
     type: "Schema",
     shapes: [
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Object",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -379,68 +1068,10 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Object"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Object"
+                                ]
                             }
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#attachment",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#attributedTo",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#audience",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#bcc",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#bto",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#cc",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
                         },
                         {
                             type: "TripleConstraint",
@@ -451,26 +1082,6 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             },
                             min: 0,
                             max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#context",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#generator",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
                         },
                         {
                             type: "TripleConstraint",
@@ -485,26 +1096,6 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#image",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#inReplyTo",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#location",
                             valueExpr: {
                                 type: "NodeConstraint",
                                 datatype: "http://www.w3.org/2001/XMLSchema#string"
@@ -534,16 +1125,6 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                         },
                         {
                             type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#replies",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#summary",
                             valueExpr: {
                                 type: "NodeConstraint",
@@ -551,26 +1132,6 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             },
                             min: 0,
                             max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#tag",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#to",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
-                            min: 0,
-                            max: -1
                         },
                         {
                             type: "TripleConstraint",
@@ -598,16 +1159,6 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             valueExpr: {
                                 type: "NodeConstraint",
                                 datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
-                            },
-                            min: 0,
-                            max: 1
-                        },
-                        {
-                            type: "TripleConstraint",
-                            predicate: "https://www.w3.org/ns/activitystreams#id",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                nodeKind: "iri"
                             },
                             min: 0,
                             max: 1
@@ -651,13 +1202,107 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             },
                             min: 0,
                             max: 1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#attachment",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#attributedTo",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#audience",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#bcc",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#bto",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#cc",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#context",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#generator",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#inReplyTo",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#location",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#replies",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Collection",
+                            min: 0,
+                            max: 1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#tag",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
+                        },
+                        {
+                            type: "TripleConstraint",
+                            predicate: "https://www.w3.org/ns/activitystreams#to",
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
+                            min: 0,
+                            max: -1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Link",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -767,11 +1412,14 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             max: 1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Activity",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -783,76 +1431,63 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Activity"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Activity"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#actor",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         },
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#instrument",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         },
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#object",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         },
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#origin",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         },
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#result",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         },
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#target",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -864,16 +1499,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#IntransitiveActivity"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#IntransitiveActivity"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Collection",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -885,10 +1525,12 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Collection"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Collection"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#totalItems",
@@ -923,10 +1565,7 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#items",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         },
@@ -941,11 +1580,14 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             max: 1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -957,10 +1599,12 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#OrderedCollection"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#OrderedCollection"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+                        "https://shapes.activitypods.org/shapes/activitystreams#Collection",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#next",
@@ -984,19 +1628,19 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#orderedItems",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#CollectionPage",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#CollectionPage",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1008,10 +1652,12 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#CollectionPage"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#CollectionPage"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+                        "https://shapes.activitypods.org/shapes/activitystreams#Collection",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#next",
@@ -1043,11 +1689,14 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             max: 1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollectionPage",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollectionPage",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1059,10 +1708,12 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
+                        "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#startIndex",
@@ -1075,11 +1726,14 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             max: 1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AcceptShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Accept",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1091,16 +1745,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Accept"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Accept"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AddShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Add",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1112,16 +1771,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Add"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Add"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#CreateShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Create",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1133,16 +1797,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Create"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Create"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DeleteShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Delete",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1154,16 +1823,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Delete"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Delete"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#FollowShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Follow",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1175,16 +1849,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Follow"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Follow"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#IgnoreShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Ignore",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1196,16 +1875,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Ignore"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Ignore"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#JoinShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Join",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1217,16 +1901,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Join"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Join"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#LeaveShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Leave",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1238,16 +1927,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Leave"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Leave"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#LikeShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Like",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1259,16 +1953,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Like"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Like"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OfferShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Offer",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1280,16 +1979,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Offer"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Offer"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#InviteShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Invite",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1301,16 +2005,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Invite"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Invite"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#RejectShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Reject",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1322,16 +2031,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Reject"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Reject"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeRejectShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#TentativeReject",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1343,16 +2057,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#TentativeReject"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#TentativeReject"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#RemoveShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Remove",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1364,16 +2083,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Remove"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Remove"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#UndoShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Undo",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1385,16 +2109,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Undo"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Undo"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#UpdateShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Update",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1406,16 +2135,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Update"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Update"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ViewShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#View",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1427,16 +2161,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#View"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#View"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ListenShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Listen",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1448,16 +2187,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Listen"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Listen"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ReadShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Read",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1469,16 +2213,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Read"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Read"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#MoveShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Move",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1490,16 +2239,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Move"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Move"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AnnounceShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Announce",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1511,16 +2265,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Announce"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Announce"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#FlagShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Flag",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1532,16 +2291,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Flag"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Flag"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DislikeShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Dislike",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1553,16 +2317,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Dislike"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Dislike"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArriveShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Arrive",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1574,16 +2343,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Arrive"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Arrive"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TravelShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Travel",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1595,16 +2369,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Travel"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Travel"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Question",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Question",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1616,10 +2395,12 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Question"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Question"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
+                        "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#oneOf",
@@ -1651,11 +2432,14 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             max: 1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeAcceptShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#TentativeAccept",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1667,16 +2451,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#TentativeAccept"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#TentativeAccept"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#BlockShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Block",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1688,16 +2477,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Block"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Block"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Activity"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ApplicationShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Application",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1709,16 +2503,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Application"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Application"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#GroupShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Group",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1730,16 +2529,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Group"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Group"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrganizationShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Organization",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1751,16 +2555,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Organization"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Organization"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#PersonShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Person",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1772,16 +2581,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Person"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Person"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ServiceShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Service",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1793,16 +2607,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Service"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Service"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Relationship",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Relationship",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1814,27 +2633,23 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Relationship"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Relationship"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#subject",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         },
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#object",
-                            valueExpr: {
-                                type: "NodeConstraint",
-                                datatype: "http://www.w3.org/2001/XMLSchema#string"
-                            },
+                            valueExpr: "https://shapes.activitypods.org/shapes/activitystreams#Object",
                             min: 0,
                             max: -1
                         },
@@ -1849,11 +2664,14 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             max: -1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#DocumentShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Document",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1865,16 +2683,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Document"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Document"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArticleShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Article",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1886,16 +2709,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Article"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Article"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#AudioShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Audio",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1907,16 +2735,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Audio"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Audio"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Document"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Document"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#ImageShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Image",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1928,16 +2761,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Image"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Image"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Document"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Document"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#VideoShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Video",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1949,16 +2787,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Video"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Video"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Document"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Document"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#NoteShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Note",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1970,16 +2813,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Note"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Note"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#PageShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Page",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -1991,16 +2839,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Page"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Page"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#EventShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Event",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2012,16 +2865,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Event"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Event"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Place",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Place",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2033,10 +2891,12 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Place"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Place"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#accuracy",
@@ -2101,11 +2961,14 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             max: 1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#MentionShape",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Mention",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2117,16 +2980,21 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Mention"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Mention"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Link"
+                        "https://shapes.activitypods.org/shapes/activitystreams#Link"
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Profile",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Profile",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2138,10 +3006,12 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Profile"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Profile"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#describes",
@@ -2153,11 +3023,14 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             max: 1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/activitystreams#Tombstone",
+            id: "https://shapes.activitypods.org/shapes/activitystreams#Tombstone",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -2169,10 +3042,12 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             predicate: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                             valueExpr: {
                                 type: "NodeConstraint",
-                                datatype: "https://www.w3.org/ns/activitystreams#Tombstone"
+                                values: [
+                                    "https://www.w3.org/ns/activitystreams#Tombstone"
+                                ]
                             }
                         },
-                        "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+                        "https://shapes.activitypods.org/shapes/activitystreams#Object",
                         {
                             type: "TripleConstraint",
                             predicate: "https://www.w3.org/ns/activitystreams#formerType",
@@ -2194,7 +3069,10 @@ const $5a51491c579929c5$export$d7dff8426c1f1d2 = {
                             max: 1
                         }
                     ]
-                }
+                },
+                extra: [
+                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+                ]
             }
         }
     ]
@@ -2211,322 +3089,322 @@ $parcel$export($75d228de1641f124$exports, "CollectionShapeType", () => $75d228de
 $parcel$export($75d228de1641f124$exports, "OrderedCollectionShapeType", () => $75d228de1641f124$export$f52b300449df2b3f);
 $parcel$export($75d228de1641f124$exports, "CollectionPageShapeType", () => $75d228de1641f124$export$464d3b3aa39764d1);
 $parcel$export($75d228de1641f124$exports, "OrderedCollectionPageShapeType", () => $75d228de1641f124$export$27ca8464d8ec16cf);
-$parcel$export($75d228de1641f124$exports, "AcceptShapeShapeType", () => $75d228de1641f124$export$853c1e95a1b4f13d);
-$parcel$export($75d228de1641f124$exports, "AddShapeShapeType", () => $75d228de1641f124$export$54470b92651c6f54);
-$parcel$export($75d228de1641f124$exports, "CreateShapeShapeType", () => $75d228de1641f124$export$3a74c015d90fb48a);
-$parcel$export($75d228de1641f124$exports, "DeleteShapeShapeType", () => $75d228de1641f124$export$b194320e377e30fc);
-$parcel$export($75d228de1641f124$exports, "FollowShapeShapeType", () => $75d228de1641f124$export$d40894f5415fdcb0);
-$parcel$export($75d228de1641f124$exports, "IgnoreShapeShapeType", () => $75d228de1641f124$export$f8c85015e7349761);
-$parcel$export($75d228de1641f124$exports, "JoinShapeShapeType", () => $75d228de1641f124$export$75f4c3f4458cea73);
-$parcel$export($75d228de1641f124$exports, "LeaveShapeShapeType", () => $75d228de1641f124$export$74413df64bcbe663);
-$parcel$export($75d228de1641f124$exports, "LikeShapeShapeType", () => $75d228de1641f124$export$abc8448eeabbbdd1);
-$parcel$export($75d228de1641f124$exports, "OfferShapeShapeType", () => $75d228de1641f124$export$58d047bd7f06f05e);
-$parcel$export($75d228de1641f124$exports, "InviteShapeShapeType", () => $75d228de1641f124$export$5ccaa421b5f51854);
-$parcel$export($75d228de1641f124$exports, "RejectShapeShapeType", () => $75d228de1641f124$export$df337f25edddb3d4);
-$parcel$export($75d228de1641f124$exports, "TentativeRejectShapeShapeType", () => $75d228de1641f124$export$df20cc89434c142c);
-$parcel$export($75d228de1641f124$exports, "RemoveShapeShapeType", () => $75d228de1641f124$export$eb541117f0aec2fa);
-$parcel$export($75d228de1641f124$exports, "UndoShapeShapeType", () => $75d228de1641f124$export$7bfbae0453992dcf);
-$parcel$export($75d228de1641f124$exports, "UpdateShapeShapeType", () => $75d228de1641f124$export$f5189816b12b8ad7);
-$parcel$export($75d228de1641f124$exports, "ViewShapeShapeType", () => $75d228de1641f124$export$f33c35e7f7c0666f);
-$parcel$export($75d228de1641f124$exports, "ListenShapeShapeType", () => $75d228de1641f124$export$7e5c80c19f4c5a36);
-$parcel$export($75d228de1641f124$exports, "ReadShapeShapeType", () => $75d228de1641f124$export$df70b3134eec98f);
-$parcel$export($75d228de1641f124$exports, "MoveShapeShapeType", () => $75d228de1641f124$export$b592c28b99e1d44b);
-$parcel$export($75d228de1641f124$exports, "AnnounceShapeShapeType", () => $75d228de1641f124$export$b60376fce881b14b);
-$parcel$export($75d228de1641f124$exports, "FlagShapeShapeType", () => $75d228de1641f124$export$e491b9b2de4157da);
-$parcel$export($75d228de1641f124$exports, "DislikeShapeShapeType", () => $75d228de1641f124$export$e24e4ca9e47f4568);
-$parcel$export($75d228de1641f124$exports, "ArriveShapeShapeType", () => $75d228de1641f124$export$48e86937c92d8cd8);
-$parcel$export($75d228de1641f124$exports, "TravelShapeShapeType", () => $75d228de1641f124$export$41c40e810465abe8);
+$parcel$export($75d228de1641f124$exports, "AcceptShapeType", () => $75d228de1641f124$export$373b0e733f6a58a9);
+$parcel$export($75d228de1641f124$exports, "AddShapeType", () => $75d228de1641f124$export$4b1e2013a5b1e29e);
+$parcel$export($75d228de1641f124$exports, "CreateShapeType", () => $75d228de1641f124$export$53bb2f00039d84cd);
+$parcel$export($75d228de1641f124$exports, "DeleteShapeType", () => $75d228de1641f124$export$b326dbb26970afbb);
+$parcel$export($75d228de1641f124$exports, "FollowShapeType", () => $75d228de1641f124$export$b7576cccedad952c);
+$parcel$export($75d228de1641f124$exports, "IgnoreShapeType", () => $75d228de1641f124$export$c56d9a370d377517);
+$parcel$export($75d228de1641f124$exports, "JoinShapeType", () => $75d228de1641f124$export$40423390495346df);
+$parcel$export($75d228de1641f124$exports, "LeaveShapeType", () => $75d228de1641f124$export$814450a210b872b7);
+$parcel$export($75d228de1641f124$exports, "LikeShapeType", () => $75d228de1641f124$export$967d64d7dc043cb3);
+$parcel$export($75d228de1641f124$exports, "OfferShapeType", () => $75d228de1641f124$export$76d5a5ef5adfa81c);
+$parcel$export($75d228de1641f124$exports, "InviteShapeType", () => $75d228de1641f124$export$c7b35596bbddaa36);
+$parcel$export($75d228de1641f124$exports, "RejectShapeType", () => $75d228de1641f124$export$98dd8636ee1b2027);
+$parcel$export($75d228de1641f124$exports, "TentativeRejectShapeType", () => $75d228de1641f124$export$f210c874e8a67e08);
+$parcel$export($75d228de1641f124$exports, "RemoveShapeType", () => $75d228de1641f124$export$8eb62a16c5dd25f1);
+$parcel$export($75d228de1641f124$exports, "UndoShapeType", () => $75d228de1641f124$export$8e0e70e5cd971414);
+$parcel$export($75d228de1641f124$exports, "UpdateShapeType", () => $75d228de1641f124$export$7a8532a8272b8fe9);
+$parcel$export($75d228de1641f124$exports, "ViewShapeType", () => $75d228de1641f124$export$86f046b31e9d598a);
+$parcel$export($75d228de1641f124$exports, "ListenShapeType", () => $75d228de1641f124$export$8392660fa310a61e);
+$parcel$export($75d228de1641f124$exports, "ReadShapeType", () => $75d228de1641f124$export$4aadace30e70896c);
+$parcel$export($75d228de1641f124$exports, "MoveShapeType", () => $75d228de1641f124$export$9de1cbd05aa4e4a2);
+$parcel$export($75d228de1641f124$exports, "AnnounceShapeType", () => $75d228de1641f124$export$6a65061ecd1ed015);
+$parcel$export($75d228de1641f124$exports, "FlagShapeType", () => $75d228de1641f124$export$772907b34ccd38da);
+$parcel$export($75d228de1641f124$exports, "DislikeShapeType", () => $75d228de1641f124$export$6280f1022b022237);
+$parcel$export($75d228de1641f124$exports, "ArriveShapeType", () => $75d228de1641f124$export$dc3522f479d91405);
+$parcel$export($75d228de1641f124$exports, "TravelShapeType", () => $75d228de1641f124$export$1a4b6fd809c5438);
 $parcel$export($75d228de1641f124$exports, "QuestionShapeType", () => $75d228de1641f124$export$eac099d4a1b658a2);
-$parcel$export($75d228de1641f124$exports, "TentativeAcceptShapeShapeType", () => $75d228de1641f124$export$1d228843c187151c);
-$parcel$export($75d228de1641f124$exports, "BlockShapeShapeType", () => $75d228de1641f124$export$80979644dbf392c);
-$parcel$export($75d228de1641f124$exports, "ApplicationShapeShapeType", () => $75d228de1641f124$export$842d31ccf1dfdac8);
-$parcel$export($75d228de1641f124$exports, "GroupShapeShapeType", () => $75d228de1641f124$export$b564288dea0a5bd0);
-$parcel$export($75d228de1641f124$exports, "OrganizationShapeShapeType", () => $75d228de1641f124$export$522f1e53d28364e8);
-$parcel$export($75d228de1641f124$exports, "PersonShapeShapeType", () => $75d228de1641f124$export$5902ff62545abcf5);
-$parcel$export($75d228de1641f124$exports, "ServiceShapeShapeType", () => $75d228de1641f124$export$555ca5a31e520487);
+$parcel$export($75d228de1641f124$exports, "TentativeAcceptShapeType", () => $75d228de1641f124$export$e44d01b2a5be2258);
+$parcel$export($75d228de1641f124$exports, "BlockShapeType", () => $75d228de1641f124$export$8a55b09e07eee057);
+$parcel$export($75d228de1641f124$exports, "ApplicationShapeType", () => $75d228de1641f124$export$7eb06d840cd48ae1);
+$parcel$export($75d228de1641f124$exports, "GroupShapeType", () => $75d228de1641f124$export$cfa2681679f25fd);
+$parcel$export($75d228de1641f124$exports, "OrganizationShapeType", () => $75d228de1641f124$export$7d3c4a9772d49f4b);
+$parcel$export($75d228de1641f124$exports, "PersonShapeType", () => $75d228de1641f124$export$5f641edbe0260f3);
+$parcel$export($75d228de1641f124$exports, "ServiceShapeType", () => $75d228de1641f124$export$2167ff40709826a7);
 $parcel$export($75d228de1641f124$exports, "RelationshipShapeType", () => $75d228de1641f124$export$9ce6e99fcca40947);
-$parcel$export($75d228de1641f124$exports, "DocumentShapeShapeType", () => $75d228de1641f124$export$dd3702b153e5244b);
-$parcel$export($75d228de1641f124$exports, "ArticleShapeShapeType", () => $75d228de1641f124$export$1b7a523775299522);
-$parcel$export($75d228de1641f124$exports, "AudioShapeShapeType", () => $75d228de1641f124$export$5dd967872b6cf25d);
-$parcel$export($75d228de1641f124$exports, "ImageShapeShapeType", () => $75d228de1641f124$export$e68d3d081cbf05e);
-$parcel$export($75d228de1641f124$exports, "VideoShapeShapeType", () => $75d228de1641f124$export$8db85f7ab45647a);
-$parcel$export($75d228de1641f124$exports, "NoteShapeShapeType", () => $75d228de1641f124$export$f3f942ab50fb1d35);
-$parcel$export($75d228de1641f124$exports, "PageShapeShapeType", () => $75d228de1641f124$export$352fb8bb94d77f11);
-$parcel$export($75d228de1641f124$exports, "EventShapeShapeType", () => $75d228de1641f124$export$4979c852d919e99d);
+$parcel$export($75d228de1641f124$exports, "DocumentShapeType", () => $75d228de1641f124$export$567343fec6bc2c67);
+$parcel$export($75d228de1641f124$exports, "ArticleShapeType", () => $75d228de1641f124$export$e95d69cde7699941);
+$parcel$export($75d228de1641f124$exports, "AudioShapeType", () => $75d228de1641f124$export$98a873e8b95d6baf);
+$parcel$export($75d228de1641f124$exports, "ImageShapeType", () => $75d228de1641f124$export$dea7974d2ab9d5f9);
+$parcel$export($75d228de1641f124$exports, "VideoShapeType", () => $75d228de1641f124$export$4df0c0c211bb75ea);
+$parcel$export($75d228de1641f124$exports, "NoteShapeType", () => $75d228de1641f124$export$8d5a952ef4e9f114);
+$parcel$export($75d228de1641f124$exports, "PageShapeType", () => $75d228de1641f124$export$899495320525d3ad);
+$parcel$export($75d228de1641f124$exports, "EventShapeType", () => $75d228de1641f124$export$53e4cd7400e6ee51);
 $parcel$export($75d228de1641f124$exports, "PlaceShapeType", () => $75d228de1641f124$export$ab061787a3ad797b);
-$parcel$export($75d228de1641f124$exports, "MentionShapeShapeType", () => $75d228de1641f124$export$c89cca55dd5b78cb);
+$parcel$export($75d228de1641f124$exports, "MentionShapeType", () => $75d228de1641f124$export$57b2cf11a29eb701);
 $parcel$export($75d228de1641f124$exports, "ProfileShapeType", () => $75d228de1641f124$export$84c06d7a4d4dca59);
 $parcel$export($75d228de1641f124$exports, "TombstoneShapeType", () => $75d228de1641f124$export$d4c5034320ad7d23);
 
 
 const $75d228de1641f124$export$10ed4a6ea04a5da7 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Object",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Object",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$711627bf7900d47a = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Link",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Link",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$4f551c247294b576 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Activity",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Activity",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$8278f0ce2855ac11 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#IntransitiveActivity",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$8d488253d594ee88 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Collection",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Collection",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$f52b300449df2b3f = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollection",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$464d3b3aa39764d1 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#CollectionPage",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#CollectionPage",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$27ca8464d8ec16cf = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrderedCollectionPage",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollectionPage",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$853c1e95a1b4f13d = {
+const $75d228de1641f124$export$373b0e733f6a58a9 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AcceptShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Accept",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$54470b92651c6f54 = {
+const $75d228de1641f124$export$4b1e2013a5b1e29e = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AddShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Add",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$3a74c015d90fb48a = {
+const $75d228de1641f124$export$53bb2f00039d84cd = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#CreateShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Create",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$b194320e377e30fc = {
+const $75d228de1641f124$export$b326dbb26970afbb = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#DeleteShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Delete",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$d40894f5415fdcb0 = {
+const $75d228de1641f124$export$b7576cccedad952c = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#FollowShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Follow",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$f8c85015e7349761 = {
+const $75d228de1641f124$export$c56d9a370d377517 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#IgnoreShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Ignore",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$75f4c3f4458cea73 = {
+const $75d228de1641f124$export$40423390495346df = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#JoinShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Join",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$74413df64bcbe663 = {
+const $75d228de1641f124$export$814450a210b872b7 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#LeaveShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Leave",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$abc8448eeabbbdd1 = {
+const $75d228de1641f124$export$967d64d7dc043cb3 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#LikeShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Like",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$58d047bd7f06f05e = {
+const $75d228de1641f124$export$76d5a5ef5adfa81c = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OfferShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Offer",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$5ccaa421b5f51854 = {
+const $75d228de1641f124$export$c7b35596bbddaa36 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#InviteShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Invite",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$df337f25edddb3d4 = {
+const $75d228de1641f124$export$98dd8636ee1b2027 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#RejectShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Reject",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$df20cc89434c142c = {
+const $75d228de1641f124$export$f210c874e8a67e08 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeRejectShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#TentativeReject",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$eb541117f0aec2fa = {
+const $75d228de1641f124$export$8eb62a16c5dd25f1 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#RemoveShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Remove",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$7bfbae0453992dcf = {
+const $75d228de1641f124$export$8e0e70e5cd971414 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#UndoShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Undo",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$f5189816b12b8ad7 = {
+const $75d228de1641f124$export$7a8532a8272b8fe9 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#UpdateShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Update",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$f33c35e7f7c0666f = {
+const $75d228de1641f124$export$86f046b31e9d598a = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ViewShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#View",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$7e5c80c19f4c5a36 = {
+const $75d228de1641f124$export$8392660fa310a61e = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ListenShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Listen",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$df70b3134eec98f = {
+const $75d228de1641f124$export$4aadace30e70896c = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ReadShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Read",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$b592c28b99e1d44b = {
+const $75d228de1641f124$export$9de1cbd05aa4e4a2 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#MoveShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Move",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$b60376fce881b14b = {
+const $75d228de1641f124$export$6a65061ecd1ed015 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AnnounceShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Announce",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$e491b9b2de4157da = {
+const $75d228de1641f124$export$772907b34ccd38da = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#FlagShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Flag",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$e24e4ca9e47f4568 = {
+const $75d228de1641f124$export$6280f1022b022237 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#DislikeShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Dislike",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$48e86937c92d8cd8 = {
+const $75d228de1641f124$export$dc3522f479d91405 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArriveShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Arrive",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$41c40e810465abe8 = {
+const $75d228de1641f124$export$1a4b6fd809c5438 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#TravelShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Travel",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$eac099d4a1b658a2 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Question",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Question",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$1d228843c187151c = {
+const $75d228de1641f124$export$e44d01b2a5be2258 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#TentativeAcceptShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#TentativeAccept",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$80979644dbf392c = {
+const $75d228de1641f124$export$8a55b09e07eee057 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#BlockShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Block",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$842d31ccf1dfdac8 = {
+const $75d228de1641f124$export$7eb06d840cd48ae1 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ApplicationShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Application",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$b564288dea0a5bd0 = {
+const $75d228de1641f124$export$cfa2681679f25fd = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#GroupShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Group",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$522f1e53d28364e8 = {
+const $75d228de1641f124$export$7d3c4a9772d49f4b = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#OrganizationShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Organization",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$5902ff62545abcf5 = {
+const $75d228de1641f124$export$5f641edbe0260f3 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#PersonShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Person",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$555ca5a31e520487 = {
+const $75d228de1641f124$export$2167ff40709826a7 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ServiceShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Service",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$9ce6e99fcca40947 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Relationship",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Relationship",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$dd3702b153e5244b = {
+const $75d228de1641f124$export$567343fec6bc2c67 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#DocumentShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Document",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$1b7a523775299522 = {
+const $75d228de1641f124$export$e95d69cde7699941 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ArticleShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Article",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$5dd967872b6cf25d = {
+const $75d228de1641f124$export$98a873e8b95d6baf = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#AudioShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Audio",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$e68d3d081cbf05e = {
+const $75d228de1641f124$export$dea7974d2ab9d5f9 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#ImageShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Image",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$8db85f7ab45647a = {
+const $75d228de1641f124$export$4df0c0c211bb75ea = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#VideoShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Video",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$f3f942ab50fb1d35 = {
+const $75d228de1641f124$export$8d5a952ef4e9f114 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#NoteShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Note",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$352fb8bb94d77f11 = {
+const $75d228de1641f124$export$899495320525d3ad = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#PageShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Page",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$4979c852d919e99d = {
+const $75d228de1641f124$export$53e4cd7400e6ee51 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#EventShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Event",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$ab061787a3ad797b = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Place",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Place",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
-const $75d228de1641f124$export$c89cca55dd5b78cb = {
+const $75d228de1641f124$export$57b2cf11a29eb701 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#MentionShape",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Mention",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$84c06d7a4d4dca59 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Profile",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Profile",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 const $75d228de1641f124$export$d4c5034320ad7d23 = {
     schema: (0, $5a51491c579929c5$export$d7dff8426c1f1d2),
-    shape: "https://shapes.activitypods.org/v2/shapes/activitystreams#Tombstone",
+    shape: "https://shapes.activitypods.org/shapes/activitystreams#Tombstone",
     context: (0, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c)
 };
 
@@ -2931,11 +3809,11 @@ $parcel$exportWildcard($af4281d770155332$exports, $81f9fc733a8124f9$exports);
 $parcel$exportWildcard($af4281d770155332$exports, $b60e4fc21753ff26$exports);
 
 
+$parcel$exportWildcard($40fc03b76cce2cb4$exports, $af4281d770155332$exports);
 $parcel$exportWildcard($40fc03b76cce2cb4$exports, $aeeccf19fafb51b6$exports);
 $parcel$exportWildcard($40fc03b76cce2cb4$exports, $5a51491c579929c5$exports);
 $parcel$exportWildcard($40fc03b76cce2cb4$exports, $75d228de1641f124$exports);
 $parcel$exportWildcard($40fc03b76cce2cb4$exports, $edcd6a486bf8a25d$exports);
-$parcel$exportWildcard($40fc03b76cce2cb4$exports, $af4281d770155332$exports);
 
 
 $parcel$exportWildcard($3fd42e7ba4a216b6$exports, $40fc03b76cce2cb4$exports);
@@ -2943,5 +3821,5 @@ $parcel$exportWildcard($3fd42e7ba4a216b6$exports, $40fc03b76cce2cb4$exports);
 
 
 
-export {$3fd42e7ba4a216b6$re_export$shapes as shapes, $40fc03b76cce2cb4$re_export$solid as solid, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c as activitystreamsContext, $5a51491c579929c5$export$d7dff8426c1f1d2 as activitystreamsSchema, $75d228de1641f124$export$10ed4a6ea04a5da7 as ObjectShapeType, $75d228de1641f124$export$711627bf7900d47a as LinkShapeType, $75d228de1641f124$export$4f551c247294b576 as ActivityShapeType, $75d228de1641f124$export$8278f0ce2855ac11 as IntransitiveActivityShapeType, $75d228de1641f124$export$8d488253d594ee88 as CollectionShapeType, $75d228de1641f124$export$f52b300449df2b3f as OrderedCollectionShapeType, $75d228de1641f124$export$464d3b3aa39764d1 as CollectionPageShapeType, $75d228de1641f124$export$27ca8464d8ec16cf as OrderedCollectionPageShapeType, $75d228de1641f124$export$853c1e95a1b4f13d as AcceptShapeShapeType, $75d228de1641f124$export$54470b92651c6f54 as AddShapeShapeType, $75d228de1641f124$export$3a74c015d90fb48a as CreateShapeShapeType, $75d228de1641f124$export$b194320e377e30fc as DeleteShapeShapeType, $75d228de1641f124$export$d40894f5415fdcb0 as FollowShapeShapeType, $75d228de1641f124$export$f8c85015e7349761 as IgnoreShapeShapeType, $75d228de1641f124$export$75f4c3f4458cea73 as JoinShapeShapeType, $75d228de1641f124$export$74413df64bcbe663 as LeaveShapeShapeType, $75d228de1641f124$export$abc8448eeabbbdd1 as LikeShapeShapeType, $75d228de1641f124$export$58d047bd7f06f05e as OfferShapeShapeType, $75d228de1641f124$export$5ccaa421b5f51854 as InviteShapeShapeType, $75d228de1641f124$export$df337f25edddb3d4 as RejectShapeShapeType, $75d228de1641f124$export$df20cc89434c142c as TentativeRejectShapeShapeType, $75d228de1641f124$export$eb541117f0aec2fa as RemoveShapeShapeType, $75d228de1641f124$export$7bfbae0453992dcf as UndoShapeShapeType, $75d228de1641f124$export$f5189816b12b8ad7 as UpdateShapeShapeType, $75d228de1641f124$export$f33c35e7f7c0666f as ViewShapeShapeType, $75d228de1641f124$export$7e5c80c19f4c5a36 as ListenShapeShapeType, $75d228de1641f124$export$df70b3134eec98f as ReadShapeShapeType, $75d228de1641f124$export$b592c28b99e1d44b as MoveShapeShapeType, $75d228de1641f124$export$b60376fce881b14b as AnnounceShapeShapeType, $75d228de1641f124$export$e491b9b2de4157da as FlagShapeShapeType, $75d228de1641f124$export$e24e4ca9e47f4568 as DislikeShapeShapeType, $75d228de1641f124$export$48e86937c92d8cd8 as ArriveShapeShapeType, $75d228de1641f124$export$41c40e810465abe8 as TravelShapeShapeType, $75d228de1641f124$export$eac099d4a1b658a2 as QuestionShapeType, $75d228de1641f124$export$1d228843c187151c as TentativeAcceptShapeShapeType, $75d228de1641f124$export$80979644dbf392c as BlockShapeShapeType, $75d228de1641f124$export$842d31ccf1dfdac8 as ApplicationShapeShapeType, $75d228de1641f124$export$b564288dea0a5bd0 as GroupShapeShapeType, $75d228de1641f124$export$522f1e53d28364e8 as OrganizationShapeShapeType, $75d228de1641f124$export$5902ff62545abcf5 as PersonShapeShapeType, $75d228de1641f124$export$555ca5a31e520487 as ServiceShapeShapeType, $75d228de1641f124$export$9ce6e99fcca40947 as RelationshipShapeType, $75d228de1641f124$export$dd3702b153e5244b as DocumentShapeShapeType, $75d228de1641f124$export$1b7a523775299522 as ArticleShapeShapeType, $75d228de1641f124$export$5dd967872b6cf25d as AudioShapeShapeType, $75d228de1641f124$export$e68d3d081cbf05e as ImageShapeShapeType, $75d228de1641f124$export$8db85f7ab45647a as VideoShapeShapeType, $75d228de1641f124$export$f3f942ab50fb1d35 as NoteShapeShapeType, $75d228de1641f124$export$352fb8bb94d77f11 as PageShapeShapeType, $75d228de1641f124$export$4979c852d919e99d as EventShapeShapeType, $75d228de1641f124$export$ab061787a3ad797b as PlaceShapeType, $75d228de1641f124$export$c89cca55dd5b78cb as MentionShapeShapeType, $75d228de1641f124$export$84c06d7a4d4dca59 as ProfileShapeType, $75d228de1641f124$export$d4c5034320ad7d23 as TombstoneShapeType, $bdf273e33df436ba$export$6cb580950f960f8 as SolidNotificationContext, $9d2c08eaaf44c215$export$ea6652556b7356f as SolidNotificationSchema, $81f9fc733a8124f9$export$51daf0a9e553c5b3 as DescriptionResourceShapeType, $81f9fc733a8124f9$export$9e1b4131740fbe8 as SubscriptionServiceShapeType, $81f9fc733a8124f9$export$852cddb4525b12fc as NotificationChannelShapeType, $81f9fc733a8124f9$export$4426abcac492061f as NotificationMessageShapeType};
+export {$3fd42e7ba4a216b6$re_export$shapes as shapes, $40fc03b76cce2cb4$re_export$solid as solid, $bdf273e33df436ba$export$6cb580950f960f8 as SolidNotificationContext, $9d2c08eaaf44c215$export$ea6652556b7356f as SolidNotificationSchema, $81f9fc733a8124f9$export$51daf0a9e553c5b3 as DescriptionResourceShapeType, $81f9fc733a8124f9$export$9e1b4131740fbe8 as SubscriptionServiceShapeType, $81f9fc733a8124f9$export$852cddb4525b12fc as NotificationChannelShapeType, $81f9fc733a8124f9$export$4426abcac492061f as NotificationMessageShapeType, $aeeccf19fafb51b6$export$2c8fa83ea1e9f99c as activitystreamsContext, $5a51491c579929c5$export$d7dff8426c1f1d2 as activitystreamsSchema, $75d228de1641f124$export$10ed4a6ea04a5da7 as ObjectShapeType, $75d228de1641f124$export$711627bf7900d47a as LinkShapeType, $75d228de1641f124$export$4f551c247294b576 as ActivityShapeType, $75d228de1641f124$export$8278f0ce2855ac11 as IntransitiveActivityShapeType, $75d228de1641f124$export$8d488253d594ee88 as CollectionShapeType, $75d228de1641f124$export$f52b300449df2b3f as OrderedCollectionShapeType, $75d228de1641f124$export$464d3b3aa39764d1 as CollectionPageShapeType, $75d228de1641f124$export$27ca8464d8ec16cf as OrderedCollectionPageShapeType, $75d228de1641f124$export$373b0e733f6a58a9 as AcceptShapeType, $75d228de1641f124$export$4b1e2013a5b1e29e as AddShapeType, $75d228de1641f124$export$53bb2f00039d84cd as CreateShapeType, $75d228de1641f124$export$b326dbb26970afbb as DeleteShapeType, $75d228de1641f124$export$b7576cccedad952c as FollowShapeType, $75d228de1641f124$export$c56d9a370d377517 as IgnoreShapeType, $75d228de1641f124$export$40423390495346df as JoinShapeType, $75d228de1641f124$export$814450a210b872b7 as LeaveShapeType, $75d228de1641f124$export$967d64d7dc043cb3 as LikeShapeType, $75d228de1641f124$export$76d5a5ef5adfa81c as OfferShapeType, $75d228de1641f124$export$c7b35596bbddaa36 as InviteShapeType, $75d228de1641f124$export$98dd8636ee1b2027 as RejectShapeType, $75d228de1641f124$export$f210c874e8a67e08 as TentativeRejectShapeType, $75d228de1641f124$export$8eb62a16c5dd25f1 as RemoveShapeType, $75d228de1641f124$export$8e0e70e5cd971414 as UndoShapeType, $75d228de1641f124$export$7a8532a8272b8fe9 as UpdateShapeType, $75d228de1641f124$export$86f046b31e9d598a as ViewShapeType, $75d228de1641f124$export$8392660fa310a61e as ListenShapeType, $75d228de1641f124$export$4aadace30e70896c as ReadShapeType, $75d228de1641f124$export$9de1cbd05aa4e4a2 as MoveShapeType, $75d228de1641f124$export$6a65061ecd1ed015 as AnnounceShapeType, $75d228de1641f124$export$772907b34ccd38da as FlagShapeType, $75d228de1641f124$export$6280f1022b022237 as DislikeShapeType, $75d228de1641f124$export$dc3522f479d91405 as ArriveShapeType, $75d228de1641f124$export$1a4b6fd809c5438 as TravelShapeType, $75d228de1641f124$export$eac099d4a1b658a2 as QuestionShapeType, $75d228de1641f124$export$e44d01b2a5be2258 as TentativeAcceptShapeType, $75d228de1641f124$export$8a55b09e07eee057 as BlockShapeType, $75d228de1641f124$export$7eb06d840cd48ae1 as ApplicationShapeType, $75d228de1641f124$export$cfa2681679f25fd as GroupShapeType, $75d228de1641f124$export$7d3c4a9772d49f4b as OrganizationShapeType, $75d228de1641f124$export$5f641edbe0260f3 as PersonShapeType, $75d228de1641f124$export$2167ff40709826a7 as ServiceShapeType, $75d228de1641f124$export$9ce6e99fcca40947 as RelationshipShapeType, $75d228de1641f124$export$567343fec6bc2c67 as DocumentShapeType, $75d228de1641f124$export$e95d69cde7699941 as ArticleShapeType, $75d228de1641f124$export$98a873e8b95d6baf as AudioShapeType, $75d228de1641f124$export$dea7974d2ab9d5f9 as ImageShapeType, $75d228de1641f124$export$4df0c0c211bb75ea as VideoShapeType, $75d228de1641f124$export$8d5a952ef4e9f114 as NoteShapeType, $75d228de1641f124$export$899495320525d3ad as PageShapeType, $75d228de1641f124$export$53e4cd7400e6ee51 as EventShapeType, $75d228de1641f124$export$ab061787a3ad797b as PlaceShapeType, $75d228de1641f124$export$57b2cf11a29eb701 as MentionShapeType, $75d228de1641f124$export$84c06d7a4d4dca59 as ProfileShapeType, $75d228de1641f124$export$d4c5034320ad7d23 as TombstoneShapeType};
 //# sourceMappingURL=index.cjs.js.map

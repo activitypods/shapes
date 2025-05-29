@@ -12,36 +12,35 @@ import { LdoJsonldContext, LdSet } from "@ldo/ldo";
 export interface Object {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: string;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
+  type: {
+    "@id": "Object";
+  };
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
@@ -72,44 +71,48 @@ export interface Link {
 export interface Activity {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
@@ -118,44 +121,51 @@ export interface Activity {
 export interface IntransitiveActivity {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "IntransitiveActivity";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
@@ -164,42 +174,46 @@ export interface IntransitiveActivity {
 export interface Collection {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Collection";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
   totalItems?: number;
   current?: string;
   first?: string;
-  items?: LdSet<string>;
+  items?: LdSet<Object>;
   last?: string;
 }
 
@@ -209,46 +223,53 @@ export interface Collection {
 export interface OrderedCollection {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "OrderedCollection";
+      }
+    | {
+        "@id": "Collection";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
   totalItems?: number;
   current?: string;
   first?: string;
-  items?: LdSet<string>;
+  items?: LdSet<Object>;
   last?: string;
   next?: string;
   prev?: string;
-  orderedItems?: LdSet<string>;
+  orderedItems?: LdSet<Object>;
 }
 
 /**
@@ -257,42 +278,49 @@ export interface OrderedCollection {
 export interface CollectionPage {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "CollectionPage";
+      }
+    | {
+        "@id": "Collection";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
   totalItems?: number;
   current?: string;
   first?: string;
-  items?: LdSet<string>;
+  items?: LdSet<Object>;
   last?: string;
   next?: string;
   partOf?: string;
@@ -305,1197 +333,1388 @@ export interface CollectionPage {
 export interface OrderedCollectionPage {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "OrderedCollectionPage";
+      }
+    | {
+        "@id": "OrderedCollection";
+      }
+    | {
+        "@id": "Collection";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
   totalItems?: number;
   current?: string;
   first?: string;
-  items?: LdSet<string>;
+  items?: LdSet<Object>;
   last?: string;
   next?: string;
   prev?: string;
-  orderedItems?: LdSet<string>;
+  orderedItems?: LdSet<Object>;
   startIndex?: number;
 }
 
 /**
- * AcceptShape Type
+ * Accept Type
  */
-export interface AcceptShape {
+export interface Accept {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Accept";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * AddShape Type
+ * Add Type
  */
-export interface AddShape {
+export interface Add {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Add";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * CreateShape Type
+ * Create Type
  */
-export interface CreateShape {
+export interface Create {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Create";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * DeleteShape Type
+ * Delete Type
  */
-export interface DeleteShape {
+export interface Delete {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Delete";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * FollowShape Type
+ * Follow Type
  */
-export interface FollowShape {
+export interface Follow {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Follow";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * IgnoreShape Type
+ * Ignore Type
  */
-export interface IgnoreShape {
+export interface Ignore {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Ignore";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * JoinShape Type
+ * Join Type
  */
-export interface JoinShape {
+export interface Join {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Join";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * LeaveShape Type
+ * Leave Type
  */
-export interface LeaveShape {
+export interface Leave {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Leave";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * LikeShape Type
+ * Like Type
  */
-export interface LikeShape {
+export interface Like {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Like";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * OfferShape Type
+ * Offer Type
  */
-export interface OfferShape {
+export interface Offer {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Offer";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * InviteShape Type
+ * Invite Type
  */
-export interface InviteShape {
+export interface Invite {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Invite";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * RejectShape Type
+ * Reject Type
  */
-export interface RejectShape {
+export interface Reject {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Reject";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * TentativeRejectShape Type
+ * TentativeReject Type
  */
-export interface TentativeRejectShape {
+export interface TentativeReject {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "TentativeReject";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * RemoveShape Type
+ * Remove Type
  */
-export interface RemoveShape {
+export interface Remove {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Remove";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * UndoShape Type
+ * Undo Type
  */
-export interface UndoShape {
+export interface Undo {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Undo";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * UpdateShape Type
+ * Update Type
  */
-export interface UpdateShape {
+export interface Update {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Update";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * ViewShape Type
+ * View Type
  */
-export interface ViewShape {
+export interface View {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "View";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * ListenShape Type
+ * Listen Type
  */
-export interface ListenShape {
+export interface Listen {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Listen";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * ReadShape Type
+ * Read Type
  */
-export interface ReadShape {
+export interface Read {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Read";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * MoveShape Type
+ * Move Type
  */
-export interface MoveShape {
+export interface Move {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Move";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * AnnounceShape Type
+ * Announce Type
  */
-export interface AnnounceShape {
+export interface Announce {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Announce";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * FlagShape Type
+ * Flag Type
  */
-export interface FlagShape {
+export interface Flag {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Flag";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * DislikeShape Type
+ * Dislike Type
  */
-export interface DislikeShape {
+export interface Dislike {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Dislike";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * ArriveShape Type
+ * Arrive Type
  */
-export interface ArriveShape {
+export interface Arrive {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Arrive";
+      }
+    | {
+        "@id": "IntransitiveActivity";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * TravelShape Type
+ * Travel Type
  */
-export interface TravelShape {
+export interface Travel {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Travel";
+      }
+    | {
+        "@id": "IntransitiveActivity";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
@@ -1504,339 +1723,383 @@ export interface TravelShape {
 export interface Question {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Question";
+      }
+    | {
+        "@id": "IntransitiveActivity";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
   oneOf?: LdSet<string>;
   anyOf?: LdSet<string>;
   closed?: string;
 }
 
 /**
- * TentativeAcceptShape Type
+ * TentativeAccept Type
  */
-export interface TentativeAcceptShape {
+export interface TentativeAccept {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "TentativeAccept";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * BlockShape Type
+ * Block Type
  */
-export interface BlockShape {
+export interface Block {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string | string>;
+  type: LdSet<
+    | {
+        "@id": "Block";
+      }
+    | {
+        "@id": "Activity";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: LdSet<string | string>;
   "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  actor?: LdSet<string>;
-  instrument?: LdSet<string>;
-  object?: LdSet<string>;
-  origin?: LdSet<string>;
-  result?: LdSet<string>;
-  target?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  actor?: LdSet<Object>;
+  instrument?: LdSet<Object>;
+  object?: LdSet<Object>;
+  origin?: LdSet<Object>;
+  result?: LdSet<Object>;
+  target?: LdSet<Object>;
 }
 
 /**
- * ApplicationShape Type
+ * Application Type
  */
-export interface ApplicationShape {
+export interface Application {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Application";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
- * GroupShape Type
+ * Group Type
  */
-export interface GroupShape {
+export interface Group {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Group";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
- * OrganizationShape Type
+ * Organization Type
  */
-export interface OrganizationShape {
+export interface Organization {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Organization";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
- * PersonShape Type
+ * Person Type
  */
-export interface PersonShape {
+export interface Person {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Person";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
- * ServiceShape Type
+ * Service Type
  */
-export interface ServiceShape {
+export interface Service {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Service";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
@@ -1845,268 +2108,406 @@ export interface ServiceShape {
 export interface Relationship {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Relationship";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
-  subject?: LdSet<string>;
-  object?: LdSet<string>;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+  subject?: LdSet<Object>;
+  object?: LdSet<Object>;
   relationship?: LdSet<string>;
 }
 
 /**
- * DocumentShape Type
+ * Document Type
  */
-export interface DocumentShape {
+export interface Document {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Document";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
- * ArticleShape Type
+ * Article Type
  */
-export interface ArticleShape {
+export interface Article {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Article";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
- * AudioShape Type
+ * Audio Type
  */
-export interface AudioShape {
+export interface Audio {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: string;
-}
-
-/**
- * ImageShape Type
- */
-export interface ImageShape {
-  "@id"?: string;
-  "@context"?: LdoJsonldContext;
-  type: string;
-}
-
-/**
- * VideoShape Type
- */
-export interface VideoShape {
-  "@id"?: string;
-  "@context"?: LdoJsonldContext;
-  type: string;
-}
-
-/**
- * NoteShape Type
- */
-export interface NoteShape {
-  "@id"?: string;
-  "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
-  "@id"?: string;
-  "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
+  type: LdSet<
+    | {
+        "@id": "Audio";
+      }
+    | {
+        "@id": "Document";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
+  "@id"?: LdSet<string | string>;
+  "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
- * PageShape Type
+ * Image Type
  */
-export interface PageShape {
+export interface Image {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
-  "@id"?: string;
-  "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
+  type: LdSet<
+    | {
+        "@id": "Image";
+      }
+    | {
+        "@id": "Document";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
+  "@id"?: LdSet<string | string>;
+  "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
- * EventShape Type
+ * Video Type
  */
-export interface EventShape {
+export interface Video {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
-  "@id"?: string;
-  "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
+  type: LdSet<
+    | {
+        "@id": "Video";
+      }
+    | {
+        "@id": "Document";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
+  "@id"?: LdSet<string | string>;
+  "@context"?: LdSet<LdoJsonldContext | LdoJsonldContext>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+}
+
+/**
+ * Note Type
+ */
+export interface Note {
+  "@id"?: string;
+  "@context"?: LdoJsonldContext;
+  type: LdSet<
+    | {
+        "@id": "Note";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
+  "@id"?: string;
+  "@context"?: LdoJsonldContext;
+  content?: string;
+  icon?: LdSet<string>;
+  image?: LdSet<string>;
+  name?: string;
+  preview?: LdSet<string>;
+  summary?: string;
+  url?: LdSet<string>;
+  duration?: string;
+  endTime?: string;
+  mediaType?: string;
+  published?: string;
+  startTime?: string;
+  updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+}
+
+/**
+ * Page Type
+ */
+export interface Page {
+  "@id"?: string;
+  "@context"?: LdoJsonldContext;
+  type: LdSet<
+    | {
+        "@id": "Page";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
+  "@id"?: string;
+  "@context"?: LdoJsonldContext;
+  content?: string;
+  icon?: LdSet<string>;
+  image?: LdSet<string>;
+  name?: string;
+  preview?: LdSet<string>;
+  summary?: string;
+  url?: LdSet<string>;
+  duration?: string;
+  endTime?: string;
+  mediaType?: string;
+  published?: string;
+  startTime?: string;
+  updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
+}
+
+/**
+ * Event Type
+ */
+export interface Event {
+  "@id"?: string;
+  "@context"?: LdoJsonldContext;
+  type: LdSet<
+    | {
+        "@id": "Event";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
+  "@id"?: string;
+  "@context"?: LdoJsonldContext;
+  content?: string;
+  icon?: LdSet<string>;
+  image?: LdSet<string>;
+  name?: string;
+  preview?: LdSet<string>;
+  summary?: string;
+  url?: LdSet<string>;
+  duration?: string;
+  endTime?: string;
+  mediaType?: string;
+  published?: string;
+  startTime?: string;
+  updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
 }
 
 /**
@@ -2115,38 +2516,42 @@ export interface EventShape {
 export interface Place {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Place";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
   accuracy?: string;
   altitude?: string;
   latitude?: string;
@@ -2156,13 +2561,15 @@ export interface Place {
 }
 
 /**
- * MentionShape Type
+ * Mention Type
  */
-export interface MentionShape {
+export interface Mention {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
   type: LdSet<
-    | string
+    | {
+        "@id": "Mention";
+      }
     | {
         "@id": "Link";
       }
@@ -2188,38 +2595,42 @@ export interface MentionShape {
 export interface Profile {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Profile";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
   describes?: string;
 }
 
@@ -2229,38 +2640,42 @@ export interface Profile {
 export interface Tombstone {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: LdSet<string | string>;
+  type: LdSet<
+    | {
+        "@id": "Tombstone";
+      }
+    | {
+        "@id": "Object";
+      }
+  >;
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  attachment?: LdSet<string>;
-  attributedTo?: LdSet<string>;
-  audience?: LdSet<string>;
-  bcc?: LdSet<string>;
-  bto?: LdSet<string>;
-  cc?: LdSet<string>;
   content?: string;
-  context?: LdSet<string>;
-  generator?: LdSet<string>;
   icon?: LdSet<string>;
   image?: LdSet<string>;
-  inReplyTo?: LdSet<string>;
-  location?: LdSet<string>;
   name?: string;
   preview?: LdSet<string>;
-  replies?: string;
   summary?: string;
-  tag?: LdSet<string>;
-  to?: LdSet<string>;
   url?: LdSet<string>;
   duration?: string;
   endTime?: string;
-  id?: {
-    "@id": string;
-  };
   mediaType?: string;
   published?: string;
   startTime?: string;
   updated?: string;
+  attachment?: LdSet<Object>;
+  attributedTo?: LdSet<Object>;
+  audience?: LdSet<Object>;
+  bcc?: LdSet<Object>;
+  bto?: LdSet<Object>;
+  cc?: LdSet<Object>;
+  context?: LdSet<Object>;
+  generator?: LdSet<Object>;
+  inReplyTo?: LdSet<Object>;
+  location?: LdSet<Object>;
+  replies?: Collection;
+  tag?: LdSet<Object>;
+  to?: LdSet<Object>;
   formerType?: LdSet<string>;
   deleted?: string;
 }
