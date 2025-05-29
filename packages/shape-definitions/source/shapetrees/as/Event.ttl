@@ -6,6 +6,6 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
 :Event
   a st:ShapeTree ;
   st:expectsType st:Resource ;
-  st:shape <../../shapes/activitypub#Event> ;
+  st:shape <../../shapes/as/Event> ;
   st:describesInstance as:name ;
   skos:prefLabel "Events"@en, "Evénements"@fr .

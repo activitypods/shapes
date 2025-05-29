@@ -7,6 +7,6 @@ PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 :Profile
   a st:ShapeTree ;
   st:expectsType st:Resource ;
-  st:shape <../../shapes/activitypub#Profile> ;
+  st:shape <../../shapes/as/Profile> ;
   st:describesInstance vcard:given-name ;
   skos:prefLabel "Profiles"@en, "Profils"@fr .
