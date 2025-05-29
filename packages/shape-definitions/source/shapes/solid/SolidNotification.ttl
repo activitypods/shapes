@@ -1,16 +1,16 @@
+@prefix : <https://shapes.activitypods.org/v2/shapes/solid#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix as: <https://www.w3.org/ns/activitystreams#> .
 @prefix notify: <http://www.w3.org/ns/solid/notifications#> .
-@prefix apodsShape: <https://shapes.activitypods.org/v2/shapes/solid#> .
 
 # Solid Notifications Protocol Data Models
 # Based on https://solidproject.org/TR/notifications-protocol
 
 # Description Resource Shape
-apodsShape:DescriptionResource a sh:NodeShape ;
+:DescriptionResource a sh:NodeShape ;
   sh:targetClass notify:DescriptionResource ;
   rdfs:label "Description Resource" ;
   rdfs:comment "A resource that includes information about the capabilities and features of a subscription service or notification channel" ;
@@ -36,7 +36,7 @@ apodsShape:DescriptionResource a sh:NodeShape ;
   ] .
 
 # Subscription Service Shape
-apodsShape:SubscriptionServiceShape a sh:NodeShape ;
+:SubscriptionServiceShape a sh:NodeShape ;
   sh:targetClass notify:SubscriptionService ;
   rdfs:label "Subscription Service" ;
   rdfs:comment "A service that can be used by Subscription Clients to discover available features and customize the details of a subscription request" ;
@@ -64,7 +64,7 @@ apodsShape:SubscriptionServiceShape a sh:NodeShape ;
   ] .
 
 # Notification Channel Shape
-apodsShape:NotificationChannelShape a sh:NodeShape ;
+:NotificationChannelShape a sh:NodeShape ;
   sh:targetClass notify:NotificationChannel ;
   rdfs:label "Notification Channel" ;
   rdfs:comment "A resource whose properties describe the immediately available notification interface with a specific notification channel type" ;
@@ -144,7 +144,7 @@ apodsShape:NotificationChannelShape a sh:NodeShape ;
   ] .
 
 # Notification Message Shape
-apodsShape:NotificationMessageShape a sh:NodeShape ;
+:NotificationMessageShape a sh:NodeShape ;
   sh:targetClass as:Activity ;
   rdfs:label "Notification Message" ;
   rdfs:comment "A notification message sent through a notification channel" ;
