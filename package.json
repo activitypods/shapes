@@ -26,5 +26,8 @@
     "parcel": "^2.15.0",
     "typescript": "^5.8.3",
     "yalc": "^1.0.0-pre.53"
+  },
+  "engines": {
+    "node": ">22.12.0"
   }
 }

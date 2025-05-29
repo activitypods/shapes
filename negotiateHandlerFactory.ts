@@ -17,16 +17,13 @@ function negotiateHandlerFactory(
   containsTriples?: boolean
 ) {
   return async function negotiateHandler(req: Request, res: Response) {
-    const reqStartsWithVersion = !!req.path.match(/^\/v[0-9]+/);
-    const reqPath = reqStartsWithVersion ? req.path : path.join("v1", req.path);
-
-    const fileFolder = path.join(basePath, ...reqPath.split("/").slice(0, -1));
+    const fileFolder = path.join(basePath, ...req.path.split("/").slice(0, -1));
 
     let sourceContentType;
     let fp;
     let dataStream;
 
-    if (containsTriples && reqPath.endsWith("/")) {
+    if (containsTriples && req.path.endsWith("/")) {
       // Requested URI is a directory. Return in ldp container format.
       try {
         const files = fs.readdirSync(fileFolder, { withFileTypes: true }).map(
@@ -52,8 +49,8 @@ function negotiateHandlerFactory(
     } else {
       // First get the file name
       let fileName: string | undefined;
-      const defaultFiletypes = [".ttl", ".shacl.ttl"];
-      const requestedFile = reqPath.slice(reqPath.lastIndexOf("/") + 1);
+      const defaultFiletypes = [".ttl", ".shacl.ttl", ".shacl"];
+      const requestedFile = req.path.slice(req.path.lastIndexOf("/") + 1);
       try {
         fileName = fs.readdirSync(fileFolder).find((file) => {
           if (requestedFile === file) return true;

@@ -40,8 +40,6 @@ async function ensureDir(dir: string) {
 }
 
 async function convertTtlToJsonld(ttlPath: string, jsonldPath: string) {
-  const ttlContent = await readFile(ttlPath, "utf8");
-
   const jsonldStream = transform(fs.createReadStream(ttlPath), {
     from: { contentType: "text/turtle" },
     to: { contentType: "application/ld+json" },
@@ -76,100 +74,183 @@ async function exportTtlAsCjs(ttlPath: string, cjsPath: string) {
 }
 
 /**
- * Recursively generates index.mjs and index.cjs files with export statements for all subdirectories and files
+ * Shared interface for processing directory entries and collecting exports
+ */
+interface DirectoryEntry {
+  name: string;
+  fullPath: string;
+  isDirectory: boolean;
+  exportName?: string;
+  namespace?: string;
+}
+
+/**
+ * Shared function to collect directory entries and export information
+ */
+async function collectDirectoryEntries(
+  dir: string,
+  ext: string
+): Promise<DirectoryEntry[]> {
+  const entries = await readdir(dir);
+  const processedEntries: DirectoryEntry[] = [];
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry);
+    const entryStat = await stat(fullPath);
+
+    if (entryStat.isDirectory()) {
+      const namespace = entry.replace(/[^a-zA-Z0-9_]/g, "_");
+      processedEntries.push({
+        name: entry,
+        fullPath,
+        isDirectory: true,
+        namespace,
+      });
+    } else if (entry.endsWith(ext)) {
+      const exportName = path
+        .basename(entry, ext)
+        .replace(/[^a-zA-Z0-9_]/g, "_");
+      processedEntries.push({
+        name: entry,
+        fullPath,
+        isDirectory: false,
+        exportName,
+      });
+    }
+  }
+
+  return processedEntries;
+}
+
+/**
+ * Recursively generates index.mjs files with ES module export statements for all subdirectories and files
  * with the specified extension in the base directory.
  *
  * The function walks through the directory tree and creates index files that:
  * - Export subdirectories as namespaces
- * - Export default exports from files with the specified extension
+ * - Export default exports from files with the specified extension (except for shapetrees)
+ * - For shapetrees directories: only export star exports, no default exports to avoid naming conflicts
  *
  * All export names are sanitized to ensure they are valid JavaScript identifiers.
  *
  * @param baseDir - The base directory to start generating index files from
  * @param ext - The file extension to look for (e.g., '.json', '.mjs')
  */
-async function generateIndexFiles(baseDir: string, ext: string) {
-  // Inner recursive function to walk through directories
+async function generateMjsIndexFiles(baseDir: string, ext: string) {
   async function walk(dir: string) {
-    // Read all entries in the current directory
-    const entries = await readdir(dir);
-    // Arrays to store export statements
+    const entries = await collectDirectoryEntries(dir, ext);
     const exports: string[] = [];
     const exportsStar: string[] = [];
 
-    // Process each entry in the directory
-    for (const entry of entries) {
-      const fullPath = path.join(dir, entry);
-      const entryStat = await stat(fullPath);
+    // Check if we're directly in the shapetrees root directory (not subdirectories)
+    const isInShapetreesRoot = path.basename(dir) === "shapetrees";
 
-      if (entryStat.isDirectory()) {
-        // Recursively process subdirectories first
-        await walk(fullPath);
-        // Add export statements for the subdirectory as a namespace and as a star export
-        const ns = entry.replace(/[^a-zA-Z0-9_]/g, "_");
-        exports.push(`export * as ${ns} from './${entry}';`);
-        exportsStar.push(`export * from './${entry}';`);
-      } else if (entry.endsWith(ext)) {
-        // For files with the matching extension, add export statements
-        const exportName = path
-          .basename(entry, ext)
-          .replace(/[^a-zA-Z0-9_]/g, "_");
-        exports.push(`export { default as ${exportName} } from './${entry}';`);
-        exportsStar.push(`export * from './${entry}';`);
+    // Process directories first (recursively)
+    for (const entry of entries.filter((e) => e.isDirectory)) {
+      await walk(entry.fullPath);
+      exports.push(`export * as ${entry.namespace} from './${entry.name}';`);
+      // Skip star exports for shapetrees directory to avoid naming conflicts with shapes
+      if (entry.name !== "shapetrees") {
+        exportsStar.push(`export * from './${entry.name}';`);
       }
     }
 
-    // If we have any exports, write them to index.mjs and index.cjs files in the current directory
+    // Process files
+    for (const entry of entries.filter((e) => !e.isDirectory)) {
+      // Only skip default exports for files directly in the shapetrees root directory
+      if (!isInShapetreesRoot) {
+        exports.push(
+          `export { default as ${entry.exportName} } from './${entry.name}';`
+        );
+      }
+      exportsStar.push(`export * from './${entry.name}';`);
+    }
+
+    // Write ES module index if we have exports
     if (exports.length > 0) {
       const content = exports.concat(exportsStar).join("\n") + "\n";
-      // Write ES module index (index.mjs)
       await writeFile(path.join(dir, "index.mjs"), content, "utf8");
-      // Write CommonJS index (index.cjs) using object spread and named property pattern
-      const cjsRequires = entries
-        .filter((entry) => {
-          const fullPath = path.join(dir, entry);
-          return fs.existsSync(fullPath) && fs.statSync(fullPath).isDirectory();
-        })
-        .map((entry) => {
-          const ns = entry.replace(/[^a-zA-Z0-9_]/g, "_");
-          return `const ${ns} = require('./${entry}');`;
-        });
-      const cjsExports = entries
-        .filter((entry) => {
-          const fullPath = path.join(dir, entry);
-          return fs.existsSync(fullPath) && fs.statSync(fullPath).isDirectory();
-        })
-        .map((entry) => {
-          const ns = entry.replace(/[^a-zA-Z0-9_]/g, "_");
-          return `...${ns}, ${ns}`;
-        });
-      const cjsFiles = entries
-        .filter((entry) => entry.endsWith(ext))
-        .map((entry) => {
-          const exportName = path
-            .basename(entry, ext)
-            .replace(/[^a-zA-Z0-9_]/g, "_");
-          return `const ${exportName} = require('./${entry}');`;
-        });
-      const cjsFileExports = entries
-        .filter((entry) => entry.endsWith(ext))
-        .map((entry) => {
-          const exportName = path
-            .basename(entry, ext)
-            .replace(/[^a-zA-Z0-9_]/g, "_");
-          return `...${exportName}, ${exportName}`;
-        });
+    }
+  }
+
+  await walk(baseDir);
+}
+
+/**
+ * Recursively generates index.cjs files with CommonJS export statements for all subdirectories and files
+ * with the specified extension in the base directory.
+ *
+ * The function walks through the directory tree and creates index files that:
+ * - Export subdirectories as namespaces
+ * - Export default exports from files with the specified extension (except for shapetrees)
+ * - For shapetrees directories: only export star exports, no default exports to avoid naming conflicts
+ *
+ * All export names are sanitized to ensure they are valid JavaScript identifiers.
+ *
+ * @param baseDir - The base directory to start generating index files from
+ * @param ext - The file extension to look for (e.g., '.json', '.mjs')
+ */
+async function generateCjsIndexFiles(baseDir: string, ext: string) {
+  async function walk(dir: string) {
+    const entries = await collectDirectoryEntries(dir, ext);
+    const cjsRequires: string[] = [];
+    const cjsExports: string[] = [];
+
+    // Check if we're directly in the shapetrees root directory (not subdirectories)
+    const isInShapetreesRoot = path.basename(dir) === "shapetrees";
+
+    // Process directories first (recursively)
+    for (const entry of entries.filter((e) => e.isDirectory)) {
+      await walk(entry.fullPath);
+      cjsRequires.push(
+        `const ${entry.namespace} = require('./${entry.name}');`
+      );
+      // Skip star exports for shapetrees directory to avoid naming conflicts with shapes
+      if (entry.name !== "shapetrees") {
+        cjsExports.push(`...${entry.namespace}, ${entry.namespace}`);
+      } else {
+        // For shapetrees directory, only add the namespace export
+        cjsExports.push(`${entry.namespace}`);
+      }
+    }
+
+    // Process files
+    for (const entry of entries.filter((e) => !e.isDirectory)) {
+      cjsRequires.push(
+        `const ${entry.exportName} = require('./${entry.name}');`
+      );
+      // Only skip named exports for files directly in the shapetrees root directory
+      if (!isInShapetreesRoot) {
+        cjsExports.push(`...${entry.exportName}, ${entry.exportName}`);
+      } else {
+        // For shapetrees root files, only add the spread without the named export
+        cjsExports.push(`...${entry.exportName}`);
+      }
+    }
+
+    // Write CommonJS index if we have exports
+    if (cjsRequires.length > 0) {
       const cjsContent =
-        [
-          ...cjsRequires,
-          ...cjsFiles,
-          `module.exports = { ${[...cjsExports, ...cjsFileExports].join(", ")} };`,
-        ].join("\n") + "\n";
+        [...cjsRequires, `module.exports = { ${cjsExports.join(", ")} };`].join(
+          "\n"
+        ) + "\n";
       await writeFile(path.join(dir, "index.cjs"), cjsContent, "utf8");
     }
   }
-  // Start the directory walking process from the base directory
+
   await walk(baseDir);
+}
+
+/**
+ * Recursively generates both index.mjs and index.cjs files with export statements for all subdirectories and files
+ * with the specified extension in the base directory.
+ *
+ * @param baseDir - The base directory to start generating index files from
+ * @param ext - The file extension to look for (e.g., '.json', '.mjs')
+ */
+async function generateIndexFiles(baseDir: string, ext: string) {
+  await generateMjsIndexFiles(baseDir, ext);
+  await generateCjsIndexFiles(baseDir, ext);
 }
 
 async function processFiles() {
@@ -214,8 +295,14 @@ async function processFiles() {
   // Generate index.mjs and index.cjs files for the JSON-LD directory
   await generateIndexFiles(JSONLD_DIR, ".json");
 
-  // Generate index.mjs and index.cjs files for the Turtle JS directory
-  await generateIndexFiles(TTL_JS_DIR, ".mjs");
+  // Generate only index.mjs files for the Turtle JS directory (since it contains .mjs files)
+  await generateMjsIndexFiles(TTL_JS_DIR, ".mjs");
+  await generateCjsIndexFiles(TTL_JS_DIR, ".cjs");
+
+  // Log completion message
+  console.log("Shape definitions built successfully.");
+  console.log(`JSON-LD files generated in: ${JSONLD_DIR}`);
+  console.log(`Turtle JS files generated in: ${TTL_JS_DIR}`);
 }
 
 // Start the processing of files and handle errors

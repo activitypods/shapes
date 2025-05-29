@@ -27,5 +27,8 @@
     "./objects-generated/v2/shapes/maid": "./objects-generated/v2/shapes/maid/index.ts",
     "./objects-generated/v2/shapes/solid": "./objects-generated/v2/shapes/solid/index.ts",
     ".": "./objects-generated/index.ts"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

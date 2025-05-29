@@ -1,4 +1,4 @@
-FROM node:24.0.1-alpine
+FROM node:24.1.0-alpine
 
 RUN node -v
 RUN npm -v
