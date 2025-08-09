@@ -27,15 +27,15 @@
     ]
   },
   {
-    "@id": "_:n3-0",
+    "@id": "_:df_1_0",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-1"
+        "@id": "_:df_1_1"
       }
     ]
   },
   {
-    "@id": "_:n3-1",
+    "@id": "_:df_1_1",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -43,23 +43,23 @@
     ]
   },
   {
-    "@id": "_:n3-0",
+    "@id": "_:df_1_0",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-2"
+        "@id": "_:df_1_2"
       }
     ]
   },
   {
-    "@id": "_:n3-2",
+    "@id": "_:df_1_2",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-3"
+        "@id": "_:df_1_3"
       }
     ]
   },
   {
-    "@id": "_:n3-3",
+    "@id": "_:df_1_3",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -67,23 +67,23 @@
     ]
   },
   {
-    "@id": "_:n3-2",
+    "@id": "_:df_1_2",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-4"
+        "@id": "_:df_1_4"
       }
     ]
   },
   {
-    "@id": "_:n3-4",
+    "@id": "_:df_1_4",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-5"
+        "@id": "_:df_1_5"
       }
     ]
   },
   {
-    "@id": "_:n3-5",
+    "@id": "_:df_1_5",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -91,7 +91,7 @@
     ]
   },
   {
-    "@id": "_:n3-4",
+    "@id": "_:df_1_4",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -102,7 +102,7 @@
     "@id": "_:b0_AttachmentPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-0"
+        "@id": "_:df_1_0"
       }
     ]
   },
@@ -134,15 +134,15 @@
     ]
   },
   {
-    "@id": "_:n3-6",
+    "@id": "_:df_1_6",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-7"
+        "@id": "_:df_1_7"
       }
     ]
   },
   {
-    "@id": "_:n3-7",
+    "@id": "_:df_1_7",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -150,23 +150,23 @@
     ]
   },
   {
-    "@id": "_:n3-6",
+    "@id": "_:df_1_6",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-8"
+        "@id": "_:df_1_8"
       }
     ]
   },
   {
-    "@id": "_:n3-8",
+    "@id": "_:df_1_8",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-9"
+        "@id": "_:df_1_9"
       }
     ]
   },
   {
-    "@id": "_:n3-9",
+    "@id": "_:df_1_9",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -174,23 +174,23 @@
     ]
   },
   {
-    "@id": "_:n3-8",
+    "@id": "_:df_1_8",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-10"
+        "@id": "_:df_1_10"
       }
     ]
   },
   {
-    "@id": "_:n3-10",
+    "@id": "_:df_1_10",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-11"
+        "@id": "_:df_1_11"
       }
     ]
   },
   {
-    "@id": "_:n3-11",
+    "@id": "_:df_1_11",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "@id": "_:n3-10",
+    "@id": "_:df_1_10",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -209,7 +209,7 @@
     "@id": "_:b0_AttributedToPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-6"
+        "@id": "_:df_1_6"
       }
     ]
   },
@@ -241,15 +241,15 @@
     ]
   },
   {
-    "@id": "_:n3-12",
+    "@id": "_:df_1_12",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-13"
+        "@id": "_:df_1_13"
       }
     ]
   },
   {
-    "@id": "_:n3-13",
+    "@id": "_:df_1_13",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -257,23 +257,23 @@
     ]
   },
   {
-    "@id": "_:n3-12",
+    "@id": "_:df_1_12",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-14"
+        "@id": "_:df_1_14"
       }
     ]
   },
   {
-    "@id": "_:n3-14",
+    "@id": "_:df_1_14",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-15"
+        "@id": "_:df_1_15"
       }
     ]
   },
   {
-    "@id": "_:n3-15",
+    "@id": "_:df_1_15",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -281,23 +281,23 @@
     ]
   },
   {
-    "@id": "_:n3-14",
+    "@id": "_:df_1_14",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-16"
+        "@id": "_:df_1_16"
       }
     ]
   },
   {
-    "@id": "_:n3-16",
+    "@id": "_:df_1_16",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-17"
+        "@id": "_:df_1_17"
       }
     ]
   },
   {
-    "@id": "_:n3-17",
+    "@id": "_:df_1_17",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -305,7 +305,7 @@
     ]
   },
   {
-    "@id": "_:n3-16",
+    "@id": "_:df_1_16",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -316,7 +316,7 @@
     "@id": "_:b0_AudiencePropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-12"
+        "@id": "_:df_1_12"
       }
     ]
   },
@@ -348,15 +348,15 @@
     ]
   },
   {
-    "@id": "_:n3-18",
+    "@id": "_:df_1_18",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-19"
+        "@id": "_:df_1_19"
       }
     ]
   },
   {
-    "@id": "_:n3-19",
+    "@id": "_:df_1_19",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -364,23 +364,23 @@
     ]
   },
   {
-    "@id": "_:n3-18",
+    "@id": "_:df_1_18",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-20"
+        "@id": "_:df_1_20"
       }
     ]
   },
   {
-    "@id": "_:n3-20",
+    "@id": "_:df_1_20",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-21"
+        "@id": "_:df_1_21"
       }
     ]
   },
   {
-    "@id": "_:n3-21",
+    "@id": "_:df_1_21",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -388,23 +388,23 @@
     ]
   },
   {
-    "@id": "_:n3-20",
+    "@id": "_:df_1_20",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-22"
+        "@id": "_:df_1_22"
       }
     ]
   },
   {
-    "@id": "_:n3-22",
+    "@id": "_:df_1_22",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-23"
+        "@id": "_:df_1_23"
       }
     ]
   },
   {
-    "@id": "_:n3-23",
+    "@id": "_:df_1_23",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -412,7 +412,7 @@
     ]
   },
   {
-    "@id": "_:n3-22",
+    "@id": "_:df_1_22",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -423,7 +423,7 @@
     "@id": "_:b0_BccPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-18"
+        "@id": "_:df_1_18"
       }
     ]
   },
@@ -455,15 +455,15 @@
     ]
   },
   {
-    "@id": "_:n3-24",
+    "@id": "_:df_1_24",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-25"
+        "@id": "_:df_1_25"
       }
     ]
   },
   {
-    "@id": "_:n3-25",
+    "@id": "_:df_1_25",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -471,23 +471,23 @@
     ]
   },
   {
-    "@id": "_:n3-24",
+    "@id": "_:df_1_24",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-26"
+        "@id": "_:df_1_26"
       }
     ]
   },
   {
-    "@id": "_:n3-26",
+    "@id": "_:df_1_26",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-27"
+        "@id": "_:df_1_27"
       }
     ]
   },
   {
-    "@id": "_:n3-27",
+    "@id": "_:df_1_27",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -495,23 +495,23 @@
     ]
   },
   {
-    "@id": "_:n3-26",
+    "@id": "_:df_1_26",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-28"
+        "@id": "_:df_1_28"
       }
     ]
   },
   {
-    "@id": "_:n3-28",
+    "@id": "_:df_1_28",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-29"
+        "@id": "_:df_1_29"
       }
     ]
   },
   {
-    "@id": "_:n3-29",
+    "@id": "_:df_1_29",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -519,7 +519,7 @@
     ]
   },
   {
-    "@id": "_:n3-28",
+    "@id": "_:df_1_28",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -530,7 +530,7 @@
     "@id": "_:b0_BtoPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-24"
+        "@id": "_:df_1_24"
       }
     ]
   },
@@ -562,15 +562,15 @@
     ]
   },
   {
-    "@id": "_:n3-30",
+    "@id": "_:df_1_30",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-31"
+        "@id": "_:df_1_31"
       }
     ]
   },
   {
-    "@id": "_:n3-31",
+    "@id": "_:df_1_31",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -578,23 +578,23 @@
     ]
   },
   {
-    "@id": "_:n3-30",
+    "@id": "_:df_1_30",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-32"
+        "@id": "_:df_1_32"
       }
     ]
   },
   {
-    "@id": "_:n3-32",
+    "@id": "_:df_1_32",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-33"
+        "@id": "_:df_1_33"
       }
     ]
   },
   {
-    "@id": "_:n3-33",
+    "@id": "_:df_1_33",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -602,23 +602,23 @@
     ]
   },
   {
-    "@id": "_:n3-32",
+    "@id": "_:df_1_32",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-34"
+        "@id": "_:df_1_34"
       }
     ]
   },
   {
-    "@id": "_:n3-34",
+    "@id": "_:df_1_34",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-35"
+        "@id": "_:df_1_35"
       }
     ]
   },
   {
-    "@id": "_:n3-35",
+    "@id": "_:df_1_35",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -626,7 +626,7 @@
     ]
   },
   {
-    "@id": "_:n3-34",
+    "@id": "_:df_1_34",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -637,7 +637,7 @@
     "@id": "_:b0_CcPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-30"
+        "@id": "_:df_1_30"
       }
     ]
   },
@@ -669,15 +669,15 @@
     ]
   },
   {
-    "@id": "_:n3-36",
+    "@id": "_:df_1_36",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-37"
+        "@id": "_:df_1_37"
       }
     ]
   },
   {
-    "@id": "_:n3-37",
+    "@id": "_:df_1_37",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
@@ -685,23 +685,23 @@
     ]
   },
   {
-    "@id": "_:n3-36",
+    "@id": "_:df_1_36",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-38"
+        "@id": "_:df_1_38"
       }
     ]
   },
   {
-    "@id": "_:n3-38",
+    "@id": "_:df_1_38",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-39"
+        "@id": "_:df_1_39"
       }
     ]
   },
   {
-    "@id": "_:n3-39",
+    "@id": "_:df_1_39",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
@@ -709,23 +709,23 @@
     ]
   },
   {
-    "@id": "_:n3-38",
+    "@id": "_:df_1_38",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-40"
+        "@id": "_:df_1_40"
       }
     ]
   },
   {
-    "@id": "_:n3-40",
+    "@id": "_:df_1_40",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-41"
+        "@id": "_:df_1_41"
       }
     ]
   },
   {
-    "@id": "_:n3-41",
+    "@id": "_:df_1_41",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -733,7 +733,7 @@
     ]
   },
   {
-    "@id": "_:n3-40",
+    "@id": "_:df_1_40",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -744,7 +744,7 @@
     "@id": "_:b0_ContentPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-36"
+        "@id": "_:df_1_36"
       }
     ]
   },
@@ -776,15 +776,15 @@
     ]
   },
   {
-    "@id": "_:n3-42",
+    "@id": "_:df_1_42",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-43"
+        "@id": "_:df_1_43"
       }
     ]
   },
   {
-    "@id": "_:n3-43",
+    "@id": "_:df_1_43",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -792,23 +792,23 @@
     ]
   },
   {
-    "@id": "_:n3-42",
+    "@id": "_:df_1_42",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-44"
+        "@id": "_:df_1_44"
       }
     ]
   },
   {
-    "@id": "_:n3-44",
+    "@id": "_:df_1_44",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-45"
+        "@id": "_:df_1_45"
       }
     ]
   },
   {
-    "@id": "_:n3-45",
+    "@id": "_:df_1_45",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -816,23 +816,23 @@
     ]
   },
   {
-    "@id": "_:n3-44",
+    "@id": "_:df_1_44",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-46"
+        "@id": "_:df_1_46"
       }
     ]
   },
   {
-    "@id": "_:n3-46",
+    "@id": "_:df_1_46",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-47"
+        "@id": "_:df_1_47"
       }
     ]
   },
   {
-    "@id": "_:n3-47",
+    "@id": "_:df_1_47",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -840,7 +840,7 @@
     ]
   },
   {
-    "@id": "_:n3-46",
+    "@id": "_:df_1_46",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -851,7 +851,7 @@
     "@id": "_:b0_ContextPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-42"
+        "@id": "_:df_1_42"
       }
     ]
   },
@@ -883,15 +883,15 @@
     ]
   },
   {
-    "@id": "_:n3-48",
+    "@id": "_:df_1_48",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-49"
+        "@id": "_:df_1_49"
       }
     ]
   },
   {
-    "@id": "_:n3-49",
+    "@id": "_:df_1_49",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -899,23 +899,23 @@
     ]
   },
   {
-    "@id": "_:n3-48",
+    "@id": "_:df_1_48",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-50"
+        "@id": "_:df_1_50"
       }
     ]
   },
   {
-    "@id": "_:n3-50",
+    "@id": "_:df_1_50",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-51"
+        "@id": "_:df_1_51"
       }
     ]
   },
   {
-    "@id": "_:n3-51",
+    "@id": "_:df_1_51",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -923,23 +923,23 @@
     ]
   },
   {
-    "@id": "_:n3-50",
+    "@id": "_:df_1_50",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-52"
+        "@id": "_:df_1_52"
       }
     ]
   },
   {
-    "@id": "_:n3-52",
+    "@id": "_:df_1_52",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-53"
+        "@id": "_:df_1_53"
       }
     ]
   },
   {
-    "@id": "_:n3-53",
+    "@id": "_:df_1_53",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -947,7 +947,7 @@
     ]
   },
   {
-    "@id": "_:n3-52",
+    "@id": "_:df_1_52",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -958,7 +958,7 @@
     "@id": "_:b0_GeneratorPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-48"
+        "@id": "_:df_1_48"
       }
     ]
   },
@@ -990,15 +990,15 @@
     ]
   },
   {
-    "@id": "_:n3-54",
+    "@id": "_:df_1_54",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-55"
+        "@id": "_:df_1_55"
       }
     ]
   },
   {
-    "@id": "_:n3-55",
+    "@id": "_:df_1_55",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Image"
@@ -1006,23 +1006,23 @@
     ]
   },
   {
-    "@id": "_:n3-54",
+    "@id": "_:df_1_54",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-56"
+        "@id": "_:df_1_56"
       }
     ]
   },
   {
-    "@id": "_:n3-56",
+    "@id": "_:df_1_56",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-57"
+        "@id": "_:df_1_57"
       }
     ]
   },
   {
-    "@id": "_:n3-57",
+    "@id": "_:df_1_57",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -1030,23 +1030,23 @@
     ]
   },
   {
-    "@id": "_:n3-56",
+    "@id": "_:df_1_56",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-58"
+        "@id": "_:df_1_58"
       }
     ]
   },
   {
-    "@id": "_:n3-58",
+    "@id": "_:df_1_58",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-59"
+        "@id": "_:df_1_59"
       }
     ]
   },
   {
-    "@id": "_:n3-59",
+    "@id": "_:df_1_59",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -1054,7 +1054,7 @@
     ]
   },
   {
-    "@id": "_:n3-58",
+    "@id": "_:df_1_58",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1065,7 +1065,7 @@
     "@id": "_:b0_IconPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-54"
+        "@id": "_:df_1_54"
       }
     ]
   },
@@ -1097,15 +1097,15 @@
     ]
   },
   {
-    "@id": "_:n3-60",
+    "@id": "_:df_1_60",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-61"
+        "@id": "_:df_1_61"
       }
     ]
   },
   {
-    "@id": "_:n3-61",
+    "@id": "_:df_1_61",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Image"
@@ -1113,23 +1113,23 @@
     ]
   },
   {
-    "@id": "_:n3-60",
+    "@id": "_:df_1_60",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-62"
+        "@id": "_:df_1_62"
       }
     ]
   },
   {
-    "@id": "_:n3-62",
+    "@id": "_:df_1_62",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-63"
+        "@id": "_:df_1_63"
       }
     ]
   },
   {
-    "@id": "_:n3-63",
+    "@id": "_:df_1_63",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -1137,23 +1137,23 @@
     ]
   },
   {
-    "@id": "_:n3-62",
+    "@id": "_:df_1_62",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-64"
+        "@id": "_:df_1_64"
       }
     ]
   },
   {
-    "@id": "_:n3-64",
+    "@id": "_:df_1_64",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-65"
+        "@id": "_:df_1_65"
       }
     ]
   },
   {
-    "@id": "_:n3-65",
+    "@id": "_:df_1_65",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -1161,7 +1161,7 @@
     ]
   },
   {
-    "@id": "_:n3-64",
+    "@id": "_:df_1_64",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1172,7 +1172,7 @@
     "@id": "_:b0_ImagePropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-60"
+        "@id": "_:df_1_60"
       }
     ]
   },
@@ -1204,15 +1204,15 @@
     ]
   },
   {
-    "@id": "_:n3-66",
+    "@id": "_:df_1_66",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-67"
+        "@id": "_:df_1_67"
       }
     ]
   },
   {
-    "@id": "_:n3-67",
+    "@id": "_:df_1_67",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -1220,23 +1220,23 @@
     ]
   },
   {
-    "@id": "_:n3-66",
+    "@id": "_:df_1_66",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-68"
+        "@id": "_:df_1_68"
       }
     ]
   },
   {
-    "@id": "_:n3-68",
+    "@id": "_:df_1_68",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-69"
+        "@id": "_:df_1_69"
       }
     ]
   },
   {
-    "@id": "_:n3-69",
+    "@id": "_:df_1_69",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -1244,23 +1244,23 @@
     ]
   },
   {
-    "@id": "_:n3-68",
+    "@id": "_:df_1_68",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-70"
+        "@id": "_:df_1_70"
       }
     ]
   },
   {
-    "@id": "_:n3-70",
+    "@id": "_:df_1_70",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-71"
+        "@id": "_:df_1_71"
       }
     ]
   },
   {
-    "@id": "_:n3-71",
+    "@id": "_:df_1_71",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -1268,7 +1268,7 @@
     ]
   },
   {
-    "@id": "_:n3-70",
+    "@id": "_:df_1_70",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1279,7 +1279,7 @@
     "@id": "_:b0_InReplyToPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-66"
+        "@id": "_:df_1_66"
       }
     ]
   },
@@ -1311,15 +1311,15 @@
     ]
   },
   {
-    "@id": "_:n3-72",
+    "@id": "_:df_1_72",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-73"
+        "@id": "_:df_1_73"
       }
     ]
   },
   {
-    "@id": "_:n3-73",
+    "@id": "_:df_1_73",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -1327,23 +1327,23 @@
     ]
   },
   {
-    "@id": "_:n3-72",
+    "@id": "_:df_1_72",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-74"
+        "@id": "_:df_1_74"
       }
     ]
   },
   {
-    "@id": "_:n3-74",
+    "@id": "_:df_1_74",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-75"
+        "@id": "_:df_1_75"
       }
     ]
   },
   {
-    "@id": "_:n3-75",
+    "@id": "_:df_1_75",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -1351,23 +1351,23 @@
     ]
   },
   {
-    "@id": "_:n3-74",
+    "@id": "_:df_1_74",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-76"
+        "@id": "_:df_1_76"
       }
     ]
   },
   {
-    "@id": "_:n3-76",
+    "@id": "_:df_1_76",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-77"
+        "@id": "_:df_1_77"
       }
     ]
   },
   {
-    "@id": "_:n3-77",
+    "@id": "_:df_1_77",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -1375,7 +1375,7 @@
     ]
   },
   {
-    "@id": "_:n3-76",
+    "@id": "_:df_1_76",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1386,7 +1386,7 @@
     "@id": "_:b0_LocationPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-72"
+        "@id": "_:df_1_72"
       }
     ]
   },
@@ -1418,15 +1418,15 @@
     ]
   },
   {
-    "@id": "_:n3-78",
+    "@id": "_:df_1_78",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-79"
+        "@id": "_:df_1_79"
       }
     ]
   },
   {
-    "@id": "_:n3-79",
+    "@id": "_:df_1_79",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
@@ -1434,23 +1434,23 @@
     ]
   },
   {
-    "@id": "_:n3-78",
+    "@id": "_:df_1_78",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-80"
+        "@id": "_:df_1_80"
       }
     ]
   },
   {
-    "@id": "_:n3-80",
+    "@id": "_:df_1_80",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-81"
+        "@id": "_:df_1_81"
       }
     ]
   },
   {
-    "@id": "_:n3-81",
+    "@id": "_:df_1_81",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
@@ -1458,23 +1458,23 @@
     ]
   },
   {
-    "@id": "_:n3-80",
+    "@id": "_:df_1_80",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-82"
+        "@id": "_:df_1_82"
       }
     ]
   },
   {
-    "@id": "_:n3-82",
+    "@id": "_:df_1_82",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-83"
+        "@id": "_:df_1_83"
       }
     ]
   },
   {
-    "@id": "_:n3-83",
+    "@id": "_:df_1_83",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -1482,7 +1482,7 @@
     ]
   },
   {
-    "@id": "_:n3-82",
+    "@id": "_:df_1_82",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1493,7 +1493,7 @@
     "@id": "_:b0_NamePropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-78"
+        "@id": "_:df_1_78"
       }
     ]
   },
@@ -1525,15 +1525,15 @@
     ]
   },
   {
-    "@id": "_:n3-84",
+    "@id": "_:df_1_84",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-85"
+        "@id": "_:df_1_85"
       }
     ]
   },
   {
-    "@id": "_:n3-85",
+    "@id": "_:df_1_85",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -1541,23 +1541,23 @@
     ]
   },
   {
-    "@id": "_:n3-84",
+    "@id": "_:df_1_84",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-86"
+        "@id": "_:df_1_86"
       }
     ]
   },
   {
-    "@id": "_:n3-86",
+    "@id": "_:df_1_86",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-87"
+        "@id": "_:df_1_87"
       }
     ]
   },
   {
-    "@id": "_:n3-87",
+    "@id": "_:df_1_87",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -1565,23 +1565,23 @@
     ]
   },
   {
-    "@id": "_:n3-86",
+    "@id": "_:df_1_86",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-88"
+        "@id": "_:df_1_88"
       }
     ]
   },
   {
-    "@id": "_:n3-88",
+    "@id": "_:df_1_88",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-89"
+        "@id": "_:df_1_89"
       }
     ]
   },
   {
-    "@id": "_:n3-89",
+    "@id": "_:df_1_89",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -1589,7 +1589,7 @@
     ]
   },
   {
-    "@id": "_:n3-88",
+    "@id": "_:df_1_88",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1600,7 +1600,7 @@
     "@id": "_:b0_PreviewPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-84"
+        "@id": "_:df_1_84"
       }
     ]
   },
@@ -1626,15 +1626,15 @@
     ]
   },
   {
-    "@id": "_:n3-90",
+    "@id": "_:df_1_90",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-91"
+        "@id": "_:df_1_91"
       }
     ]
   },
   {
-    "@id": "_:n3-91",
+    "@id": "_:df_1_91",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Collection"
@@ -1642,23 +1642,23 @@
     ]
   },
   {
-    "@id": "_:n3-90",
+    "@id": "_:df_1_90",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-92"
+        "@id": "_:df_1_92"
       }
     ]
   },
   {
-    "@id": "_:n3-92",
+    "@id": "_:df_1_92",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-93"
+        "@id": "_:df_1_93"
       }
     ]
   },
   {
-    "@id": "_:n3-93",
+    "@id": "_:df_1_93",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#OrderedCollection"
@@ -1666,23 +1666,23 @@
     ]
   },
   {
-    "@id": "_:n3-92",
+    "@id": "_:df_1_92",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-94"
+        "@id": "_:df_1_94"
       }
     ]
   },
   {
-    "@id": "_:n3-94",
+    "@id": "_:df_1_94",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-95"
+        "@id": "_:df_1_95"
       }
     ]
   },
   {
-    "@id": "_:n3-95",
+    "@id": "_:df_1_95",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -1690,7 +1690,7 @@
     ]
   },
   {
-    "@id": "_:n3-94",
+    "@id": "_:df_1_94",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1701,7 +1701,7 @@
     "@id": "_:b0_RepliesPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-90"
+        "@id": "_:df_1_90"
       }
     ]
   },
@@ -1733,15 +1733,15 @@
     ]
   },
   {
-    "@id": "_:n3-96",
+    "@id": "_:df_1_96",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-97"
+        "@id": "_:df_1_97"
       }
     ]
   },
   {
-    "@id": "_:n3-97",
+    "@id": "_:df_1_97",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
@@ -1749,23 +1749,23 @@
     ]
   },
   {
-    "@id": "_:n3-96",
+    "@id": "_:df_1_96",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-98"
+        "@id": "_:df_1_98"
       }
     ]
   },
   {
-    "@id": "_:n3-98",
+    "@id": "_:df_1_98",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-99"
+        "@id": "_:df_1_99"
       }
     ]
   },
   {
-    "@id": "_:n3-99",
+    "@id": "_:df_1_99",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
@@ -1773,23 +1773,23 @@
     ]
   },
   {
-    "@id": "_:n3-98",
+    "@id": "_:df_1_98",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-100"
+        "@id": "_:df_1_100"
       }
     ]
   },
   {
-    "@id": "_:n3-100",
+    "@id": "_:df_1_100",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-101"
+        "@id": "_:df_1_101"
       }
     ]
   },
   {
-    "@id": "_:n3-101",
+    "@id": "_:df_1_101",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -1797,7 +1797,7 @@
     ]
   },
   {
-    "@id": "_:n3-100",
+    "@id": "_:df_1_100",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1808,7 +1808,7 @@
     "@id": "_:b0_SummaryPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-96"
+        "@id": "_:df_1_96"
       }
     ]
   },
@@ -1840,15 +1840,15 @@
     ]
   },
   {
-    "@id": "_:n3-102",
+    "@id": "_:df_1_102",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-103"
+        "@id": "_:df_1_103"
       }
     ]
   },
   {
-    "@id": "_:n3-103",
+    "@id": "_:df_1_103",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -1856,23 +1856,23 @@
     ]
   },
   {
-    "@id": "_:n3-102",
+    "@id": "_:df_1_102",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-104"
+        "@id": "_:df_1_104"
       }
     ]
   },
   {
-    "@id": "_:n3-104",
+    "@id": "_:df_1_104",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-105"
+        "@id": "_:df_1_105"
       }
     ]
   },
   {
-    "@id": "_:n3-105",
+    "@id": "_:df_1_105",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -1880,23 +1880,23 @@
     ]
   },
   {
-    "@id": "_:n3-104",
+    "@id": "_:df_1_104",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-106"
+        "@id": "_:df_1_106"
       }
     ]
   },
   {
-    "@id": "_:n3-106",
+    "@id": "_:df_1_106",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-107"
+        "@id": "_:df_1_107"
       }
     ]
   },
   {
-    "@id": "_:n3-107",
+    "@id": "_:df_1_107",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -1904,7 +1904,7 @@
     ]
   },
   {
-    "@id": "_:n3-106",
+    "@id": "_:df_1_106",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1915,7 +1915,7 @@
     "@id": "_:b0_TagPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-102"
+        "@id": "_:df_1_102"
       }
     ]
   },
@@ -1947,15 +1947,15 @@
     ]
   },
   {
-    "@id": "_:n3-108",
+    "@id": "_:df_1_108",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-109"
+        "@id": "_:df_1_109"
       }
     ]
   },
   {
-    "@id": "_:n3-109",
+    "@id": "_:df_1_109",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -1963,23 +1963,23 @@
     ]
   },
   {
-    "@id": "_:n3-108",
+    "@id": "_:df_1_108",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-110"
+        "@id": "_:df_1_110"
       }
     ]
   },
   {
-    "@id": "_:n3-110",
+    "@id": "_:df_1_110",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-111"
+        "@id": "_:df_1_111"
       }
     ]
   },
   {
-    "@id": "_:n3-111",
+    "@id": "_:df_1_111",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -1987,23 +1987,23 @@
     ]
   },
   {
-    "@id": "_:n3-110",
+    "@id": "_:df_1_110",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-112"
+        "@id": "_:df_1_112"
       }
     ]
   },
   {
-    "@id": "_:n3-112",
+    "@id": "_:df_1_112",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-113"
+        "@id": "_:df_1_113"
       }
     ]
   },
   {
-    "@id": "_:n3-113",
+    "@id": "_:df_1_113",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -2011,7 +2011,7 @@
     ]
   },
   {
-    "@id": "_:n3-112",
+    "@id": "_:df_1_112",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -2022,7 +2022,7 @@
     "@id": "_:b0_ToPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-108"
+        "@id": "_:df_1_108"
       }
     ]
   },
@@ -2054,15 +2054,15 @@
     ]
   },
   {
-    "@id": "_:n3-114",
+    "@id": "_:df_1_114",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-115"
+        "@id": "_:df_1_115"
       }
     ]
   },
   {
-    "@id": "_:n3-115",
+    "@id": "_:df_1_115",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -2070,23 +2070,23 @@
     ]
   },
   {
-    "@id": "_:n3-114",
+    "@id": "_:df_1_114",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-116"
+        "@id": "_:df_1_116"
       }
     ]
   },
   {
-    "@id": "_:n3-116",
+    "@id": "_:df_1_116",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-117"
+        "@id": "_:df_1_117"
       }
     ]
   },
   {
-    "@id": "_:n3-117",
+    "@id": "_:df_1_117",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -2094,23 +2094,23 @@
     ]
   },
   {
-    "@id": "_:n3-116",
+    "@id": "_:df_1_116",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-118"
+        "@id": "_:df_1_118"
       }
     ]
   },
   {
-    "@id": "_:n3-118",
+    "@id": "_:df_1_118",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-119"
+        "@id": "_:df_1_119"
       }
     ]
   },
   {
-    "@id": "_:n3-119",
+    "@id": "_:df_1_119",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -2118,7 +2118,7 @@
     ]
   },
   {
-    "@id": "_:n3-118",
+    "@id": "_:df_1_118",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -2129,7 +2129,7 @@
     "@id": "_:b0_UrlPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-114"
+        "@id": "_:df_1_114"
       }
     ]
   },
@@ -2562,15 +2562,15 @@
     ]
   },
   {
-    "@id": "_:n3-120",
+    "@id": "_:df_1_120",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-121"
+        "@id": "_:df_1_121"
       }
     ]
   },
   {
-    "@id": "_:n3-121",
+    "@id": "_:df_1_121",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -2578,23 +2578,23 @@
     ]
   },
   {
-    "@id": "_:n3-120",
+    "@id": "_:df_1_120",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-122"
+        "@id": "_:df_1_122"
       }
     ]
   },
   {
-    "@id": "_:n3-122",
+    "@id": "_:df_1_122",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-123"
+        "@id": "_:df_1_123"
       }
     ]
   },
   {
-    "@id": "_:n3-123",
+    "@id": "_:df_1_123",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -2602,23 +2602,23 @@
     ]
   },
   {
-    "@id": "_:n3-122",
+    "@id": "_:df_1_122",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-124"
+        "@id": "_:df_1_124"
       }
     ]
   },
   {
-    "@id": "_:n3-124",
+    "@id": "_:df_1_124",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-125"
+        "@id": "_:df_1_125"
       }
     ]
   },
   {
-    "@id": "_:n3-125",
+    "@id": "_:df_1_125",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -2626,7 +2626,7 @@
     ]
   },
   {
-    "@id": "_:n3-124",
+    "@id": "_:df_1_124",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -2637,7 +2637,7 @@
     "@id": "_:b0_ActorPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-120"
+        "@id": "_:df_1_120"
       }
     ]
   },
@@ -2664,15 +2664,15 @@
     ]
   },
   {
-    "@id": "_:n3-126",
+    "@id": "_:df_1_126",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-127"
+        "@id": "_:df_1_127"
       }
     ]
   },
   {
-    "@id": "_:n3-127",
+    "@id": "_:df_1_127",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -2680,23 +2680,23 @@
     ]
   },
   {
-    "@id": "_:n3-126",
+    "@id": "_:df_1_126",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-128"
+        "@id": "_:df_1_128"
       }
     ]
   },
   {
-    "@id": "_:n3-128",
+    "@id": "_:df_1_128",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-129"
+        "@id": "_:df_1_129"
       }
     ]
   },
   {
-    "@id": "_:n3-129",
+    "@id": "_:df_1_129",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -2704,23 +2704,23 @@
     ]
   },
   {
-    "@id": "_:n3-128",
+    "@id": "_:df_1_128",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-130"
+        "@id": "_:df_1_130"
       }
     ]
   },
   {
-    "@id": "_:n3-130",
+    "@id": "_:df_1_130",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-131"
+        "@id": "_:df_1_131"
       }
     ]
   },
   {
-    "@id": "_:n3-131",
+    "@id": "_:df_1_131",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -2728,7 +2728,7 @@
     ]
   },
   {
-    "@id": "_:n3-130",
+    "@id": "_:df_1_130",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -2739,7 +2739,7 @@
     "@id": "_:b0_InstrumentPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-126"
+        "@id": "_:df_1_126"
       }
     ]
   },
@@ -2766,15 +2766,15 @@
     ]
   },
   {
-    "@id": "_:n3-132",
+    "@id": "_:df_1_132",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-133"
+        "@id": "_:df_1_133"
       }
     ]
   },
   {
-    "@id": "_:n3-133",
+    "@id": "_:df_1_133",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -2782,23 +2782,23 @@
     ]
   },
   {
-    "@id": "_:n3-132",
+    "@id": "_:df_1_132",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-134"
+        "@id": "_:df_1_134"
       }
     ]
   },
   {
-    "@id": "_:n3-134",
+    "@id": "_:df_1_134",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-135"
+        "@id": "_:df_1_135"
       }
     ]
   },
   {
-    "@id": "_:n3-135",
+    "@id": "_:df_1_135",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -2806,23 +2806,23 @@
     ]
   },
   {
-    "@id": "_:n3-134",
+    "@id": "_:df_1_134",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-136"
+        "@id": "_:df_1_136"
       }
     ]
   },
   {
-    "@id": "_:n3-136",
+    "@id": "_:df_1_136",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-137"
+        "@id": "_:df_1_137"
       }
     ]
   },
   {
-    "@id": "_:n3-137",
+    "@id": "_:df_1_137",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -2830,7 +2830,7 @@
     ]
   },
   {
-    "@id": "_:n3-136",
+    "@id": "_:df_1_136",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -2841,7 +2841,7 @@
     "@id": "_:b0_ObjectPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-132"
+        "@id": "_:df_1_132"
       }
     ]
   },
@@ -2868,15 +2868,15 @@
     ]
   },
   {
-    "@id": "_:n3-138",
+    "@id": "_:df_1_138",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-139"
+        "@id": "_:df_1_139"
       }
     ]
   },
   {
-    "@id": "_:n3-139",
+    "@id": "_:df_1_139",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -2884,23 +2884,23 @@
     ]
   },
   {
-    "@id": "_:n3-138",
+    "@id": "_:df_1_138",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-140"
+        "@id": "_:df_1_140"
       }
     ]
   },
   {
-    "@id": "_:n3-140",
+    "@id": "_:df_1_140",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-141"
+        "@id": "_:df_1_141"
       }
     ]
   },
   {
-    "@id": "_:n3-141",
+    "@id": "_:df_1_141",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -2908,23 +2908,23 @@
     ]
   },
   {
-    "@id": "_:n3-140",
+    "@id": "_:df_1_140",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-142"
+        "@id": "_:df_1_142"
       }
     ]
   },
   {
-    "@id": "_:n3-142",
+    "@id": "_:df_1_142",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-143"
+        "@id": "_:df_1_143"
       }
     ]
   },
   {
-    "@id": "_:n3-143",
+    "@id": "_:df_1_143",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -2932,7 +2932,7 @@
     ]
   },
   {
-    "@id": "_:n3-142",
+    "@id": "_:df_1_142",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -2943,7 +2943,7 @@
     "@id": "_:b0_OriginPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-138"
+        "@id": "_:df_1_138"
       }
     ]
   },
@@ -2970,15 +2970,15 @@
     ]
   },
   {
-    "@id": "_:n3-144",
+    "@id": "_:df_1_144",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-145"
+        "@id": "_:df_1_145"
       }
     ]
   },
   {
-    "@id": "_:n3-145",
+    "@id": "_:df_1_145",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -2986,23 +2986,23 @@
     ]
   },
   {
-    "@id": "_:n3-144",
+    "@id": "_:df_1_144",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-146"
+        "@id": "_:df_1_146"
       }
     ]
   },
   {
-    "@id": "_:n3-146",
+    "@id": "_:df_1_146",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-147"
+        "@id": "_:df_1_147"
       }
     ]
   },
   {
-    "@id": "_:n3-147",
+    "@id": "_:df_1_147",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -3010,23 +3010,23 @@
     ]
   },
   {
-    "@id": "_:n3-146",
+    "@id": "_:df_1_146",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-148"
+        "@id": "_:df_1_148"
       }
     ]
   },
   {
-    "@id": "_:n3-148",
+    "@id": "_:df_1_148",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-149"
+        "@id": "_:df_1_149"
       }
     ]
   },
   {
-    "@id": "_:n3-149",
+    "@id": "_:df_1_149",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -3034,7 +3034,7 @@
     ]
   },
   {
-    "@id": "_:n3-148",
+    "@id": "_:df_1_148",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -3045,7 +3045,7 @@
     "@id": "_:b0_ResultPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-144"
+        "@id": "_:df_1_144"
       }
     ]
   },
@@ -3072,15 +3072,15 @@
     ]
   },
   {
-    "@id": "_:n3-150",
+    "@id": "_:df_1_150",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-151"
+        "@id": "_:df_1_151"
       }
     ]
   },
   {
-    "@id": "_:n3-151",
+    "@id": "_:df_1_151",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -3088,23 +3088,23 @@
     ]
   },
   {
-    "@id": "_:n3-150",
+    "@id": "_:df_1_150",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-152"
+        "@id": "_:df_1_152"
       }
     ]
   },
   {
-    "@id": "_:n3-152",
+    "@id": "_:df_1_152",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-153"
+        "@id": "_:df_1_153"
       }
     ]
   },
   {
-    "@id": "_:n3-153",
+    "@id": "_:df_1_153",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -3112,23 +3112,23 @@
     ]
   },
   {
-    "@id": "_:n3-152",
+    "@id": "_:df_1_152",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-154"
+        "@id": "_:df_1_154"
       }
     ]
   },
   {
-    "@id": "_:n3-154",
+    "@id": "_:df_1_154",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-155"
+        "@id": "_:df_1_155"
       }
     ]
   },
   {
-    "@id": "_:n3-155",
+    "@id": "_:df_1_155",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -3136,7 +3136,7 @@
     ]
   },
   {
-    "@id": "_:n3-154",
+    "@id": "_:df_1_154",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -3147,7 +3147,7 @@
     "@id": "_:b0_TargetPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-150"
+        "@id": "_:df_1_150"
       }
     ]
   },
@@ -3168,15 +3168,15 @@
     ]
   },
   {
-    "@id": "_:n3-156",
+    "@id": "_:df_1_156",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-157"
+        "@id": "_:df_1_157"
       }
     ]
   },
   {
-    "@id": "_:n3-157",
+    "@id": "_:df_1_157",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
@@ -3184,23 +3184,23 @@
     ]
   },
   {
-    "@id": "_:n3-156",
+    "@id": "_:df_1_156",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-158"
+        "@id": "_:df_1_158"
       }
     ]
   },
   {
-    "@id": "_:n3-158",
+    "@id": "_:df_1_158",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-159"
+        "@id": "_:df_1_159"
       }
     ]
   },
   {
-    "@id": "_:n3-159",
+    "@id": "_:df_1_159",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
@@ -3208,23 +3208,23 @@
     ]
   },
   {
-    "@id": "_:n3-158",
+    "@id": "_:df_1_158",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-160"
+        "@id": "_:df_1_160"
       }
     ]
   },
   {
-    "@id": "_:n3-160",
+    "@id": "_:df_1_160",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-161"
+        "@id": "_:df_1_161"
       }
     ]
   },
   {
-    "@id": "_:n3-161",
+    "@id": "_:df_1_161",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -3232,23 +3232,23 @@
     ]
   },
   {
-    "@id": "_:n3-160",
+    "@id": "_:df_1_160",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-162"
+        "@id": "_:df_1_162"
       }
     ]
   },
   {
-    "@id": "_:n3-162",
+    "@id": "_:df_1_162",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-163"
+        "@id": "_:df_1_163"
       }
     ]
   },
   {
-    "@id": "_:n3-163",
+    "@id": "_:df_1_163",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -3256,7 +3256,7 @@
     ]
   },
   {
-    "@id": "_:n3-162",
+    "@id": "_:df_1_162",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -3267,7 +3267,7 @@
     "@id": "_:b0_CurrentPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-156"
+        "@id": "_:df_1_156"
       }
     ]
   },
@@ -3288,15 +3288,15 @@
     ]
   },
   {
-    "@id": "_:n3-164",
+    "@id": "_:df_1_164",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-165"
+        "@id": "_:df_1_165"
       }
     ]
   },
   {
-    "@id": "_:n3-165",
+    "@id": "_:df_1_165",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
@@ -3304,23 +3304,23 @@
     ]
   },
   {
-    "@id": "_:n3-164",
+    "@id": "_:df_1_164",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-166"
+        "@id": "_:df_1_166"
       }
     ]
   },
   {
-    "@id": "_:n3-166",
+    "@id": "_:df_1_166",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-167"
+        "@id": "_:df_1_167"
       }
     ]
   },
   {
-    "@id": "_:n3-167",
+    "@id": "_:df_1_167",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
@@ -3328,23 +3328,23 @@
     ]
   },
   {
-    "@id": "_:n3-166",
+    "@id": "_:df_1_166",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-168"
+        "@id": "_:df_1_168"
       }
     ]
   },
   {
-    "@id": "_:n3-168",
+    "@id": "_:df_1_168",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-169"
+        "@id": "_:df_1_169"
       }
     ]
   },
   {
-    "@id": "_:n3-169",
+    "@id": "_:df_1_169",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -3352,23 +3352,23 @@
     ]
   },
   {
-    "@id": "_:n3-168",
+    "@id": "_:df_1_168",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-170"
+        "@id": "_:df_1_170"
       }
     ]
   },
   {
-    "@id": "_:n3-170",
+    "@id": "_:df_1_170",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-171"
+        "@id": "_:df_1_171"
       }
     ]
   },
   {
-    "@id": "_:n3-171",
+    "@id": "_:df_1_171",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -3376,7 +3376,7 @@
     ]
   },
   {
-    "@id": "_:n3-170",
+    "@id": "_:df_1_170",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -3387,7 +3387,7 @@
     "@id": "_:b0_FirstPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-164"
+        "@id": "_:df_1_164"
       }
     ]
   },
@@ -3414,15 +3414,15 @@
     ]
   },
   {
-    "@id": "_:n3-172",
+    "@id": "_:df_1_172",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-173"
+        "@id": "_:df_1_173"
       }
     ]
   },
   {
-    "@id": "_:n3-173",
+    "@id": "_:df_1_173",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -3430,23 +3430,23 @@
     ]
   },
   {
-    "@id": "_:n3-172",
+    "@id": "_:df_1_172",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-174"
+        "@id": "_:df_1_174"
       }
     ]
   },
   {
-    "@id": "_:n3-174",
+    "@id": "_:df_1_174",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-175"
+        "@id": "_:df_1_175"
       }
     ]
   },
   {
-    "@id": "_:n3-175",
+    "@id": "_:df_1_175",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -3454,23 +3454,23 @@
     ]
   },
   {
-    "@id": "_:n3-174",
+    "@id": "_:df_1_174",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-176"
+        "@id": "_:df_1_176"
       }
     ]
   },
   {
-    "@id": "_:n3-176",
+    "@id": "_:df_1_176",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-177"
+        "@id": "_:df_1_177"
       }
     ]
   },
   {
-    "@id": "_:n3-177",
+    "@id": "_:df_1_177",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -3478,7 +3478,7 @@
     ]
   },
   {
-    "@id": "_:n3-176",
+    "@id": "_:df_1_176",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -3489,7 +3489,7 @@
     "@id": "_:b0_ItemsPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-172"
+        "@id": "_:df_1_172"
       }
     ]
   },
@@ -3510,15 +3510,15 @@
     ]
   },
   {
-    "@id": "_:n3-178",
+    "@id": "_:df_1_178",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-179"
+        "@id": "_:df_1_179"
       }
     ]
   },
   {
-    "@id": "_:n3-179",
+    "@id": "_:df_1_179",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
@@ -3526,23 +3526,23 @@
     ]
   },
   {
-    "@id": "_:n3-178",
+    "@id": "_:df_1_178",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-180"
+        "@id": "_:df_1_180"
       }
     ]
   },
   {
-    "@id": "_:n3-180",
+    "@id": "_:df_1_180",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-181"
+        "@id": "_:df_1_181"
       }
     ]
   },
   {
-    "@id": "_:n3-181",
+    "@id": "_:df_1_181",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
@@ -3550,23 +3550,23 @@
     ]
   },
   {
-    "@id": "_:n3-180",
+    "@id": "_:df_1_180",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-182"
+        "@id": "_:df_1_182"
       }
     ]
   },
   {
-    "@id": "_:n3-182",
+    "@id": "_:df_1_182",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-183"
+        "@id": "_:df_1_183"
       }
     ]
   },
   {
-    "@id": "_:n3-183",
+    "@id": "_:df_1_183",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -3574,23 +3574,23 @@
     ]
   },
   {
-    "@id": "_:n3-182",
+    "@id": "_:df_1_182",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-184"
+        "@id": "_:df_1_184"
       }
     ]
   },
   {
-    "@id": "_:n3-184",
+    "@id": "_:df_1_184",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-185"
+        "@id": "_:df_1_185"
       }
     ]
   },
   {
-    "@id": "_:n3-185",
+    "@id": "_:df_1_185",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -3598,7 +3598,7 @@
     ]
   },
   {
-    "@id": "_:n3-184",
+    "@id": "_:df_1_184",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -3609,7 +3609,7 @@
     "@id": "_:b0_LastPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-178"
+        "@id": "_:df_1_178"
       }
     ]
   },
@@ -3669,15 +3669,15 @@
     ]
   },
   {
-    "@id": "_:n3-186",
+    "@id": "_:df_1_186",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-187"
+        "@id": "_:df_1_187"
       }
     ]
   },
   {
-    "@id": "_:n3-187",
+    "@id": "_:df_1_187",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -3685,23 +3685,23 @@
     ]
   },
   {
-    "@id": "_:n3-186",
+    "@id": "_:df_1_186",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-188"
+        "@id": "_:df_1_188"
       }
     ]
   },
   {
-    "@id": "_:n3-188",
+    "@id": "_:df_1_188",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-189"
+        "@id": "_:df_1_189"
       }
     ]
   },
   {
-    "@id": "_:n3-189",
+    "@id": "_:df_1_189",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -3709,23 +3709,23 @@
     ]
   },
   {
-    "@id": "_:n3-188",
+    "@id": "_:df_1_188",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-190"
+        "@id": "_:df_1_190"
       }
     ]
   },
   {
-    "@id": "_:n3-190",
+    "@id": "_:df_1_190",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-191"
+        "@id": "_:df_1_191"
       }
     ]
   },
   {
-    "@id": "_:n3-191",
+    "@id": "_:df_1_191",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -3733,7 +3733,7 @@
     ]
   },
   {
-    "@id": "_:n3-190",
+    "@id": "_:df_1_190",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -3744,7 +3744,7 @@
     "@id": "_:b0_OrderedItemsPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-186"
+        "@id": "_:df_1_186"
       }
     ]
   },
@@ -3765,15 +3765,15 @@
     ]
   },
   {
-    "@id": "_:n3-192",
+    "@id": "_:df_1_192",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-193"
+        "@id": "_:df_1_193"
       }
     ]
   },
   {
-    "@id": "_:n3-193",
+    "@id": "_:df_1_193",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
@@ -3781,23 +3781,23 @@
     ]
   },
   {
-    "@id": "_:n3-192",
+    "@id": "_:df_1_192",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-194"
+        "@id": "_:df_1_194"
       }
     ]
   },
   {
-    "@id": "_:n3-194",
+    "@id": "_:df_1_194",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-195"
+        "@id": "_:df_1_195"
       }
     ]
   },
   {
-    "@id": "_:n3-195",
+    "@id": "_:df_1_195",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
@@ -3805,23 +3805,23 @@
     ]
   },
   {
-    "@id": "_:n3-194",
+    "@id": "_:df_1_194",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-196"
+        "@id": "_:df_1_196"
       }
     ]
   },
   {
-    "@id": "_:n3-196",
+    "@id": "_:df_1_196",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-197"
+        "@id": "_:df_1_197"
       }
     ]
   },
   {
-    "@id": "_:n3-197",
+    "@id": "_:df_1_197",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -3829,23 +3829,23 @@
     ]
   },
   {
-    "@id": "_:n3-196",
+    "@id": "_:df_1_196",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-198"
+        "@id": "_:df_1_198"
       }
     ]
   },
   {
-    "@id": "_:n3-198",
+    "@id": "_:df_1_198",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-199"
+        "@id": "_:df_1_199"
       }
     ]
   },
   {
-    "@id": "_:n3-199",
+    "@id": "_:df_1_199",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -3853,7 +3853,7 @@
     ]
   },
   {
-    "@id": "_:n3-198",
+    "@id": "_:df_1_198",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -3864,7 +3864,7 @@
     "@id": "_:b0_NextPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-192"
+        "@id": "_:df_1_192"
       }
     ]
   },
@@ -3885,15 +3885,15 @@
     ]
   },
   {
-    "@id": "_:n3-200",
+    "@id": "_:df_1_200",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-201"
+        "@id": "_:df_1_201"
       }
     ]
   },
   {
-    "@id": "_:n3-201",
+    "@id": "_:df_1_201",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -3901,23 +3901,23 @@
     ]
   },
   {
-    "@id": "_:n3-200",
+    "@id": "_:df_1_200",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-202"
+        "@id": "_:df_1_202"
       }
     ]
   },
   {
-    "@id": "_:n3-202",
+    "@id": "_:df_1_202",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-203"
+        "@id": "_:df_1_203"
       }
     ]
   },
   {
-    "@id": "_:n3-203",
+    "@id": "_:df_1_203",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Collection"
@@ -3925,23 +3925,23 @@
     ]
   },
   {
-    "@id": "_:n3-202",
+    "@id": "_:df_1_202",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-204"
+        "@id": "_:df_1_204"
       }
     ]
   },
   {
-    "@id": "_:n3-204",
+    "@id": "_:df_1_204",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-205"
+        "@id": "_:df_1_205"
       }
     ]
   },
   {
-    "@id": "_:n3-205",
+    "@id": "_:df_1_205",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -3949,7 +3949,7 @@
     ]
   },
   {
-    "@id": "_:n3-204",
+    "@id": "_:df_1_204",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -3960,7 +3960,7 @@
     "@id": "_:b0_PartOfPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-200"
+        "@id": "_:df_1_200"
       }
     ]
   },
@@ -3981,15 +3981,15 @@
     ]
   },
   {
-    "@id": "_:n3-206",
+    "@id": "_:df_1_206",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-207"
+        "@id": "_:df_1_207"
       }
     ]
   },
   {
-    "@id": "_:n3-207",
+    "@id": "_:df_1_207",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#CollectionPage"
@@ -3997,23 +3997,23 @@
     ]
   },
   {
-    "@id": "_:n3-206",
+    "@id": "_:df_1_206",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-208"
+        "@id": "_:df_1_208"
       }
     ]
   },
   {
-    "@id": "_:n3-208",
+    "@id": "_:df_1_208",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-209"
+        "@id": "_:df_1_209"
       }
     ]
   },
   {
-    "@id": "_:n3-209",
+    "@id": "_:df_1_209",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage"
@@ -4021,23 +4021,23 @@
     ]
   },
   {
-    "@id": "_:n3-208",
+    "@id": "_:df_1_208",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-210"
+        "@id": "_:df_1_210"
       }
     ]
   },
   {
-    "@id": "_:n3-210",
+    "@id": "_:df_1_210",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-211"
+        "@id": "_:df_1_211"
       }
     ]
   },
   {
-    "@id": "_:n3-211",
+    "@id": "_:df_1_211",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -4045,23 +4045,23 @@
     ]
   },
   {
-    "@id": "_:n3-210",
+    "@id": "_:df_1_210",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-212"
+        "@id": "_:df_1_212"
       }
     ]
   },
   {
-    "@id": "_:n3-212",
+    "@id": "_:df_1_212",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-213"
+        "@id": "_:df_1_213"
       }
     ]
   },
   {
-    "@id": "_:n3-213",
+    "@id": "_:df_1_213",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -4069,7 +4069,7 @@
     ]
   },
   {
-    "@id": "_:n3-212",
+    "@id": "_:df_1_212",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -4080,7 +4080,7 @@
     "@id": "_:b0_PrevPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-206"
+        "@id": "_:df_1_206"
       }
     ]
   },
@@ -4309,15 +4309,15 @@
     ]
   },
   {
-    "@id": "_:n3-214",
+    "@id": "_:df_1_214",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-215"
+        "@id": "_:df_1_215"
       }
     ]
   },
   {
-    "@id": "_:n3-215",
+    "@id": "_:df_1_215",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -4325,23 +4325,23 @@
     ]
   },
   {
-    "@id": "_:n3-214",
+    "@id": "_:df_1_214",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-216"
+        "@id": "_:df_1_216"
       }
     ]
   },
   {
-    "@id": "_:n3-216",
+    "@id": "_:df_1_216",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-217"
+        "@id": "_:df_1_217"
       }
     ]
   },
   {
-    "@id": "_:n3-217",
+    "@id": "_:df_1_217",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -4349,7 +4349,7 @@
     ]
   },
   {
-    "@id": "_:n3-216",
+    "@id": "_:df_1_216",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -4360,7 +4360,7 @@
     "@id": "_:b0_RelationshipPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-214"
+        "@id": "_:df_1_214"
       }
     ]
   },
@@ -4387,15 +4387,15 @@
     ]
   },
   {
-    "@id": "_:n3-218",
+    "@id": "_:df_1_218",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-219"
+        "@id": "_:df_1_219"
       }
     ]
   },
   {
-    "@id": "_:n3-219",
+    "@id": "_:df_1_219",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -4403,23 +4403,23 @@
     ]
   },
   {
-    "@id": "_:n3-218",
+    "@id": "_:df_1_218",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-220"
+        "@id": "_:df_1_220"
       }
     ]
   },
   {
-    "@id": "_:n3-220",
+    "@id": "_:df_1_220",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-221"
+        "@id": "_:df_1_221"
       }
     ]
   },
   {
-    "@id": "_:n3-221",
+    "@id": "_:df_1_221",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Link"
@@ -4427,23 +4427,23 @@
     ]
   },
   {
-    "@id": "_:n3-220",
+    "@id": "_:df_1_220",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-222"
+        "@id": "_:df_1_222"
       }
     ]
   },
   {
-    "@id": "_:n3-222",
+    "@id": "_:df_1_222",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-223"
+        "@id": "_:df_1_223"
       }
     ]
   },
   {
-    "@id": "_:n3-223",
+    "@id": "_:df_1_223",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -4451,7 +4451,7 @@
     ]
   },
   {
-    "@id": "_:n3-222",
+    "@id": "_:df_1_222",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -4462,7 +4462,7 @@
     "@id": "_:b0_SubjectPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-218"
+        "@id": "_:df_1_218"
       }
     ]
   },
@@ -4483,15 +4483,15 @@
     ]
   },
   {
-    "@id": "_:n3-224",
+    "@id": "_:df_1_224",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-225"
+        "@id": "_:df_1_225"
       }
     ]
   },
   {
-    "@id": "_:n3-225",
+    "@id": "_:df_1_225",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -4499,23 +4499,23 @@
     ]
   },
   {
-    "@id": "_:n3-224",
+    "@id": "_:df_1_224",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-226"
+        "@id": "_:df_1_226"
       }
     ]
   },
   {
-    "@id": "_:n3-226",
+    "@id": "_:df_1_226",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-227"
+        "@id": "_:df_1_227"
       }
     ]
   },
   {
-    "@id": "_:n3-227",
+    "@id": "_:df_1_227",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -4523,7 +4523,7 @@
     ]
   },
   {
-    "@id": "_:n3-226",
+    "@id": "_:df_1_226",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -4534,7 +4534,7 @@
     "@id": "_:b0_DescribesPropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-224"
+        "@id": "_:df_1_224"
       }
     ],
     "http://www.w3.org/ns/shacl#maxCount": [
@@ -4567,15 +4567,15 @@
     ]
   },
   {
-    "@id": "_:n3-228",
+    "@id": "_:df_1_228",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-229"
+        "@id": "_:df_1_229"
       }
     ]
   },
   {
-    "@id": "_:n3-229",
+    "@id": "_:df_1_229",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#Object"
@@ -4583,23 +4583,23 @@
     ]
   },
   {
-    "@id": "_:n3-228",
+    "@id": "_:df_1_228",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:n3-230"
+        "@id": "_:df_1_230"
       }
     ]
   },
   {
-    "@id": "_:n3-230",
+    "@id": "_:df_1_230",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:n3-231"
+        "@id": "_:df_1_231"
       }
     ]
   },
   {
-    "@id": "_:n3-231",
+    "@id": "_:df_1_231",
     "http://www.w3.org/ns/shacl#nodeKind": [
       {
         "@id": "http://www.w3.org/ns/shacl#IRI"
@@ -4607,7 +4607,7 @@
     ]
   },
   {
-    "@id": "_:n3-230",
+    "@id": "_:df_1_230",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -4618,7 +4618,7 @@
     "@id": "_:b0_FormerTypePropertyShape",
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:n3-228"
+        "@id": "_:df_1_228"
       }
     ]
   },
@@ -5066,7 +5066,7 @@
     ]
   },
   {
-    "@id": "_:n3-232",
+    "@id": "_:df_1_232",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5082,7 +5082,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Object",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-232"
+        "@id": "_:df_1_232"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5108,7 +5108,7 @@
     ]
   },
   {
-    "@id": "_:n3-233",
+    "@id": "_:df_1_233",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5124,7 +5124,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Link",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-233"
+        "@id": "_:df_1_233"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5150,7 +5150,7 @@
     ]
   },
   {
-    "@id": "_:n3-234",
+    "@id": "_:df_1_234",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5166,7 +5166,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Activity",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-234"
+        "@id": "_:df_1_234"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5192,7 +5192,7 @@
     ]
   },
   {
-    "@id": "_:n3-235",
+    "@id": "_:df_1_235",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5208,7 +5208,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#IntransitiveActivity",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-235"
+        "@id": "_:df_1_235"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5234,7 +5234,7 @@
     ]
   },
   {
-    "@id": "_:n3-236",
+    "@id": "_:df_1_236",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5250,7 +5250,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Collection",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-236"
+        "@id": "_:df_1_236"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5276,7 +5276,7 @@
     ]
   },
   {
-    "@id": "_:n3-237",
+    "@id": "_:df_1_237",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5292,7 +5292,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollection",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-237"
+        "@id": "_:df_1_237"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5318,7 +5318,7 @@
     ]
   },
   {
-    "@id": "_:n3-238",
+    "@id": "_:df_1_238",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5334,7 +5334,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#CollectionPage",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-238"
+        "@id": "_:df_1_238"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5360,7 +5360,7 @@
     ]
   },
   {
-    "@id": "_:n3-239",
+    "@id": "_:df_1_239",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5376,7 +5376,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#OrderedCollectionPage",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-239"
+        "@id": "_:df_1_239"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5402,7 +5402,7 @@
     ]
   },
   {
-    "@id": "_:n3-240",
+    "@id": "_:df_1_240",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5418,7 +5418,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Accept",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-240"
+        "@id": "_:df_1_240"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5444,7 +5444,7 @@
     ]
   },
   {
-    "@id": "_:n3-241",
+    "@id": "_:df_1_241",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5460,7 +5460,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Add",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-241"
+        "@id": "_:df_1_241"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5486,7 +5486,7 @@
     ]
   },
   {
-    "@id": "_:n3-242",
+    "@id": "_:df_1_242",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5502,7 +5502,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Create",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-242"
+        "@id": "_:df_1_242"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5528,7 +5528,7 @@
     ]
   },
   {
-    "@id": "_:n3-243",
+    "@id": "_:df_1_243",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5544,7 +5544,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Delete",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-243"
+        "@id": "_:df_1_243"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5570,7 +5570,7 @@
     ]
   },
   {
-    "@id": "_:n3-244",
+    "@id": "_:df_1_244",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5586,7 +5586,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Follow",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-244"
+        "@id": "_:df_1_244"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5612,7 +5612,7 @@
     ]
   },
   {
-    "@id": "_:n3-245",
+    "@id": "_:df_1_245",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5628,7 +5628,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Ignore",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-245"
+        "@id": "_:df_1_245"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5654,7 +5654,7 @@
     ]
   },
   {
-    "@id": "_:n3-246",
+    "@id": "_:df_1_246",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5670,7 +5670,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Join",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-246"
+        "@id": "_:df_1_246"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5696,7 +5696,7 @@
     ]
   },
   {
-    "@id": "_:n3-247",
+    "@id": "_:df_1_247",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5712,7 +5712,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Leave",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-247"
+        "@id": "_:df_1_247"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5738,7 +5738,7 @@
     ]
   },
   {
-    "@id": "_:n3-248",
+    "@id": "_:df_1_248",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5754,7 +5754,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Like",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-248"
+        "@id": "_:df_1_248"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5780,7 +5780,7 @@
     ]
   },
   {
-    "@id": "_:n3-249",
+    "@id": "_:df_1_249",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5796,7 +5796,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Offer",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-249"
+        "@id": "_:df_1_249"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5822,7 +5822,7 @@
     ]
   },
   {
-    "@id": "_:n3-250",
+    "@id": "_:df_1_250",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5838,7 +5838,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Invite",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-250"
+        "@id": "_:df_1_250"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5864,7 +5864,7 @@
     ]
   },
   {
-    "@id": "_:n3-251",
+    "@id": "_:df_1_251",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5880,7 +5880,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Reject",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-251"
+        "@id": "_:df_1_251"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5906,7 +5906,7 @@
     ]
   },
   {
-    "@id": "_:n3-252",
+    "@id": "_:df_1_252",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5922,7 +5922,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#TentativeReject",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-252"
+        "@id": "_:df_1_252"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5948,7 +5948,7 @@
     ]
   },
   {
-    "@id": "_:n3-253",
+    "@id": "_:df_1_253",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -5964,7 +5964,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Remove",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-253"
+        "@id": "_:df_1_253"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -5990,7 +5990,7 @@
     ]
   },
   {
-    "@id": "_:n3-254",
+    "@id": "_:df_1_254",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6006,7 +6006,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Undo",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-254"
+        "@id": "_:df_1_254"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6032,7 +6032,7 @@
     ]
   },
   {
-    "@id": "_:n3-255",
+    "@id": "_:df_1_255",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6048,7 +6048,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Update",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-255"
+        "@id": "_:df_1_255"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6074,7 +6074,7 @@
     ]
   },
   {
-    "@id": "_:n3-256",
+    "@id": "_:df_1_256",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6090,7 +6090,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#View",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-256"
+        "@id": "_:df_1_256"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6116,7 +6116,7 @@
     ]
   },
   {
-    "@id": "_:n3-257",
+    "@id": "_:df_1_257",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6132,7 +6132,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Listen",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-257"
+        "@id": "_:df_1_257"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6158,7 +6158,7 @@
     ]
   },
   {
-    "@id": "_:n3-258",
+    "@id": "_:df_1_258",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6174,7 +6174,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Read",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-258"
+        "@id": "_:df_1_258"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6200,7 +6200,7 @@
     ]
   },
   {
-    "@id": "_:n3-259",
+    "@id": "_:df_1_259",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6216,7 +6216,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Move",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-259"
+        "@id": "_:df_1_259"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6242,7 +6242,7 @@
     ]
   },
   {
-    "@id": "_:n3-260",
+    "@id": "_:df_1_260",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6258,7 +6258,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Announce",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-260"
+        "@id": "_:df_1_260"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6284,7 +6284,7 @@
     ]
   },
   {
-    "@id": "_:n3-261",
+    "@id": "_:df_1_261",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6300,7 +6300,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Flag",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-261"
+        "@id": "_:df_1_261"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6326,7 +6326,7 @@
     ]
   },
   {
-    "@id": "_:n3-262",
+    "@id": "_:df_1_262",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6342,7 +6342,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Dislike",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-262"
+        "@id": "_:df_1_262"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6368,7 +6368,7 @@
     ]
   },
   {
-    "@id": "_:n3-263",
+    "@id": "_:df_1_263",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6384,7 +6384,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Arrive",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-263"
+        "@id": "_:df_1_263"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6410,7 +6410,7 @@
     ]
   },
   {
-    "@id": "_:n3-264",
+    "@id": "_:df_1_264",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6426,7 +6426,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Travel",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-264"
+        "@id": "_:df_1_264"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6452,7 +6452,7 @@
     ]
   },
   {
-    "@id": "_:n3-265",
+    "@id": "_:df_1_265",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6468,7 +6468,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Question",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-265"
+        "@id": "_:df_1_265"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6478,7 +6478,7 @@
     ]
   },
   {
-    "@id": "_:n3-266",
+    "@id": "_:df_1_266",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#anyOf"
@@ -6489,12 +6489,12 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Question",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-266"
+        "@id": "_:df_1_266"
       }
     ]
   },
   {
-    "@id": "_:n3-267",
+    "@id": "_:df_1_267",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#oneOf"
@@ -6505,7 +6505,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Question",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-267"
+        "@id": "_:df_1_267"
       }
     ],
     "http://www.w3.org/ns/shacl#targetClass": [
@@ -6526,7 +6526,7 @@
     ]
   },
   {
-    "@id": "_:n3-268",
+    "@id": "_:df_1_268",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6542,7 +6542,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#TentativeAccept",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-268"
+        "@id": "_:df_1_268"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6568,7 +6568,7 @@
     ]
   },
   {
-    "@id": "_:n3-269",
+    "@id": "_:df_1_269",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6584,7 +6584,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Block",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-269"
+        "@id": "_:df_1_269"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6610,7 +6610,7 @@
     ]
   },
   {
-    "@id": "_:n3-270",
+    "@id": "_:df_1_270",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6626,7 +6626,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Application",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-270"
+        "@id": "_:df_1_270"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6652,7 +6652,7 @@
     ]
   },
   {
-    "@id": "_:n3-271",
+    "@id": "_:df_1_271",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6668,7 +6668,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Group",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-271"
+        "@id": "_:df_1_271"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6694,7 +6694,7 @@
     ]
   },
   {
-    "@id": "_:n3-272",
+    "@id": "_:df_1_272",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6710,7 +6710,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Organization",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-272"
+        "@id": "_:df_1_272"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6736,7 +6736,7 @@
     ]
   },
   {
-    "@id": "_:n3-273",
+    "@id": "_:df_1_273",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6752,7 +6752,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Person",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-273"
+        "@id": "_:df_1_273"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6778,7 +6778,7 @@
     ]
   },
   {
-    "@id": "_:n3-274",
+    "@id": "_:df_1_274",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6794,7 +6794,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Service",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-274"
+        "@id": "_:df_1_274"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6820,7 +6820,7 @@
     ]
   },
   {
-    "@id": "_:n3-275",
+    "@id": "_:df_1_275",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6836,7 +6836,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Relationship",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-275"
+        "@id": "_:df_1_275"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6862,7 +6862,7 @@
     ]
   },
   {
-    "@id": "_:n3-276",
+    "@id": "_:df_1_276",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6878,7 +6878,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Document",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-276"
+        "@id": "_:df_1_276"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6904,7 +6904,7 @@
     ]
   },
   {
-    "@id": "_:n3-277",
+    "@id": "_:df_1_277",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6920,7 +6920,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Article",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-277"
+        "@id": "_:df_1_277"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6946,7 +6946,7 @@
     ]
   },
   {
-    "@id": "_:n3-278",
+    "@id": "_:df_1_278",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -6962,7 +6962,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Audio",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-278"
+        "@id": "_:df_1_278"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -6988,7 +6988,7 @@
     ]
   },
   {
-    "@id": "_:n3-279",
+    "@id": "_:df_1_279",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7004,7 +7004,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Image",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-279"
+        "@id": "_:df_1_279"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -7030,7 +7030,7 @@
     ]
   },
   {
-    "@id": "_:n3-280",
+    "@id": "_:df_1_280",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7046,7 +7046,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Video",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-280"
+        "@id": "_:df_1_280"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -7072,7 +7072,7 @@
     ]
   },
   {
-    "@id": "_:n3-281",
+    "@id": "_:df_1_281",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7088,7 +7088,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Note",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-281"
+        "@id": "_:df_1_281"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -7114,7 +7114,7 @@
     ]
   },
   {
-    "@id": "_:n3-282",
+    "@id": "_:df_1_282",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7130,7 +7130,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Page",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-282"
+        "@id": "_:df_1_282"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -7156,7 +7156,7 @@
     ]
   },
   {
-    "@id": "_:n3-283",
+    "@id": "_:df_1_283",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7172,7 +7172,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Event",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-283"
+        "@id": "_:df_1_283"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -7198,7 +7198,7 @@
     ]
   },
   {
-    "@id": "_:n3-284",
+    "@id": "_:df_1_284",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7214,7 +7214,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Place",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-284"
+        "@id": "_:df_1_284"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -7240,7 +7240,7 @@
     ]
   },
   {
-    "@id": "_:n3-285",
+    "@id": "_:df_1_285",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7256,7 +7256,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Mention",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-285"
+        "@id": "_:df_1_285"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -7282,7 +7282,7 @@
     ]
   },
   {
-    "@id": "_:n3-286",
+    "@id": "_:df_1_286",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7298,7 +7298,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Profile",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-286"
+        "@id": "_:df_1_286"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [
@@ -7324,7 +7324,7 @@
     ]
   },
   {
-    "@id": "_:n3-287",
+    "@id": "_:df_1_287",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -7340,7 +7340,7 @@
     "@id": "https://shapes.activitypods.org/shapes/activitystreams#Tombstone",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-287"
+        "@id": "_:df_1_287"
       }
     ],
     "http://www.w3.org/ns/shacl#node": [

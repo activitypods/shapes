@@ -1,7 +1,7 @@
-export * as as from './as';
-export * as maid from './maid';
-export * as vcard from './vcard';
-export * from './as';
-export * from './maid';
-export * from './vcard';
+export * as as from './as/index.mjs';
+export * as maid from './maid/index.mjs';
+export * as vcard from './vcard/index.mjs';
+export * from './as/index.mjs';
+export * from './maid/index.mjs';
+export * from './vcard/index.mjs';
 export * from './File.mjs';

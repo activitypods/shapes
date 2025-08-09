@@ -1,10 +1,10 @@
-export * as as from './as';
-export * as maid from './maid';
-export * as solid from './solid';
-export * as vcard from './vcard';
+export * as as from './as/index.mjs';
+export * as maid from './maid/index.mjs';
+export * as solid from './solid/index.mjs';
+export * as vcard from './vcard/index.mjs';
 export { default as activitystreams } from './activitystreams.mjs';
-export * from './as';
-export * from './maid';
-export * from './solid';
-export * from './vcard';
+export * from './as/index.mjs';
+export * from './maid/index.mjs';
+export * from './solid/index.mjs';
+export * from './vcard/index.mjs';
 export * from './activitystreams.mjs';
