@@ -4,7 +4,6 @@ dotenv.config();
 import path from "node:path";
 import express from "express";
 import type { Request, Response } from "express";
-
 import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);

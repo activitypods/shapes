@@ -1,3 +1,3 @@
-export * as shapes from './shapes';
-export * as shapetrees from './shapetrees';
-export * from './shapes';
+export * as shapes from './shapes/index.mjs';
+export * as shapetrees from './shapetrees/index.mjs';
+export * from './shapes/index.mjs';

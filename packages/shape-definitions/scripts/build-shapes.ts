@@ -148,10 +148,12 @@ async function generateMjsIndexFiles(baseDir: string, ext: string) {
     // Process directories first (recursively)
     for (const entry of entries.filter((e) => e.isDirectory)) {
       await walk(entry.fullPath);
-      exports.push(`export * as ${entry.namespace} from './${entry.name}';`);
+      exports.push(
+        `export * as ${entry.namespace} from './${entry.name}/index.mjs';`
+      );
       // Skip star exports for shapetrees directory to avoid naming conflicts with shapes
       if (entry.name !== "shapetrees") {
-        exportsStar.push(`export * from './${entry.name}';`);
+        exportsStar.push(`export * from './${entry.name}/index.mjs';`);
       }
     }
 
@@ -203,7 +205,7 @@ async function generateCjsIndexFiles(baseDir: string, ext: string) {
     for (const entry of entries.filter((e) => e.isDirectory)) {
       await walk(entry.fullPath);
       cjsRequires.push(
-        `const ${entry.namespace} = require('./${entry.name}');`
+        `const ${entry.namespace} = require('./${entry.name}/index.cjs');`
       );
       // Skip star exports for shapetrees directory to avoid naming conflicts with shapes
       if (entry.name !== "shapetrees") {

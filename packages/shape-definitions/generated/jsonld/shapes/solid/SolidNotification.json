@@ -21,7 +21,7 @@
     ]
   },
   {
-    "@id": "_:n3-288",
+    "@id": "_:df_7_0",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#id"
@@ -59,12 +59,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#DescriptionResource",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-288"
+        "@id": "_:df_7_0"
       }
     ]
   },
   {
-    "@id": "_:n3-289",
+    "@id": "_:df_7_1",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#subscription"
@@ -90,12 +90,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#DescriptionResource",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-289"
+        "@id": "_:df_7_1"
       }
     ]
   },
   {
-    "@id": "_:n3-290",
+    "@id": "_:df_7_2",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#channel"
@@ -121,7 +121,7 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#DescriptionResource",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-290"
+        "@id": "_:df_7_2"
       }
     ]
   },
@@ -147,7 +147,7 @@
     ]
   },
   {
-    "@id": "_:n3-291",
+    "@id": "_:df_7_3",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#id"
@@ -185,12 +185,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionServiceShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-291"
+        "@id": "_:df_7_3"
       }
     ]
   },
   {
-    "@id": "_:n3-292",
+    "@id": "_:df_7_4",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#channelType"
@@ -228,12 +228,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionServiceShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-292"
+        "@id": "_:df_7_4"
       }
     ]
   },
   {
-    "@id": "_:n3-293",
+    "@id": "_:df_7_5",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#feature"
@@ -259,7 +259,7 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionServiceShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-293"
+        "@id": "_:df_7_5"
       }
     ]
   },
@@ -285,7 +285,7 @@
     ]
   },
   {
-    "@id": "_:n3-294",
+    "@id": "_:df_7_6",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#id"
@@ -323,12 +323,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-294"
+        "@id": "_:df_7_6"
       }
     ]
   },
   {
-    "@id": "_:n3-295",
+    "@id": "_:df_7_7",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -366,12 +366,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-295"
+        "@id": "_:df_7_7"
       }
     ]
   },
   {
-    "@id": "_:n3-296",
+    "@id": "_:df_7_8",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#topic"
@@ -403,12 +403,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-296"
+        "@id": "_:df_7_8"
       }
     ]
   },
   {
-    "@id": "_:n3-297",
+    "@id": "_:df_7_9",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#receiveFrom"
@@ -434,12 +434,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-297"
+        "@id": "_:df_7_9"
       }
     ]
   },
   {
-    "@id": "_:n3-298",
+    "@id": "_:df_7_10",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#sendTo"
@@ -471,12 +471,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-298"
+        "@id": "_:df_7_10"
       }
     ]
   },
   {
-    "@id": "_:n3-299",
+    "@id": "_:df_7_11",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#sender"
@@ -508,12 +508,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-299"
+        "@id": "_:df_7_11"
       }
     ]
   },
   {
-    "@id": "_:n3-300",
+    "@id": "_:df_7_12",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#startAt"
@@ -539,12 +539,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-300"
+        "@id": "_:df_7_12"
       }
     ]
   },
   {
-    "@id": "_:n3-301",
+    "@id": "_:df_7_13",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#endAt"
@@ -570,12 +570,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-301"
+        "@id": "_:df_7_13"
       }
     ]
   },
   {
-    "@id": "_:n3-302",
+    "@id": "_:df_7_14",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#state"
@@ -601,12 +601,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-302"
+        "@id": "_:df_7_14"
       }
     ]
   },
   {
-    "@id": "_:n3-303",
+    "@id": "_:df_7_15",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#rate"
@@ -632,12 +632,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-303"
+        "@id": "_:df_7_15"
       }
     ]
   },
   {
-    "@id": "_:n3-304",
+    "@id": "_:df_7_16",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#accept"
@@ -663,7 +663,7 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-304"
+        "@id": "_:df_7_16"
       }
     ]
   },
@@ -689,7 +689,7 @@
     ]
   },
   {
-    "@id": "_:n3-305",
+    "@id": "_:df_7_17",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#id"
@@ -727,12 +727,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-305"
+        "@id": "_:df_7_17"
       }
     ]
   },
   {
-    "@id": "_:n3-306",
+    "@id": "_:df_7_18",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -764,12 +764,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-306"
+        "@id": "_:df_7_18"
       }
     ]
   },
   {
-    "@id": "_:n3-307",
+    "@id": "_:df_7_19",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#object"
@@ -807,12 +807,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-307"
+        "@id": "_:df_7_19"
       }
     ]
   },
   {
-    "@id": "_:n3-308",
+    "@id": "_:df_7_20",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#published"
@@ -850,12 +850,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-308"
+        "@id": "_:df_7_20"
       }
     ]
   },
   {
-    "@id": "_:n3-309",
+    "@id": "_:df_7_21",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "https://www.w3.org/ns/activitystreams#target"
@@ -881,12 +881,12 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-309"
+        "@id": "_:df_7_21"
       }
     ]
   },
   {
-    "@id": "_:n3-310",
+    "@id": "_:df_7_22",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/ns/solid/notifications#state"
@@ -918,7 +918,7 @@
     "@id": "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:n3-310"
+        "@id": "_:df_7_22"
       }
     ]
   }
