@@ -12,9 +12,9 @@ import { LdoJsonldContext, LdSet } from "@ldo/ldo";
 export interface Object {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: {
+  type: LdSet<{
     "@id": "Object";
-  };
+  }>;
   content?: string;
   icon?: LdSet<string>;
   image?: LdSet<string>;
@@ -49,9 +49,9 @@ export interface Object {
 export interface Link {
   "@id"?: string;
   "@context"?: LdoJsonldContext;
-  type: {
+  type: LdSet<{
     "@id": "Link";
-  };
+  }>;
   name?: string;
   preview?: LdSet<string>;
   height?: number;

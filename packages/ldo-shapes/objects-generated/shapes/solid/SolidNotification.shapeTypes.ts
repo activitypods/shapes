@@ -28,7 +28,8 @@ export const DescriptionResourceShapeType: ShapeType<DescriptionResource> = {
  */
 export const SubscriptionServiceShapeType: ShapeType<SubscriptionService> = {
   schema: SolidNotificationSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionService",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionServiceShape",
   context: SolidNotificationContext,
 };
 
@@ -37,7 +38,8 @@ export const SubscriptionServiceShapeType: ShapeType<SubscriptionService> = {
  */
 export const NotificationChannelShapeType: ShapeType<NotificationChannel> = {
   schema: SolidNotificationSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannel",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
   context: SolidNotificationContext,
 };
 
@@ -46,6 +48,7 @@ export const NotificationChannelShapeType: ShapeType<NotificationChannel> = {
  */
 export const NotificationMessageShapeType: ShapeType<NotificationMessage> = {
   schema: SolidNotificationSchema,
-  shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessage",
+  shape:
+    "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
   context: SolidNotificationContext,
 };

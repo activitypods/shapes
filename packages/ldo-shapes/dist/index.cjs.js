@@ -30,13 +30,15 @@ var $eb5f831e0bb7d686$exports = {};
 $parcel$export($eb5f831e0bb7d686$exports, "activitystreamsContext", () => $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c);
 const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
     type: {
-        "@id": "@type"
+        "@id": "@type",
+        "@isCollection": true
     },
     Object: {
         "@id": "https://www.w3.org/ns/activitystreams#Object",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             content: {
                 "@id": "https://www.w3.org/ns/activitystreams#content",
@@ -274,7 +276,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Collection",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             totalItems: {
                 "@id": "https://www.w3.org/ns/activitystreams#totalItems",
@@ -334,7 +337,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Link",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             name: {
                 "@id": "https://www.w3.org/ns/activitystreams#name",
@@ -405,7 +409,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Activity",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             actor: {
                 "@id": "https://www.w3.org/ns/activitystreams#actor",
@@ -473,7 +478,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#IntransitiveActivity",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -481,7 +487,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#OrderedCollection",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             next: {
                 "@id": "https://www.w3.org/ns/activitystreams#next",
@@ -515,7 +522,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#CollectionPage",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             next: {
                 "@id": "https://www.w3.org/ns/activitystreams#next",
@@ -539,7 +547,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#OrderedCollectionPage",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             startIndex: {
                 "@id": "https://www.w3.org/ns/activitystreams#startIndex",
@@ -555,7 +564,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Accept",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -563,7 +573,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Add",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -571,7 +582,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Create",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -579,7 +591,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Delete",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -587,7 +600,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Follow",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -595,7 +609,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Ignore",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -603,7 +618,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Join",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -611,7 +627,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Leave",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -619,7 +636,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Like",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -627,7 +645,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Offer",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -635,7 +654,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Invite",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -643,7 +663,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Reject",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -651,7 +672,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#TentativeReject",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -659,7 +681,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Remove",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -667,7 +690,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Undo",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -675,7 +699,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Update",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -683,7 +708,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#View",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -691,7 +717,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Listen",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -699,7 +726,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Read",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -707,7 +735,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Move",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -715,7 +744,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Announce",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -723,7 +753,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Flag",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -731,7 +762,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Dislike",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -739,7 +771,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Arrive",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -747,7 +780,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Travel",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -755,7 +789,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Question",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             oneOf: {
                 "@id": "https://www.w3.org/ns/activitystreams#oneOf",
@@ -791,7 +826,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#TentativeAccept",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -799,7 +835,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Block",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -807,7 +844,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Application",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -815,7 +853,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Group",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -823,7 +862,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Organization",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -831,7 +871,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Person",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -839,7 +880,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Service",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -847,7 +889,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Relationship",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             subject: {
                 "@id": "https://www.w3.org/ns/activitystreams#subject",
@@ -880,7 +923,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Document",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -888,7 +932,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Article",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -896,7 +941,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Audio",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -904,7 +950,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Image",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -912,7 +959,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Video",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -920,7 +968,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Note",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -928,7 +977,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Page",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -936,7 +986,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Event",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -944,7 +995,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Place",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             accuracy: {
                 "@id": "https://www.w3.org/ns/activitystreams#accuracy",
@@ -1000,7 +1052,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Mention",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             }
         }
     },
@@ -1008,7 +1061,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Profile",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             describes: {
                 "@id": "https://www.w3.org/ns/activitystreams#describes",
@@ -1024,7 +1078,8 @@ const $eb5f831e0bb7d686$export$2c8fa83ea1e9f99c = {
         "@id": "https://www.w3.org/ns/activitystreams#Tombstone",
         "@context": {
             type: {
-                "@id": "@type"
+                "@id": "@type",
+                "@isCollection": true
             },
             formerType: {
                 "@id": "https://www.w3.org/ns/activitystreams#formerType",
@@ -3452,7 +3507,8 @@ const $f5da5fe4bb3a5c60$export$6cb580950f960f8 = {
     },
     receiveFrom: {
         "@id": "http://www.w3.org/ns/solid/notifications#receiveFrom",
-        "@type": "@id"
+        "@type": "@id",
+        "@isCollection": true
     },
     sendTo: {
         "@id": "http://www.w3.org/ns/solid/notifications#sendTo",
@@ -3464,23 +3520,28 @@ const $f5da5fe4bb3a5c60$export$6cb580950f960f8 = {
     },
     startAt: {
         "@id": "http://www.w3.org/ns/solid/notifications#startAt",
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@isCollection": true
     },
     endAt: {
         "@id": "http://www.w3.org/ns/solid/notifications#endAt",
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@isCollection": true
     },
     state: {
         "@id": "http://www.w3.org/ns/solid/notifications#state",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@isCollection": true
     },
     rate: {
         "@id": "http://www.w3.org/ns/solid/notifications#rate",
-        "@type": "http://www.w3.org/2001/XMLSchema#duration"
+        "@type": "http://www.w3.org/2001/XMLSchema#duration",
+        "@isCollection": true
     },
     accept: {
         "@id": "http://www.w3.org/ns/solid/notifications#accept",
-        "@type": "http://www.w3.org/2001/XMLSchema#string"
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@isCollection": true
     },
     object: {
         "@id": "https://www.w3.org/ns/activitystreams#object",
@@ -3518,7 +3579,9 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                             valueExpr: {
                                 type: "NodeConstraint",
                                 nodeKind: "iri"
-                            }
+                            },
+                            min: 1,
+                            max: 1
                         },
                         {
                             type: "TripleConstraint",
@@ -3545,7 +3608,7 @@ const $3278b757a0226216$export$ea6652556b7356f = {
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionService",
+            id: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionServiceShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -3558,7 +3621,9 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                             valueExpr: {
                                 type: "NodeConstraint",
                                 nodeKind: "iri"
-                            }
+                            },
+                            min: 1,
+                            max: 1
                         },
                         {
                             type: "TripleConstraint",
@@ -3566,7 +3631,9 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                             valueExpr: {
                                 type: "NodeConstraint",
                                 nodeKind: "iri"
-                            }
+                            },
+                            min: 1,
+                            max: 1
                         },
                         {
                             type: "TripleConstraint",
@@ -3583,7 +3650,7 @@ const $3278b757a0226216$export$ea6652556b7356f = {
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannel",
+            id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -3596,7 +3663,9 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                             valueExpr: {
                                 type: "NodeConstraint",
                                 nodeKind: "iri"
-                            }
+                            },
+                            min: 1,
+                            max: 1
                         },
                         {
                             type: "TripleConstraint",
@@ -3604,7 +3673,9 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                             valueExpr: {
                                 type: "NodeConstraint",
                                 nodeKind: "iri"
-                            }
+                            },
+                            min: 1,
+                            max: 1
                         },
                         {
                             type: "TripleConstraint",
@@ -3624,7 +3695,7 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                                 nodeKind: "iri"
                             },
                             min: 0,
-                            max: 1
+                            max: -1
                         },
                         {
                             type: "TripleConstraint",
@@ -3654,7 +3725,7 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                                 datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
                             },
                             min: 0,
-                            max: 1
+                            max: -1
                         },
                         {
                             type: "TripleConstraint",
@@ -3664,7 +3735,7 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                                 datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
                             },
                             min: 0,
-                            max: 1
+                            max: -1
                         },
                         {
                             type: "TripleConstraint",
@@ -3674,7 +3745,7 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                                 datatype: "http://www.w3.org/2001/XMLSchema#string"
                             },
                             min: 0,
-                            max: 1
+                            max: -1
                         },
                         {
                             type: "TripleConstraint",
@@ -3684,7 +3755,7 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                                 datatype: "http://www.w3.org/2001/XMLSchema#duration"
                             },
                             min: 0,
-                            max: 1
+                            max: -1
                         },
                         {
                             type: "TripleConstraint",
@@ -3694,14 +3765,14 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                                 datatype: "http://www.w3.org/2001/XMLSchema#string"
                             },
                             min: 0,
-                            max: 1
+                            max: -1
                         }
                     ]
                 }
             }
         },
         {
-            id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessage",
+            id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
             type: "ShapeDecl",
             shapeExpr: {
                 type: "Shape",
@@ -3714,7 +3785,9 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                             valueExpr: {
                                 type: "NodeConstraint",
                                 nodeKind: "iri"
-                            }
+                            },
+                            min: 1,
+                            max: 1
                         },
                         {
                             type: "TripleConstraint",
@@ -3732,7 +3805,9 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                             valueExpr: {
                                 type: "NodeConstraint",
                                 nodeKind: "iri"
-                            }
+                            },
+                            min: 1,
+                            max: 1
                         },
                         {
                             type: "TripleConstraint",
@@ -3740,7 +3815,9 @@ const $3278b757a0226216$export$ea6652556b7356f = {
                             valueExpr: {
                                 type: "NodeConstraint",
                                 datatype: "http://www.w3.org/2001/XMLSchema#dateTime"
-                            }
+                            },
+                            min: 1,
+                            max: 1
                         },
                         {
                             type: "TripleConstraint",
@@ -3785,17 +3862,17 @@ const $0c862ea91c28280b$export$51daf0a9e553c5b3 = {
 };
 const $0c862ea91c28280b$export$9e1b4131740fbe8 = {
     schema: (0, $3278b757a0226216$export$ea6652556b7356f),
-    shape: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionService",
+    shape: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionServiceShape",
     context: (0, $f5da5fe4bb3a5c60$export$6cb580950f960f8)
 };
 const $0c862ea91c28280b$export$852cddb4525b12fc = {
     schema: (0, $3278b757a0226216$export$ea6652556b7356f),
-    shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannel",
+    shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
     context: (0, $f5da5fe4bb3a5c60$export$6cb580950f960f8)
 };
 const $0c862ea91c28280b$export$4426abcac492061f = {
     schema: (0, $3278b757a0226216$export$ea6652556b7356f),
-    shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessage",
+    shape: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
     context: (0, $f5da5fe4bb3a5c60$export$6cb580950f960f8)
 };
 

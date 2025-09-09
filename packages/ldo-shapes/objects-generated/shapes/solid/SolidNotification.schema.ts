@@ -23,6 +23,8 @@ export const SolidNotificationSchema: Schema = {
                 type: "NodeConstraint",
                 nodeKind: "iri",
               },
+              min: 1,
+              max: 1,
             },
             {
               type: "TripleConstraint",
@@ -50,7 +52,7 @@ export const SolidNotificationSchema: Schema = {
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionService",
+      id: "https://shapes.activitypods.org/v2/shapes/solid#SubscriptionServiceShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -64,6 +66,8 @@ export const SolidNotificationSchema: Schema = {
                 type: "NodeConstraint",
                 nodeKind: "iri",
               },
+              min: 1,
+              max: 1,
             },
             {
               type: "TripleConstraint",
@@ -72,6 +76,8 @@ export const SolidNotificationSchema: Schema = {
                 type: "NodeConstraint",
                 nodeKind: "iri",
               },
+              min: 1,
+              max: 1,
             },
             {
               type: "TripleConstraint",
@@ -88,7 +94,7 @@ export const SolidNotificationSchema: Schema = {
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannel",
+      id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationChannelShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -102,6 +108,8 @@ export const SolidNotificationSchema: Schema = {
                 type: "NodeConstraint",
                 nodeKind: "iri",
               },
+              min: 1,
+              max: 1,
             },
             {
               type: "TripleConstraint",
@@ -110,6 +118,8 @@ export const SolidNotificationSchema: Schema = {
                 type: "NodeConstraint",
                 nodeKind: "iri",
               },
+              min: 1,
+              max: 1,
             },
             {
               type: "TripleConstraint",
@@ -129,7 +139,7 @@ export const SolidNotificationSchema: Schema = {
                 nodeKind: "iri",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -159,7 +169,7 @@ export const SolidNotificationSchema: Schema = {
                 datatype: "http://www.w3.org/2001/XMLSchema#dateTime",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -169,7 +179,7 @@ export const SolidNotificationSchema: Schema = {
                 datatype: "http://www.w3.org/2001/XMLSchema#dateTime",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -179,7 +189,7 @@ export const SolidNotificationSchema: Schema = {
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -189,7 +199,7 @@ export const SolidNotificationSchema: Schema = {
                 datatype: "http://www.w3.org/2001/XMLSchema#duration",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
             {
               type: "TripleConstraint",
@@ -199,14 +209,14 @@ export const SolidNotificationSchema: Schema = {
                 datatype: "http://www.w3.org/2001/XMLSchema#string",
               },
               min: 0,
-              max: 1,
+              max: -1,
             },
           ],
         },
       },
     },
     {
-      id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessage",
+      id: "https://shapes.activitypods.org/v2/shapes/solid#NotificationMessageShape",
       type: "ShapeDecl",
       shapeExpr: {
         type: "Shape",
@@ -220,6 +230,8 @@ export const SolidNotificationSchema: Schema = {
                 type: "NodeConstraint",
                 nodeKind: "iri",
               },
+              min: 1,
+              max: 1,
             },
             {
               type: "TripleConstraint",
@@ -238,6 +250,8 @@ export const SolidNotificationSchema: Schema = {
                 type: "NodeConstraint",
                 nodeKind: "iri",
               },
+              min: 1,
+              max: 1,
             },
             {
               type: "TripleConstraint",
@@ -246,6 +260,8 @@ export const SolidNotificationSchema: Schema = {
                 type: "NodeConstraint",
                 datatype: "http://www.w3.org/2001/XMLSchema#dateTime",
               },
+              min: 1,
+              max: 1,
             },
             {
               type: "TripleConstraint",

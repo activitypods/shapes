@@ -8,12 +8,14 @@ import { LdoJsonldContext } from "@ldo/ldo";
 export const activitystreamsContext: LdoJsonldContext = {
   type: {
     "@id": "@type",
+    "@isCollection": true,
   },
   Object: {
     "@id": "https://www.w3.org/ns/activitystreams#Object",
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       content: {
         "@id": "https://www.w3.org/ns/activitystreams#content",
@@ -252,6 +254,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       totalItems: {
         "@id": "https://www.w3.org/ns/activitystreams#totalItems",
@@ -312,6 +315,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       name: {
         "@id": "https://www.w3.org/ns/activitystreams#name",
@@ -383,6 +387,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       actor: {
         "@id": "https://www.w3.org/ns/activitystreams#actor",
@@ -451,6 +456,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -459,6 +465,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       next: {
         "@id": "https://www.w3.org/ns/activitystreams#next",
@@ -493,6 +500,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       next: {
         "@id": "https://www.w3.org/ns/activitystreams#next",
@@ -517,6 +525,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       startIndex: {
         "@id": "https://www.w3.org/ns/activitystreams#startIndex",
@@ -533,6 +542,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -541,6 +551,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -549,6 +560,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -557,6 +569,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -565,6 +578,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -573,6 +587,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -581,6 +596,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -589,6 +605,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -597,6 +614,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -605,6 +623,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -613,6 +632,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -621,6 +641,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -629,6 +650,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -637,6 +659,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -645,6 +668,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -653,6 +677,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -661,6 +686,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -669,6 +695,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -677,6 +704,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -685,6 +713,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -693,6 +722,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -701,6 +731,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -709,6 +740,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -717,6 +749,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -725,6 +758,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -733,6 +767,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       oneOf: {
         "@id": "https://www.w3.org/ns/activitystreams#oneOf",
@@ -769,6 +804,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -777,6 +813,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -785,6 +822,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -793,6 +831,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -801,6 +840,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -809,6 +849,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -817,6 +858,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -825,6 +867,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       subject: {
         "@id": "https://www.w3.org/ns/activitystreams#subject",
@@ -858,6 +901,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -866,6 +910,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -874,6 +919,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -882,6 +928,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -890,6 +937,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -898,6 +946,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -906,6 +955,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -914,6 +964,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -922,6 +973,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       accuracy: {
         "@id": "https://www.w3.org/ns/activitystreams#accuracy",
@@ -978,6 +1030,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
     },
   },
@@ -986,6 +1039,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       describes: {
         "@id": "https://www.w3.org/ns/activitystreams#describes",
@@ -1002,6 +1056,7 @@ export const activitystreamsContext: LdoJsonldContext = {
     "@context": {
       type: {
         "@id": "@type",
+        "@isCollection": true,
       },
       formerType: {
         "@id": "https://www.w3.org/ns/activitystreams#formerType",

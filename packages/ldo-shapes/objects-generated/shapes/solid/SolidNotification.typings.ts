@@ -49,26 +49,26 @@ export interface NotificationChannel {
   id: {
     "@id": string;
   };
-  type: {
+  type: LdSet<{
     "@id": string;
-  };
+  }>;
   topic: LdSet<{
     "@id": string;
   }>;
-  receiveFrom?: {
+  receiveFrom?: LdSet<{
     "@id": string;
-  };
+  }>;
   sendTo?: {
     "@id": string;
   };
   sender?: {
     "@id": string;
   };
-  startAt?: string;
-  endAt?: string;
-  state?: string;
-  rate?: string;
-  accept?: string;
+  startAt?: LdSet<string>;
+  endAt?: LdSet<string>;
+  state?: LdSet<string>;
+  rate?: LdSet<string>;
+  accept?: LdSet<string>;
 }
 
 /**
