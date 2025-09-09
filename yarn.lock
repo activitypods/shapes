@@ -458,14 +458,14 @@
   dependencies:
     event-emitter-promisify "^1.1.0"
 
-"@ldo/cli@^1.0.0-alpha.30":
-  version "1.0.0-alpha.30"
-  resolved "https://registry.yarnpkg.com/@ldo/cli/-/cli-1.0.0-alpha.30.tgz#9f163c78b6f03a33b3cd8a30c5919f42fd74fc1e"
-  integrity sha512-jpZZ84wYX6hGUaWLSlSZq4ykPGeF69jz4e3HfpwNAY121Pz9uogdaZUixqIj+NTeiuxNW3/GOXdi7BDh0WpNiw==
+"@ldo/cli@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@ldo/cli/-/cli-1.0.0-alpha.32.tgz#38608ac49c9f8cb8e9180b425f14a740e398f3e8"
+  integrity sha512-lXBsoF4d9bZtguxnwF74vqmtjWvpBy6DrqnfTSl91NJz9h6NeQxqZsaabRroX1JBbcSTFElo200Ese5Es17qgg==
   dependencies:
     "@jeswr/shacl2shex" "^1.1.0"
-    "@ldo/ldo" "^1.0.0-alpha.30"
-    "@ldo/schema-converter-shex" "^1.0.0-alpha.30"
+    "@ldo/ldo" "^1.0.0-alpha.32"
+    "@ldo/schema-converter-shex" "^1.0.0-alpha.32"
     "@shexjs/parser" "^1.0.0-alpha.24"
     child-process-promise "^2.2.1"
     commander "^9.3.0"
@@ -510,13 +510,13 @@
     "@rdfjs/dataset" "^1.1.0"
     jsonld2graphobject "^0.0.4"
 
-"@ldo/jsonld-dataset-proxy@^1.0.0-alpha.30":
-  version "1.0.0-alpha.30"
-  resolved "https://registry.yarnpkg.com/@ldo/jsonld-dataset-proxy/-/jsonld-dataset-proxy-1.0.0-alpha.30.tgz#1e32e2941a44f58fa21451ebd68939d9eb8f2edd"
-  integrity sha512-KxbnI/qY981FcAVhtFO3dowZGAR+MRGK2d3+adiQ+ELN4usECI4I6Om+deM+henh9k0Z9UdNSa++3FAXWa9NtA==
+"@ldo/jsonld-dataset-proxy@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@ldo/jsonld-dataset-proxy/-/jsonld-dataset-proxy-1.0.0-alpha.32.tgz#2f2a12f9532da475ef42c6fcf17fd2979f47e0cf"
+  integrity sha512-ll8jOP6L6sCEce73PNkBZWhs+GmDE1vNsg/7fRv6eqROZJOhOqHTs74/qkvyOTzRVVOthIB0MMoRva4kE96r2Q==
   dependencies:
     "@ldo/rdf-utils" "^1.0.0-alpha.30"
-    "@ldo/subscribable-dataset" "^1.0.0-alpha.30"
+    "@ldo/subscribable-dataset" "^1.0.0-alpha.32"
     jsonld2graphobject "^0.0.4"
 
 "@ldo/ldo@^0.0.1-alpha.24":
@@ -531,14 +531,14 @@
     buffer "^6.0.3"
     readable-stream "^4.3.0"
 
-"@ldo/ldo@^1.0.0-alpha.30":
-  version "1.0.0-alpha.30"
-  resolved "https://registry.yarnpkg.com/@ldo/ldo/-/ldo-1.0.0-alpha.30.tgz#9756024d4d01822658f5752413995ef6447f6f8a"
-  integrity sha512-zX9+G4NrOFWLwioq6pLukC6I/j34oO5Wfkb86YUUQg7TKfGOzNLmeR9hn+1k3q4bnMum3Inb1MkGzwlF3qTkbQ==
+"@ldo/ldo@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@ldo/ldo/-/ldo-1.0.0-alpha.32.tgz#7b826c61db18a6bf5672aa1f5cdcf5831b477822"
+  integrity sha512-B5yEKAjpQA4VbXOv3faxYYxjgDZUSxTy4vCSATpVvGt96RxolJzewJ7ELl0C2KG0EANcWoHyUB0ac7oOJrmUCQ==
   dependencies:
     "@ldo/dataset" "^1.0.0-alpha.30"
-    "@ldo/jsonld-dataset-proxy" "^1.0.0-alpha.30"
-    "@ldo/subscribable-dataset" "^1.0.0-alpha.30"
+    "@ldo/jsonld-dataset-proxy" "^1.0.0-alpha.32"
+    "@ldo/subscribable-dataset" "^1.0.0-alpha.32"
     buffer "^6.0.3"
     readable-stream "^4.3.0"
 
@@ -560,10 +560,10 @@
     n3 "^1.17.1"
     rdf-string "^1.6.3"
 
-"@ldo/schema-converter-shex@^1.0.0-alpha.30":
-  version "1.0.0-alpha.30"
-  resolved "https://registry.yarnpkg.com/@ldo/schema-converter-shex/-/schema-converter-shex-1.0.0-alpha.30.tgz#e60770b7b6245ed0869a18ffe501e6fe77051701"
-  integrity sha512-WuFLX/nVzusxDQUkgeCxS1TDZ5CxNkBGY8G1k9KNeVZFKuQ3EUk2iIF6CRPdzaTtVBr5skfOn/Es7todyzt25g==
+"@ldo/schema-converter-shex@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@ldo/schema-converter-shex/-/schema-converter-shex-1.0.0-alpha.32.tgz#2095603babd94dfc8e917ffc463a90f87a69833b"
+  integrity sha512-qLIr3xGv0ptmLxkyOyt4afKMZhr3L3UvrMeLiImloOAtCunWdPoRVtd2y0Em/szWiGOW24XW3Pw/42/9Y9sSZA==
   dependencies:
     "@ldo/traverser-shexj" "^1.0.0-alpha.28"
     dts-dom "~3.6.0"
@@ -577,10 +577,10 @@
     "@ldo/dataset" "^0.0.1-alpha.24"
     "@ldo/rdf-utils" "^0.0.1-alpha.24"
 
-"@ldo/subscribable-dataset@^1.0.0-alpha.30":
-  version "1.0.0-alpha.30"
-  resolved "https://registry.yarnpkg.com/@ldo/subscribable-dataset/-/subscribable-dataset-1.0.0-alpha.30.tgz#b4e6e906ad156b9b1d19abe2b7f02718910684b6"
-  integrity sha512-3U/8gTgK3FG50eT6wKnSM3msHzYNtWcUtLNMcgY9tqj8xBe1DZUgDR6IYEKX+ZMqwo8cz6Qr7t1VJVGoQYvF3A==
+"@ldo/subscribable-dataset@^1.0.0-alpha.32":
+  version "1.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@ldo/subscribable-dataset/-/subscribable-dataset-1.0.0-alpha.32.tgz#d34b64ba69ff7c133478b3359e8d7bd8323a4aae"
+  integrity sha512-E42L2tDRxqOx5vxLGG0HiuZ6SMdW9iothJcFREV4f92kE9KE+l+Ope9hpfAmRfyNMdAEbl1wvW2iCfyj/J5naw==
   dependencies:
     "@ldo/dataset" "^1.0.0-alpha.30"
     "@ldo/rdf-utils" "^1.0.0-alpha.30"
