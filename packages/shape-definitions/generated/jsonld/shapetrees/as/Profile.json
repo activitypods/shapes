@@ -11,7 +11,7 @@
     ],
     "http://www.w3.org/ns/shapetrees#shape": [
       {
-        "@id": "/shapes/activitypub#Profile"
+        "@id": "/shapes/as/Profile"
       }
     ],
     "http://www.w3.org/ns/shapetrees#describesInstance": [

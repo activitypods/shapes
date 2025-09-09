@@ -11,7 +11,7 @@
     ],
     "http://www.w3.org/ns/shapetrees#shape": [
       {
-        "@id": "/shapes/activitypub#Image"
+        "@id": "/shapes/as/Image"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
