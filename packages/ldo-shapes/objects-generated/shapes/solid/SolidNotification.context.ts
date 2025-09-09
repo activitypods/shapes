@@ -42,6 +42,7 @@ export const SolidNotificationContext: LdoJsonldContext = {
   receiveFrom: {
     "@id": "http://www.w3.org/ns/solid/notifications#receiveFrom",
     "@type": "@id",
+    "@isCollection": true,
   },
   sendTo: {
     "@id": "http://www.w3.org/ns/solid/notifications#sendTo",
@@ -54,22 +55,27 @@ export const SolidNotificationContext: LdoJsonldContext = {
   startAt: {
     "@id": "http://www.w3.org/ns/solid/notifications#startAt",
     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@isCollection": true,
   },
   endAt: {
     "@id": "http://www.w3.org/ns/solid/notifications#endAt",
     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@isCollection": true,
   },
   state: {
     "@id": "http://www.w3.org/ns/solid/notifications#state",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@isCollection": true,
   },
   rate: {
     "@id": "http://www.w3.org/ns/solid/notifications#rate",
     "@type": "http://www.w3.org/2001/XMLSchema#duration",
+    "@isCollection": true,
   },
   accept: {
     "@id": "http://www.w3.org/ns/solid/notifications#accept",
     "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@isCollection": true,
   },
   object: {
     "@id": "https://www.w3.org/ns/activitystreams#object",

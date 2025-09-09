@@ -23,8 +23,9 @@
     "build:transpile": "parcel build && yalc publish --push --changed"
   },
   "devDependencies": {
-    "@ldo/cli": "^1.0.0-alpha.18",
-    "@ldo/ldo": "^1.0.0-alpha.14"
+    "@ldo/cli": "^1.0.0-alpha.32",
+    "@ldo/ldo": "^1.0.0-alpha.32",
+    "@types/shexj": "2.1.7"
   },
   "exports": {
     "./objects-generated/shapes": "./objects-generated/shapes/index.ts",

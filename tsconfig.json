@@ -14,7 +14,7 @@
     "moduleResolution": "nodenext",
     "lib": ["ESNext", "dom"],
     "erasableSyntaxOnly": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": false
   },
   "exclude": ["node_modules", "dist"]
 }
