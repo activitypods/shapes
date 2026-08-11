@@ -1,6 +1,6 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
-PREFIX pair: <http://virtual-assembly.org/ontologies/pair/>
+PREFIX pair: <http://virtual-assembly.org/ontologies/pair#>
 
 :ExperienceAssociation
   a sh:NodeShape ;

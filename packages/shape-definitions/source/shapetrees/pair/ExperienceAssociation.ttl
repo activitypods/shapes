@@ -1,7 +1,7 @@
 PREFIX : <>
 PREFIX st: <http://www.w3.org/ns/shapetrees#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX pair: <http://virtual-assembly.org/ontologies/pair/>
+PREFIX pair: <http://virtual-assembly.org/ontologies/pair#>
 
 :ExperienceAssociation
   a st:ShapeTree ;
