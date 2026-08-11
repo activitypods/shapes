@@ -1,0 +1,11 @@
+PREFIX : <>
+PREFIX st: <http://www.w3.org/ns/shapetrees#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX pair: <http://virtual-assembly.org/ontologies/pair/>
+
+:ExperienceAssociation
+  a st:ShapeTree ;
+  st:expectsType st:Resource ;
+  st:shape <../../shapes/pair/ExperienceAssociation> ;
+  st:describesInstance pair:experienceSkill ;
+  skos:prefLabel "Skill experience"@en, "Compétence déclarée"@fr .
