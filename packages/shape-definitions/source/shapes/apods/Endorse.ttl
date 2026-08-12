@@ -1,0 +1,7 @@
+PREFIX : <>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX apods: <http://activitypods.org/ns/core#>
+
+:Endorse
+  a sh:NodeShape ;
+  sh:targetClass apods:Endorse .
