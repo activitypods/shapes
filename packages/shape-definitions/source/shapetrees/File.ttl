@@ -6,4 +6,5 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
 :File
   a st:ShapeTree ;
   st:expectsType st:NonRDFResource ;
-  skos:prefLabel "Files"@en, "Fichiers"@fr .
+  skos:prefLabel "Files"@en, "Fichiers"@fr ;
+  skos:definition "A binary file (picture, document…) uploaded to the Pod. Not RDF, so it has no SHACL shape."@en, "Un fichier binaire (photo, document…) déposé dans le Pod. Pas de shape SHACL : ce n'est pas du RDF."@fr .

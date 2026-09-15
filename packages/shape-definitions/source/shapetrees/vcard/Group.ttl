@@ -8,4 +8,5 @@ PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
   st:expectsType st:Resource ;
   st:shape <../../shapes/vcard/Group> ;
   st:describesInstance vcard:label ;
-  skos:prefLabel "Groups"@en, "Groupes"@fr .
+  skos:prefLabel "Groups"@en, "Groupes"@fr ;
+  skos:definition "A group of contacts defined by the user to organize their network."@en, "Un groupe de contacts défini par l'utilisateur pour organiser son réseau."@fr .

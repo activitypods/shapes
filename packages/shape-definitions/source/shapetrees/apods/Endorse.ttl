@@ -8,4 +8,5 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
   st:expectsType st:Resource ;
   st:shape <../../shapes/apods/Endorse> ;
   st:describesInstance as:object ;
-  skos:prefLabel "Endorsement"@en, "Recommandation"@fr .
+  skos:prefLabel "Endorsement"@en, "Recommandation"@fr ;
+  skos:definition "An endorsement a user sends to another about an object."@en, "Une recommandation qu'un utilisateur adresse à un autre au sujet d'un objet."@fr .

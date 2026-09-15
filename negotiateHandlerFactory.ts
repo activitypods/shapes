@@ -103,7 +103,7 @@ function negotiateHandlerFactory(
       from: { path: fp },
       to: { contentType: responseType },
       baseIRI:
-        baseUri || `${req.protocol}://${req.get("host")}${req.originalUrl}`,
+        baseUri || `${req.protocol}://${req.get("host")}${req.path}`,
     });
 
     responseStream.on("error", (e) => {

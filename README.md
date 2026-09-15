@@ -6,19 +6,34 @@ A monorepo with RDF shapes, shape trees, and LDO objects used by [ActivityPods](
 
 ## Serving shapes
 
-When developing a new application, you can serve your new shapes locally. The default port is `30916`. We will make shape development easier soon. Stay tuned!.
-
-<!--
-Note, this is planned but not implemented:
-:::note
-When you are serving your app (built from the template) and pod provider in development mode, the client will notice that a local shape server is running on this port (`30916`) and use this server as the shape provider instead of https://shapes.activitypods.org/.
-:::
--->
+When developing a new application, you can serve your new shapes locally. The default port is `30916`.
 
 ```bash
 yarn install
 yarn start
 ```
+
+Every shape and shape tree is served with content negotiation: browsers get the website, other clients get Turtle or JSON-LD depending on their `Accept` header (append `?format=turtle` or `?format=jsonld` to force a format from a browser).
+
+## Website
+
+The website in `website` (Vite + React + Ant Design) lists the shapes, explains what each SHACL definition describes, and shows which [trusted applications](https://activitypods.org/data/trusted-apps) use them. It is built into `website/dist` and served by the Express server.
+
+```bash
+yarn build:website   # build the website, then `yarn start` serves it
+yarn dev:website     # development server on http://localhost:4010, proxying /api to the shape server
+```
+
+The server exposes two JSON endpoints for the website:
+
+- `GET /api/shapes`: every shape tree with its labels, definitions, target class and the properties of its SHACL shape, parsed from `packages/shape-definitions/source` at startup.
+- `GET /api/applications`: the trusted applications and the shape trees they request access to, crawled from their access needs and cached (see `APPLICATIONS_CACHE_TTL` in `.env`).
+
+Labels and definitions come from the `skos:prefLabel` and `skos:definition` of each shape tree, in English and French. Applications are shown only in the languages they declare with `dc:language`.
+
+### Proposing shapes from the website
+
+The "Propose a shape" form generates the shape tree and SHACL files server-side (`POST /api/proposals/preview`, validated with [n3](https://github.com/rdfjs/N3.js)) and opens a draft pull request on this repository (`POST /api/proposals`). To enable it, set `GITHUB_TOKEN` in a gitignored `.env.local` file (which overrides `.env`) to a fine-grained token with *Contents* and *Pull requests* write access on the repository (`GITHUB_REPOSITORY`, default `activitypods/shapes`). Without a token the form still previews the files but cannot submit. Submissions are rate limited per client address.
 
 ## Packages
 

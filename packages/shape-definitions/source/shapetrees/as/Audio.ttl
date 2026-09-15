@@ -7,4 +7,5 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
   a st:ShapeTree ;
   st:expectsType st:Resource ;
   st:shape <../../shapes/as/Audio> ;
-  skos:prefLabel "Audios"@en, "Audios"@fr .
+  skos:prefLabel "Audios"@en, "Audios"@fr ;
+  skos:definition "An audio file and its metadata (name, duration, media type, file URL)."@en, "Un fichier audio et ses métadonnées (nom, durée, type MIME, URL du fichier)."@fr .

@@ -8,4 +8,5 @@ PREFIX pair: <http://virtual-assembly.org/ontologies/pair#>
   st:expectsType st:Resource ;
   st:shape <../../shapes/maid/Offer> ;
   st:describesInstance pair:label ;
-  skos:prefLabel "Offers"@en, "Offres"@fr .
+  skos:prefLabel "Offers"@en, "Offres"@fr ;
+  skos:definition "A mutual aid offer: a service, an object or a skill offered to one's network."@en, "Une offre d'entraide : un service, un objet ou une compétence proposée à son réseau."@fr .
