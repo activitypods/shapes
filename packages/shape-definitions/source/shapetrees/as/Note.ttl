@@ -7,4 +7,5 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
   a st:ShapeTree ;
   st:expectsType st:Resource ;
   st:shape <../../shapes/as/Note> ;
-  skos:prefLabel "Messages"@en, "Messages"@fr .
+  skos:prefLabel "Messages"@en, "Messages"@fr ;
+  skos:definition "A short text message, addressed to one or more people or posted to a feed."@en, "Un court message texte, adressé à une ou plusieurs personnes ou publié dans un fil."@fr .

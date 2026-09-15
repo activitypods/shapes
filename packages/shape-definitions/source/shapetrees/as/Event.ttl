@@ -8,4 +8,5 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
   st:expectsType st:Resource ;
   st:shape <../../shapes/as/Event> ;
   st:describesInstance as:name ;
-  skos:prefLabel "Events"@en, "Evénements"@fr .
+  skos:prefLabel "Events"@en, "Evénements"@fr ;
+  skos:definition "A dated event with a location, a description and a list of attendees."@en, "Un évènement daté, avec un lieu, une description et une liste de participants."@fr .

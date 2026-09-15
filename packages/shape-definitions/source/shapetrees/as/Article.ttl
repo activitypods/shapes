@@ -7,4 +7,5 @@ PREFIX as: <https://www.w3.org/ns/activitystreams#>
   a st:ShapeTree ;
   st:expectsType st:Resource ;
   st:shape <../../shapes/as/Article> ;
-  skos:prefLabel "Articles"@en, "Articles"@fr .
+  skos:prefLabel "Articles"@en, "Articles"@fr ;
+  skos:definition "A long, structured text with a title and an HTML content."@en, "Un texte long et structuré, avec un titre et un contenu HTML."@fr .

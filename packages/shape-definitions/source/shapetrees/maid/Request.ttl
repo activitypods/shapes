@@ -8,4 +8,5 @@ PREFIX pair: <http://virtual-assembly.org/ontologies/pair#>
   st:expectsType st:Resource ;
   st:shape <../../shapes/maid/Request> ;
   st:describesInstance pair:label ;
-  skos:prefLabel "Requests"@en, "Demandes"@fr .
+  skos:prefLabel "Requests"@en, "Demandes"@fr ;
+  skos:definition "A mutual aid request addressed to one's network."@en, "Une demande d'entraide adressée à son réseau."@fr .

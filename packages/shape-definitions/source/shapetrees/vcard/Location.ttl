@@ -8,4 +8,5 @@ PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
   st:expectsType st:Resource ;
   st:shape <../../shapes/vcard/Location> ;
   st:describesInstance vcard:given-name ;
-  skos:prefLabel "Addresses"@en, "Adresses"@fr .
+  skos:prefLabel "Addresses"@en, "Adresses"@fr ;
+  skos:definition "A postal address saved by the user, with its geographic coordinates."@en, "Une adresse postale enregistrée par l'utilisateur, avec ses coordonnées géographiques."@fr .
