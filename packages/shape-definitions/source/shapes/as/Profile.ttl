@@ -1,7 +1,80 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX as: <https://www.w3.org/ns/activitystreams#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 
 :Profile
   a sh:NodeShape ;
-  sh:targetClass as:Profile .
+  sh:targetClass as:Profile ;
+  sh:property [
+    sh:path as:describes ;
+    sh:name "describes" ;
+    sh:description "The WebID this profile describes."@en, "Le WebID que ce profil décrit."@fr ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:given-name ;
+    sh:name "given-name" ;
+    sh:description "First name, or the name the user wants to be called by."@en, "Prénom, ou nom sous lequel l'utilisateur souhaite être appelé."@fr ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:family-name ;
+    sh:name "family-name" ;
+    sh:description "Last name."@en, "Nom de famille."@fr ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:fn ;
+    sh:name "fn" ;
+    sh:description "Formatted full name."@en, "Nom complet formaté."@fr ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:note ;
+    sh:name "note" ;
+    sh:description "Short presentation of the user."@en, "Courte présentation de l'utilisateur."@fr ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:photo ;
+    sh:name "photo" ;
+    sh:description "URL of the profile picture."@en, "URL de la photo de profil."@fr ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:hasAddress ;
+    sh:name "hasAddress" ;
+    sh:description "Home address, one of the user's saved addresses."@en, "Adresse du domicile, parmi les adresses enregistrées de l'utilisateur."@fr ;
+    sh:class vcard:Location ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:hasGeo ;
+    sh:name "hasGeo" ;
+    sh:description "Approximate coordinates of the home, deliberately fuzzed by the Pod provider so that the exact address stays private."@en, "Coordonnées approximatives du domicile, volontairement brouillées par le fournisseur de Pod pour que l'adresse exacte reste privée."@fr ;
+    sh:node :HomeGeo ;
+    sh:maxCount 1 ;
+  ] .
+
+:HomeGeo
+  a sh:NodeShape ;
+  sh:property [
+    sh:path vcard:latitude ;
+    sh:name "latitude" ;
+    sh:datatype xsd:decimal ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:longitude ;
+    sh:name "longitude" ;
+    sh:datatype xsd:decimal ;
+    sh:maxCount 1 ;
+  ] .

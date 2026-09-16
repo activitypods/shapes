@@ -1,7 +1,21 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 
 :Group
   a sh:NodeShape ;
-  sh:targetClass vcard:Group .
+  sh:targetClass vcard:Group ;
+  sh:property [
+    sh:path vcard:label ;
+    sh:name "label" ;
+    sh:description "Name of the group."@en, "Nom du groupe."@fr ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:hasMember ;
+    sh:name "hasMember" ;
+    sh:description "WebIDs of the contacts in the group."@en, "WebIDs des contacts membres du groupe."@fr ;
+    sh:nodeKind sh:IRI ;
+  ] .

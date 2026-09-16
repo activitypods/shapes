@@ -1,7 +1,59 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX as: <https://www.w3.org/ns/activitystreams#>
+PREFIX pair: <http://virtual-assembly.org/ontologies/pair#>
 PREFIX maid: <https://mutual-aid.app/ns/core#>
 
 :Request
   a sh:NodeShape ;
-  sh:targetClass maid:Request .
+  sh:targetClass maid:Request ;
+  sh:property [
+    sh:path as:name ;
+    sh:name "name" ;
+    sh:description "Title of the request."@en, "Titre de la demande."@fr ;
+    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:content ;
+    sh:name "content" ;
+    sh:description "Body of the request (Markdown or HTML)."@en, "Corps de la demande (Markdown ou HTML)."@fr ;
+    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:location ;
+    sh:name "location" ;
+    sh:description "Where the request applies: an embedded as:Place with latitude, longitude and radius."@en, "Zone concernée : un as:Place embarqué avec latitude, longitude et rayon."@fr ;
+    sh:or ( [ sh:class as:Place ] [ sh:nodeKind sh:IRI ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path maid:requestOfResourceType ;
+    sh:name "requestOfResourceType" ;
+    sh:description "What the request is about: pair:AtomBasedResource (an object), pair:HumanBasedResource (a skill or service) or pair:Resource (anything else)."@en, "Ce que concerne la demande : pair:AtomBasedResource (un objet), pair:HumanBasedResource (une compétence ou un service) ou pair:Resource (autre)."@fr ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path pair:hasType ;
+    sh:name "hasType" ;
+    sh:description "How the exchange happens: maid:GiftRequest, maid:BarterRequest, maid:PurchaseRequest or maid:LoanRequest."@en, "Modalité de l'échange : maid:GiftRequest, maid:BarterRequest, maid:PurchaseRequest ou maid:LoanRequest."@fr ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path pair:depictedBy ;
+    sh:name "depictedBy" ;
+    sh:description "URLs of the photos."@en, "URLs des photos."@fr ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path maid:expirationDate ;
+    sh:name "expirationDate" ;
+    sh:description "Date after which the request is no longer shown."@en, "Date après laquelle la demande n'est plus affichée."@fr ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+  ] .

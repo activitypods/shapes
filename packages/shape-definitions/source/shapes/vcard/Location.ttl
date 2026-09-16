@@ -1,7 +1,86 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 
 :Location
   a sh:NodeShape ;
-  sh:targetClass vcard:Location .
+  sh:targetClass vcard:Location ;
+  sh:property [
+    sh:path vcard:given-name ;
+    sh:name "given-name" ;
+    sh:description "Label of the address, as the user names it (home, office…)."@en, "Libellé de l'adresse, tel que l'utilisateur la nomme (maison, bureau…)."@fr ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:hasAddress ;
+    sh:name "hasAddress" ;
+    sh:description "The postal address itself, embedded as a vcard:Address."@en, "L'adresse postale elle-même, embarquée sous forme de vcard:Address."@fr ;
+    sh:node :Address ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:note ;
+    sh:name "note" ;
+    sh:description "Free-text indications (door code, floor…)."@en, "Indications en texte libre (digicode, étage…)."@fr ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] .
+
+:Address
+  a sh:NodeShape ;
+  sh:property [
+    sh:path vcard:given-name ;
+    sh:name "given-name" ;
+    sh:description "Place name as returned by the geocoder."@en, "Nom du lieu tel que renvoyé par le géocodeur."@fr ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:street-address ;
+    sh:name "street-address" ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:postal-code ;
+    sh:name "postal-code" ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:locality ;
+    sh:name "locality" ;
+    sh:description "City."@en, "Ville."@fr ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:country-name ;
+    sh:name "country-name" ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:hasGeo ;
+    sh:name "hasGeo" ;
+    sh:description "Exact coordinates (vcard:latitude, vcard:longitude)."@en, "Coordonnées exactes (vcard:latitude, vcard:longitude)."@fr ;
+    sh:node :AddressGeo ;
+    sh:maxCount 1 ;
+  ] .
+
+:AddressGeo
+  a sh:NodeShape ;
+  sh:property [
+    sh:path vcard:latitude ;
+    sh:name "latitude" ;
+    sh:datatype xsd:decimal ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path vcard:longitude ;
+    sh:name "longitude" ;
+    sh:datatype xsd:decimal ;
+    sh:maxCount 1 ;
+  ] .

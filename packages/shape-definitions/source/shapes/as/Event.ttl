@@ -1,7 +1,51 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX as: <https://www.w3.org/ns/activitystreams#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 
 :Event
   a sh:NodeShape ;
-  sh:targetClass as:Event .
+  sh:targetClass as:Event ;
+  sh:property [
+    sh:path as:name ;
+    sh:name "name" ;
+    sh:description "Title of the event."@en, "Titre de l'évènement."@fr ;
+    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:content ;
+    sh:name "content" ;
+    sh:description "Full description of the event (Markdown or HTML)."@en, "Description complète de l'évènement (Markdown ou HTML)."@fr ;
+    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:startTime ;
+    sh:name "startTime" ;
+    sh:description "When the event starts."@en, "Début de l'évènement."@fr ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:endTime ;
+    sh:name "endTime" ;
+    sh:description "When the event ends."@en, "Fin de l'évènement."@fr ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:location ;
+    sh:name "location" ;
+    sh:description "Where the event takes place: a saved address (vcard:Location) or an embedded place (as:Place)."@en, "Lieu de l'évènement : une adresse enregistrée (vcard:Location) ou un lieu embarqué (as:Place)."@fr ;
+    sh:or ( [ sh:class vcard:Location ] [ sh:class as:Place ] [ sh:nodeKind sh:IRI ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:image ;
+    sh:name "image" ;
+    sh:description "Illustration of the event, as an as:Image or the URL of an uploaded file."@en, "Illustration de l'évènement, sous forme d'as:Image ou d'URL d'un fichier déposé."@fr ;
+    sh:or ( [ sh:class as:Image ] [ sh:nodeKind sh:IRI ] ) ;
+  ] .

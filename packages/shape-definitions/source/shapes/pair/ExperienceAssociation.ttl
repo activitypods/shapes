@@ -1,7 +1,31 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX as: <https://www.w3.org/ns/activitystreams#>
 PREFIX pair: <http://virtual-assembly.org/ontologies/pair#>
 
 :ExperienceAssociation
   a sh:NodeShape ;
-  sh:targetClass pair:ExperienceAssociation .
+  sh:targetClass pair:ExperienceAssociation ;
+  sh:property [
+    sh:path pair:experienceSkill ;
+    sh:name "experienceSkill" ;
+    sh:description "The skill (a pair:Skill concept)."@en, "La compétence (un concept pair:Skill)."@fr ;
+    sh:class pair:Skill ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path pair:experienceGrade ;
+    sh:name "experienceGrade" ;
+    sh:description "Self-assessed level (a pair:Grade concept)."@en, "Niveau auto-évalué (un concept pair:Grade)."@fr ;
+    sh:class pair:Grade ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:summary ;
+    sh:name "summary" ;
+    sh:description "A few words about this experience."@en, "Quelques mots sur cette expérience."@fr ;
+    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+    sh:maxCount 1 ;
+  ] .

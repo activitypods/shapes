@@ -1,7 +1,59 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX as: <https://www.w3.org/ns/activitystreams#>
+PREFIX pair: <http://virtual-assembly.org/ontologies/pair#>
 PREFIX maid: <https://mutual-aid.app/ns/core#>
 
 :Offer
   a sh:NodeShape ;
-  sh:targetClass maid:Offer .
+  sh:targetClass maid:Offer ;
+  sh:property [
+    sh:path as:name ;
+    sh:name "name" ;
+    sh:description "Title of the offer."@en, "Titre de l'offre."@fr ;
+    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:content ;
+    sh:name "content" ;
+    sh:description "Body of the offer (Markdown or HTML)."@en, "Corps de l'offre (Markdown ou HTML)."@fr ;
+    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:location ;
+    sh:name "location" ;
+    sh:description "Where the offer applies: an embedded as:Place with latitude, longitude and radius."@en, "Zone concernée : un as:Place embarqué avec latitude, longitude et rayon."@fr ;
+    sh:or ( [ sh:class as:Place ] [ sh:nodeKind sh:IRI ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path maid:offerOfResourceType ;
+    sh:name "offerOfResourceType" ;
+    sh:description "What the offer is about: pair:AtomBasedResource (an object), pair:HumanBasedResource (a skill or service) or pair:Resource (anything else)."@en, "Ce que concerne l'offre : pair:AtomBasedResource (un objet), pair:HumanBasedResource (une compétence ou un service) ou pair:Resource (autre)."@fr ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path pair:hasType ;
+    sh:name "hasType" ;
+    sh:description "How the exchange happens: maid:GiftOffer, maid:BarterOffer, maid:SaleOffer or maid:LoanOffer."@en, "Modalité de l'échange : maid:GiftOffer, maid:BarterOffer, maid:SaleOffer ou maid:LoanOffer."@fr ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path pair:depictedBy ;
+    sh:name "depictedBy" ;
+    sh:description "URLs of the photos."@en, "URLs des photos."@fr ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path maid:expirationDate ;
+    sh:name "expirationDate" ;
+    sh:description "Date after which the offer is no longer shown."@en, "Date après laquelle l'offre n'est plus affichée."@fr ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+  ] .

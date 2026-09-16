@@ -1,7 +1,37 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX as: <https://www.w3.org/ns/activitystreams#>
 PREFIX apods: <http://activitypods.org/ns/core#>
 
 :Endorse
   a sh:NodeShape ;
-  sh:targetClass apods:Endorse .
+  sh:targetClass apods:Endorse ;
+  sh:property [
+    sh:path as:actor ;
+    sh:name "actor" ;
+    sh:description "WebID of the person recommending."@en, "WebID de la personne qui recommande."@fr ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:object ;
+    sh:name "object" ;
+    sh:description "What is endorsed, e.g. a declared skill (pair:ExperienceAssociation)."@en, "Ce qui est recommandé, par exemple une compétence déclarée (pair:ExperienceAssociation)."@fr ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:content ;
+    sh:name "content" ;
+    sh:description "Text of the endorsement."@en, "Texte de la recommandation."@fr ;
+    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path as:published ;
+    sh:name "published" ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+  ] .

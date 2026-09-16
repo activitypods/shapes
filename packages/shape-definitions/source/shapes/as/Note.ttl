@@ -1,7 +1,46 @@
 PREFIX : <>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX as: <https://www.w3.org/ns/activitystreams#>
 
 :Note
   a sh:NodeShape ;
-  sh:targetClass as:Note .
+  sh:targetClass as:Note ;
+  sh:property [
+    sh:path as:attributedTo ;
+    sh:name "attributedTo" ;
+    sh:description "Author of the message (a WebID)."@en, "Auteur du message (un WebID)."@fr ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path as:content ;
+    sh:name "content" ;
+    sh:description "Body of the message, as HTML."@en, "Corps du message, en HTML."@fr ;
+    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+  ] ;
+  sh:property [
+    sh:path as:inReplyTo ;
+    sh:name "inReplyTo" ;
+    sh:description "The message this one replies to."@en, "Le message auquel celui-ci répond."@fr ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+    sh:path as:tag ;
+    sh:name "tag" ;
+    sh:description "Mentions (as:Mention with href and name) and hashtags."@en, "Mentions (as:Mention avec href et name) et mots-dièse."@fr ;
+    sh:or ( [ sh:class as:Mention ] [ sh:class as:Link ] [ sh:nodeKind sh:IRI ] ) ;
+  ] ;
+  sh:property [
+    sh:path as:attachment ;
+    sh:name "attachment" ;
+    sh:description "Attached media: as:Document or as:Image objects with url and mediaType."@en, "Médias joints : objets as:Document ou as:Image avec url et mediaType."@fr ;
+    sh:or ( [ sh:class as:Document ] [ sh:class as:Image ] [ sh:nodeKind sh:IRI ] ) ;
+  ] ;
+  sh:property [
+    sh:path as:published ;
+    sh:name "published" ;
+    sh:description "Publication date."@en, "Date de publication."@fr ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+  ] .
