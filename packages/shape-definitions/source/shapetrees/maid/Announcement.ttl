@@ -1,0 +1,12 @@
+PREFIX : <>
+PREFIX pair: <http://virtual-assembly.org/ontologies/pair#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX st: <http://www.w3.org/ns/shapetrees#>
+
+:Announcement
+  a st:ShapeTree ;
+  st:expectsType st:Resource ;
+  st:shape <../../shapes/maid/Announcement> ;
+  st:describesInstance pair:label ;
+  skos:prefLabel "Announcement"@en, "Annonce"@fr ;
+  skos:definition "Information shared with other"@en, "Une information partagée"@fr .
