@@ -1,0 +1,193 @@
+[
+  {
+    "@id": "ExperienceAssociation",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "http://virtual-assembly.org/ontologies/pair#ExperienceAssociation"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_0",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://virtual-assembly.org/ontologies/pair#experienceSkill"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "experienceSkill"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The skill (a pair:Skill concept).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "La compétence (un concept pair:Skill).",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://virtual-assembly.org/ontologies/pair#Skill"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "ExperienceAssociation",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_13_0"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_1",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://virtual-assembly.org/ontologies/pair#experienceGrade"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "experienceGrade"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Self-assessed level (a pair:Grade concept).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Niveau auto-évalué (un concept pair:Grade).",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://virtual-assembly.org/ontologies/pair#Grade"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "ExperienceAssociation",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_13_1"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_2",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#summary"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "summary"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "A few words about this experience.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Quelques mots sur cette expérience.",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_3",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_13_4"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_4",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_3",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_13_5"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_5",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_13_6"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_6",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_5",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_13_2",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_13_3"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "ExperienceAssociation",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_13_2"
+      }
+    ]
+  }
+]

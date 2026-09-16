@@ -29,6 +29,17 @@
         "@value": "Adresses",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A postal address saved by the user, with its geographic coordinates.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Une adresse postale enregistrée par l'utilisateur, avec ses coordonnées géographiques.",
+        "@language": "fr"
+      }
     ]
   }
 ]

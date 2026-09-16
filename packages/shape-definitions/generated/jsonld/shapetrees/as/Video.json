@@ -24,6 +24,17 @@
         "@value": "Vidéos",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A video and its metadata (name, duration, media type, file URL).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Une vidéo et ses métadonnées (nom, durée, type MIME, URL du fichier).",
+        "@language": "fr"
+      }
     ]
   }
 ]

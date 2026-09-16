@@ -46,9 +46,10 @@ const ApplicationCard = ({ app }: { app: Application }) => {
 };
 
 const ApplicationsPage = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const { lang } = useLang();
   const { visible, hidden, isPending, isError } = useVisibleApplications();
-  const language = t(`language.${i18n.language}`);
+  const language = t(`language.${lang}`);
 
   return (
     <Space direction="vertical" size={24} style={{ width: '100%' }}>

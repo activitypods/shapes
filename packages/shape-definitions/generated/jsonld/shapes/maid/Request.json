@@ -9,5 +9,453 @@
         "@id": "https://mutual-aid.app/ns/core#Request"
       }
     ]
+  },
+  {
+    "@id": "_:df_12_0",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Title of the request.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Titre de la demande.",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_1",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_12_2"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_2",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_1",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_12_3"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_3",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_12_4"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_4",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_3",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_0",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_12_1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Request",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_12_0"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_5",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Body of the request (Markdown or HTML).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Corps de la demande (Markdown ou HTML).",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_6",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_12_7"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_7",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_6",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_12_8"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_8",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_12_9"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_9",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_8",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_5",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_12_6"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Request",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_12_5"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_10",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#location"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "location"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Where the request applies: an embedded as:Place with latitude, longitude and radius.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Zone concernée : un as:Place embarqué avec latitude, longitude et rayon.",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_11",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_12_12"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_12",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Place"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_11",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_12_13"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_13",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_12_14"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_14",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_13",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_10",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_12_11"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Request",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_12_10"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_15",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://mutual-aid.app/ns/core#requestOfResourceType"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "requestOfResourceType"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "What the request is about: pair:AtomBasedResource (an object), pair:HumanBasedResource (a skill or service) or pair:Resource (anything else).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Ce que concerne la demande : pair:AtomBasedResource (un objet), pair:HumanBasedResource (une compétence ou un service) ou pair:Resource (autre).",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Request",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_12_15"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_16",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://virtual-assembly.org/ontologies/pair#hasType"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "hasType"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "How the exchange happens: maid:GiftRequest, maid:BarterRequest, maid:PurchaseRequest or maid:LoanRequest.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Modalité de l'échange : maid:GiftRequest, maid:BarterRequest, maid:PurchaseRequest ou maid:LoanRequest.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Request",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_12_16"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_17",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://virtual-assembly.org/ontologies/pair#depictedBy"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "depictedBy"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "URLs of the photos.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "URLs des photos.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "Request",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_12_17"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_12_18",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://mutual-aid.app/ns/core#expirationDate"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "expirationDate"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Date after which the request is no longer shown.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Date après laquelle la demande n'est plus affichée.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Request",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_12_18"
+      }
+    ]
   }
 ]

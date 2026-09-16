@@ -24,6 +24,17 @@
         "@value": "Articles",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A long, structured text with a title and an HTML content.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Un texte long et structuré, avec un titre et un contenu HTML.",
+        "@language": "fr"
+      }
     ]
   }
 ]

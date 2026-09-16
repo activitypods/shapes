@@ -29,8 +29,8 @@ const ApplicationDetailPage = () => {
     <Space direction="vertical" size={24} style={{ width: '100%' }}>
       <Breadcrumb items={[{ title: <Link to="/applications">{t('applications.title')}</Link> }, { title: name }]} />
 
-      <Flex justify="space-between" align="flex-start" gap={24}>
-        <Space size={20} align="center">
+      <Flex justify="space-between" align="flex-start" gap={24} wrap>
+        <Space size={20} align="start" wrap>
           <Avatar shape="square" size={72} src={app.thumbnail ?? undefined}>
             {name.charAt(0)}
           </Avatar>
@@ -48,7 +48,7 @@ const ApplicationDetailPage = () => {
             )}
           </Space>
         </Space>
-        <Space>
+        <Space wrap>
           <Button icon={<ExportOutlined />} href={app.id} target="_blank">
             {t('applications.jsonld')}
           </Button>
@@ -60,11 +60,12 @@ const ApplicationDetailPage = () => {
         </Space>
       </Flex>
 
-      <Card title={`${t('applications.dataUsed')} — ${t('applications.shapes', { count: app.needs.length })}`}>
+      <Card title={t('applications.dataUsed')} extra={<Typography.Text type="secondary">{t('applications.shapes', { count: app.needs.length })}</Typography.Text>}>
         <Table<AccessNeed>
           dataSource={app.needs}
           rowKey="shapeTree"
           pagination={false}
+          scroll={{ x: 900 }}
           columns={[
             {
               title: t('applications.shape'),

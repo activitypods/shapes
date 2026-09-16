@@ -24,6 +24,17 @@
         "@value": "Messages",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A short text message, addressed to one or more people or posted to a feed.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Un court message texte, adressé à une ou plusieurs personnes ou publié dans un fil.",
+        "@language": "fr"
+      }
     ]
   }
 ]

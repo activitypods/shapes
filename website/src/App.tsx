@@ -3,7 +3,7 @@ import frFR from 'antd/locale/fr_FR';
 import enUS from 'antd/locale/en_US';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
-import { useTranslation } from 'react-i18next';
+import { useLang } from './lib/lang';
 import theme from './theme';
 import AppLayout from './components/AppLayout';
 import ScrollToTop from './components/ScrollToTop';
@@ -17,10 +17,10 @@ import ProposePage from './pages/ProposePage';
 const queryClient = new QueryClient({ defaultOptions: { queries: { retry: 1, refetchOnWindowFocus: false } } });
 
 const App = () => {
-  const { i18n } = useTranslation();
+  const { lang } = useLang();
   return (
     <QueryClientProvider client={queryClient}>
-      <ConfigProvider theme={theme} locale={i18n.language === 'fr' ? frFR : enUS}>
+      <ConfigProvider theme={theme} locale={lang === 'fr' ? frFR : enUS}>
         <AntdApp>
           <BrowserRouter>
             <ScrollToTop />

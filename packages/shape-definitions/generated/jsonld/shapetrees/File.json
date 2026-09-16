@@ -19,6 +19,17 @@
         "@value": "Fichiers",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A binary file (picture, document…) uploaded to the Pod. Not RDF, so it has no SHACL shape.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Un fichier binaire (photo, document…) déposé dans le Pod. Pas de shape SHACL : ce n'est pas du RDF.",
+        "@language": "fr"
+      }
     ]
   }
 ]

@@ -29,6 +29,17 @@
         "@value": "Evénements",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A dated event with a location, a description and a list of attendees.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Un évènement daté, avec un lieu, une description et une liste de participants.",
+        "@language": "fr"
+      }
     ]
   }
 ]

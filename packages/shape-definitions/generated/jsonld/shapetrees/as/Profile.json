@@ -29,6 +29,17 @@
         "@value": "Profils",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "The public profile of a user: name, picture, short bio. Every Pod holds one.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Le profil public d'un utilisateur : nom, photo, courte présentation. Chaque Pod en contient un.",
+        "@language": "fr"
+      }
     ]
   }
 ]

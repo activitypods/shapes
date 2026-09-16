@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { useTranslation } from 'react-i18next';
+import { useLang } from './lib/lang';
 
 // Mirrors the JSON returned by the Express server (see /api/shapes.ts and /api/applications.ts).
 
@@ -10,12 +10,14 @@ export interface ValueConstraint {
   class?: string;
   nodeKind?: string;
   hasValue?: string;
+  node?: string;
+  nodeProperties?: ShapeProperty[];
 }
 
 export interface ShapeProperty {
   path: string;
   name?: string;
-  description?: string;
+  description?: LangString;
   minCount?: number;
   maxCount?: number;
   value?: ValueConstraint;
@@ -77,10 +79,10 @@ export const useAllApplications = () =>
 
 /** Applications available in the current language (an application without `dc:language` is shown everywhere). */
 export function useVisibleApplications() {
-  const { i18n } = useTranslation();
+  const { lang } = useLang();
   const query = useAllApplications();
   const all = query.data?.applications ?? [];
-  const visible = all.filter((app) => app.languages.length === 0 || app.languages.includes(i18n.language));
+  const visible = all.filter((app) => app.languages.length === 0 || app.languages.includes(lang));
   return { ...query, all, visible, hidden: all.length - visible.length };
 }
 

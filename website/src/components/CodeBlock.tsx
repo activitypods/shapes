@@ -13,23 +13,25 @@ const CodeBlock = ({ code, variant = 'dark' }: CodeBlockProps) => {
   return (
     <div
       style={{
-        position: 'relative',
         background: dark ? '#1e1e1e' : '#fafafa',
         color: dark ? '#d4d4d4' : 'rgba(0,0,0,0.88)',
         border: dark ? 'none' : '1px solid #f0f0f0',
         borderRadius: 8,
-        padding: '16px 20px'
+        padding: '10px 20px 16px'
       }}
     >
-      <CopyButton
-        text={code}
-        label={t('common.copy')}
-        size="small"
-        ghost={dark}
-        style={{ position: 'absolute', top: 10, right: 10, ...(dark ? { color: 'rgba(255,255,255,0.65)', borderColor: 'rgba(255,255,255,0.2)' } : {}) }}
-      />
-      <pre style={{ margin: 0, fontSize: 13, lineHeight: 1.6, overflowX: 'auto', paddingRight: 96 }}>
-        <code>{code}</code>
+      {/* The button sits in its own row: an overlay would hide the start of long lines on narrow screens. */}
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 4 }}>
+        <CopyButton
+          text={code}
+          label={t('common.copy')}
+          size="small"
+          ghost={dark}
+          style={dark ? { color: 'rgba(255,255,255,0.65)', borderColor: 'rgba(255,255,255,0.2)' } : undefined}
+        />
+      </div>
+      <pre style={{ margin: 0, fontSize: 13, lineHeight: 1.6, overflowX: 'auto' }}>
+        <code style={{ overflowWrap: 'normal' }}>{code}</code>
       </pre>
     </div>
   );

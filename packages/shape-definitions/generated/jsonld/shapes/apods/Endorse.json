@@ -1,0 +1,225 @@
+[
+  {
+    "@id": "Endorse",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "http://activitypods.org/ns/core#Endorse"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_0",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#actor"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "actor"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "WebID of the person recommending.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "WebID de la personne qui recommande.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Endorse",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_2_0"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_1",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#object"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "object"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "What is endorsed, e.g. a declared skill (pair:ExperienceAssociation).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Ce qui est recommandé, par exemple une compétence déclarée (pair:ExperienceAssociation).",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Endorse",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_2_1"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_2",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Text of the endorsement.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Texte de la recommandation.",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_3",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_2_4"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_4",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_3",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_2_5"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_5",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_2_6"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_6",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_5",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_2",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_2_3"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Endorse",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_2_2"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_2_7",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#published"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "published"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Endorse",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_2_7"
+      }
+    ]
+  }
+]

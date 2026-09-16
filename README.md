@@ -55,7 +55,9 @@ Feel free to open a PR, to submit new shapes and shapetrees!
 
 Please run `yarn build`, to generate the typescript ldo objects before publishing.
 
-Note that shapes must not change, they are immutable. Create a new shape, if you need it.
+Note that shapes must not change, they are immutable. Create a new shape, if you need it. Adding _optional_ properties to an existing SHACL shape is fine: it does not invalidate any existing resource, and it tells other applications what they can expect to find.
+
+The main node shape must be the first subject of its file and declare its `sh:targetClass` first: the Pod provider reads the target class from the first node of the JSON-LD serialization. Nested shapes (an embedded address, a geolocation…) are declared after it, referenced with `sh:node`, and carry no `sh:targetClass`.
 
 ## Funding
 

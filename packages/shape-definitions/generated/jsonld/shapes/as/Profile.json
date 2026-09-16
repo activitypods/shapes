@@ -9,5 +9,419 @@
         "@id": "https://www.w3.org/ns/activitystreams#Profile"
       }
     ]
+  },
+  {
+    "@id": "_:df_8_0",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#describes"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "describes"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The WebID this profile describes.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Le WebID que ce profil décrit.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Profile",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_0"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_8_1",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#given-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "given-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "First name, or the name the user wants to be called by.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Prénom, ou nom sous lequel l'utilisateur souhaite être appelé.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Profile",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_1"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_8_2",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#family-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "family-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Last name.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Nom de famille.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Profile",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_2"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_8_3",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#fn"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "fn"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Formatted full name.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Nom complet formaté.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Profile",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_3"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_8_4",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#note"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "note"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Short presentation of the user.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Courte présentation de l'utilisateur.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Profile",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_4"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_8_5",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#photo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "photo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "URL of the profile picture.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "URL de la photo de profil.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Profile",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_5"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_8_6",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#hasAddress"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "hasAddress"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Home address, one of the user's saved addresses.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Adresse du domicile, parmi les adresses enregistrées de l'utilisateur.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#Location"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Profile",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_6"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_8_7",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#hasGeo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "hasGeo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Approximate coordinates of the home, deliberately fuzzed by the Pod provider so that the exact address stays private.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Coordonnées approximatives du domicile, volontairement brouillées par le fournisseur de Pod pour que l'adresse exacte reste privée.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "HomeGeo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Profile",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_7"
+      }
+    ]
+  },
+  {
+    "@id": "HomeGeo",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ]
+  },
+  {
+    "@id": "_:df_8_8",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#latitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "latitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "HomeGeo",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_8"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_8_9",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#longitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "longitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "HomeGeo",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_8_9"
+      }
+    ]
   }
 ]

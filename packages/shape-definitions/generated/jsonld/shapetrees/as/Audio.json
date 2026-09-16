@@ -24,6 +24,17 @@
         "@value": "Audios",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "An audio file and its metadata (name, duration, media type, file URL).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Un fichier audio et ses métadonnées (nom, durée, type MIME, URL du fichier).",
+        "@language": "fr"
+      }
     ]
   }
 ]

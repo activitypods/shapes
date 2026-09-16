@@ -29,6 +29,17 @@
         "@value": "Demandes",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mutual aid request addressed to one's network.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Une demande d'entraide adressée à son réseau.",
+        "@language": "fr"
+      }
     ]
   }
 ]

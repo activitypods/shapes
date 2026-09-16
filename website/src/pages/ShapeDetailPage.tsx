@@ -1,4 +1,4 @@
-import { Alert, Breadcrumb, Button, Card, Col, Descriptions, Flex, List, Result, Row, Space, Spin, Tabs, Typography } from 'antd';
+import { Alert, Breadcrumb, Button, Card, Col, Descriptions, Flex, Grid, List, Result, Row, Space, Spin, Tabs, Typography } from 'antd';
 import { ExportOutlined } from '@ant-design/icons';
 import { Link, useParams } from 'react-router';
 import { Trans, useTranslation } from 'react-i18next';
@@ -35,11 +35,12 @@ module.exports = {
 };`;
 
 const ShapeDetailPage = () => {
-  const { t, i18n } = useTranslation();
-  const { l } = useLang();
+  const { t } = useTranslation();
+  const { l, lang } = useLang();
   const { '*': id = '' } = useParams();
   const { data, isPending } = useShapes();
   const { visible } = useVisibleApplications();
+  const compact = Grid.useBreakpoint().md === false;
 
   if (isPending) return <Spin />;
   const shapes = data?.shapes ?? [];
@@ -62,9 +63,9 @@ const ShapeDetailPage = () => {
         ]}
       />
 
-      <Flex justify="space-between" align="flex-start" gap={24}>
+      <Flex justify="space-between" align="flex-start" gap={24} wrap>
         <Space direction="vertical" size={8} style={{ maxWidth: 800 }}>
-          <Space size={12} align="center">
+          <Space size={12} align="center" wrap>
             <Typography.Title level={2} style={{ margin: 0 }}>
               {label}
             </Typography.Title>
@@ -74,7 +75,7 @@ const ShapeDetailPage = () => {
             {l(shape.definition)}
           </Typography.Paragraph>
         </Space>
-        <Space>
+        <Space wrap>
           <Button icon={<ExportOutlined />} href={githubShapeTreeFile(shape.id)} target="_blank">
             {t('shape.viewOnGithub')}
           </Button>
@@ -82,10 +83,10 @@ const ShapeDetailPage = () => {
         </Space>
       </Flex>
 
-      <Row gutter={24} align="top">
+      <Row gutter={[24, 24]} align="top">
         <Col xs={24} xl={16}>
           <Space direction="vertical" size={24} style={{ width: '100%' }}>
-            <Card title={t('shape.describes')} extra={!isFile && <Typography.Text type="secondary" style={{ fontSize: 12 }}>{t('shape.generated')}</Typography.Text>}>
+            <Card title={t('shape.describes')} extra={!isFile && !compact && <Typography.Text type="secondary" style={{ fontSize: 12 }}>{t('shape.generated')}</Typography.Text>}>
               <Space direction="vertical" size={16} style={{ width: '100%' }}>
                 <Typography.Paragraph style={{ fontSize: 15, margin: 0 }}>
                   {isFile ? (
@@ -136,16 +137,17 @@ const ShapeDetailPage = () => {
                 dataSource={users}
                 locale={{ emptyText: <span /> }}
                 renderItem={({ app, need }) => (
-                  <List.Item style={{ padding: '16px 24px' }} extra={<AccessModeTags modes={need.accessMode} />}>
+                  <List.Item style={{ padding: compact ? '16px' : '16px 24px' }} extra={compact ? undefined : <AccessModeTags modes={need.accessMode} />}>
                     <List.Item.Meta
                       avatar={<ApplicationAvatars applications={[app]} size={48} />}
                       title={<Link to={applicationPath(app.slug)}>{l(app.name)}</Link>}
                       description={
-                        <Space direction="vertical" size={0}>
+                        <Space direction="vertical" size={4}>
                           <span>{l(app.description)}</span>
                           <Typography.Text type="secondary" style={{ fontSize: 12 }}>
                             {app.slug}
                           </Typography.Text>
+                          {compact && <AccessModeTags modes={need.accessMode} />}
                         </Space>
                       }
                     />
@@ -153,7 +155,7 @@ const ShapeDetailPage = () => {
                 )}
               />
               <Typography.Text type="secondary" style={{ display: 'block', padding: '12px 24px', fontSize: 12 }}>
-                {t('shape.usedByHelp', { language: t(`language.${i18n.language}`) })}
+                {t('shape.usedByHelp', { language: t(`language.${lang}`) })}
               </Typography.Text>
             </Card>
           </Space>

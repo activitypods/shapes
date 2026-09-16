@@ -22,12 +22,17 @@ export interface ValueConstraint {
   class?: string;
   nodeKind?: string;
   hasValue?: string;
+  /** Nested node shape (`sh:node`) the value must conform to, e.g. an embedded address. */
+  node?: string;
+  /** Properties of that nested shape, so that the website can show them as a sub-table. */
+  nodeProperties?: ShapeProperty[];
 }
 
 export interface ShapeProperty {
   path: string;
   name?: string;
-  description?: string;
+  /** `sh:description`, possibly in several languages (`und` when untagged). */
+  description?: LangString;
   minCount?: number;
   maxCount?: number;
   /** Direct constraint on the value, if any. */
@@ -86,24 +91,30 @@ function literalNumber(store: Store, subject: Quad_Subject, predicate: Term): nu
   return object?.termType === "Literal" ? Number(object.value) : undefined;
 }
 
-function valueConstraint(store: Store, node: Quad_Subject, prefixes: Record<string, string>): ValueConstraint | undefined {
+function valueConstraint(store: Store, node: Quad_Subject, prefixes: Record<string, string>, base: string, seen: Set<string>): ValueConstraint | undefined {
   const datatype = firstObject(store, node, sh("datatype"));
   const cls = firstObject(store, node, sh("class"));
   const nodeKind = firstObject(store, node, sh("nodeKind"));
   const hasValue = firstObject(store, node, sh("hasValue"));
-  if (!datatype && !cls && !nodeKind && !hasValue) return undefined;
+  const nested = firstObject(store, node, sh("node"));
+  if (!datatype && !cls && !nodeKind && !hasValue && !nested) return undefined;
   return {
     ...(datatype && { datatype: compactIri(datatype.value, prefixes) }),
     ...(cls && { class: compactIri(cls.value, prefixes) }),
     ...(nodeKind && { nodeKind: compactIri(nodeKind.value, prefixes) }),
     ...(hasValue && { hasValue: compactIri(hasValue.value, prefixes) }),
+    ...(nested && {
+      node:
+        nested.termType !== "NamedNode" ? "_:" + nested.value : nested.value.startsWith(base) ? nested.value.slice(base.length) : compactIri(nested.value, prefixes),
+      nodeProperties: collectProperties(store, nested as Quad_Subject, prefixes, base, seen),
+    }),
   };
 }
 
 /** Collects the property shapes of a node shape, following `sh:node` references inside the same document. */
-function collectProperties(store: Store, nodeShape: Quad_Subject, prefixes: Record<string, string>, seen = new Set<string>()): ShapeProperty[] {
+function collectProperties(store: Store, nodeShape: Quad_Subject, prefixes: Record<string, string>, base: string, seen = new Set<string>()): ShapeProperty[] {
   if (seen.has(nodeShape.value)) return [];
-  seen.add(nodeShape.value);
+  seen = new Set(seen).add(nodeShape.value);
 
   const lists = store.extractLists();
   const properties: ShapeProperty[] = [];
@@ -113,18 +124,18 @@ function collectProperties(store: Store, nodeShape: Quad_Subject, prefixes: Reco
     const pathTerm = firstObject(store, node, sh("path"));
     if (!pathTerm) continue;
     const name = firstObject(store, node, sh("name"));
-    const description = firstObject(store, node, sh("description"));
+    const description = langString(store, node, sh("description"));
     const orHead = firstObject(store, node, sh("or"));
     const or = orHead && lists[orHead.value]
-      ? lists[orHead.value].map((alt) => valueConstraint(store, alt as Quad_Subject, prefixes)).filter((c): c is ValueConstraint => !!c)
+      ? lists[orHead.value].map((alt) => valueConstraint(store, alt as Quad_Subject, prefixes, base, seen)).filter((c): c is ValueConstraint => !!c)
       : undefined;
-    const value = valueConstraint(store, node, prefixes);
+    const value = valueConstraint(store, node, prefixes, base, seen);
     const minCount = literalNumber(store, node, sh("minCount"));
     const maxCount = literalNumber(store, node, sh("maxCount"));
     properties.push({
       path: compactIri(pathTerm.value, prefixes),
       ...(name && { name: name.value }),
-      ...(description && { description: description.value }),
+      ...(Object.keys(description).length && { description }),
       ...(minCount !== undefined && { minCount }),
       ...(maxCount !== undefined && { maxCount }),
       ...(value && { value }),
@@ -133,7 +144,7 @@ function collectProperties(store: Store, nodeShape: Quad_Subject, prefixes: Reco
   }
 
   for (const referenced of store.getObjects(nodeShape, sh("node"), null)) {
-    properties.push(...collectProperties(store, referenced as Quad_Subject, prefixes, seen));
+    properties.push(...collectProperties(store, referenced as Quad_Subject, prefixes, base, seen));
   }
 
   return properties;
@@ -152,7 +163,8 @@ export function parseShape(turtle: string, shapeUri: string, prefixes: Record<st
   const targetClass = firstObject(store, main, sh("targetClass"));
   return {
     targetClass: targetClass ? compactIri(targetClass.value, allPrefixes) : null,
-    properties: collectProperties(store, main, allPrefixes),
+    // Named shapes in a document resolve as <document IRI> + name (`PREFIX : <>`), hence the base.
+    properties: collectProperties(store, main, allPrefixes, shapeUri),
   };
 }
 

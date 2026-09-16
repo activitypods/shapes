@@ -81,7 +81,8 @@
     "instanceOf": "Une ressource de type",
     "exactly": "Exactement",
     "or": "ou",
-    "any": "Toute valeur"
+    "any": "Toute valeur",
+    "node": "Une valeur décrite par"
   },
   "access": {
     "acl_Read": "Lecture",

@@ -1,0 +1,45 @@
+[
+  {
+    "@id": "ExperienceAssociation",
+    "@type": [
+      "http://www.w3.org/ns/shapetrees#ShapeTree"
+    ],
+    "http://www.w3.org/ns/shapetrees#expectsType": [
+      {
+        "@id": "http://www.w3.org/ns/shapetrees#Resource"
+      }
+    ],
+    "http://www.w3.org/ns/shapetrees#shape": [
+      {
+        "@id": "/shapes/pair/ExperienceAssociation"
+      }
+    ],
+    "http://www.w3.org/ns/shapetrees#describesInstance": [
+      {
+        "@id": "http://virtual-assembly.org/ontologies/pair#experienceSkill"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Skill experience",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Compétence déclarée",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A skill a user declares to have, linked to an experience.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Une compétence qu'un utilisateur déclare posséder, liée à une expérience.",
+        "@language": "fr"
+      }
+    ]
+  }
+]

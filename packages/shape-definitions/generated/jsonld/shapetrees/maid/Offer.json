@@ -29,6 +29,17 @@
         "@value": "Offres",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A mutual aid offer: a service, an object or a skill offered to one's network.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Une offre d'entraide : un service, un objet ou une compétence proposée à son réseau.",
+        "@language": "fr"
+      }
     ]
   }
 ]

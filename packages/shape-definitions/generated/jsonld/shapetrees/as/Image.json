@@ -24,6 +24,17 @@
         "@value": "Images",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "An image and its metadata (name, media type, file URL).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Une image et ses métadonnées (nom, type MIME, URL du fichier).",
+        "@language": "fr"
+      }
     ]
   }
 ]

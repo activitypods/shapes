@@ -1,0 +1,45 @@
+[
+  {
+    "@id": "Endorse",
+    "@type": [
+      "http://www.w3.org/ns/shapetrees#ShapeTree"
+    ],
+    "http://www.w3.org/ns/shapetrees#expectsType": [
+      {
+        "@id": "http://www.w3.org/ns/shapetrees#Resource"
+      }
+    ],
+    "http://www.w3.org/ns/shapetrees#shape": [
+      {
+        "@id": "/shapes/apods/Endorse"
+      }
+    ],
+    "http://www.w3.org/ns/shapetrees#describesInstance": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#object"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Endorsement",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Recommandation",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "An endorsement a user sends to another about an object.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Une recommandation qu'un utilisateur adresse à un autre au sujet d'un objet.",
+        "@language": "fr"
+      }
+    ]
+  }
+]

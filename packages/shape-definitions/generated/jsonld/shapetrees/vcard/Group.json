@@ -29,6 +29,17 @@
         "@value": "Groupes",
         "@language": "fr"
       }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A group of contacts defined by the user to organize their network.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Un groupe de contacts défini par l'utilisateur pour organiser son réseau.",
+        "@language": "fr"
+      }
     ]
   }
 ]

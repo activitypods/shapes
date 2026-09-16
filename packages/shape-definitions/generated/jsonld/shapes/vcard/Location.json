@@ -9,5 +9,435 @@
         "@id": "http://www.w3.org/2006/vcard/ns#Location"
       }
     ]
+  },
+  {
+    "@id": "_:df_16_0",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#given-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "given-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Label of the address, as the user names it (home, office…).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Libellé de l'adresse, tel que l'utilisateur la nomme (maison, bureau…).",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Location",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_0"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_16_1",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#hasAddress"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "hasAddress"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The postal address itself, embedded as a vcard:Address.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "L'adresse postale elle-même, embarquée sous forme de vcard:Address.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "Address"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Location",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_1"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_16_2",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#note"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "note"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Free-text indications (door code, floor…).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Indications en texte libre (digicode, étage…).",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Location",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_2"
+      }
+    ]
+  },
+  {
+    "@id": "Address",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ]
+  },
+  {
+    "@id": "_:df_16_3",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#given-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "given-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Place name as returned by the geocoder.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Nom du lieu tel que renvoyé par le géocodeur.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Address",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_3"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_16_4",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#street-address"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "street-address"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Address",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_4"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_16_5",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#postal-code"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "postal-code"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Address",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_5"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_16_6",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#locality"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "locality"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "City.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Ville.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Address",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_6"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_16_7",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#country-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "country-name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Address",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_7"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_16_8",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#hasGeo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "hasGeo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Exact coordinates (vcard:latitude, vcard:longitude).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Coordonnées exactes (vcard:latitude, vcard:longitude).",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "AddressGeo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Address",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_8"
+      }
+    ]
+  },
+  {
+    "@id": "AddressGeo",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ]
+  },
+  {
+    "@id": "_:df_16_9",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#latitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "latitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "AddressGeo",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_9"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_16_10",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#longitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "longitude"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "AddressGeo",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_16_10"
+      }
+    ]
   }
 ]

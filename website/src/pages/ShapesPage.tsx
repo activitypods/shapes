@@ -39,7 +39,7 @@ const ShapeCard = ({ shape }: { shape: Shape }) => {
       <Typography.Paragraph type="secondary" style={{ margin: 0, flex: 1 }}>
         {l(shape.definition)}
       </Typography.Paragraph>
-      <Flex justify="space-between" align="center" gap={12} style={{ paddingTop: 8 }}>
+      <Flex justify="space-between" align="center" gap={12} wrap style={{ paddingTop: 8 }}>
         {users.length > 0 ? (
           <Space size={8} onClick={(e) => e.stopPropagation()}>
             <ApplicationAvatars applications={users} />
@@ -105,10 +105,10 @@ const ShapesPage = () => {
         <Typography.Paragraph type="secondary" style={{ fontSize: 16, margin: 0, maxWidth: 760 }}>
           <Trans i18nKey="shapes.intro" components={[<Link to="/propose" />]} />
         </Typography.Paragraph>
-        <Space size={16}>
-          <Input.Search size="large" allowClear placeholder={t('shapes.search')} style={{ width: 560 }} value={search} onChange={(e) => setSearch(e.target.value)} />
+        <Flex align="center" gap={16} wrap>
+          <Input.Search size="large" allowClear placeholder={t('shapes.search')} style={{ width: '100%', maxWidth: 560 }} value={search} onChange={(e) => setSearch(e.target.value)} />
           <Typography.Text type="secondary">{t('shapes.count', { count: shapes.length })}</Typography.Text>
-        </Space>
+        </Flex>
       </Space>
 
       <Flex justify="space-between" align="center" wrap gap={8}>

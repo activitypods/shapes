@@ -1,7 +1,13 @@
+export * as apods from './apods/index.mjs';
 export * as as from './as/index.mjs';
+export * as g1 from './g1/index.mjs';
 export * as maid from './maid/index.mjs';
+export * as pair from './pair/index.mjs';
 export * as vcard from './vcard/index.mjs';
+export * from './apods/index.mjs';
 export * from './as/index.mjs';
+export * from './g1/index.mjs';
 export * from './maid/index.mjs';
+export * from './pair/index.mjs';
 export * from './vcard/index.mjs';
 export * from './File.json';

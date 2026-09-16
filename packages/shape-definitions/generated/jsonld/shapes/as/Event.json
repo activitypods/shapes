@@ -9,5 +9,485 @@
         "@id": "https://www.w3.org/ns/activitystreams#Event"
       }
     ]
+  },
+  {
+    "@id": "_:df_5_0",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "name"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Title of the event.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Titre de l'évènement.",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_1",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_5_2"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_2",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_1",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_5_3"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_3",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_5_4"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_4",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_3",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_0",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_5_1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Event",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_5_0"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_5",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Full description of the event (Markdown or HTML).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Description complète de l'évènement (Markdown ou HTML).",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_6",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_5_7"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_7",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_6",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_5_8"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_8",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_5_9"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_9",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_8",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_5",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_5_6"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Event",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_5_5"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_10",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#startTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "startTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "When the event starts.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Début de l'évènement.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Event",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_5_10"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_11",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#endTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "endTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "When the event ends.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Fin de l'évènement.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Event",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_5_11"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_12",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#location"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "location"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Where the event takes place: a saved address (vcard:Location) or an embedded place (as:Place).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Lieu de l'évènement : une adresse enregistrée (vcard:Location) ou un lieu embarqué (as:Place).",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_13",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_5_14"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_14",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#Location"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_13",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_5_15"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_15",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_5_16"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_16",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Place"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_15",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_5_17"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_17",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_5_18"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_18",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_17",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_12",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_5_13"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Event",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_5_12"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_19",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#image"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "image"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Illustration of the event, as an as:Image or the URL of an uploaded file.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Illustration de l'évènement, sous forme d'as:Image ou d'URL d'un fichier déposé.",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_20",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_5_21"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_21",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Image"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_20",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_5_22"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_22",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_5_23"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_23",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_22",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_5_19",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_5_20"
+      }
+    ]
+  },
+  {
+    "@id": "Event",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_5_19"
+      }
+    ]
   }
 ]

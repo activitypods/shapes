@@ -11,7 +11,6 @@ const theme: ThemeConfig = {
   components: {
     Layout: {
       headerBg: '#ffffff',
-      headerPadding: '0 50px',
       bodyBg: '#f5f5f5'
     }
   }

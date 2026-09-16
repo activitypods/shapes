@@ -1,0 +1,48 @@
+/* Layout paddings by breakpoint: Antd's Layout tokens are not responsive. */
+.site-header {
+  padding: 0 50px;
+}
+.site-content {
+  padding: 24px 50px 48px;
+}
+@media (max-width: 991px) {
+  .site-header {
+    padding: 0 24px;
+  }
+  .site-content {
+    padding: 16px 24px 32px;
+  }
+}
+@media (max-width: 575px) {
+  .site-header {
+    padding: 0 16px;
+  }
+  .site-content {
+    padding: 16px 16px 32px;
+  }
+  .site-content h2.ant-typography {
+    font-size: 24px;
+  }
+}
+/* Long URIs and file paths must never widen the page. */
+code {
+  overflow-wrap: anywhere;
+}
+/* Preview beside the form on wide screens, below it (not sticky) on narrower ones. */
+@media (min-width: 1200px) {
+  .propose-preview {
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 1199px) {
+  .propose-preview {
+    position: static !important;
+  }
+}
+/* Preview beside the form on wide screens, below it (not sticky) on narrower ones. */
+@media (max-width: 1199px) {
+  .propose-preview {
+    position: static !important;
+    margin-top: 24px;
+  }
+}

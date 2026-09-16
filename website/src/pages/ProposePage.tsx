@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Alert, AutoComplete, Button, Card, Col, Divider, Form, Input, Result, Row, Select, Space, Spin, Switch, Tabs, Typography } from 'antd';
+import { Alert, AutoComplete, Button, Card, Col, Divider, Form, Grid, Input, Result, Row, Select, Space, Spin, Switch, Tabs, Typography } from 'antd';
 import { GithubOutlined, MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import { ApiError, VALUE_KINDS, previewProposal, submitProposal, useProposalsConfig, useShapes } from '../api';
@@ -20,6 +20,7 @@ const ProposePage = () => {
   const { data: config } = useProposalsConfig();
   const { data: shapesData } = useShapes();
   const knownPrefixes = shapesData?.prefixes ?? {};
+  const compact = Grid.useBreakpoint().md === false;
 
   const values = Form.useWatch([], form);
   const [preview, setPreview] = useState<ProposalPreview | null>(null);
@@ -119,7 +120,7 @@ const ProposePage = () => {
         />
       )}
 
-      <Row gutter={24} align="top">
+      <Row gutter={[24, 0]} align="top">
         <Col xs={24} xl={12}>
           <Form<ShapeProposal>
             form={form}
@@ -129,12 +130,12 @@ const ProposePage = () => {
           >
             <Card title={t('propose.identity')} style={{ marginBottom: 24 }}>
               <Row gutter={16}>
-                <Col span={10}>
+                <Col xs={24} sm={10}>
                   <Form.Item name="prefix" label={t('propose.prefix')} extra={t('propose.prefixHelp')} rules={[{ required: true }, { pattern: /^[a-z][a-z0-9-]*$/, message: 'a-z, 0-9, -' }]}>
                     <AutoComplete options={prefixOptions} placeholder="foaf" filterOption={(input, option) => String(option?.value).startsWith(input)} />
                   </Form.Item>
                 </Col>
-                <Col span={14}>
+                <Col xs={24} sm={14}>
                   <Form.Item name="name" label={t('propose.name')} extra={t('propose.nameHelp')} rules={[{ required: true }, { pattern: /^[A-Z][A-Za-z0-9]*$/, message: 'PascalCase' }]}>
                     <Input placeholder="Project" />
                   </Form.Item>
@@ -155,12 +156,12 @@ const ProposePage = () => {
 
             <Card title={t('propose.labels')} style={{ marginBottom: 24 }}>
               <Row gutter={16}>
-                <Col span={12}>
+                <Col xs={24} sm={12}>
                   <Form.Item name={['label', 'en']} label={t('propose.labelEn')} rules={[{ required: true }]}>
                     <Input placeholder="Projects" />
                   </Form.Item>
                 </Col>
-                <Col span={12}>
+                <Col xs={24} sm={12}>
                   <Form.Item name={['label', 'fr']} label={t('propose.labelFr')} rules={[{ required: true }]}>
                     <Input placeholder="Projets" />
                   </Form.Item>
@@ -182,23 +183,23 @@ const ProposePage = () => {
                     {fields.map((field, index) => (
                       <Card key={field.key} size="small" extra={<Button type="text" danger icon={<MinusCircleOutlined />} onClick={() => remove(field.name)} />}>
                         <Row gutter={16}>
-                          <Col span={12}>
+                          <Col xs={24} sm={12}>
                             <Form.Item name={[field.name, 'path']} label={t('propose.propertyPath')} rules={[{ required: true }]}>
                               <Input placeholder="foaf:name" />
                             </Form.Item>
                           </Col>
-                          <Col span={12}>
+                          <Col xs={24} sm={12}>
                             <Form.Item name={[field.name, 'name']} label={t('propose.propertyName')}>
                               <Input placeholder="name" />
                             </Form.Item>
                           </Col>
-                          <Col span={12}>
+                          <Col xs={24} sm={12}>
                             <Form.Item name={[field.name, 'kind']} label={t('propose.propertyKind')} initialValue="any" rules={[{ required: true }]}>
                               <Select options={kindOptions} />
                             </Form.Item>
                           </Col>
                           {values?.properties?.[index]?.kind === 'resource' && (
-                            <Col span={12}>
+                            <Col xs={24} sm={12}>
                               <Form.Item name={[field.name, 'class']} label={t('propose.propertyClass')} rules={[{ required: true }]}>
                                 <Input placeholder="as:Person" />
                               </Form.Item>
@@ -232,7 +233,7 @@ const ProposePage = () => {
 
             <Card title={t('propose.proposer')} style={{ marginBottom: 24 }}>
               <Form.Item name="githubHandle" label={t('propose.githubHandle')} extra={t('propose.githubHandleHelp')} rules={[{ required: true }]}>
-                <Input prefix="@" placeholder="octocat" style={{ maxWidth: 320 }} />
+                <Input prefix="@" placeholder="octocat" style={{ maxWidth: 320, width: '100%' }} />
               </Form.Item>
               <Form.Item name="motivation" label={t('propose.motivation')} extra={t('propose.motivationHelp')}>
                 <Input.TextArea rows={3} />
@@ -247,8 +248,8 @@ const ProposePage = () => {
         </Col>
 
         <Col xs={24} xl={12}>
-          <div style={{ position: 'sticky', top: 24 }}>
-            <Card title={t('propose.preview')} extra={<Typography.Text type="secondary" style={{ fontSize: 12 }}>{t('propose.previewHelp')}</Typography.Text>}>
+          <div className="propose-preview" style={{ position: 'sticky', top: 24 }}>
+            <Card title={t('propose.preview')} extra={!compact && <Typography.Text type="secondary" style={{ fontSize: 12 }}>{t('propose.previewHelp')}</Typography.Text>}>
               {previewError && <Alert type="warning" showIcon message={previewError} style={{ marginBottom: 16 }} />}
               {!preview && !previewError && (
                 <Space>

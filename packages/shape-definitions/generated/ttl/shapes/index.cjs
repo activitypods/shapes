@@ -1,6 +1,9 @@
+const apods = require('./apods/index.cjs');
 const as = require('./as/index.cjs');
+const g1 = require('./g1/index.cjs');
 const maid = require('./maid/index.cjs');
+const pair = require('./pair/index.cjs');
 const solid = require('./solid/index.cjs');
 const vcard = require('./vcard/index.cjs');
 const activitystreams = require('./activitystreams.cjs');
-module.exports = { ...as, as, ...maid, maid, ...solid, solid, ...vcard, vcard, ...activitystreams, activitystreams };
+module.exports = { ...apods, apods, ...as, as, ...g1, g1, ...maid, maid, ...pair, pair, ...solid, solid, ...vcard, vcard, ...activitystreams, activitystreams };

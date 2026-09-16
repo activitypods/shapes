@@ -1,9 +1,11 @@
-import { Layout, Menu, Segmented, Space, Typography } from 'antd';
-import { GithubOutlined } from '@ant-design/icons';
+import { useEffect, useState } from 'react';
+import { Button, Drawer, Grid, Layout, Menu, Segmented, Space, Typography } from 'antd';
+import { GithubOutlined, MenuOutlined } from '@ant-design/icons';
 import { Link, Outlet, useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { SUPPORTED_LANGUAGES } from '../i18n';
 import { GITHUB_REPOSITORY } from '../lib/links';
+import { useLang } from '../lib/lang';
 import { useVisibleApplications } from '../api';
 
 const Logo = () => (
@@ -17,44 +19,70 @@ const Logo = () => (
 
 const AppLayout = () => {
   const { t, i18n } = useTranslation();
+  const { lang } = useLang();
   const { pathname } = useLocation();
   const { visible, hidden } = useVisibleApplications();
+  const screens = Grid.useBreakpoint();
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  // Keep the document language in sync for assistive technologies and hyphenation.
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+
+  // Close the mobile menu when a link has been followed.
+  useEffect(() => {
+    setDrawerOpen(false);
+  }, [pathname]);
 
   const section = pathname.startsWith('/applications') ? 'applications' : pathname.startsWith('/propose') ? 'propose' : 'shapes';
+  const compact = screens.md === false;
+
+  const menuItems = [
+    { key: 'shapes', label: <Link to="/">{t('nav.shapes')}</Link> },
+    { key: 'applications', label: <Link to="/applications">{t('nav.applications')}</Link> },
+    { key: 'propose', label: <Link to="/propose">{t('nav.propose')}</Link> },
+    { key: 'github', icon: <GithubOutlined />, label: <a href={GITHUB_REPOSITORY} target="_blank" rel="noreferrer">{t('nav.github')}</a> }
+  ];
+
+  const languageSwitch = (
+    <Segmented
+      size="small"
+      value={lang}
+      options={SUPPORTED_LANGUAGES.map((code) => ({ value: code, label: code.toUpperCase() }))}
+      onChange={(code) => i18n.changeLanguage(code as string)}
+    />
+  );
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
-      <Layout.Header style={{ display: 'flex', alignItems: 'center', gap: 24, borderBottom: '1px solid #f0f0f0' }}>
-        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, color: 'rgba(0,0,0,0.88)', fontSize: 18, fontWeight: 600, whiteSpace: 'nowrap' }}>
+      <Layout.Header className="site-header" style={{ display: 'flex', alignItems: 'center', gap: 24, borderBottom: '1px solid #f0f0f0' }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, color: 'rgba(0,0,0,0.88)', fontSize: 18, fontWeight: 600, whiteSpace: 'nowrap', flex: compact ? 1 : undefined }}>
           <Logo />
           {t('site.title')}
         </Link>
-        <Menu
-          mode="horizontal"
-          selectedKeys={[section]}
-          style={{ flex: 1, minWidth: 0, justifyContent: 'flex-end', borderBottom: 'none' }}
-          items={[
-            { key: 'shapes', label: <Link to="/">{t('nav.shapes')}</Link> },
-            { key: 'applications', label: <Link to="/applications">{t('nav.applications')}</Link> },
-            { key: 'propose', label: <Link to="/propose">{t('nav.propose')}</Link> },
-            { key: 'github', icon: <GithubOutlined />, label: <a href={GITHUB_REPOSITORY} target="_blank" rel="noreferrer">{t('nav.github')}</a> }
-          ]}
-        />
-        <Segmented
-          size="small"
-          value={i18n.language}
-          options={SUPPORTED_LANGUAGES.map((lang) => ({ value: lang, label: lang.toUpperCase() }))}
-          onChange={(lang) => i18n.changeLanguage(lang as string)}
-        />
+        {compact ? (
+          <>
+            <Button type="text" icon={<MenuOutlined />} aria-label="Menu" onClick={() => setDrawerOpen(true)} />
+            <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} placement="right" width={280} title={languageSwitch} styles={{ body: { padding: 0 } }}>
+              <Menu mode="inline" selectedKeys={[section]} items={menuItems} style={{ borderInlineEnd: 'none' }} />
+            </Drawer>
+          </>
+        ) : (
+          <>
+            <Menu mode="horizontal" selectedKeys={[section]} style={{ flex: 1, minWidth: 0, justifyContent: 'flex-end', borderBottom: 'none' }} items={menuItems} />
+            {languageSwitch}
+          </>
+        )}
       </Layout.Header>
-      <Layout.Content style={{ padding: '24px 50px 48px' }}>
+      <Layout.Content className="site-content">
         <Outlet />
       </Layout.Content>
       <Layout.Footer style={{ background: 'transparent' }}>
         <Space direction="vertical" size={4}>
           {visible.length + hidden > 0 && (
             <Typography.Text type="secondary" style={{ fontSize: 12 }}>
-              {t('footer.usage', { visible: visible.length, hidden, language: t(`language.${i18n.language}`) })}
+              {t('footer.usage', { visible: visible.length, hidden, language: t(`language.${lang}`) })}
             </Typography.Text>
           )}
           <Typography.Text type="secondary" style={{ fontSize: 12 }}>

@@ -9,5 +9,434 @@
         "@id": "https://www.w3.org/ns/activitystreams#Note"
       }
     ]
+  },
+  {
+    "@id": "_:df_7_0",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#attributedTo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "attributedTo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Author of the message (a WebID).",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Auteur du message (un WebID).",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "Note",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_7_0"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_1",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "content"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Body of the message, as HTML.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Corps du message, en HTML.",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_2",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_7_3"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_3",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_2",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_7_4"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_4",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_7_5"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_5",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_4",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_1",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_7_2"
+      }
+    ]
+  },
+  {
+    "@id": "Note",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_7_1"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_6",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#inReplyTo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "inReplyTo"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "The message this one replies to.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Le message auquel celui-ci répond.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "Note",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_7_6"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_7",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#tag"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "tag"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Mentions (as:Mention with href and name) and hashtags.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Mentions (as:Mention avec href et name) et mots-dièse.",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_8",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_7_9"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_9",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Mention"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_8",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_7_10"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_10",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_7_11"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_11",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Link"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_10",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_7_12"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_12",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_7_13"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_13",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_12",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_7",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_7_8"
+      }
+    ]
+  },
+  {
+    "@id": "Note",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_7_7"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_14",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#attachment"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "attachment"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Attached media: as:Document or as:Image objects with url and mediaType.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Médias joints : objets as:Document ou as:Image avec url et mediaType.",
+        "@language": "fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_15",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_7_16"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_16",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Document"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_15",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_7_17"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_17",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_7_18"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_18",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#Image"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_17",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:df_7_19"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_19",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:df_7_20"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_20",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_19",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_14",
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:df_7_15"
+      }
+    ]
+  },
+  {
+    "@id": "Note",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_7_14"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_7_21",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://www.w3.org/ns/activitystreams#published"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "published"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Publication date.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Date de publication.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Note",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_7_21"
+      }
+    ]
   }
 ]

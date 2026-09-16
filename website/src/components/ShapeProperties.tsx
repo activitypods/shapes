@@ -2,6 +2,7 @@ import { Table, Typography } from 'antd';
 import { useTranslation } from 'react-i18next';
 import type { ShapeProperty, ValueConstraint } from '../api';
 import ClassTag from './ClassTag';
+import { useLang } from '../lib/lang';
 
 const datatypeKeys: Record<string, string> = {
   'xsd:string': 'text',
@@ -32,6 +33,12 @@ const Constraint = ({ constraint }: { constraint: ValueConstraint }) => {
     return (
       <>
         {t('values.instanceOf')} <ClassTag iri={constraint.class} />
+      </>
+    );
+  if (constraint.node)
+    return (
+      <>
+        {t('values.node')} <ClassTag iri={constraint.node} />
       </>
     );
   if (constraint.datatype) {
@@ -65,14 +72,26 @@ const ExpectedValue = ({ property }: { property: ShapeProperty }) => {
 const cardinality = ({ minCount = 0, maxCount }: ShapeProperty) =>
   maxCount === undefined ? `${minCount}..n` : minCount === maxCount ? `${minCount}` : `${minCount}..${maxCount}`;
 
-const ShapeProperties = ({ properties }: { properties: ShapeProperty[] }) => {
+/** The nested shape a property's value must conform to, if any (direct `sh:node` or inside `sh:or`). */
+const nestedProperties = (property: ShapeProperty): ShapeProperty[] | undefined =>
+  [property.value, ...(property.or ?? [])].find((c) => c?.nodeProperties?.length)?.nodeProperties;
+
+const ShapeProperties = ({ properties, nested = false }: { properties: ShapeProperty[]; nested?: boolean }) => {
   const { t } = useTranslation();
+  const { l } = useLang();
   return (
     <Table<ShapeProperty>
       dataSource={properties}
       rowKey="path"
       pagination={false}
-      size="middle"
+      size={nested ? 'small' : 'middle'}
+      scroll={{ x: 640 }}
+      expandable={{
+        rowExpandable: (property) => !!nestedProperties(property),
+        // Embedded nodes (an address, a geolocation…) show their own properties as a sub-table.
+        expandedRowRender: (property) => <ShapeProperties properties={nestedProperties(property) ?? []} nested />,
+        defaultExpandAllRows: true
+      }}
       columns={[
         {
           title: t('shape.property'),
@@ -82,7 +101,7 @@ const ShapeProperties = ({ properties }: { properties: ShapeProperty[] }) => {
         },
         { title: t('shape.expected'), key: 'expected', width: 260, render: (_, property) => <ExpectedValue property={property} /> },
         { title: t('shape.cardinality'), key: 'cardinality', width: 80, render: (_, property) => <Typography.Text type="secondary">{cardinality(property)}</Typography.Text> },
-        { title: t('shape.description'), dataIndex: 'description', render: (description?: string) => <Typography.Text type="secondary">{description}</Typography.Text> }
+        { title: t('shape.description'), dataIndex: 'description', render: (description?: ShapeProperty['description']) => <Typography.Text type="secondary">{l(description)}</Typography.Text> }
       ]}
     />
   );

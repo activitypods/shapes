@@ -9,5 +9,85 @@
         "@id": "http://www.w3.org/2006/vcard/ns#Group"
       }
     ]
+  },
+  {
+    "@id": "_:df_15_0",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#label"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "label"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "Name of the group.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Nom du groupe.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "Group",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_15_0"
+      }
+    ]
+  },
+  {
+    "@id": "_:df_15_1",
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2006/vcard/ns#hasMember"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "hasMember"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "WebIDs of the contacts in the group.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "WebIDs des contacts membres du groupe.",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ]
+  },
+  {
+    "@id": "Group",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:df_15_1"
+      }
+    ]
   }
 ]
