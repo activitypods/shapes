@@ -1,0 +1,12 @@
+PREFIX : <>
+PREFIX st: <http://www.w3.org/ns/shapetrees#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX pair: <http://virtual-assembly.org/ontologies/pair#>
+
+:Announcement
+  a st:ShapeTree ;
+  st:expectsType st:Resource ;
+  st:shape <../../shapes/maid/Announcement> ;
+  st:describesInstance pair:label ;
+  skos:prefLabel "Announcements"@en, "Annonces"@fr ;
+  skos:definition "A piece of information shared with one's network (an event, a tip, a warning…), with nothing offered or requested in return."@en, "Une information partagée avec son réseau (un événement, un bon plan, une alerte…), sans rien proposer ni demander en échange."@fr .

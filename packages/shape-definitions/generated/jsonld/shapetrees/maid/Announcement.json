@@ -1,0 +1,45 @@
+[
+  {
+    "@id": "Announcement",
+    "@type": [
+      "http://www.w3.org/ns/shapetrees#ShapeTree"
+    ],
+    "http://www.w3.org/ns/shapetrees#expectsType": [
+      {
+        "@id": "http://www.w3.org/ns/shapetrees#Resource"
+      }
+    ],
+    "http://www.w3.org/ns/shapetrees#shape": [
+      {
+        "@id": "/shapes/maid/Announcement"
+      }
+    ],
+    "http://www.w3.org/ns/shapetrees#describesInstance": [
+      {
+        "@id": "http://virtual-assembly.org/ontologies/pair#label"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Announcements",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Annonces",
+        "@language": "fr"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "A piece of information shared with one's network (an event, a tip, a warning…), with nothing offered or requested in return.",
+        "@language": "en"
+      }
+      ,
+      {
+        "@value": "Une information partagée avec son réseau (un événement, un bon plan, une alerte…), sans rien proposer ni demander en échange.",
+        "@language": "fr"
+      }
+    ]
+  }
+]
