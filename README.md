@@ -35,6 +35,10 @@ Labels and definitions come from the `skos:prefLabel` and `skos:definition` of e
 
 The "Propose a shape" form generates the shape tree and SHACL files server-side (`POST /api/proposals/preview`, validated with [n3](https://github.com/rdfjs/N3.js)) and opens a draft pull request on this repository (`POST /api/proposals`). To enable it, set `GITHUB_TOKEN` in a gitignored `.env.local` file (which overrides `.env`) to a fine-grained token with *Contents* and *Pull requests* write access on the repository (`GITHUB_REPOSITORY`, default `activitypods/shapes`). Without a token the form still previews the files but cannot submit. Submissions are rate limited per client address.
 
+## Deployment
+
+shapes.activitypods.org is deployed with [Coolify](https://coolify.io): every push to `master` makes Coolify rebuild the `Dockerfile` and restart the container (port `30916`). The runtime configuration (`BASE_URL`, `PUBLIC_URL`, `GITHUB_TOKEN`…) is set in the application's environment variables in Coolify, not in a file.
+
 ## Packages
 
 This monorepo has the following structure:
